@@ -27,10 +27,10 @@ body {
     align-items: center;
 }
 
-canvas { 
-    background-color:#0d0d1b; 
-    border-radius:10px; 
-    box-shadow:inset 0 0 10px rgba(0,0,0,0.7); 
+canvas {
+    background-color:#0d0d1b;
+    border-radius:10px;
+    box-shadow:inset 0 0 10px rgba(0,0,0,0.7);
     display:block;
     margin-bottom:10px;
 }
@@ -55,12 +55,12 @@ canvas {
     text-align:center;
     width:90%;
     margin:5px 0;
-    background-color:#22c55e; 
-    color:white; 
+    background-color:#22c55e;
+    color:white;
     display:block;
 }
-.upload-label:hover { 
-    opacity:0.9; 
+.upload-label:hover {
+    opacity:0.9;
 }
 
 /* NOVO ESTILO: Cor para o botão de exportar ranking */
@@ -96,7 +96,7 @@ canvas {
 }
 
 #side-panel button {
-    background-color:#3b82f6; 
+    background-color:#3b82f6;
     color:white;
     width: 100%;
     padding: 10px;
@@ -158,6 +158,26 @@ canvas {
     color: #ffc107;
     font-weight: bold;
 }
+
+/* ===== NOVO ESTILO ADICIONADO AQUI ===== */
+#side-panel a {
+    display: block; /* Faz o link ocupar a linha inteira */
+    background-color:#0284c7; /* Uma cor um pouco diferente para destacar */
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+#side-panel a:hover {
+    opacity: 0.9;
+}
+/* ===== FIM DO NOVO ESTILO ===== */
+
 </style>
 </head>
 <body>
@@ -179,6 +199,8 @@ canvas {
 
 <div id="side-panel">
     <button id="resetButton">🔄 Reiniciar Simulação</button>
+
+    <a href="ranking.html" target="_blank">📊 Ver Ranking Final</a>
     <div>
         <h3 class="font-bold text-lg mb-2 text-center text-[#a7ff83]">Ranking</h3>
         <input type="text" id="searchInput" placeholder="Pesquisar seguidor...">
@@ -191,7 +213,7 @@ const INITIAL_RADIUS = 2;
 const MAX_RADIUS = 60;
 const MAX_SPEED = 1.5;   
 const MIN_SPEED = 0.5;   
-const ELIMINATION_THRESHOLD = 15; 
+const ELIMINATION_THRESHOLD = 15;
 const NORMAL_GROWTH_RATE = 0.05;
 const SLOW_GROWTH_RATE = 0.01;
 
