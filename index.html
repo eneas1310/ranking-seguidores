@@ -13,24 +13,56 @@
         .user-img { width: 50px; height: 50px; border-radius: 50%; margin-right: 15px; border: 3px solid #ffc107; }
         .username { font-size: 1.2em; font-weight: bold; }
         .status { color: #ffc107; font-size: 0.9em; }
-        .header { background-color: #2c2c54; padding: 15px; margin-bottom: 20px; border-radius: 8px; text-align: center; }
+        .header { background-color: #2c2c54; padding: 20px; margin-bottom: 20px; border-radius: 8px; text-align: center; }
+        
+        /* ===== NOVOS ESTILOS PARA A BUSCA ===== */
+        .search-container { display: flex; justify-content: center; gap: 10px; }
+        .search-input {
+            width: 350px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 2px solid #4a4e69;
+            background-color: #1a1a2e;
+            color: #fff;
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 1em;
+        }
+        .search-input::placeholder { color: #aaa; }
+        .search-button {
+            background-color:#3b82f6;
+            color:white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .search-button:hover { opacity: 0.9; }
+        /* ===== FIM DOS NOVOS ESTILOS ===== */
     </style>
 </head>
 <body>
 
 <div class="header">
     <h1 class="text-3xl font-bold">🏆 Ranking Final da Rodada 💥</h1>
-    <p class="text-gray-400 mt-1" id="lastUpdated">Carregando...</p>
+    <p class="text-gray-400 mt-1" id="lastUpdated">Consulte sua posição abaixo</p>
     <a href="simulador.html" class="text-cyan-400 hover:text-cyan-300 transition-colors mt-2 inline-block">Criar Nova Simulação</a>
+
+    <div class="search-container mt-4">
+        <input type="text" id="searchInput" placeholder="Digite seu @username para ver sua posição...">
+        <button id="searchButton">Buscar</button>
+    </div>
 </div>
 
 <div id="rankingList" class="max-w-xl mx-auto">
     </div>
 
 <script>
-    function loadRanking() {
-        // O Vercel hospeda o ranking_final.json junto com o HTML
-        // O '?t=' no final força o navegador a carregar o arquivo mais recente.
+    // Variável global para guardar todos os dados do ranking
+    let fullRankingData = [];
+
+    // Função para carregar os dados do JSON
+    function loadRankingData() {
         fetch('ranking_final.json?t=' + new Date().getTime())
             .then(response => {
                 if (!response.ok) {
@@ -38,31 +70,10 @@
                 }
                 return response.json();
             })
-            .then(rankingData => {
-                const rankingList = document.getElementById('rankingList');
-                rankingList.innerHTML = ''; // Limpa a lista
-                
-                rankingData.forEach(item => {
-                    // Define a cor da borda baseado no status
-                    const statusColor = item.status.includes('CAMPEÃO') ? 'border-yellow-400' : 
-                                      item.status.includes('2º Lugar') ? 'border-gray-300' :
-                                      item.status.includes('3º Lugar') ? 'border-yellow-700' : 'border-gray-500';
-                    
-                    const div = document.createElement('div');
-                    div.className = `ranking-item hover:bg-[#2c2c54] transition-colors rounded-lg mb-2`;
-                    
-                    div.innerHTML = `
-                        <span class="rank-number">${item.rank}º</span>
-                        <img src="${item.imageUrl}" alt="${item.username}" class="user-img ${statusColor}">
-                        <div>
-                            <div class="username">@${item.username}</div>
-                            <div class="status">${item.status}</div>
-                        </div>
-                    `;
-                    rankingList.appendChild(div);
-                });
-
-                document.getElementById('lastUpdated').textContent = `Atualizado em: ${new Date().toLocaleTimeString('pt-BR')} (Recarregue para ver a próxima rodada!)`;
+            .then(data => {
+                fullRankingData = data; // Salva os dados na variável global
+                console.log('Dados do ranking carregados com sucesso.');
+                document.getElementById('lastUpdated').textContent = `Ranking finalizado! Pesquise seu nome.`;
             })
             .catch(error => {
                 const rankingList = document.getElementById('rankingList');
@@ -70,7 +81,69 @@
             });
     }
 
-    loadRanking();
+    // Função para MOSTRAR os resultados na tela
+    function displayResults(results) {
+        const rankingList = document.getElementById('rankingList');
+        rankingList.innerHTML = ''; // Limpa a lista antes de mostrar novos resultados
+
+        if (results.length === 0) {
+            rankingList.innerHTML = `<p class="text-yellow-400 text-center">Nenhum usuário encontrado com esse nome.</p>`;
+            return;
+        }
+
+        results.forEach(item => {
+            const statusColor = item.status.includes('CAMPEÃO') ? 'border-yellow-400' : 
+                              item.status.includes('2º Lugar') ? 'border-gray-300' :
+                              item.status.includes('3º Lugar') ? 'border-yellow-700' : 'border-gray-500';
+            
+            const div = document.createElement('div');
+            div.className = `ranking-item hover:bg-[#2c2c54] transition-colors rounded-lg mb-2`;
+            
+            div.innerHTML = `
+                <span class="rank-number">${item.rank}º</span>
+                <img src="${item.imageUrl}" alt="${item.username}" class="user-img ${statusColor}">
+                <div>
+                    <div class="username">@${item.username}</div>
+                    <div class="status">${item.status}</div>
+                </div>
+            `;
+            rankingList.appendChild(div);
+        });
+    }
+
+    // Função para realizar a busca
+    function performSearch() {
+        const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+        
+        if (!searchTerm) {
+            // Se a busca for vazia, limpa a lista
+            document.getElementById('rankingList').innerHTML = '';
+            return;
+        }
+
+        // Filtra os dados do ranking com base no termo pesquisado
+        const filteredResults = fullRankingData.filter(item => 
+            item.username.toLowerCase().includes(searchTerm)
+        );
+
+        // Mostra os resultados filtrados
+        displayResults(filteredResults);
+    }
+
+    // Carrega os dados do ranking assim que a página abre
+    document.addEventListener('DOMContentLoaded', () => {
+        loadRankingData();
+
+        // Adiciona o evento de clique ao botão de busca
+        document.getElementById('searchButton').addEventListener('click', performSearch);
+
+        // Adiciona o evento de "Enter" no campo de busca
+        document.getElementById('searchInput').addEventListener('keyup', (event) => {
+            if (event.key === 'Enter') {
+                performSearch();
+            }
+        });
+    });
 </script>
 </body>
 </html>
