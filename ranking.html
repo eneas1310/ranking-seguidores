@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking do Battle Royale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+        body { font-family: 'Chakra Petch', sans-serif; background-color: #1a1a2e; color: #fff; padding: 20px; }
+        .ranking-item { display: flex; align-items: center; padding: 15px; border-bottom: 1px solid #2c2c54; }
+        .rank-number { font-size: 2em; font-weight: bold; width: 60px; text-align: center; color: #a7ff83; }
+        .user-img { width: 50px; height: 50px; border-radius: 50%; margin-right: 15px; border: 3px solid #ffc107; }
+        .username { font-size: 1.2em; font-weight: bold; }
+        .status { color: #ffc107; font-size: 0.9em; }
+        .header { background-color: #2c2c54; padding: 15px; margin-bottom: 20px; border-radius: 8px; text-align: center; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1 class="text-3xl font-bold">🏆 Ranking Final da Rodada 💥</h1>
+    <p class="text-gray-400 mt-1" id="lastUpdated">Carregando...</p>
+</div>
+
+<div id="rankingList" class="max-w-xl mx-auto">
+    </div>
+
+<script>
+    function loadRanking() {
+        // O Vercel hospeda o ranking_final.json junto com o HTML
+        // O '?t=' no final força o navegador a carregar o arquivo mais recente.
+        fetch('ranking_final.json?t=' + new Date().getTime())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Ranking indisponível. A rodada ainda não foi finalizada ou publicada.');
+                }
+                return response.json();
+            })
+            .then(rankingData => {
+                const rankingList = document.getElementById('rankingList');
+                rankingList.innerHTML = ''; // Limpa a lista
+                
+                rankingData.forEach(item => {
+                    // Define a cor da borda baseado no status
+                    const statusColor = item.status.includes('CAMPEÃO') ? 'border-yellow-400' : 
+                                        item.status.includes('2º Lugar') ? 'border-gray-300' :
+                                        item.status.includes('3º Lugar') ? 'border-yellow-700' : 'border-gray-500';
+                    
+                    const div = document.createElement('div');
+                    div.className = `ranking-item hover:bg-[#2c2c54] transition-colors rounded-lg mb-2`;
+                    
+                    div.innerHTML = `
+                        <span class="rank-number">${item.rank}º</span>
+                        <img src="${item.imageUrl}" alt="${item.username}" class="user-img ${statusColor}">
+                        <div>
+                            <div class="username">@${item.username}</div>
+                            <div class="status">${item.status}</div>
+                        </div>
+                    `;
+                    rankingList.appendChild(div);
+                });
+
+                document.getElementById('lastUpdated').textContent = `Atualizado em: ${new Date().toLocaleTimeString('pt-BR')} (Recarregue para ver a próxima rodada!)`;
+            })
+            .catch(error => {
+                const rankingList = document.getElementById('rankingList');
+                rankingList.innerHTML = `<p class="text-red-400 text-center">${error.message}</p>`;
+            });
+    }
+
+    loadRanking();
+</script>
+</body>
+</html>
