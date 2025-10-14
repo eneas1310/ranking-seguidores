@@ -88,20 +88,7 @@ body {
     color: #ffc107;
     font-weight: 500;
 }
-.link-to-simulador {
-    background-color: #d97706;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.2s;
-    display: inline-block;
-    margin-top: 15px;
-}
-.link-to-simulador:hover {
-    background-color: #b45309;
-}
+/* REMOVIDO: Estilos para o link do simulador */
 </style>
 </head>
 <body>
@@ -116,10 +103,7 @@ body {
     <div id="ranking-list">
         </div>
     
-    <div class="text-center mt-5">
-        <a href="simulador.html" class="link-to-simulador">🎮 Ir para o Simulador (Para Exportar novo Ranking)</a>
     </div>
-</div>
 
 <script>
 let rankingData = [];
@@ -150,14 +134,15 @@ function displayRanking() {
         item.username.toLowerCase().includes(searchTerm)
     );
     
-    // Se não houver termo de busca, exibe todos. Se houver, exibe apenas os filtrados.
+    // Se houver termo de busca, exibe apenas os filtrados. Se não, exibe todos.
     const dataToDisplay = searchTerm ? filteredData : rankingData;
 
     if (dataToDisplay.length === 0 && searchTerm) {
         rankingList.innerHTML = `<div class="text-center text-red-400 p-5">Nenhum resultado encontrado para "${searchTerm}".</div>`;
         return;
-    } else if (dataToDisplay.length === 0) {
-        rankingList.innerHTML = `<div class="text-center text-yellow-400 p-5">O ranking está vazio. Execute o simulador e exporte o arquivo 'ranking_final.json'.</div>`;
+    } else if (dataToDisplay.length === 0 && !searchTerm) {
+        // Exibir todos por padrão, se a lista não estiver vazia. Se estiver vazia, mostra mensagem.
+        rankingList.innerHTML = `<div class="text-center text-yellow-400 p-5">O ranking está vazio.</div>`;
         return;
     }
 
