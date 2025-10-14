@@ -15,20 +15,19 @@ body {
     margin: 0;
     min-height: 100vh;
     display: flex;
-    /* MUDANÇA CRUCIAL PARA MOBILE: Alinha o conteúdo no topo */
     justify-content: center;
     align-items: flex-start; /* Alinhamento ao topo */
-    padding: 20px 10px; /* Reduz o padding lateral para telas menores */
+    padding: 20px 10px;
 }
 
 #ranking-container {
     background-color: #2c2c54;
     border-radius: 12px;
-    padding: 20px; /* Padding ajustado */
+    padding: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     width: 100%;
     max-width: 800px;
-    margin-top: 10px; /* Pequena margem do topo */
+    margin-top: 10px;
 }
 
 #date-selector-container {
@@ -36,7 +35,6 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    /* Ajuste para telas pequenas */
     flex-wrap: wrap; 
 }
 
@@ -52,7 +50,7 @@ body {
 
 #ranking-list {
     margin-top: 20px;
-    max-height: 50vh; /* Limite de altura para mobile */
+    max-height: 50vh; 
     overflow-y: auto;
     background-color: #1a1a2e;
     border-radius: 8px;
@@ -141,7 +139,6 @@ async function loadRanking() {
     loadingMessage.style.color = '#facc15';
     
     try {
-        // O & evita que o Vercel ou o navegador guardem o arquivo antigo em cache
         const response = await fetch(fileName + '?' + new Date().getTime());
         
         if (!response.ok) {
@@ -160,21 +157,23 @@ async function loadRanking() {
         console.error("Erro ao carregar ranking:", error);
         loadingMessage.textContent = `ERRO: Não foi possível carregar o ranking para o dia. ${error.message}`;
         loadingMessage.style.color = '#f87171';
-        rankingData = []; // Zera os dados em caso de erro
+        rankingData = [];
     }
 }
 
 function displayRanking() {
-    const searchTerm = searchInput.value.trim().toLowerCase();
+    // 1. Limpa e normaliza o termo de busca
+    const rawSearchTerm = searchInput.value.trim().toLowerCase();
+    // Remove o '@' do termo de busca
+    const searchTerm = rawSearchTerm.startsWith('@') ? rawSearchTerm.substring(1) : rawSearchTerm;
+    
     rankingList.innerHTML = '';
 
     if (rankingData.length === 0) {
-        // Não busca se não há dados carregados
         return;
     }
 
     if (!searchTerm) {
-        // Se o campo de busca estiver vazio, a lista continua vazia.
         loadingMessage.textContent = 'Digite seu nome para buscar no ranking.';
         loadingMessage.style.color = '#facc15';
         return;
@@ -183,13 +182,17 @@ function displayRanking() {
     loadingMessage.textContent = 'Buscando...';
     loadingMessage.style.color = '#a7ff83';
 
-    // Filtra o ranking com base no termo de busca
-    const filteredData = rankingData.filter(item => 
-        item.username.toLowerCase().includes(searchTerm)
-    );
+    // 2. Filtra o ranking comparando o termo de busca com o username (sem o '@')
+    const filteredData = rankingData.filter(item => {
+        // Remove o '@' dos usernames do ranking antes de comparar, garantindo a indiferença
+        const cleanUsername = item.username.toLowerCase().startsWith('@') ? item.username.toLowerCase().substring(1) : item.username.toLowerCase();
+        
+        // Verifica se o termo limpo está contido no username limpo
+        return cleanUsername.includes(searchTerm);
+    });
 
     if (filteredData.length === 0) {
-        rankingList.innerHTML = `<div class="text-center text-red-400 p-5">Nenhum resultado encontrado para "${searchTerm}".</div>`;
+        rankingList.innerHTML = `<div class="text-center text-red-400 p-5">Nenhum resultado encontrado.</div>`;
         loadingMessage.textContent = `Nenhum resultado encontrado.`;
         loadingMessage.style.color = '#f87171';
         return;
