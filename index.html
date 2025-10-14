@@ -88,22 +88,20 @@ body {
     color: #ffc107;
     font-weight: 500;
 }
-/* REMOVIDO: Estilos para o link do simulador */
 </style>
 </head>
 <body>
 
 <div id="ranking-container">
-    <h1 class="text-3xl font-bold text-center mb-5 text-[#a7ff83]">🏆 RANKING FINAL DA ARENA 💥</h1>
+    <h1 class="text-3xl font-bold text-center mb-5 text-[#a7ff83]">🏆 Arena do Insta dia 8 💥</h1>
 
-    <input type="text" id="searchInput" placeholder="🔍 Digite seu @username para buscar no ranking..." class="search-input">
+    <input type="text" id="searchInput" placeholder="" class="search-input">
     
-    <div id="loading" class="text-center text-yellow-300 mt-5">Carregando ranking... Certifique-se de que o arquivo 'ranking_final.json' foi publicado.</div>
+    <div id="loading" class="text-center text-yellow-300 mt-5">Digite seu nome para buscar no ranking.</div>
     
     <div id="ranking-list">
         </div>
-    
-    </div>
+</div>
 
 <script>
 let rankingData = [];
@@ -113,13 +111,14 @@ const loadingMessage = document.getElementById('loading');
 
 async function loadRanking() {
     try {
-        const response = await fetch('ranking_final.json?' + new Date().getTime()); // Adiciona timestamp para evitar cache
+        const response = await fetch('ranking_final.json?' + new Date().getTime());
         if (!response.ok) {
             throw new Error('Arquivo ranking_final.json não encontrado ou erro de rede.');
         }
         rankingData = await response.json();
-        loadingMessage.style.display = 'none';
-        displayRanking();
+        // Nao faz displayRanking() aqui. A lista fica VAZIA por padrao.
+        loadingMessage.textContent = 'Ranking carregado. Digite seu nome e aperte Enter.';
+        loadingMessage.style.color = '#34d399';
     } catch (error) {
         console.error("Erro ao carregar ranking:", error);
         loadingMessage.textContent = "Erro ao carregar o ranking. Verifique se o 'ranking_final.json' foi enviado e publicado.";
@@ -130,23 +129,35 @@ function displayRanking() {
     const searchTerm = searchInput.value.trim().toLowerCase();
     rankingList.innerHTML = '';
 
-    const filteredData = rankingData.filter(item => 
-        item.username.toLowerCase().includes(searchTerm)
-    );
-    
-    // Se houver termo de busca, exibe apenas os filtrados. Se não, exibe todos.
-    const dataToDisplay = searchTerm ? filteredData : rankingData;
-
-    if (dataToDisplay.length === 0 && searchTerm) {
-        rankingList.innerHTML = `<div class="text-center text-red-400 p-5">Nenhum resultado encontrado para "${searchTerm}".</div>`;
-        return;
-    } else if (dataToDisplay.length === 0 && !searchTerm) {
-        // Exibir todos por padrão, se a lista não estiver vazia. Se estiver vazia, mostra mensagem.
-        rankingList.innerHTML = `<div class="text-center text-yellow-400 p-5">O ranking está vazio.</div>`;
+    if (rankingData.length === 0) {
+        // Se os dados não carregaram, não faz nada
         return;
     }
 
-    dataToDisplay.forEach((item, index) => {
+    if (!searchTerm) {
+        // ALTERACAO 3: Se o campo de busca estiver vazio, a lista continua vazia.
+        loadingMessage.textContent = 'Digite seu nome para buscar no ranking.';
+        loadingMessage.style.color = '#facc15';
+        return;
+    }
+    
+    loadingMessage.textContent = 'Buscando...';
+    loadingMessage.style.color = '#a7ff83';
+
+    // Filtra o ranking com base no termo de busca
+    const filteredData = rankingData.filter(item => 
+        item.username.toLowerCase().includes(searchTerm)
+    );
+
+    if (filteredData.length === 0) {
+        rankingList.innerHTML = `<div class="text-center text-red-400 p-5">Nenhum resultado encontrado para "${searchTerm}".</div>`;
+        loadingMessage.textContent = `Nenhum resultado encontrado.`;
+        loadingMessage.style.color = '#f87171';
+        return;
+    }
+
+    // Exibe apenas o(s) resultado(s) encontrado(s)
+    filteredData.forEach((item, index) => {
         const div = document.createElement('div');
         div.className = 'ranking-item';
         div.innerHTML = `
@@ -157,11 +168,15 @@ function displayRanking() {
         `;
         rankingList.appendChild(div);
     });
+
+    loadingMessage.textContent = `Resultado(s) encontrado(s) para "${searchTerm}".`;
+    loadingMessage.style.color = '#34d399';
 }
 
+// O evento de busca é acionado por qualquer digitação na caixa de input
 searchInput.addEventListener('input', displayRanking);
 
-// Inicia o carregamento do ranking
+// Inicia o carregamento dos dados do ranking (em background)
 loadRanking();
 </script>
 </body>
