@@ -97,6 +97,25 @@ body {
     color: #ffc107;
     font-weight: 500;
 }
+
+/* NOVO ESTILO PARA O BOTÃO COMPARTILHAR */
+#shareButton {
+    background-color: #E4405F; /* Cor do Instagram/social */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    width: 100%;
+    margin-top: 20px;
+    display: none; /* Escondido por padrão */
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#shareButton:hover {
+    opacity: 0.9;
+}
 </style>
 </head>
 <body>
@@ -117,6 +136,8 @@ body {
     
     <div id="ranking-list">
         </div>
+
+    <button id="shareButton">🔥 Compartilhar meu Resultado!</button>
 </div>
 
 <script>
@@ -125,16 +146,63 @@ const searchInput = document.getElementById('searchInput');
 const rankingList = document.getElementById('ranking-list');
 const loadingMessage = document.getElementById('loading');
 const dateSelector = document.getElementById('dateSelector');
+const shareButton = document.getElementById('shareButton');
+let lastFoundProfile = null;
 
+// --- FUNÇÃO AUXILIAR PARA CRIAR A MENSAGEM DE COMPARTILHAMENTO ---
+function getShareMessage(profile) {
+    const dataDisplay = dateSelector.options[dateSelector.selectedIndex].text;
+    const shareUrl = window.location.origin + window.location.pathname;
+    let messageBody = "";
+
+    if (profile.rank === 1) {
+        messageBody = `👑 SOU CAMPEÃO! Fiquei em 1º lugar na Arena do Insta! Foi uma vitória épica!`;
+    } else if (profile.rank === 2) {
+        messageBody = `🥈 PRATA NA ARENA! Levei o 2º lugar na rodada de hoje. Quase lá!`;
+    } else if (profile.rank === 3) {
+        messageBody = `🥉 MEDALHA DE BRONZE! Garanti o 3º lugar na rodada mais tensa da Arena!`;
+    } else if (profile.rank <= 10) {
+        messageBody = `💥 TOP 10! Fiquei em ${profile.rank}º lugar na Arena do Insta. Tamo na elite!`;
+    } else {
+        messageBody = `⚔️ Batalhei! Consegui ${profile.rank}º lugar na rodada. Na próxima, busco o Top 10!`;
+    }
+
+    return `${messageBody}\n\nConfira os resultados completos no perfil oficial: @arenadoinsta \n\nMeu Ranking: ${shareUrl}`;
+}
+
+
+// --- Lógica de Compartilhamento ---
+function shareRanking(profile) {
+    if (!profile) return;
+    
+    const shareMessage = getShareMessage(profile);
+
+    // Usa a API de Clipboard para copiar no celular
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(shareMessage)
+            .then(() => {
+                alert('Mensagem de compartilhamento copiada! Cole no Instagram Stories ou no seu Feed!');
+            })
+            .catch(err => {
+                console.error('Erro ao copiar: ', err);
+                alert('Não foi possível copiar automaticamente. Copie este texto manualmente: \n\n' + shareMessage);
+            });
+    } else {
+        alert('Seu navegador não suporta a cópia automática. Copie este texto manualmente: \n\n' + shareMessage);
+    }
+}
+
+
+// --- Lógica de Carregamento ---
 async function loadRanking() {
-    // 1. Pega a data selecionada (em formato YYYY-MM-DD)
     const date = dateSelector.value;
-    // 2. Constrói o nome do arquivo JSON
     const fileName = `ranking_${date}.json`;
     
-    // Reseta o estado da busca e da lista
     searchInput.value = '';
     rankingList.innerHTML = '';
+    shareButton.style.display = 'none';
+    lastFoundProfile = null;
+    
     loadingMessage.textContent = `Carregando ranking do dia ${dateSelector.options[dateSelector.selectedIndex].text}...`;
     loadingMessage.style.color = '#facc15';
     
@@ -142,10 +210,7 @@ async function loadRanking() {
         const response = await fetch(fileName + '?' + new Date().getTime());
         
         if (!response.ok) {
-            if (response.status === 404) {
-                 throw new Error(`Arquivo ${fileName} não encontrado. Certifique-se de que o ranking foi gerado e renomeado corretamente.`);
-            }
-            throw new Error('Erro de rede ao buscar o arquivo.');
+             throw new Error(`Arquivo ${fileName} não encontrado. Certifique-se de que o ranking foi gerado e renomeado corretamente.`);
         }
         
         rankingData = await response.json();
@@ -161,17 +226,16 @@ async function loadRanking() {
     }
 }
 
+// --- Lógica de Exibição (Busca) ---
 function displayRanking() {
-    // 1. Limpa e normaliza o termo de busca
     const rawSearchTerm = searchInput.value.trim().toLowerCase();
-    // Remove o '@' do termo de busca
     const searchTerm = rawSearchTerm.startsWith('@') ? rawSearchTerm.substring(1) : rawSearchTerm;
     
     rankingList.innerHTML = '';
+    shareButton.style.display = 'none';
+    lastFoundProfile = null;
 
-    if (rankingData.length === 0) {
-        return;
-    }
+    if (rankingData.length === 0) return;
 
     if (!searchTerm) {
         loadingMessage.textContent = 'Digite seu nome para buscar no ranking.';
@@ -182,12 +246,8 @@ function displayRanking() {
     loadingMessage.textContent = 'Buscando...';
     loadingMessage.style.color = '#a7ff83';
 
-    // 2. Filtra o ranking comparando o termo de busca com o username (sem o '@')
     const filteredData = rankingData.filter(item => {
-        // Remove o '@' dos usernames do ranking antes de comparar, garantindo a indiferença
         const cleanUsername = item.username.toLowerCase().startsWith('@') ? item.username.toLowerCase().substring(1) : item.username.toLowerCase();
-        
-        // Verifica se o termo limpo está contido no username limpo
         return cleanUsername.includes(searchTerm);
     });
 
@@ -198,7 +258,10 @@ function displayRanking() {
         return;
     }
 
-    // Exibe apenas o(s) resultado(s) encontrado(s)
+    // Armazena o perfil para compartilhamento e exibe o botão
+    lastFoundProfile = filteredData[0];
+    shareButton.style.display = 'block';
+
     filteredData.forEach((item) => {
         const div = document.createElement('div');
         div.className = 'ranking-item';
@@ -215,13 +278,12 @@ function displayRanking() {
     loadingMessage.style.color = '#34d399';
 }
 
-// Evento para carregar um novo ranking quando a data muda
+// --- Event Listeners ---
 dateSelector.addEventListener('change', loadRanking);
-
-// Evento de busca é acionado por qualquer digitação na caixa de input
 searchInput.addEventListener('input', displayRanking);
+shareButton.addEventListener('click', () => shareRanking(lastFoundProfile));
 
-// Inicia o carregamento dos dados do ranking ao carregar a página (com a data padrão)
+// Inicia o carregamento dos dados do ranking ao carregar a página
 loadRanking();
 </script>
 </body>
