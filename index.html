@@ -18,7 +18,7 @@ body {
     align-items: flex-start;
     padding: 20px;
     min-height: 100vh;
-    position: relative; /* Necessário para o painel lateral */
+    position: relative;
 }
 
 #app-container {
@@ -70,10 +70,10 @@ canvas {
     opacity:0.9;
 }
 
-.upload-label { background-color:#22c55e; } /* Verde */
-.export-button { background-color: #0284c7; } /* Azul Ciano */
+.upload-label { background-color:#22c55e; }
+.export-button { background-color: #0284c7; }
 
-/* ===== ESTILO DO PAINEL LATERAL RE-ADICIONADO ===== */
+/* ===== PAINEL LATERAL (Reiniciar) ===== */
 #side-panel {
     position: absolute;
     right: 20px;
@@ -86,7 +86,7 @@ canvas {
     box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 #side-panel button {
-    background-color: #d97706; /* Laranja */
+    background-color: #d97706;
     color: white;
     width: 100%;
     padding: 10px;
@@ -97,6 +97,23 @@ canvas {
 }
 #side-panel button:hover {
     opacity: 0.9;
+}
+/* ===== ESTILOS DE BUSCA NO FINAL DA SIMULACAO ===== */
+.search-input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: #1a1a2e;
+    border: 1px solid #4a4e69;
+    color: #fff;
+}
+.search-button {
+    width: 100%;
+    background-color: #8b5cf6;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
 </style>
@@ -118,6 +135,13 @@ canvas {
         <label for="imageUpload" class="action-button upload-label">🖼️ Carregar Fotos</label>
         
         <button id="exportRankingButton" class="action-button export-button" style="display:none;">🏆 Salvar Ranking Final (.json)</button>
+        
+        <div id="search-container" style="display: none; width: 90%; margin-top: 10px; text-align: center;">
+            <p class="text-base text-gray-400 mb-2">Confira sua posição:</p>
+            <input type="text" id="searchInput" placeholder="Digite seu @username para buscar..." class="search-input">
+            <button id="searchButton" class="search-button mt-2">🔍 Buscar Posição</button>
+            <p id="searchResult" class="mt-3 text-lg h-8"></p>
+        </div>
     </div>
 </div>
 
@@ -126,6 +150,7 @@ canvas {
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@vercel/speed-insights/dist/script.js" async></script>
+
 <script>
 // --- Constantes da Simulação ---
 const INITIAL_RADIUS = 2;
@@ -138,6 +163,7 @@ const SLOW_GROWTH_RATE = 0.01;
 
 // --- Variáveis Globais ---
 let canvas, ctx, profiles=[], animationFrameId, isGameOver=false, lastTime=0, followerImageUrls=[];
+let finalRankingData = [];
 let eliminationCounter = 1;
 const imageCache = new Map();
 let grid;
@@ -196,6 +222,10 @@ function initProfiles(){
     grid = new SpatialGrid(canvas.width, canvas.height, MAX_RADIUS * 2);
     profiles=[]; isGameOver=false; lastTime=performance.now();
     eliminationCounter = 1;
+    finalRankingData = []; 
+    document.getElementById('search-container').style.display = 'none'; 
+    document.getElementById('searchInput').value = ''; 
+    document.getElementById('searchResult').textContent = '';
     document.getElementById('statusMessage').textContent = `${followerImageUrls.length} perfis em batalha!`;
     document.getElementById('exportRankingButton').style.display = 'none';
     document.getElementById('resetButton').style.display = 'block';
@@ -224,7 +254,6 @@ function detectCollisions(alive) {
         for (const p2 of grid.getNearby(p1)) {
             if (p1.id >= p2.id) continue;
             if (Math.hypot(p2.x - p1.x, p2.y - p1.y) < p1.radius + p2.radius) {
-                const angle = Math.atan2(p2.y - p1.y, p2.x - p1.x);
                 p1.vx*=-1; p1.vy*=-1; p2.vx*=-1; p2.vy*=-1;
                 p1.collisionCount++; p2.collisionCount++;
                 if(p1.collisionCount>=ELIMINATION_THRESHOLD && p1.alive){ p1.alive=false; p1.eliminationOrder = eliminationCounter++; }
@@ -272,7 +301,11 @@ function animate(time){
     if(isGameOver){
         drawPodium();
         document.getElementById('exportRankingButton').style.display = 'block';
-        document.getElementById('statusMessage').textContent = 'FIM DE JOGO! Salve o ranking para publicar.';
+        document.getElementById('search-container').style.display = 'block';
+        if (finalRankingData.length === 0) {
+            generateFinalRanking();
+        }
+        document.getElementById('statusMessage').textContent = 'FIM DE JOGO! Salve o ranking ou busque sua posição.';
     } else {
         alive.forEach(p=>p.draw(ctx, alive.length));
         animationFrameId=requestAnimationFrame(animate);
@@ -282,12 +315,8 @@ function animate(time){
     ctx.fillText(`Vivos: ${alive.length}`, 10,25);
 }
 
-function exportRanking() {
-    if (!isGameOver) {
-        alert("A simulação precisa terminar para exportar o ranking.");
-        return;
-    }
-    const finalRanking = profiles
+function generateFinalRanking() {
+    finalRankingData = profiles
         .sort((a, b) => {
             if (a.alive && !b.alive) return -1;
             if (!a.alive && b.alive) return 1;
@@ -296,7 +325,7 @@ function exportRanking() {
         })
         .map((p, index) => {
             const rank = index + 1;
-            let rankStatus = p.alive ? '🏆 CAMPEÃO!' : rank === 2 ? '🥈 2º Lugar' : rank === 3 ? '🥉 3º Lugar' : `Eliminado em ${rank}º`;
+            let rankStatus = p.alive ? '🏆 CAMPEÃO!' : rank === 2 ? '🥈 2º Lugar' : rank === 3 ? '🥉 3º Lugar' : `Eliminado`;
             return {
                 username: p.username,
                 rank: rank,
@@ -304,8 +333,14 @@ function exportRanking() {
                 imageUrl: followerImageUrls.find(img => img.name === p.username)?.url || p.image.src
             };
         });
+}
 
-    const blob = new Blob([JSON.stringify(finalRanking, null, 2)], { type: 'application/json' });
+function exportRanking() {
+    if (finalRankingData.length === 0) {
+        alert("A simulação precisa terminar para exportar o ranking.");
+        return;
+    }
+    const blob = new Blob([JSON.stringify(finalRankingData, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
@@ -347,6 +382,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('exportRankingButton').addEventListener('click', exportRanking);
+    
+    // LÓGICA DE BUSCA DE USUÁRIO (APENAS NA PÁGINA DO SIMULADOR)
+    document.getElementById('searchButton').addEventListener('click', () => {
+        const searchInput = document.getElementById('searchInput');
+        const resultElement = document.getElementById('searchResult');
+        const query = searchInput.value.trim().toLowerCase().replace('@', '');
+
+        if (finalRankingData.length === 0) {
+            resultElement.textContent = 'Aguarde o fim do jogo para buscar.';
+            resultElement.style.color = '#facc15';
+            return;
+        }
+
+        if (!query) {
+            resultElement.textContent = 'Digite um nome para buscar.';
+            resultElement.style.color = '#facc15';
+            return;
+        }
+
+        const foundProfile = finalRankingData.find(p => p.username.toLowerCase() === query);
+
+        if (foundProfile) {
+            resultElement.innerHTML = `🎉 <strong>${foundProfile.rank}º</strong> Lugar - ${foundProfile.status}`;
+            resultElement.style.color = '#34d399';
+        } else {
+            resultElement.textContent = '😕 Usuário não encontrado.';
+            resultElement.style.color = '#f87171';
+        }
+    });
 });
 </script>
 </body>
