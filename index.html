@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alinhamento ao topo */
+    align-items: flex-start;
     padding: 20px 10px;
 }
 
@@ -48,7 +48,6 @@ body {
     font-size: 1.1rem;
 }
 
-/* NOVO: Estilo para os botões de filtro */
 #filter-buttons {
     display: flex;
     justify-content: center;
@@ -119,7 +118,6 @@ body {
     font-size: 1.2rem;
     color: #fff;
 }
-/* NOVO: Estilo para o destaque da busca */
 .username .highlight {
     color: #a7ff83;
     background-color: #4a4e69;
@@ -145,7 +143,7 @@ body {
             </select>
     </div>
 
-    <input type="text" id="searchInput" placeholder="Busque por um ou mais termos..." class="search-input">
+    <input type="text" id="searchInput" placeholder="Busque por @usuario, nome, etc..." class="search-input">
     
     <div id="filter-buttons">
         <button id="top10Btn" class="filter-btn">🏆 Ver Top 10</button>
@@ -166,7 +164,6 @@ const dateSelector = document.getElementById('dateSelector');
 const top10Btn = document.getElementById('top10Btn');
 const allBtn = document.getElementById('allBtn');
 
-// --- Lógica de Carregamento ---
 async function loadRanking() {
     const date = dateSelector.value;
     const fileName = `ranking_${date}.json`;
@@ -184,10 +181,9 @@ async function loadRanking() {
         }
         rankingData = await response.json();
         
-        // NOVO: Exibe o Top 10 por padrão
         loadingMessage.textContent = '🏆 Top 10 da Arena!';
         loadingMessage.style.color = '#34d399';
-        renderRankingList(rankingData.slice(0, 10)); // Mostra os 10 primeiros
+        renderRankingList(rankingData.slice(0, 10));
         
     } catch (error) {
         console.error("Erro ao carregar ranking:", error);
@@ -197,9 +193,8 @@ async function loadRanking() {
     }
 }
 
-// --- NOVO: Função Central de Renderização ---
 function renderRankingList(dataToRender, searchTerms = []) {
-    rankingList.innerHTML = ''; // Limpa a lista atual
+    rankingList.innerHTML = '';
 
     if (dataToRender.length === 0) {
         rankingList.innerHTML = `<div class="text-center text-red-400 p-5">Nenhum resultado encontrado.</div>`;
@@ -210,12 +205,13 @@ function renderRankingList(dataToRender, searchTerms = []) {
         const div = document.createElement('div');
         div.className = 'ranking-item';
 
-        // Lógica de Destaque (Highlight)
         let highlightedUsername = `@${item.username}`;
         if (searchTerms.length > 0) {
             searchTerms.forEach(term => {
-                const regex = new RegExp(term, 'gi'); // 'gi' = global, case-insensitive
-                highlightedUsername = highlightedUsername.replace(regex, (match) => `<strong class="highlight">${match}</strong>`);
+                if(term) { // Garante que o termo não seja vazio
+                    const regex = new RegExp(term, 'gi');
+                    highlightedUsername = highlightedUsername.replace(regex, (match) => `<strong class="highlight">${match}</strong>`);
+                }
             });
         }
         
@@ -229,12 +225,12 @@ function renderRankingList(dataToRender, searchTerms = []) {
     });
 }
 
-// --- Lógica de Exibição (Busca) Aprimorada ---
 function handleSearch() {
     const rawSearchTerm = searchInput.value.trim().toLowerCase();
-    
-    if (!rawSearchTerm) {
-        // Se a busca estiver vazia, mostra o Top 10 novamente
+    // --- CORREÇÃO APLICADA AQUI ---
+    const cleanSearchTerm = rawSearchTerm.replace(/@/g, ''); // Remove todos os '@' da busca
+
+    if (!cleanSearchTerm) {
         loadingMessage.textContent = 'Digite algo para buscar ou use os filtros.';
         loadingMessage.style.color = '#facc15';
         renderRankingList(rankingData.slice(0, 10));
@@ -244,12 +240,10 @@ function handleSearch() {
     loadingMessage.textContent = 'Buscando...';
     loadingMessage.style.color = '#a7ff83';
     
-    // NOVO: Busca por termos separados
-    const searchTerms = rawSearchTerm.split(' ').filter(term => term); // Cria um array de termos
+    const searchTerms = cleanSearchTerm.split(' ').filter(term => term);
 
     const filteredData = rankingData.filter(item => {
         const cleanUsername = item.username.toLowerCase();
-        // Verifica se TODOS os termos da busca estão incluídos no nome de usuário
         return searchTerms.every(term => cleanUsername.includes(term));
     });
     
@@ -264,20 +258,19 @@ dateSelector.addEventListener('change', loadRanking);
 searchInput.addEventListener('input', handleSearch);
 
 top10Btn.addEventListener('click', () => {
-    searchInput.value = ''; // Limpa a busca
+    searchInput.value = '';
     loadingMessage.textContent = '🏆 Top 10 da Arena!';
     loadingMessage.style.color = '#34d399';
     renderRankingList(rankingData.slice(0, 10));
 });
 
 allBtn.addEventListener('click', () => {
-    searchInput.value = ''; // Limpa a busca
+    searchInput.value = '';
     loadingMessage.textContent = `📜 Ranking completo com ${rankingData.length} participantes.`;
     loadingMessage.style.color = '#34d399';
     renderRankingList(rankingData);
 });
 
-// Inicia o carregamento dos dados
 loadRanking();
 </script>
 </body>
