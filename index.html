@@ -1,353 +1,675 @@
-<!DOCTYPE html>
+DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Simulador - Arena do Insta</title>
+
 <script src="https://cdn.tailwindcss.com"></script>
+
 <style>
+
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
+
 body {
-    font-family: 'Chakra Petch', sans-serif;
-    background-color: #1a1a2e;
-    color: #fff;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    min-height: 100vh;
-    position: relative; /* Necessário para o painel lateral */
+
+    font-family: 'Chakra Petch', sans-serif;
+
+    background-color: #1a1a2e;
+
+    color: #fff;
+
+    margin: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    padding: 20px;
+
+    min-height: 100vh;
+
+    position: relative; /* Necessário para o painel lateral */
+
 }
+
 
 #app-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 15px;
+
 }
+
 
 canvas {
-    background-color:#0d0d1b;
-    border-radius:10px;
-    box-shadow:inset 0 0 10px rgba(0,0,0,0.7);
-    display:block;
+
+    background-color:#0d0d1b;
+
+    border-radius:10px;
+
+    box-shadow:inset 0 0 10px rgba(0,0,0,0.7);
+
+    display:block;
+
 }
+
 
 .header {
-    background-color: #2c2c54;
-    padding: 20px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    text-align: center;
-    width: 750px;
+
+    background-color: #2c2c54;
+
+    padding: 20px;
+
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    width: 750px;
+
 }
+
 
 .status-box {
-    background-color: #2c2c54;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.5);
-    width: 750px;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    gap: 10px;
+
+    background-color: #2c2c54;
+
+    border-radius: 8px;
+
+    padding: 15px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.5);
+
+    width: 750px;
+
+    display:flex;
+
+    flex-direction: column;
+
+    align-items:center;
+
+    gap: 10px;
+
 }
+
 
 .action-button {
-    transition:all 0.2s ease-in-out;
-    padding:10px 20px;
-    border-radius:8px;
-    font-weight:bold;
-    cursor:pointer;
-    text-align:center;
-    width:90%;
-    color: white;
+
+    transition:all 0.2s ease-in-out;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    text-align:center;
+
+    width:90%;
+
+    color: white;
+
 }
+
 .action-button:hover {
-    opacity:0.9;
+
+    opacity:0.9;
+
 }
+
 
 .upload-label { background-color:#22c55e; } /* Verde */
+
 .export-button { background-color: #0284c7; } /* Azul Ciano */
 
+
 /* ===== ESTILO DO PAINEL LATERAL RE-ADICIONADO ===== */
+
 #side-panel {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 220px;
-    background-color: #2c2c54;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+
+    position: absolute;
+
+    right: 20px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 220px;
+
+    background-color: #2c2c54;
+
+    border-radius: 8px;
+
+    padding: 15px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+
 }
+
 #side-panel button {
-    background-color: #d97706; /* Laranja */
-    color: white;
-    width: 100%;
-    padding: 10px;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.2s ease;
+
+    background-color: #d97706; /* Laranja */
+
+    color: white;
+
+    width: 100%;
+
+    padding: 10px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
 }
+
 #side-panel button:hover {
-    opacity: 0.9;
+
+    opacity: 0.9;
+
 }
+
 
 </style>
+
 </head>
+
 <body>
 
+
 <div id="app-container">
-    <div class="header">
-        <h1 class="text-4xl font-bold mb-2">ARENA DO INSTA</h1>
-        <p class="text-gray-300 mt-1 text-xl">Simulador de Rodadas</p>
-    </div>
 
-    <canvas id="collisionCanvas" width="750" height="600"></canvas>
+    <div class="header">
 
-    <div class="status-box">
-        <div id="statusMessage" class="text-lg font-semibold text-yellow-300 text-center">Aguardando imagens...</div>
-        
-        <input type="file" id="imageUpload" multiple accept="image/*" style="display:none;">
-        <label for="imageUpload" class="action-button upload-label">🖼️ Carregar Fotos</label>
-        
-        <button id="exportRankingButton" class="action-button export-button" style="display:none;">🏆 Salvar Ranking Final (.json)</button>
-    </div>
+        <h1 class="text-4xl font-bold mb-2">ARENA DO INSTA</h1>
+
+        <p class="text-gray-300 mt-1 text-xl">Simulador de Rodadas</p>
+
+    </div>
+
+
+    <canvas id="collisionCanvas" width="750" height="600"></canvas>
+
+
+    <div class="status-box">
+
+        <div id="statusMessage" class="text-lg font-semibold text-yellow-300 text-center">Aguardando imagens...</div>
+
+        
+
+        <input type="file" id="imageUpload" multiple accept="image/*" style="display:none;">
+
+        <label for="imageUpload" class="action-button upload-label">🖼️ Carregar Fotos</label>
+
+        
+
+        <button id="exportRankingButton" class="action-button export-button" style="display:none;">🏆 Salvar Ranking Final (.json)</button>
+
+    </div>
+
 </div>
+
 
 <div id="side-panel">
-    <button id="resetButton" style="display:none;">🔄 Reiniciar Simulação</button>
+
+    <button id="resetButton" style="display:none;">🔄 Reiniciar Simulação</button>
+
 </div>
+
 
 
 <script>
+
 // --- Constantes da Simulação ---
+
 const INITIAL_RADIUS = 2;
+
 const MAX_RADIUS = 60;
+
 const MAX_SPEED = 1.5;
+
 const MIN_SPEED = 0.5;
+
 const ELIMINATION_THRESHOLD = 15;
+
 const NORMAL_GROWTH_RATE = 0.05;
+
 const SLOW_GROWTH_RATE = 0.01;
 
+
 // --- Variáveis Globais ---
+
 let canvas, ctx, profiles=[], animationFrameId, isGameOver=false, lastTime=0, followerImageUrls=[];
+
 let eliminationCounter = 1;
+
 const imageCache = new Map();
+
 let grid;
 
+
 class SpatialGrid {
-    constructor(width, height, cellSize) { this.cellSize = cellSize; this.cols = Math.ceil(width / cellSize); this.rows = Math.ceil(height / cellSize); this.grid = new Map(); }
-    clear() { this.grid.clear(); }
-    insert(profile) { const col = Math.floor(profile.x / this.cellSize); const row = Math.floor(profile.y / this.cellSize); const key = `${col},${row}`; if (!this.grid.has(key)) { this.grid.set(key, []); } this.grid.get(key).push(profile); }
-    getNearby(profile) { const nearby = []; const col = Math.floor(profile.x / this.cellSize); const row = Math.floor(profile.y / this.cellSize); for (let r = -1; r <= 1; r++) { for (let c = -1; c <= 1; c++) { const key = `${col + c},${row + r}`; if (this.grid.has(key)) { nearby.push(...this.grid.get(key)); } } } return nearby; }
+
+    constructor(width, height, cellSize) { this.cellSize = cellSize; this.cols = Math.ceil(width / cellSize); this.rows = Math.ceil(height / cellSize); this.grid = new Map(); }
+
+    clear() { this.grid.clear(); }
+
+    insert(profile) { const col = Math.floor(profile.x / this.cellSize); const row = Math.floor(profile.y / this.cellSize); const key = `${col},${row}`; if (!this.grid.has(key)) { this.grid.set(key, []); } this.grid.get(key).push(profile); }
+
+    getNearby(profile) { const nearby = []; const col = Math.floor(profile.x / this.cellSize); const row = Math.floor(profile.y / this.cellSize); for (let r = -1; r <= 1; r++) { for (let c = -1; c <= 1; c++) { const key = `${col + c},${row + r}`; if (this.grid.has(key)) { nearby.push(...this.grid.get(key)); } } } return nearby; }
+
 }
+
 
 class Profile {
-    constructor(id, username, x, y, vx, vy, imageUrl){
-        this.id=id; this.username=username; this.x=x; this.y=y; this.vx=vx; this.vy=vy;
-        this.radius=INITIAL_RADIUS; this.collisionCount=0; this.alive=true;
-        this.eliminationOrder = null;
-        this.image=imageCache.get(imageUrl);
-        if(!this.image){ this.image=new Image(); this.image.src=imageUrl; imageCache.set(imageUrl,this.image); }
-    }
-    update(dt,totalAlive){
-        if(!this.alive) return;
-        let speedFactor = Math.max(MIN_SPEED, Math.min(MAX_SPEED, Math.pow(followerImageUrls.length / totalAlive, 0.4)));
-        if(totalAlive <= 10) speedFactor *= 1.8;
-        if(totalAlive <= 5) speedFactor *= 2.0;
-        if(Math.abs(this.vx)<0.2) this.vx += this.vx>0?0.2:-0.2;
-        if(Math.abs(this.vy)<0.2) this.vy += this.vy>0?0.2:-0.2;
-        this.x += this.vx * dt * 60 * speedFactor;
-        this.y += this.vy * dt * 60 * speedFactor;
-        let currentGrowthRate = NORMAL_GROWTH_RATE;
-        if (totalAlive <= 50) { currentGrowthRate = SLOW_GROWTH_RATE; }
-        const dynamicFinalRadius = INITIAL_RADIUS + (MAX_RADIUS - INITIAL_RADIUS) * (1 - totalAlive / followerImageUrls.length);
-        if(this.radius < dynamicFinalRadius){ this.radius += currentGrowthRate * dt * 60; if(this.radius > dynamicFinalRadius) this.radius = dynamicFinalRadius; }
-        if(this.x-this.radius<0){ this.x=this.radius; this.vx*=-1;}
-        else if(this.x+this.radius>canvas.width){ this.x=canvas.width-this.radius; this.vx*=-1;}
-      . y-this.radius<0){ this.y=this.radius; this.vy*=-1;}
-        else if(this.y+this.radius>canvas.height){ this.y=canvas.height-this.radius; this.vy*=-1;}
-    }
-    draw(ctx, aliveCount){
-        if(!this.alive) return;
-        if(aliveCount <= 200){
-            const barW = this.radius*2; const barH = 3; const barX = this.x - barW/2; const barY = this.y - this.radius - 5;
-            const healthRatio = (ELIMINATION_THRESHOLD - this.collisionCount)/ELIMINATION_THRESHOLD;
-            ctx.fillStyle = "rgba(51,51,51,0.6)"; ctx.fillRect(barX, barY, barW, barH);
-            let barColor = healthRatio > 0.6 ? "limegreen" : healthRatio > 0.3 ? "gold" : "red";
-            ctx.fillStyle = barColor; ctx.fillRect(barX, barY, barW * healthRatio, barH);
-            ctx.strokeStyle = "rgba(255,255,255,0.3)"; ctx.strokeRect(barX, barY, barW, barH);
-        }
-        ctx.save(); ctx.beginPath(); ctx.arc(this.x,this.y,this.radius,0,Math.PI*2); ctx.clip();
-        ctx.drawImage(this.image,this.x-this.radius,this.y-this.radius,this.radius*2,this.radius*2);
-        ctx.restore();
-    }
+
+    constructor(id, username, x, y, vx, vy, imageUrl){
+
+        this.id=id; this.username=username; this.x=x; this.y=y; this.vx=vx; this.vy=vy;
+
+        this.radius=INITIAL_RADIUS; this.collisionCount=0; this.alive=true;
+
+        this.eliminationOrder = null;
+
+        this.image=imageCache.get(imageUrl);
+
+        if(!this.image){ this.image=new Image(); this.image.src=imageUrl; imageCache.set(imageUrl,this.image); }
+
+    }
+
+    update(dt,totalAlive){
+
+        if(!this.alive) return;
+
+        let speedFactor = Math.max(MIN_SPEED, Math.min(MAX_SPEED, Math.pow(followerImageUrls.length / totalAlive, 0.4)));
+
+        if(totalAlive <= 10) speedFactor *= 1.8;
+
+        if(totalAlive <= 5) speedFactor *= 2.0;
+
+        if(Math.abs(this.vx)<0.2) this.vx += this.vx>0?0.2:-0.2;
+
+        if(Math.abs(this.vy)<0.2) this.vy += this.vy>0?0.2:-0.2;
+
+        this.x += this.vx * dt * 60 * speedFactor;
+
+        this.y += this.vy * dt * 60 * speedFactor;
+
+        let currentGrowthRate = NORMAL_GROWTH_RATE;
+
+        if (totalAlive <= 50) { currentGrowthRate = SLOW_GROWTH_RATE; }
+
+        const dynamicFinalRadius = INITIAL_RADIUS + (MAX_RADIUS - INITIAL_RADIUS) * (1 - totalAlive / followerImageUrls.length);
+
+        if(this.radius < dynamicFinalRadius){ this.radius += currentGrowthRate * dt * 60; if(this.radius > dynamicFinalRadius) this.radius = dynamicFinalRadius; }
+
+        if(this.x-this.radius<0){ this.x=this.radius; this.vx*=-1;}
+
+        else if(this.x+this.radius>canvas.width){ this.x=canvas.width-this.radius; this.vx*=-1;}
+
+        if(this.y-this.radius<0){ this.y=this.radius; this.vy*=-1;}
+
+        else if(this.y+this.radius>canvas.height){ this.y=canvas.height-this.radius; this.vy*=-1;}
+
+    }
+
+    draw(ctx, aliveCount){
+
+        if(!this.alive) return;
+
+        if(aliveCount <= 200){
+
+            const barW = this.radius*2; const barH = 3; const barX = this.x - barW/2; const barY = this.y - this.radius - 5;
+
+            const healthRatio = (ELIMINATION_THRESHOLD - this.collisionCount)/ELIMINATION_THRESHOLD;
+
+            ctx.fillStyle = "rgba(51,51,51,0.6)"; ctx.fillRect(barX, barY, barW, barH);
+
+            let barColor = healthRatio > 0.6 ? "limegreen" : healthRatio > 0.3 ? "gold" : "red";
+
+            ctx.fillStyle = barColor; ctx.fillRect(barX, barY, barW * healthRatio, barH);
+
+            ctx.strokeStyle = "rgba(255,255,255,0.3)"; ctx.strokeRect(barX, barY, barW, barH);
+
+        }
+
+        ctx.save(); ctx.beginPath(); ctx.arc(this.x,this.y,this.radius,0,Math.PI*2); ctx.clip();
+
+        ctx.drawImage(this.image,this.x-this.radius,this.y-this.radius,this.radius*2,this.radius*2);
+
+        ctx.restore();
+
+    }
+
 }
+
 
 function initProfiles(){
-    canvas=document.getElementById('collisionCanvas'); ctx=canvas.getContext('2d');
-    grid = new SpatialGrid(canvas.width, canvas.height, MAX_RADIUS * 2);
-    profiles=[]; isGameOver=false; lastTime=performance.now();
-    eliminationCounter = 1;
-    document.getElementById('statusMessage').textContent = `${followerImageUrls.length} perfis em batalha!`;
-    document.getElementById('exportRankingButton').style.display = 'none';
-    document.getElementById('resetButton').style.display = 'block';
 
-    for(let i=0;i<followerImageUrls.length;i++){
-        const imageObj=followerImageUrls[i];
-        let x=Math.random()*(canvas.width-INITIAL_RADIUS*2)+INITIAL_RADIUS;
-        let y=Math.random()*(canvas.height-INITIAL_RADIUS*2)+INITIAL_RADIUS;
-        profiles.push(new Profile(i, imageObj.name, x, y, (Math.random()-0.5)*MAX_SPEED, (Math.random()-0.5)*MAX_SPEED, imageObj.url));
-    }
+    canvas=document.getElementById('collisionCanvas'); ctx=canvas.getContext('2d');
+
+    grid = new SpatialGrid(canvas.width, canvas.height, MAX_RADIUS * 2);
+
+    profiles=[]; isGameOver=false; lastTime=performance.now();
+
+    eliminationCounter = 1;
+
+    document.getElementById('statusMessage').textContent = `${followerImageUrls.length} perfis em batalha!`;
+
+    document.getElementById('exportRankingButton').style.display = 'none';
+
+    document.getElementById('resetButton').style.display = 'block';
+
+
+    for(let i=0;i<followerImageUrls.length;i++){
+
+        const imageObj=followerImageUrls[i];
+
+        let x=Math.random()*(canvas.width-INITIAL_RADIUS*2)+INITIAL_RADIUS;
+
+        let y=Math.random()*(canvas.height-INITIAL_RADIUS*2)+INITIAL_RADIUS;
+
+        profiles.push(new Profile(i, imageObj.name, x, y, (Math.random()-0.5)*MAX_SPEED, (Math.random()-0.5)*MAX_SPEED, imageObj.url));
+
+    }
+
 }
+
 
 function detectCollisions(alive) {
-    if(alive.length < 2) return;
-    if(alive.length === 2){
-        const [p1, p2] = alive;
-        if(Math.hypot(p2.x - p1.x, p2.y - p1.y) < p1.radius + p2.radius){
-            let loser = (p1.collisionCount < p2.collisionCount) ? p2 : (p2.collisionCount < p1.collisionCount) ? p1 : (Math.random() < 0.5 ? p1 : p2);
-            loser.alive = false; loser.eliminationOrder = eliminationCounter++;
-        }
-        return;
-    }
-    grid.clear();
-    alive.forEach(p => grid.insert(p));
-    for (const p1 of alive) {
-        for (const p2 of grid.getNearby(p1)) {
-            if (p1.id >= p2.id) continue;
-            if (Math.hypot(p2.x - p1.x, p2.y - p1.y) < p1.radius + p2.radius) {
-                const angle = Math.atan2(p2.y - p1.y, p2.x - p1.x);
-                p1.vx*=-1; p1.vy*=-1; p2.vx*=-1; p2.vy*=-1;
-                p1.collisionCount++; p2.collisionCount++;
-                if(p1.collisionCount>=ELIMINATION_THRESHOLD && p1.alive){ p1.alive=false; p1.eliminationOrder = eliminationCounter++; }
-                if(p2.collisionCount>=ELIMINATION_THRESHOLD && p2.alive){ p2.alive=false; p2.eliminationOrder = eliminationCounter++; }
-            }
-        }
-    }
+
+    if(alive.length < 2) return;
+
+    if(alive.length === 2){
+
+        const [p1, p2] = alive;
+
+        if(Math.hypot(p2.x - p1.x, p2.y - p1.y) < p1.radius + p2.radius){
+
+            let loser = (p1.collisionCount < p2.collisionCount) ? p2 : (p2.collisionCount < p1.collisionCount) ? p1 : (Math.random() < 0.5 ? p1 : p2);
+
+            loser.alive = false; loser.eliminationOrder = eliminationCounter++;
+
+        }
+
+        return;
+
+    }
+
+    grid.clear();
+
+    alive.forEach(p => grid.insert(p));
+
+    for (const p1 of alive) {
+
+        for (const p2 of grid.getNearby(p1)) {
+
+            if (p1.id >= p2.id) continue;
+
+            if (Math.hypot(p2.x - p1.x, p2.y - p1.y) < p1.radius + p2.radius) {
+
+                const angle = Math.atan2(p2.y - p1.y, p2.x - p1.x);
+
+                p1.vx*=-1; p1.vy*=-1; p2.vx*=-1; p2.vy*=-1;
+
+                p1.collisionCount++; p2.collisionCount++;
+
+                if(p1.collisionCount>=ELIMINATION_THRESHOLD && p1.alive){ p1.alive=false; p1.eliminationOrder = eliminationCounter++; }
+
+                if(p2.collisionCount>=ELIMINATION_THRESHOLD && p2.alive){ p2.alive=false; p2.eliminationOrder = eliminationCounter++; }
+
+            }
+
+        }
+
+    }
+
 }
+
 
 function drawPodium() {
-    const alive = profiles.filter(p=>p.alive);
-    if(alive.length === 0) return;
-    const champion = alive[0];
-    const dead = profiles.filter(p=>!p.alive).sort((a,b)=>b.eliminationOrder - a.eliminationOrder);
-    const podiumData = [
-        {profile: champion, y: canvas.height*0.20, label:"CAMPEÃO", radius: canvas.width*0.45, fontSize:36, nameSize:26},
-        dead[0] ? {profile: dead[0], y: canvas.height*0.55, label:"2º LUGAR", radius: canvas.width*0.28, fontSize:24, nameSize:16} : null,
-        dead[1] ? {profile: dead[1], y: canvas.height*0.82, label:"3º LUGAR", radius: canvas.width*0.18, fontSize:24, nameSize:16} : null
-    ].filter(Boolean);
-    
-    podiumData.forEach(pos=>{
-        const p = pos.profile;
-        p.radius += (pos.radius - p.radius) * 0.05;
-        ctx.save(); ctx.beginPath(); ctx.arc(canvas.width/2, pos.y, p.radius, 0, Math.PI*2); ctx.clip();
-        ctx.drawImage(p.image, canvas.width/2 - p.radius, pos.y - p.radius, p.radius*2, p.radius*2); ctx.restore();
-        ctx.fillStyle="gold"; ctx.textAlign="center"; ctx.font = `bold ${pos.fontSize}px Chakra Petch`;
-        ctx.fillText(pos.label, canvas.width/2, pos.y - p.radius - 15);
-        ctx.fillStyle="#fff"; ctx.font = `bold ${pos.nameSize}px Chakra Petch`;
-        ctx.fillText(`@${p.username}`, canvas.width/2, pos.y + p.radius + 30);
-    });
+
+    const alive = profiles.filter(p=>p.alive);
+
+    if(alive.length === 0) return;
+
+    const champion = alive[0];
+
+    const dead = profiles.filter(p=>!p.alive).sort((a,b)=>b.eliminationOrder - a.eliminationOrder);
+
+    const podiumData = [
+
+        {profile: champion, y: canvas.height*0.20, label:"CAMPEÃO", radius: canvas.width*0.45, fontSize:36, nameSize:26},
+
+        dead[0] ? {profile: dead[0], y: canvas.height*0.55, label:"2º LUGAR", radius: canvas.width*0.28, fontSize:24, nameSize:16} : null,
+
+        dead[1] ? {profile: dead[1], y: canvas.height*0.82, label:"3º LUGAR", radius: canvas.width*0.18, fontSize:24, nameSize:16} : null
+
+    ].filter(Boolean);
+
+    
+
+    podiumData.forEach(pos=>{
+
+        const p = pos.profile;
+
+        p.radius += (pos.radius - p.radius) * 0.05;
+
+        ctx.save(); ctx.beginPath(); ctx.arc(canvas.width/2, pos.y, p.radius, 0, Math.PI*2); ctx.clip();
+
+        ctx.drawImage(p.image, canvas.width/2 - p.radius, pos.y - p.radius, p.radius*2, p.radius*2); ctx.restore();
+
+        ctx.fillStyle="gold"; ctx.textAlign="center"; ctx.font = `bold ${pos.fontSize}px Chakra Petch`;
+
+        ctx.fillText(pos.label, canvas.width/2, pos.y - p.radius - 15);
+
+        ctx.fillStyle="#fff"; ctx.font = `bold ${pos.nameSize}px Chakra Petch`;
+
+        ctx.fillText(`@${p.username}`, canvas.width/2, pos.y + p.radius + 30);
+
+    });
+
 }
+
 
 function animate(time){
-    if(!ctx) return;
-    const dt=(time-lastTime)/1000 || 0; lastTime=time;
-    const alive = profiles.filter(p=>p.alive);
-    
-    detectCollisions(alive);
-    alive.forEach(p=>p.update(dt, alive.length));
-    
-    if(alive.length<=1 && followerImageUrls.length > 1) isGameOver=true;
-    
-    ctx.clearRect(0,0,canvas.width,canvas.height);
 
-    if(isGameOver){
-        drawPodium();
-        document.getElementById('exportRankingButton').style.display = 'block';
-        document.getElementById('statusMessage').textContent = 'FIM DE JOGO! Salve o ranking para publicar.';
-    } else {
-        alive.forEach(p=>p.draw(ctx, alive.length));
-        animationFrameId=requestAnimationFrame(animate);
-    }
-    
-    ctx.fillStyle="#fff"; ctx.font="bold 20px Chakra Petch"; ctx.textAlign="left";
-    ctx.fillText(`Vivos: ${alive.length}`, 10,25);
+    if(!ctx) return;
+
+    const dt=(time-lastTime)/1000 || 0; lastTime=time;
+
+    const alive = profiles.filter(p=>p.alive);
+
+    
+
+    detectCollisions(alive);
+
+    alive.forEach(p=>p.update(dt, alive.length));
+
+    
+
+    if(alive.length<=1 && followerImageUrls.length > 1) isGameOver=true;
+
+    
+
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+
+    if(isGameOver){
+
+        drawPodium();
+
+        document.getElementById('exportRankingButton').style.display = 'block';
+
+        document.getElementById('statusMessage').textContent = 'FIM DE JOGO! Salve o ranking para publicar.';
+
+    } else {
+
+        alive.forEach(p=>p.draw(ctx, alive.length));
+
+        animationFrameId=requestAnimationFrame(animate);
+
+    }
+
+    
+
+    ctx.fillStyle="#fff"; ctx.font="bold 20px Chakra Petch"; ctx.textAlign="left";
+
+    ctx.fillText(`Vivos: ${alive.length}`, 10,25);
+
 }
+
 
 function exportRanking() {
-    if (!isGameOver) {
-        alert("A simulação precisa terminar para exportar o ranking.");
-        return;
-    }
-    const finalRanking = profiles
-        .sort((a, b) => {
-            if (a.alive && !b.alive) return -1;
-            if (!a.alive && b.alive) return 1;
-            if (!a.alive && !b.alive) return b.eliminationOrder - a.eliminationOrder;
-            return 0;
-        })
-        .map((p, index) => {
-            const rank = index + 1;
-            let rankStatus = p.alive ? '🏆 CAMPEÃO!' : rank === 2 ? '🥈 2º Lugar' : rank === 3 ? '🥉 3º Lugar' : `Eliminado em ${rank}º`;
-            return {
-                username: p.username,
-                rank: rank,
-                status: rankStatus,
-                imageUrl: followerImageUrls.find(img => img.name === p.username)?.url || p.image.src
-            };
-        });
 
-    const blob = new Blob([JSON.stringify(finalRanking, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'ranking_final.json';
-    a.click();
-    URL.revokeObjectURL(url);
-    alert("Arquivo 'ranking_final.json' baixado com sucesso!");
+    if (!isGameOver) {
+
+        alert("A simulação precisa terminar para exportar o ranking.");
+
+        return;
+
+    }
+
+    const finalRanking = profiles
+
+        .sort((a, b) => {
+
+            if (a.alive && !b.alive) return -1;
+
+            if (!a.alive && b.alive) return 1;
+
+            if (!a.alive && !b.alive) return b.eliminationOrder - a.eliminationOrder;
+
+            return 0;
+
+        })
+
+        .map((p, index) => {
+
+            const rank = index + 1;
+
+            let rankStatus = p.alive ? '🏆 CAMPEÃO!' : rank === 2 ? '🥈 2º Lugar' : rank === 3 ? '🥉 3º Lugar' : `Eliminado em ${rank}º`;
+
+            return {
+
+                username: p.username,
+
+                rank: rank,
+
+                status: rankStatus,
+
+                imageUrl: followerImageUrls.find(img => img.name === p.username)?.url || p.image.src
+
+            };
+
+        });
+
+
+    const blob = new Blob([JSON.stringify(finalRanking, null, 2)], { type: 'application/json' });
+
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+
+    a.href = url;
+
+    a.download = 'ranking_final.json';
+
+    a.click();
+
+    URL.revokeObjectURL(url);
+
+    alert("Arquivo 'ranking_final.json' baixado com sucesso!");
+
 }
 
+
 document.addEventListener('DOMContentLoaded', () => {
-    canvas = document.getElementById('collisionCanvas');
-    ctx = canvas.getContext('2d');
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    document.getElementById('imageUpload').addEventListener('change', (e) => {
-        const files=Array.from(e.target.files);
-        if(files.length===0) return;
-        const readers=files.map(f=>new Promise((res,rej)=>{
-            const r=new FileReader();
-            r.onload = () => res({ url: r.result, name: f.name.replace(/\.[^/.]+$/, '') });
-            r.onerror=rej; r.readAsDataURL(f);
-        }));
-        Promise.all(readers).then(results=>{
-            followerImageUrls=results;
-            initProfiles();
-            if(animationFrameId) cancelAnimationFrame(animationFrameId);
-            animate(performance.now());
-        });
-    });
+    canvas = document.getElementById('collisionCanvas');
 
-    document.getElementById('resetButton').addEventListener('click', () => {
-        if (followerImageUrls.length === 0) {
-             alert("Carregue as imagens primeiro para reiniciar.");
-             return;
-        }
-        cancelAnimationFrame(animationFrameId);
-        initProfiles();
-        animate(performance.now());
-    });
+    ctx = canvas.getContext('2d');
 
-    document.getElementById('exportRankingButton').addEventListener('click', exportRanking);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+
+    document.getElementById('imageUpload').addEventListener('change', (e) => {
+
+        const files=Array.from(e.target.files);
+
+        if(files.length===0) return;
+
+        const readers=files.map(f=>new Promise((res,rej)=>{
+
+            const r=new FileReader();
+
+            r.onload = () => res({ url: r.result, name: f.name.replace(/\.[^/.]+$/, '') });
+
+            r.onerror=rej; r.readAsDataURL(f);
+
+        }));
+
+        Promise.all(readers).then(results=>{
+
+            followerImageUrls=results;
+
+            initProfiles();
+
+            if(animationFrameId) cancelAnimationFrame(animationFrameId);
+
+            animate(performance.now());
+
+        });
+
+    });
+
+
+    document.getElementById('resetButton').addEventListener('click', () => {
+
+        if (followerImageUrls.length === 0) {
+
+             alert("Carregue as imagens primeiro para reiniciar.");
+
+             return;
+
+        }
+
+        cancelAnimationFrame(animationFrameId);
+
+        initProfiles();
+
+        animate(performance.now());
+
+    });
+
+
+    document.getElementById('exportRankingButton').addEventListener('click', exportRanking);
+
 });
+
 </script>
+
 </body>
+
 </html>
