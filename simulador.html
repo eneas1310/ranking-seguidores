@@ -84,20 +84,28 @@ canvas {
     border-radius: 8px;
     padding: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-#side-panel button {
-    background-color: #d97706;
-    color: white;
+#side-panel button, #side-panel a {
     width: 100%;
     padding: 10px;
     border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.2s ease;
+    text-align: center;
+    text-decoration: none;
+    color: white;
 }
-#side-panel button:hover {
-    opacity: 0.9;
-}
+
+#resetButton { background-color: #d97706; }
+#resetButton:hover { opacity: 0.9; }
+
+#linkToRanking { background-color: #8b5cf6; }
+#linkToRanking:hover { opacity: 0.9; }
+
 /* ===== ESTILOS DE BUSCA NO FINAL DA SIMULACAO ===== */
 .search-input {
     width: 100%;
@@ -146,6 +154,7 @@ canvas {
 </div>
 
 <div id="side-panel">
+    <a id="linkToRanking" href="index.html">📈 Ver Ranking Público</a>
     <button id="resetButton" style="display:none;">🔄 Reiniciar Simulação</button>
 </div>
 
@@ -253,7 +262,12 @@ function detectCollisions(alive) {
     for (const p1 of alive) {
         for (const p2 of grid.getNearby(p1)) {
             if (p1.id >= p2.id) continue;
-            if (Math.hypot(p2.x - p1.x, p2.y - p1.y) < p1.radius + p2.radius) {
+            const dist = Math.hypot(p2.x - p1.x, p2.y - p1.y);
+            if (dist < p1.radius + p2.radius) {
+                const overlap = (p1.radius + p2.radius - dist)/2;
+                const angle = Math.atan2(p2.y - p1.y, p2.x - p1.x);
+                const sx=Math.cos(angle)*overlap, sy=Math.sin(angle)*overlap;
+                p1.x-=sx; p1.y-=sy; p2.x+=sx; p2.y+=sy;
                 p1.vx*=-1; p1.vy*=-1; p2.vx*=-1; p2.vy*=-1;
                 p1.collisionCount++; p2.collisionCount++;
                 if(p1.collisionCount>=ELIMINATION_THRESHOLD && p1.alive){ p1.alive=false; p1.eliminationOrder = eliminationCounter++; }
@@ -347,7 +361,7 @@ function exportRanking() {
     a.download = 'ranking_final.json';
     a.click();
     URL.revokeObjectURL(url);
-    alert("Arquivo 'ranking_final.json' baixado com sucesso!");
+    alert("Arquivo 'ranking_final.json' baixado com sucesso! Lembre-se de substituir o arquivo no seu repositório Git e dar PUSH para que o Ranking Público seja atualizado.");
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -383,7 +397,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('exportRankingButton').addEventListener('click', exportRanking);
     
-    // LÓGICA DE BUSCA DE USUÁRIO (APENAS NA PÁGINA DO SIMULADOR)
+    // LÓGICA DE BUSCA DE USUÁRIO
     document.getElementById('searchButton').addEventListener('click', () => {
         const searchInput = document.getElementById('searchInput');
         const resultElement = document.getElementById('searchResult');
