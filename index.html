@@ -15,18 +15,20 @@ body {
     margin: 0;
     min-height: 100vh;
     display: flex;
+    /* MUDANÇA CRUCIAL PARA MOBILE: Alinha o conteúdo no topo */
     justify-content: center;
-    align-items: center;
-    padding: 20px;
+    align-items: flex-start; /* Alinhamento ao topo */
+    padding: 20px 10px; /* Reduz o padding lateral para telas menores */
 }
 
 #ranking-container {
     background-color: #2c2c54;
     border-radius: 12px;
-    padding: 30px;
+    padding: 20px; /* Padding ajustado */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     width: 100%;
     max-width: 800px;
+    margin-top: 10px; /* Pequena margem do topo */
 }
 
 #date-selector-container {
@@ -34,6 +36,8 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    /* Ajuste para telas pequenas */
+    flex-wrap: wrap; 
 }
 
 .search-input {
@@ -48,7 +52,7 @@ body {
 
 #ranking-list {
     margin-top: 20px;
-    max-height: 500px;
+    max-height: 50vh; /* Limite de altura para mobile */
     overflow-y: auto;
     background-color: #1a1a2e;
     border-radius: 8px;
