@@ -8,7 +8,6 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
-/* Adicionando Keyframes para o efeito de fade-in (mantido) */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -28,7 +27,7 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alinhamento ao topo */
+    align-items: flex-start;
     padding: 20px 10px;
 }
 
@@ -78,7 +77,6 @@ body {
     transition: background-color 0.2s ease;
     border-left: 5px solid transparent;
     
-    /* CÓDIGO DE ANIMAÇÃO MANTIDO */
     animation: fadeIn 0.4s ease-out forwards;
     opacity: 0; 
     transform: translateY(10px);
@@ -94,19 +92,15 @@ body {
     border-radius: 50%;
     margin-right: 15px;
     object-fit: cover;
-    /* NOVO: Borda discreta para todos (como anel) */
     box-shadow: 0 0 0 2px #4a4e69, inset 0 0 5px rgba(0, 0, 0, 0.5); 
 }
 
-/* NOVO: Borda/Anel Dourado para o 1º Lugar */
 .ranking-item:nth-child(1) img { 
     box-shadow: 0 0 0 4px gold, inset 0 0 10px rgba(0, 0, 0, 0.8); 
 }
-/* NOVO: Borda/Anel Prateado para o 2º Lugar */
 .ranking-item:nth-child(2) img { 
     box-shadow: 0 0 0 4px silver, inset 0 0 10px rgba(0, 0, 0, 0.8); 
 }
-/* NOVO: Borda/Anel Bronze para o 3º Lugar */
 .ranking-item:nth-child(3) img { 
     box-shadow: 0 0 0 4px #cd7f32, inset 0 0 10px rgba(0, 0, 0, 0.8); 
 }
@@ -120,11 +114,32 @@ body {
     color: #a7ff83;
 }
 .username {
-    flex-grow: 1;
     font-weight: bold;
     font-size: 1.2rem;
     color: #fff;
 }
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.stats-details {
+    font-size: 0.8rem;
+    color: #c7c7c7;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.stat-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 350px;
+}
+
 .status {
     font-size: 0.9rem;
     color: #ffc107;
@@ -140,6 +155,7 @@ body {
     <div id="date-selector-container">
         <span class="text-lg font-bold mr-3 text-gray-300">Ranking do Dia:</span>
         <select id="dateSelector" class="bg-[#1a1a2e] border-2 border-[#4a4e69] text-[#a7ff83] p-2 rounded-lg cursor-pointer font-semibold">
+            <option value="2025-10-15" selected>15/10/2025 (Hoje)</option>
             <option value="2025-10-14">14/10/2025</option>
             <option value="2025-10-13">13/10/2025</option>
         </select>
@@ -163,7 +179,6 @@ const loadingMessage = document.getElementById('loading');
 const dateSelector = document.getElementById('dateSelector');
 const rankingListTitle = document.getElementById('ranking-list-title');
 
-// --- Lógica de Carregamento ---
 async function loadRanking() {
     const date = dateSelector.value;
     const fileName = `ranking_${date}.json`;
@@ -187,7 +202,7 @@ async function loadRanking() {
         loadingMessage.textContent = 'Ranking carregado! Pesquise seu nome ou veja a lista abaixo.';
         loadingMessage.style.color = '#34d399';
         
-        displayRanking(); // Chama a exibição do Top Geral após o carregamento
+        displayRanking();
         
     } catch (error) {
         console.error("Erro ao carregar ranking:", error);
@@ -197,7 +212,6 @@ async function loadRanking() {
     }
 }
 
-// --- Lógica de Exibição (Busca e Top Geral) ---
 function displayRanking() {
     const rawSearchTerm = searchInput.value.trim().toLowerCase();
     const searchTerm = rawSearchTerm.startsWith('@') ? rawSearchTerm.substring(1) : rawSearchTerm;
@@ -209,13 +223,11 @@ function displayRanking() {
     let dataToDisplay = [];
 
     if (!searchTerm) {
-        // MOSTRA TOP GERAL quando a busca está vazia
         dataToDisplay = rankingData;
         rankingListTitle.textContent = `TOP GERAL (${dataToDisplay.length} PARTICIPANTES)`;
         loadingMessage.textContent = 'Lista completa carregada. Pesquise para filtrar.';
         loadingMessage.style.color = '#34d399';
     } else {
-        // FILTRA a lista quando há termo de busca
         rankingListTitle.textContent = "RESULTADOS DA BUSCA";
         loadingMessage.textContent = 'Buscando...';
         loadingMessage.style.color = '#a7ff83';
@@ -238,32 +250,44 @@ function displayRanking() {
         loadingMessage.style.color = '#34d399';
     }
 
-    // Exibe o(s) resultado(s)
     dataToDisplay.forEach((item) => {
         let statusText = item.status;
         
-        // Mantém a regra do status de eliminação
         if (item.rank > 3 && item.status.includes('Eliminado')) {
-            statusText = `Fui eliminado em ${item.rank}º Posição`;
+            statusText = `Eliminado na ${item.rank}º Posição`;
         }
+
+        const eliminatedByText = item.eliminatedBy === 'Sobrevivente' 
+            ? 'Sobreviveu até o fim!' 
+            : `@${item.eliminatedBy}`;
+
+        const eliminatedListText = item.eliminatedCount > 0 
+            ? item.eliminatedList.map(name => `@${name}`).join(', ') 
+            : 'Ninguém';
 
         const div = document.createElement('div');
         div.className = 'ranking-item';
+
         div.innerHTML = `
             <span class="rank-number">${item.rank}º</span>
             <img src="${item.imageUrl}" alt="${item.username}">
-            <span class="username">@${item.username}</span>
+            <div class="info-wrapper">
+                <span class="username">@${item.username}</span>
+                <div class="stats-details">
+                    <span class="stat-line">⚔️ Eliminações: <strong>${item.eliminatedCount}</strong></span>
+                    <span class="stat-line">💀 Eliminado por: <strong>${eliminatedByText}</strong></span>
+                    <span class="stat-line">🎯 Vítimas: ${eliminatedListText}</span>
+                </div>
+            </div>
             <span class="status">${statusText}</span>
         `;
         rankingList.appendChild(div);
     });
 }
 
-// --- Event Listeners ---
 dateSelector.addEventListener('change', loadRanking);
 searchInput.addEventListener('input', displayRanking);
 
-// Inicia o carregamento dos dados do ranking ao carregar a página
 document.addEventListener('DOMContentLoaded', loadRanking);
 </script>
 </body>
