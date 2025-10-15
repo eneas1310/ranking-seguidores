@@ -162,7 +162,7 @@ canvas {
 
 <script>
 // --- Constantes da Simulação ---
-const INITIAL_RADIUS = 2;
+const INITIAL_RADIUS = 1; 
 const MAX_RADIUS = 60;
 const MAX_SPEED = 1.5;
 const MIN_SPEED = 0.5;
@@ -278,27 +278,45 @@ function detectCollisions(alive) {
 }
 
 function drawPodium() {
-    const alive = profiles.filter(p=>p.alive);
-    if(alive.length === 0) return;
+    const alive = profiles.filter(p => p.alive);
+    if (alive.length === 0) return;
     const champion = alive[0];
-    const dead = profiles.filter(p=>!p.alive).sort((a,b)=>b.eliminationOrder - a.eliminationOrder);
+    const dead = profiles.filter(p => !p.alive).sort((a, b) => b.eliminationOrder - a.eliminationOrder);
+
     const podiumData = [
-        {profile: champion, y: canvas.height*0.20, label:"CAMPEÃO", radius: canvas.width*0.45, fontSize:36, nameSize:26},
-        dead[0] ? {profile: dead[0], y: canvas.height*0.55, label:"2º LUGAR", radius: canvas.width*0.28, fontSize:24, nameSize:16} : null,
-        dead[1] ? {profile: dead[1], y: canvas.height*0.82, label:"3º LUGAR", radius: canvas.width*0.18, fontSize:24, nameSize:16} : null
+        { profile: champion, y: 120, radius: 70, label: "CAMPEÃO", nameSize: 20, fontSize: 28 },
+        // Posição Y do 2º lugar ajustada para baixo
+        dead[0] ? { profile: dead[0], y: 320, radius: 55, label: "2º LUGAR", nameSize: 16, fontSize: 22 } : null,
+        // Posição Y do 3º lugar ajustada para baixo
+        dead[1] ? { profile: dead[1], y: 500, radius: 40, label: "3º LUGAR", nameSize: 14, fontSize: 20 } : null
     ].filter(Boolean);
-    
-    podiumData.forEach(pos=>{
+
+    podiumData.forEach(pos => {
         const p = pos.profile;
-        p.radius += (pos.radius - p.radius) * 0.05;
-        ctx.save(); ctx.beginPath(); ctx.arc(canvas.width/2, pos.y, p.radius, 0, Math.PI*2); ctx.clip();
-        ctx.drawImage(p.image, canvas.width/2 - p.radius, pos.y - p.radius, p.radius*2, p.radius*2); ctx.restore();
-        ctx.fillStyle="gold"; ctx.textAlign="center"; ctx.font = `bold ${pos.fontSize}px Chakra Petch`;
-        ctx.fillText(pos.label, canvas.width/2, pos.y - p.radius - 15);
-        ctx.fillStyle="#fff"; ctx.font = `bold ${pos.nameSize}px Chakra Petch`;
-        ctx.fillText(`@${p.username}`, canvas.width/2, pos.y + p.radius + 30);
+        const radius = pos.radius;
+        const y = pos.y;
+        
+        // Desenha a foto
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(canvas.width / 2, y, radius, 0, Math.PI * 2);
+        ctx.clip();
+        ctx.drawImage(p.image, canvas.width / 2 - radius, y - radius, radius * 2, radius * 2);
+        ctx.restore();
+
+        // Escreve o título (CAMPEÃO, 2º LUGAR, etc.)
+        ctx.fillStyle = "gold";
+        ctx.textAlign = "center";
+        ctx.font = `bold ${pos.fontSize}px Chakra Petch`;
+        ctx.fillText(pos.label, canvas.width / 2, y - radius - 15);
+
+        // Escreve o nome do arquivo com @
+        ctx.fillStyle = "#fff";
+        ctx.font = `bold ${pos.nameSize}px Chakra Petch`;
+        ctx.fillText(`@${p.username}`, canvas.width / 2, y + radius + 30);
     });
 }
+
 
 function animate(time){
     if(!ctx) return;
@@ -313,7 +331,7 @@ function animate(time){
     ctx.clearRect(0,0,canvas.width,canvas.height);
 
     if(isGameOver){
-        drawPodium();
+        drawPodium(); // Apenas desenha o pódio estático
         document.getElementById('exportRankingButton').style.display = 'block';
         document.getElementById('search-container').style.display = 'block';
         if (finalRankingData.length === 0) {

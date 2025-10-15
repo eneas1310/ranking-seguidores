@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start; /* Alinhamento ao topo */
     padding: 20px 10px;
 }
 
@@ -48,31 +48,6 @@ body {
     font-size: 1.1rem;
 }
 
-#filter-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.filter-btn {
-    background-color: #4a4e69;
-    border: none;
-    color: #fff;
-    padding: 8px 16px;
-    border-radius: 8px;
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.9rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.filter-btn:hover {
-    background-color: #6a6e9a;
-}
-
-
 #ranking-list {
     margin-top: 20px;
     max-height: 50vh; 
@@ -91,11 +66,10 @@ body {
     transition: background-color 0.2s ease;
     border-left: 5px solid transparent;
 }
-.ranking-item:hover { background-color: #3e3e70; }
-.ranking-item:nth-child(1) { border-left-color: gold; }
-.ranking-item:nth-child(2) { border-left-color: silver; }
-.ranking-item:nth-child(3) { border-left-color: #cd7f32; }
-.ranking-item:not(:nth-child(-n+3)) { border-left-color: #4a4e69; }
+.ranking-item:nth-child(1) { border-left-color: gold; background-color: #3e3e70; }
+.ranking-item:nth-child(2) { border-left-color: silver; background-color: #3e3e70; }
+.ranking-item:nth-child(3) { border-left-color: #cd7f32; background-color: #3e3e70; }
+.ranking-item:not(:nth-child(-n+3)) { background-color: #3c3c6e44; border-left-color: #4a4e69; }
 
 .ranking-item img {
     width: 50px;
@@ -118,12 +92,6 @@ body {
     font-size: 1.2rem;
     color: #fff;
 }
-.username .highlight {
-    color: #a7ff83;
-    background-color: #4a4e69;
-    padding: 0 2px;
-    border-radius: 3px;
-}
 .status {
     font-size: 0.9rem;
     color: #ffc107;
@@ -139,20 +107,17 @@ body {
     <div id="date-selector-container">
         <span class="text-lg font-bold mr-3 text-gray-300">Ranking do Dia:</span>
         <select id="dateSelector" class="bg-[#1a1a2e] border-2 border-[#4a4e69] text-[#a7ff83] p-2 rounded-lg cursor-pointer font-semibold">
+            <option value="2025-10-14">14/10/2025</option>
             <option value="2025-10-13">13/10/2025</option>
             </select>
     </div>
 
-    <input type="text" id="searchInput" placeholder="Busque por @usuario, nome, etc..." class="search-input">
+    <input type="text" id="searchInput" placeholder="" class="search-input">
     
-    <div id="filter-buttons">
-        <button id="top10Btn" class="filter-btn">🏆 Ver Top 10</button>
-        <button id="allBtn" class="filter-btn">📜 Ver Ranking Completo</button>
-    </div>
-
-    <div id="loading" class="text-center text-yellow-300 mt-5 h-6">Carregando dados...</div>
+    <div id="loading" class="text-center text-yellow-300 mt-5">Carregando dados...</div>
     
-    <div id="ranking-list"></div>
+    <div id="ranking-list">
+        </div>
 </div>
 
 <script>
@@ -161,116 +126,103 @@ const searchInput = document.getElementById('searchInput');
 const rankingList = document.getElementById('ranking-list');
 const loadingMessage = document.getElementById('loading');
 const dateSelector = document.getElementById('dateSelector');
-const top10Btn = document.getElementById('top10Btn');
-const allBtn = document.getElementById('allBtn');
 
 async function loadRanking() {
+    // 1. Pega a data selecionada (em formato YYYY-MM-DD)
     const date = dateSelector.value;
+    // 2. Constrói o nome do arquivo JSON
     const fileName = `ranking_${date}.json`;
     
+    // Reseta o estado da busca e da lista
     searchInput.value = '';
     rankingList.innerHTML = '';
-    
     loadingMessage.textContent = `Carregando ranking do dia ${dateSelector.options[dateSelector.selectedIndex].text}...`;
     loadingMessage.style.color = '#facc15';
     
     try {
         const response = await fetch(fileName + '?' + new Date().getTime());
+        
         if (!response.ok) {
-            throw new Error(`Arquivo ${fileName} não encontrado.`);
+            if (response.status === 404) {
+                 throw new Error(`Arquivo ${fileName} não encontrado. Certifique-se de que o ranking foi gerado e renomeado corretamente.`);
+            }
+            throw new Error('Erro de rede ao buscar o arquivo.');
         }
+        
         rankingData = await response.json();
         
-        loadingMessage.textContent = '🏆 Top 10 da Arena!';
+        loadingMessage.textContent = 'Ranking carregado! Digite seu nome e aperte Enter.';
         loadingMessage.style.color = '#34d399';
-        renderRankingList(rankingData.slice(0, 10));
         
     } catch (error) {
         console.error("Erro ao carregar ranking:", error);
-        loadingMessage.textContent = `ERRO: Não foi possível carregar o ranking. ${error.message}`;
+        loadingMessage.textContent = `ERRO: Não foi possível carregar o ranking para o dia. ${error.message}`;
         loadingMessage.style.color = '#f87171';
         rankingData = [];
     }
 }
 
-function renderRankingList(dataToRender, searchTerms = []) {
+function displayRanking() {
+    // 1. Limpa e normaliza o termo de busca
+    const rawSearchTerm = searchInput.value.trim().toLowerCase();
+    // Remove o '@' do termo de busca
+    const searchTerm = rawSearchTerm.startsWith('@') ? rawSearchTerm.substring(1) : rawSearchTerm;
+    
     rankingList.innerHTML = '';
 
-    if (dataToRender.length === 0) {
-        rankingList.innerHTML = `<div class="text-center text-red-400 p-5">Nenhum resultado encontrado.</div>`;
+    if (rankingData.length === 0) {
         return;
     }
 
-    dataToRender.forEach((item) => {
-        const div = document.createElement('div');
-        div.className = 'ranking-item';
-
-        let highlightedUsername = `@${item.username}`;
-        if (searchTerms.length > 0) {
-            searchTerms.forEach(term => {
-                if(term) { // Garante que o termo não seja vazio
-                    const regex = new RegExp(term, 'gi');
-                    highlightedUsername = highlightedUsername.replace(regex, (match) => `<strong class="highlight">${match}</strong>`);
-                }
-            });
-        }
-        
-        div.innerHTML = `
-            <span class="rank-number">${item.rank}º</span>
-            <img src="${item.imageUrl}" alt="${item.username}">
-            <span class="username">${highlightedUsername}</span>
-            <span class="status">${item.status}</span>
-        `;
-        rankingList.appendChild(div);
-    });
-}
-
-function handleSearch() {
-    const rawSearchTerm = searchInput.value.trim().toLowerCase();
-    // --- CORREÇÃO APLICADA AQUI ---
-    const cleanSearchTerm = rawSearchTerm.replace(/@/g, ''); // Remove todos os '@' da busca
-
-    if (!cleanSearchTerm) {
-        loadingMessage.textContent = 'Digite algo para buscar ou use os filtros.';
+    if (!searchTerm) {
+        loadingMessage.textContent = 'Digite seu nome para buscar no ranking.';
         loadingMessage.style.color = '#facc15';
-        renderRankingList(rankingData.slice(0, 10));
         return;
     }
     
     loadingMessage.textContent = 'Buscando...';
     loadingMessage.style.color = '#a7ff83';
-    
-    const searchTerms = cleanSearchTerm.split(' ').filter(term => term);
 
+    // 2. Filtra o ranking comparando o termo de busca com o username (sem o '@')
     const filteredData = rankingData.filter(item => {
-        const cleanUsername = item.username.toLowerCase();
-        return searchTerms.every(term => cleanUsername.includes(term));
+        // Remove o '@' dos usernames do ranking antes de comparar, garantindo a indiferença
+        const cleanUsername = item.username.toLowerCase().startsWith('@') ? item.username.toLowerCase().substring(1) : item.username.toLowerCase();
+        
+        // Verifica se o termo limpo está contido no username limpo
+        return cleanUsername.includes(searchTerm);
     });
-    
-    loadingMessage.textContent = `${filteredData.length} resultado(s) encontrado(s).`;
-    loadingMessage.style.color = '#34d399';
 
-    renderRankingList(filteredData, searchTerms);
+    if (filteredData.length === 0) {
+        rankingList.innerHTML = `<div class="text-center text-red-400 p-5">Nenhum resultado encontrado.</div>`;
+        loadingMessage.textContent = `Nenhum resultado encontrado.`;
+        loadingMessage.style.color = '#f87171';
+        return;
+    }
+
+    // Exibe apenas o(s) resultado(s) encontrado(s)
+    filteredData.forEach((item) => {
+        const div = document.createElement('div');
+        div.className = 'ranking-item';
+        div.innerHTML = `
+            <span class="rank-number">${item.rank}º</span>
+            <img src="${item.imageUrl}" alt="${item.username}">
+            <span class="username">@${item.username}</span>
+            <span class="status">${item.status}</span>
+        `;
+        rankingList.appendChild(div);
+    });
+
+    loadingMessage.textContent = `Resultado(s) encontrado(s) para o ranking do dia ${dateSelector.options[dateSelector.selectedIndex].text}.`;
+    loadingMessage.style.color = '#34d399';
 }
 
-// --- Event Listeners ---
+// Evento para carregar um novo ranking quando a data muda
 dateSelector.addEventListener('change', loadRanking);
-searchInput.addEventListener('input', handleSearch);
 
-top10Btn.addEventListener('click', () => {
-    searchInput.value = '';
-    loadingMessage.textContent = '🏆 Top 10 da Arena!';
-    loadingMessage.style.color = '#34d399';
-    renderRankingList(rankingData.slice(0, 10));
-});
+// Evento de busca é acionado por qualquer digitação na caixa de input
+searchInput.addEventListener('input', displayRanking);
 
-allBtn.addEventListener('click', () => {
-    searchInput.value = '';
-    loadingMessage.textContent = `📜 Ranking completo com ${rankingData.length} participantes.`;
-    loadingMessage.style.color = '#34d399';
-    renderRankingList(rankingData);
-});
-
+// Inicia o carregamento dos dados do ranking ao carregar a página (com a data padrão)
 loadRanking();
 </script>
 </body>
