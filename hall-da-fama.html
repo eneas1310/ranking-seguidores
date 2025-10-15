@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hall da Fama - Arena do Insta</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 20px 10px;
+}
+.leaderboard-card {
+    background-color: #2c2c54;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px B20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+.leaderboard-title {
+    color: #a7ff83;
+    border-bottom: 2px solid #4a4e69;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.player-row {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgba(26, 26, 46, 0.6);
+    margin-bottom: 8px;
+}
+.player-row:nth-child(1) { background-color: #4a4e69; }
+.player-row img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.player-rank {
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 30px;
+}
+.player-name {
+    flex-grow: 1;
+    font-size: 1.1rem;
+}
+.player-stat {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffc107;
+}
+</style>
+</head>
+<body>
+
+<div class="container mx-auto max-w-4xl">
+    <h1 class="text-4xl font-bold text-center mb-4 text-[#a7ff83]">🏆 HALL DA FAMA - ARENA DO INSTA 🏆</h1>
+    <p class="text-center text-gray-400 mb-8">Estatísticas gerais de todas as batalhas. Atualizado em tempo real!</p>
+
+    <div class="leaderboard-card">
+        <h2 class="leaderboard-title text-2xl font-bold">⚔️ Maiores Carrascos (Total de Eliminações)</h2>
+        <div id="top-killers-list">
+            <p class="text-yellow-300">Calculando estatísticas...</p>
+        </div>
+    </div>
+
+    <div class="leaderboard-card">
+        <h2 class="leaderboard-title text-2xl font-bold">🥇 Mais Vitórias (Campeão do Dia)</h2>
+        <div id="top-winners-list">
+            <p class="text-yellow-300">Calculando estatísticas...</p>
+        </div>
+    </div>
+    
+    <div class="leaderboard-card">
+        <h2 class="leaderboard-title text-2xl font-bold">🎖️ Mais Pódios (Top 3)</h2>
+        <div id="top-podiums-list">
+            <p class="text-yellow-300">Calculando estatísticas...</p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+    
+    // IMPORTANTE: LISTA DE DATAS DOS RANKINGS
+    // Para adicionar um novo ranking, basta adicionar a data aqui no formato 'AAAA-MM-DD'
+    const dates = [
+        '2025-10-15',
+        '2025-10-14',
+        '2025-10-13'
+    ];
+
+    const playerStats = {};
+
+    // 1. Carrega todos os arquivos JSON em paralelo
+    const allRankings = await Promise.all(
+        dates.map(date =>
+            fetch(`ranking_${date}.json?` + new Date().getTime())
+                .then(res => {
+                    if (!res.ok) return []; // Se um arquivo não existir, retorna uma lista vazia
+                    return res.json();
+                })
+        )
+    );
+
+    // 2. Processa e soma os dados de todos os dias
+    allRankings.forEach(dailyRanking => {
+        dailyRanking.forEach(player => {
+            const username = player.username;
+            // Se for a primeira vez que vemos esse jogador, inicializa seus dados
+            if (!playerStats[username]) {
+                playerStats[username] = {
+                    username: username,
+                    totalKills: 0,
+                    wins: 0,
+                    podiums: 0,
+                    participations: 0,
+                    imageUrl: player.imageUrl // Pega a imagem mais recente
+                };
+            }
+
+            // Soma as estatísticas do dia
+            playerStats[username].totalKills += player.eliminatedCount;
+            playerStats[username].participations++;
+            if (player.rank === 1) playerStats[username].wins++;
+            if (player.rank <= 3) playerStats[username].podiums++;
+        });
+    });
+
+    // 3. Converte o objeto de stats em uma lista
+    const fullStatsList = Object.values(playerStats);
+    
+    // 4. Funções para criar e exibir os placares
+    function displayLeaderboard(containerId, dataList, statKey, statLabel) {
+        const container = document.getElementById(containerId);
+        container.innerHTML = ''; // Limpa a mensagem "Calculando..."
+
+        // Ordena a lista pelo critério (ex: mais eliminações) e pega os Top 10
+        const sortedList = dataList.sort((a, b) => b[statKey] - a[statKey]).slice(0, 10);
+
+        sortedList.forEach((player, index) => {
+            const playerHtml = `
+                <div class="player-row">
+                    <span class="player-rank">${index + 1}º</span>
+                    <img src="${player.imageUrl}" alt="${player.username}">
+                    <span class="player-name">@${player.username}</span>
+                    <span class="player-stat">${player[statKey]} ${statLabel}</span>
+                </div>
+            `;
+            container.innerHTML += playerHtml;
+        });
+    }
+
+    // 5. Gera os placares na tela
+    displayLeaderboard('top-killers-list', fullStatsList, 'totalKills', 'eliminações');
+    displayLeaderboard('top-winners-list', fullStatsList, 'wins', 'vitórias');
+    displayLeaderboard('top-podiums-list', fullStatsList, 'podiums', 'pódios');
+});
+</script>
+
+</body>
+</html>
