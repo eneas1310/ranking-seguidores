@@ -49,7 +49,7 @@ body {
 }
 
 #ranking-list {
-    margin-top: 10px; /* Reduz margem, o título já adiciona espaço */
+    margin-top: 10px; 
     max-height: 50vh; 
     overflow-y: auto;
     background-color: #1a1a2e;
@@ -107,9 +107,8 @@ body {
     <div id="date-selector-container">
         <span class="text-lg font-bold mr-3 text-gray-300">Ranking do Dia:</span>
         <select id="dateSelector" class="bg-[#1a1a2e] border-2 border-[#4a4e69] text-[#a7ff83] p-2 rounded-lg cursor-pointer font-semibold">
-            <option value="2025-10-14">14/10/2025</option>
             <option value="2025-10-13">13/10/2025</option>
-        </select>
+            </select>
     </div>
 
     <input type="text" id="searchInput" placeholder="" class="search-input">
@@ -207,13 +206,20 @@ function displayRanking() {
 
     // Exibe o(s) resultado(s)
     dataToDisplay.forEach((item) => {
+        let statusText = item.status;
+        
+        // NOVO: Altera o texto de status para ser mais conversacional, se não for Top 3
+        if (item.rank > 3 && item.status.includes('Eliminado')) {
+            statusText = `Fui eliminado em ${item.rank}º Posição`;
+        }
+
         const div = document.createElement('div');
         div.className = 'ranking-item';
         div.innerHTML = `
             <span class="rank-number">${item.rank}º</span>
             <img src="${item.imageUrl}" alt="${item.username}">
             <span class="username">@${item.username}</span>
-            <span class="status">${item.status}</span>
+            <span class="status">${statusText}</span>
         `;
         rankingList.appendChild(div);
     });
