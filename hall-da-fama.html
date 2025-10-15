@@ -18,7 +18,7 @@ body {
     background-color: #2c2c54;
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 4px B20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
 }
 .leaderboard-title {
@@ -62,107 +62,60 @@ body {
 
 <div class="container mx-auto max-w-4xl">
     <h1 class="text-4xl font-bold text-center mb-4 text-[#a7ff83]">🏆 HALL DA FAMA - ARENA DO INSTA 🏆</h1>
-    <p class="text-center text-gray-400 mb-8">Estatísticas gerais de todas as batalhas. Atualizado em tempo real!</p>
+    <p class="text-center text-gray-400 mb-8">Estatísticas gerais de todas as batalhas.</p>
 
     <div class="leaderboard-card">
         <h2 class="leaderboard-title text-2xl font-bold">⚔️ Maiores Carrascos (Total de Eliminações)</h2>
-        <div id="top-killers-list">
-            <p class="text-yellow-300">Calculando estatísticas...</p>
-        </div>
+        <div id="top-killers-list"><p class="text-yellow-300">Carregando...</p></div>
     </div>
 
     <div class="leaderboard-card">
         <h2 class="leaderboard-title text-2xl font-bold">🥇 Mais Vitórias (Campeão do Dia)</h2>
-        <div id="top-winners-list">
-            <p class="text-yellow-300">Calculando estatísticas...</p>
-        </div>
+        <div id="top-winners-list"><p class="text-yellow-300">Carregando...</p></div>
     </div>
     
     <div class="leaderboard-card">
         <h2 class="leaderboard-title text-2xl font-bold">🎖️ Mais Pódios (Top 3)</h2>
-        <div id="top-podiums-list">
-            <p class="text-yellow-300">Calculando estatísticas...</p>
-        </div>
+        <div id="top-podiums-list"><p class="text-yellow-300">Carregando...</p></div>
     </div>
 
 </div>
 
 <script>
 document.addEventListener('DOMContentLoaded', async () => {
-    
-    // IMPORTANTE: LISTA DE DATAS DOS RANKINGS
-    // Para adicionar um novo ranking, basta adicionar a data aqui no formato 'AAAA-MM-DD'
-    const dates = [
-        '2025-10-15',
-        '2025-10-14',
-        '2025-10-13'
-    ];
+    try {
+        // Agora só precisa carregar UM arquivo, que já está pronto!
+        const response = await fetch('hall_of_fame_stats.json?' + new Date().getTime());
+        if (!response.ok) throw new Error('Arquivo de estatísticas não encontrado.');
+        
+        const stats = await response.json();
 
-    const playerStats = {};
+        function displayLeaderboard(containerId, dataList, statKey, statLabel) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = ''; 
+            dataList.forEach((player, index) => {
+                const playerHtml = `
+                    <div class="player-row">
+                        <span class="player-rank">${index + 1}º</span>
+                        <img src="${player.imageUrl}" alt="${player.username}">
+                        <span class="player-name">@${player.username}</span>
+                        <span class="player-stat">${player[statKey]} ${statLabel}</span>
+                    </div>
+                `;
+                container.innerHTML += playerHtml;
+            });
+        }
 
-    // 1. Carrega todos os arquivos JSON em paralelo
-    const allRankings = await Promise.all(
-        dates.map(date =>
-            fetch(`ranking_${date}.json?` + new Date().getTime())
-                .then(res => {
-                    if (!res.ok) return []; // Se um arquivo não existir, retorna uma lista vazia
-                    return res.json();
-                })
-        )
-    );
+        displayLeaderboard('top-killers-list', stats.topKillers, 'totalKills', 'eliminações');
+        displayLeaderboard('top-winners-list', stats.topWinners, 'wins', 'vitórias');
+        displayLeaderboard('top-podiums-list', stats.topPodiums, 'podiums', 'pódios');
 
-    // 2. Processa e soma os dados de todos os dias
-    allRankings.forEach(dailyRanking => {
-        dailyRanking.forEach(player => {
-            const username = player.username;
-            // Se for a primeira vez que vemos esse jogador, inicializa seus dados
-            if (!playerStats[username]) {
-                playerStats[username] = {
-                    username: username,
-                    totalKills: 0,
-                    wins: 0,
-                    podiums: 0,
-                    participations: 0,
-                    imageUrl: player.imageUrl // Pega a imagem mais recente
-                };
-            }
-
-            // Soma as estatísticas do dia
-            playerStats[username].totalKills += player.eliminatedCount;
-            playerStats[username].participations++;
-            if (player.rank === 1) playerStats[username].wins++;
-            if (player.rank <= 3) playerStats[username].podiums++;
-        });
-    });
-
-    // 3. Converte o objeto de stats em uma lista
-    const fullStatsList = Object.values(playerStats);
-    
-    // 4. Funções para criar e exibir os placares
-    function displayLeaderboard(containerId, dataList, statKey, statLabel) {
-        const container = document.getElementById(containerId);
-        container.innerHTML = ''; // Limpa a mensagem "Calculando..."
-
-        // Ordena a lista pelo critério (ex: mais eliminações) e pega os Top 10
-        const sortedList = dataList.sort((a, b) => b[statKey] - a[statKey]).slice(0, 10);
-
-        sortedList.forEach((player, index) => {
-            const playerHtml = `
-                <div class="player-row">
-                    <span class="player-rank">${index + 1}º</span>
-                    <img src="${player.imageUrl}" alt="${player.username}">
-                    <span class="player-name">@${player.username}</span>
-                    <span class="player-stat">${player[statKey]} ${statLabel}</span>
-                </div>
-            `;
-            container.innerHTML += playerHtml;
-        });
+    } catch (error) {
+        console.error(error);
+        document.getElementById('top-killers-list').textContent = 'Erro ao carregar estatísticas.';
+        document.getElementById('top-winners-list').textContent = 'Erro ao carregar estatísticas.';
+        document.getElementById('top-podiums-list').textContent = 'Erro ao carregar estatísticas.';
     }
-
-    // 5. Gera os placares na tela
-    displayLeaderboard('top-killers-list', fullStatsList, 'totalKills', 'eliminações');
-    displayLeaderboard('top-winners-list', fullStatsList, 'wins', 'vitórias');
-    displayLeaderboard('top-podiums-list', fullStatsList, 'podiums', 'pódios');
 });
 </script>
 
