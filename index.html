@@ -49,7 +49,7 @@ body {
 }
 
 #ranking-list {
-    margin-top: 20px;
+    margin-top: 10px; /* Reduz margem, o título já adiciona espaço */
     max-height: 50vh; 
     overflow-y: auto;
     background-color: #1a1a2e;
@@ -109,12 +109,14 @@ body {
         <select id="dateSelector" class="bg-[#1a1a2e] border-2 border-[#4a4e69] text-[#a7ff83] p-2 rounded-lg cursor-pointer font-semibold">
             <option value="2025-10-14">14/10/2025</option>
             <option value="2025-10-13">13/10/2025</option>
-            </select>
+        </select>
     </div>
 
     <input type="text" id="searchInput" placeholder="" class="search-input">
     
     <div id="loading" class="text-center text-yellow-300 mt-5">Carregando dados...</div>
+    
+    <div id="ranking-list-title" class="text-xl font-bold text-center mt-4 text-[#ffc107]"></div>
     
     <div id="ranking-list">
         </div>
@@ -126,16 +128,17 @@ const searchInput = document.getElementById('searchInput');
 const rankingList = document.getElementById('ranking-list');
 const loadingMessage = document.getElementById('loading');
 const dateSelector = document.getElementById('dateSelector');
+const rankingListTitle = document.getElementById('ranking-list-title');
 
+// --- Lógica de Carregamento ---
 async function loadRanking() {
-    // 1. Pega a data selecionada (em formato YYYY-MM-DD)
     const date = dateSelector.value;
-    // 2. Constrói o nome do arquivo JSON
     const fileName = `ranking_${date}.json`;
     
-    // Reseta o estado da busca e da lista
     searchInput.value = '';
     rankingList.innerHTML = '';
+    rankingListTitle.textContent = '';
+    
     loadingMessage.textContent = `Carregando ranking do dia ${dateSelector.options[dateSelector.selectedIndex].text}...`;
     loadingMessage.style.color = '#facc15';
     
@@ -143,16 +146,15 @@ async function loadRanking() {
         const response = await fetch(fileName + '?' + new Date().getTime());
         
         if (!response.ok) {
-            if (response.status === 404) {
-                 throw new Error(`Arquivo ${fileName} não encontrado. Certifique-se de que o ranking foi gerado e renomeado corretamente.`);
-            }
-            throw new Error('Erro de rede ao buscar o arquivo.');
+             throw new Error(`Arquivo ${fileName} não encontrado. Certifique-se de que o ranking foi gerado e renomeado corretamente.`);
         }
         
         rankingData = await response.json();
         
-        loadingMessage.textContent = 'Ranking carregado! Digite seu nome e aperte Enter.';
+        loadingMessage.textContent = 'Ranking carregado! Pesquise seu nome ou veja a lista abaixo.';
         loadingMessage.style.color = '#34d399';
+        
+        displayRanking(); // Chama a exibição do Top Geral após o carregamento
         
     } catch (error) {
         console.error("Erro ao carregar ranking:", error);
@@ -162,45 +164,49 @@ async function loadRanking() {
     }
 }
 
+// --- Lógica de Exibição (Busca e Top Geral) ---
 function displayRanking() {
-    // 1. Limpa e normaliza o termo de busca
     const rawSearchTerm = searchInput.value.trim().toLowerCase();
-    // Remove o '@' do termo de busca
     const searchTerm = rawSearchTerm.startsWith('@') ? rawSearchTerm.substring(1) : rawSearchTerm;
     
     rankingList.innerHTML = '';
+    
+    if (rankingData.length === 0) return;
 
-    if (rankingData.length === 0) {
-        return;
-    }
+    let dataToDisplay = [];
 
     if (!searchTerm) {
-        loadingMessage.textContent = 'Digite seu nome para buscar no ranking.';
-        loadingMessage.style.color = '#facc15';
-        return;
-    }
-    
-    loadingMessage.textContent = 'Buscando...';
-    loadingMessage.style.color = '#a7ff83';
+        // MOSTRA TOP GERAL quando a busca está vazia
+        dataToDisplay = rankingData;
+        rankingListTitle.textContent = `TOP GERAL (${dataToDisplay.length} PARTICIPANTES)`;
+        loadingMessage.textContent = 'Lista completa carregada. Pesquise para filtrar.';
+        loadingMessage.style.color = '#34d399';
+    } else {
+        // FILTRA a lista quando há termo de busca
+        rankingListTitle.textContent = "RESULTADOS DA BUSCA";
+        loadingMessage.textContent = 'Buscando...';
+        loadingMessage.style.color = '#a7ff83';
 
-    // 2. Filtra o ranking comparando o termo de busca com o username (sem o '@')
-    const filteredData = rankingData.filter(item => {
-        // Remove o '@' dos usernames do ranking antes de comparar, garantindo a indiferença
-        const cleanUsername = item.username.toLowerCase().startsWith('@') ? item.username.toLowerCase().substring(1) : item.username.toLowerCase();
+        const filteredData = rankingData.filter(item => {
+            const cleanUsername = item.username.toLowerCase().startsWith('@') ? item.username.toLowerCase().substring(1) : item.username.toLowerCase();
+            return cleanUsername.includes(searchTerm);
+        });
+
+        if (filteredData.length === 0) {
+            rankingList.innerHTML = `<div class="text-center text-red-400 p-5">Nenhum resultado encontrado.</div>`;
+            loadingMessage.textContent = `Nenhum resultado encontrado.`;
+            loadingMessage.style.color = '#f87171';
+            rankingListTitle.textContent = "";
+            return;
+        }
         
-        // Verifica se o termo limpo está contido no username limpo
-        return cleanUsername.includes(searchTerm);
-    });
-
-    if (filteredData.length === 0) {
-        rankingList.innerHTML = `<div class="text-center text-red-400 p-5">Nenhum resultado encontrado.</div>`;
-        loadingMessage.textContent = `Nenhum resultado encontrado.`;
-        loadingMessage.style.color = '#f87171';
-        return;
+        dataToDisplay = filteredData;
+        loadingMessage.textContent = `Resultado(s) encontrado(s) para o ranking do dia ${dateSelector.options[dateSelector.selectedIndex].text}.`;
+        loadingMessage.style.color = '#34d399';
     }
 
-    // Exibe apenas o(s) resultado(s) encontrado(s)
-    filteredData.forEach((item) => {
+    // Exibe o(s) resultado(s)
+    dataToDisplay.forEach((item) => {
         const div = document.createElement('div');
         div.className = 'ranking-item';
         div.innerHTML = `
@@ -211,19 +217,14 @@ function displayRanking() {
         `;
         rankingList.appendChild(div);
     });
-
-    loadingMessage.textContent = `Resultado(s) encontrado(s) para o ranking do dia ${dateSelector.options[dateSelector.selectedIndex].text}.`;
-    loadingMessage.style.color = '#34d399';
 }
 
-// Evento para carregar um novo ranking quando a data muda
+// --- Event Listeners ---
 dateSelector.addEventListener('change', loadRanking);
-
-// Evento de busca é acionado por qualquer digitação na caixa de input
 searchInput.addEventListener('input', displayRanking);
 
-// Inicia o carregamento dos dados do ranking ao carregar a página (com a data padrão)
-loadRanking();
+// Inicia o carregamento dos dados do ranking ao carregar a página
+document.addEventListener('DOMContentLoaded', loadRanking);
 </script>
 </body>
 </html>
