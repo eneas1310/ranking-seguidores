@@ -167,3 +167,31 @@ body {
     color: #e74c3c; /* Vermelho para as eliminações */
     font-weight: bold;
 }
+
+
+/* --- AJUSTES PARA CELULAR (RESPONSIVIDADE) --- */
+
+@media (max-width: 768px) {
+    
+    .arena-header {
+        flex-direction: column; /* Empilha o título e o botão verticalmente */
+        gap: 15px;             /* Adiciona um espaço entre eles */
+    }
+
+    .main-container {
+        padding: 20px 15px; /* Reduz um pouco o espaçamento lateral no celular */
+    }
+
+    .arena-header h1 {
+        font-size: 1.6rem;  /* Diminui um pouco o título principal para caber melhor */
+    }
+
+    .ranking-item {
+        padding: 10px; /* Otimiza o espaço interno dos itens do ranking */
+    }
+
+    .rank {
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+}
