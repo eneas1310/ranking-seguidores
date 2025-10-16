@@ -1,67 +1,63 @@
-// Conteúdo para o novo arquivo: js/hall-da-fama.js
+document.addEventListener('DOMContentLoaded', () => {
+    // Pega o container onde as informações serão exibidas
+    const container = document.getElementById('carrasco-do-dia-container');
 
-document.addEventListener('DOMContentLoaded', function() {
-    fetch('../data/hall_of_fame_stats.json')
+    // 1. GERA O NOME DO ARQUIVO DE RANKING DO DIA ATUAL
+    const hoje = new Date();
+    const ano = hoje.getFullYear();
+    // getMonth() retorna 0-11, então somamos 1. Adicionamos '0' se for menor que 10.
+    const mes = String(hoje.getMonth() + 1).padStart(2, '0'); 
+    const dia = String(hoje.getDate()).padStart(2, '0');
+    
+    const nomeArquivo = `ranking_${ano}-${mes}-${dia}.json`; // Ex: "ranking_2025-10-15.json"
+
+    // 2. BUSCA E PROCESSA O ARQUIVO JSON
+    fetch(nomeArquivo)
         .then(response => {
             if (!response.ok) {
-                throw new Error('Erro ao carregar os dados do Hall da Fama. Status: ' + response.status);
+                // Lança um erro se o arquivo não for encontrado (ex: ranking não gerado)
+                throw new Error('Arquivo de ranking para o dia de hoje não encontrado.');
             }
             return response.json();
         })
-        .then(data => {
-            const topKillersContainer = document.getElementById('top-killers-container');
-            const topPodiumsContainer = document.getElementById('top-podiums-container');
+        .then(dadosRanking => {
+            // Verifica se há dados no arquivo
+            if (!dadosRanking || dadosRanking.length === 0) {
+                container.innerHTML = '<p>Não há participantes no ranking de hoje.</p>';
+                return;
+            }
 
-            populateRanking(topKillersContainer, data.topKillers, 'totalKills');
-            populateRanking(topPodiumsContainer, data.topPodiums, 'podiums');
+            // 3. ENCONTRA O "MAIS CARRASCO" (QUEM TEM MAIS ELIMINAÇÕES)
+            const maisCarrasco = dadosRanking.reduce((maior, atual) => {
+                // Compara as eliminações do 'maior' encontrado até agora com o 'atual'
+                return (atual.eliminacoes > maior.eliminacoes) ? atual : maior;
+            }, dadosRanking[0]); // Começa a comparação com o primeiro participante
+
+            // 4. EXIBE O RESULTADO NA TELA
+            exibirCarrasco(maisCarrasco);
         })
         .catch(error => {
+            // Exibe uma mensagem de erro amigável na página
             console.error('Erro:', error);
-            const container = document.querySelector('.row.justify-content-center');
-            container.innerHTML = `<div class="col-12 text-center"><p class="text-danger">Não foi possível carregar o Hall da Fama. Tente novamente mais tarde.</p><p class="text-muted">Detalhe do erro: ${error.message}</p></div>`;
+            container.innerHTML = `<p>Ainda não há ranking para o dia ${dia}/${mes}/${ano}.</p>`;
         });
-});
 
-function populateRanking(container, players, statType) {
-    if (!players || players.length === 0) {
-        container.innerHTML = '<p class="text-muted text-center mt-3">Nenhum jogador classificado ainda.</p>';
-        return;
-    }
+    // Função para criar o HTML e exibir o carrasco na página
+    function exibirCarrasco(carrasco) {
+        // Limpa a mensagem de "carregando"
+        container.innerHTML = ''; 
 
-    let rankHtml = '';
-    players.forEach((player, index) => {
-        const statValue = player[statType];
-        const statLabel = getStatLabel(statType);
-
-        rankHtml += `
-            <div class="player-entry">
-                <span class="player-rank">${index + 1}</span>
-                <img src="${player.imageUrl}" alt="Foto de ${player.username}" class="player-img">
-                <div class="player-info">
-                    <a href="https://www.instagram.com/${player.username}" target="_blank" class="player-name">${player.username}</a>
-                    <div class="player-stats">
-                        <span><i class="fas fa-skull-crossbones"></i> ${player.totalKills}</span>
-                        <span><i class="fas fa-trophy"></i> ${player.wins}</span>
-                        <span><i class="fas fa-medal"></i> ${player.podiums}</span>
-                        <span><i class="fas fa-gamepad"></i> ${player.participations}</span>
-                    </div>
+        const htmlCarrasco = `
+            <div class="carrasco-card">
+                <h3>MAIOR CARRASCO DE HOJE</h3>
+                <img src="${carrasco.profile_pic_url}" alt="Foto de ${carrasco.username}" class="profile-pic">
+                <h2>@${carrasco.username}</h2>
+                <div class="stats">
+                    <span class="eliminacoes-count">💀 ${carrasco.eliminacoes} ELIMINAÇÕES 💀</span>
                 </div>
-                <span class="player-main-stat">${statValue} ${statLabel}</span>
             </div>
         `;
-    });
-    container.innerHTML = rankHtml;
-}
-
-function getStatLabel(statType) {
-    switch (statType) {
-        case 'totalKills':
-            return 'Kills';
-        case 'wins':
-            return 'Vitórias';
-        case 'podiums':
-            return 'Pódios';
-        default:
-            return '';
+        
+        container.innerHTML = htmlCarrasco;
     }
-}
+});
