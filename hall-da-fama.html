@@ -1,123 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hall da Fama - Arena do Insta</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
-
-body {
-    font-family: 'Chakra Petch', sans-serif;
-    background-color: #1a1a2e;
-    color: #fff;
-    padding: 20px 10px;
-}
-.leaderboard-card {
-    background-color: #2c2c54;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
-}
-.leaderboard-title {
-    color: #a7ff83;
-    border-bottom: 2px solid #4a4e69;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-}
-.player-row {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 6px;
-    background-color: rgba(26, 26, 46, 0.6);
-    margin-bottom: 8px;
-}
-.player-row:nth-child(1) { background-color: #4a4e69; }
-.player-row img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-.player-rank {
-    font-size: 1.2rem;
-    font-weight: bold;
-    width: 30px;
-}
-.player-name {
-    flex-grow: 1;
-    font-size: 1.1rem;
-}
-.player-stat {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #ffc107;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hall da Fama - Arena do Insta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hall-da-fama.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Arena do Insta</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="simulador.html">Simulador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="hall-da-fama.html">Hall da Fama</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-<div class="container mx-auto max-w-4xl">
-    <h1 class="text-4xl font-bold text-center mb-4 text-[#a7ff83]">🏆 HALL DA FAMA - ARENA DO INSTA 🏆</h1>
-    <p class="text-center text-gray-400 mb-8">Estatísticas gerais de todas as batalhas.</p>
+    <main class="container mt-5">
+        <div class="text-center">
+            <h1>🏆 Hall da Fama 🏆</h1>
+            <p class="lead">Os maiores campeões e lendas da Arena!</p>
+        </div>
 
-    <div class="leaderboard-card">
-        <h2 class="leaderboard-title text-2xl font-bold">⚔️ Maiores Carrascos (Total de Eliminações)</h2>
-        <div id="top-killers-list"><p class="text-yellow-300">Carregando...</p></div>
-    </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6 mb-4">
+                <div class="ranking-card">
+                    <h2 class="ranking-title">
+                        <i class="fas fa-skull-crossbones"></i> Mais Kills
+                    </h2>
+                    <div id="top-killers-container" class="ranking-list">
+                        </div>
+                </div>
+            </div>
 
-    <div class="leaderboard-card">
-        <h2 class="leaderboard-title text-2xl font-bold">🥇 Mais Vitórias (Campeão do Dia)</h2>
-        <div id="top-winners-list"><p class="text-yellow-300">Carregando...</p></div>
-    </div>
-    
-    <div class="leaderboard-card">
-        <h2 class="leaderboard-title text-2xl font-bold">🎖️ Mais Pódios (Top 3)</h2>
-        <div id="top-podiums-list"><p class="text-yellow-300">Carregando...</p></div>
-    </div>
+            <div class="col-md-6 mb-4">
+                <div class="ranking-card">
+                    <h2 class="ranking-title">
+                        <i class="fas fa-medal"></i> Mais Pódios
+                    </h2>
+                    <div id="top-podiums-container" class="ranking-list">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', async () => {
-    try {
-        // Agora só precisa carregar UM arquivo, que já está pronto!
-        const response = await fetch('hall_of_fame_stats.json?' + new Date().getTime());
-        if (!response.ok) throw new Error('Arquivo de estatísticas não encontrado.');
-        
-        const stats = await response.json();
-
-        function displayLeaderboard(containerId, dataList, statKey, statLabel) {
-            const container = document.getElementById(containerId);
-            container.innerHTML = ''; 
-            dataList.forEach((player, index) => {
-                const playerHtml = `
-                    <div class="player-row">
-                        <span class="player-rank">${index + 1}º</span>
-                        <img src="${player.imageUrl}" alt="${player.username}">
-                        <span class="player-name">@${player.username}</span>
-                        <span class="player-stat">${player[statKey]} ${statLabel}</span>
-                    </div>
-                `;
-                container.innerHTML += playerHtml;
-            });
-        }
-
-        displayLeaderboard('top-killers-list', stats.topKillers, 'totalKills', 'eliminações');
-        displayLeaderboard('top-winners-list', stats.topWinners, 'wins', 'vitórias');
-        displayLeaderboard('top-podiums-list', stats.topPodiums, 'podiums', 'pódios');
-
-    } catch (error) {
-        console.error(error);
-        document.getElementById('top-killers-list').textContent = 'Erro ao carregar estatísticas.';
-        document.getElementById('top-winners-list').textContent = 'Erro ao carregar estatísticas.';
-        document.getElementById('top-podiums-list').textContent = 'Erro ao carregar estatísticas.';
-    }
-});
-</script>
-
+    <script src="js/hall-da-fama.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
