@@ -178,7 +178,7 @@ body {
     <div id="date-selector-container">
         <span class="text-lg font-bold mr-3 text-gray-300">Ranking do Dia:</span>
         <select id="dateSelector" class="bg-[#1a1a2e] border-2 border-[#4a4e69] text-[#a7ff83] p-2 rounded-lg cursor-pointer font-semibold">
-            <option value="2025-10-15" selected>15/10/2025 (Hoje)</option>
+            <option value="2025-10-15" selected>15/10/2025</option>
             <option value="2025-10-14">14/10/2025</option>
             <option value="2025-10-13">13/10/2025</option>
         </select>
@@ -201,6 +201,25 @@ const loadingMessage = document.getElementById('loading');
 const dateSelector = document.getElementById('dateSelector');
 const rankingListTitle = document.getElementById('ranking-list-title');
 
+// ### NOVO ### Esta função atualiza a etiqueta "(Hoje)" dinamicamente
+function updateDateLabels() {
+    const hoje = new Date();
+    const ano = hoje.getFullYear();
+    const mes = String(hoje.getMonth() + 1).padStart(2, '0');
+    const dia = String(hoje.getDate()).padStart(2, '0');
+    const dataAtualFormatada = `${ano}-${mes}-${dia}`; // Formato YYYY-MM-DD
+
+    for (const option of dateSelector.options) {
+        // Limpa qualquer etiqueta "(Hoje)" existente
+        option.textContent = option.textContent.replace(' (Hoje)', '');
+
+        // Adiciona a etiqueta se a data da opção for a data atual
+        if (option.value === dataAtualFormatada) {
+            option.textContent += ' (Hoje)';
+        }
+    }
+}
+
 async function loadRanking() {
     const date = dateSelector.value;
     const fileName = `ranking_${date}.json`;
@@ -216,7 +235,7 @@ async function loadRanking() {
         const response = await fetch(fileName + '?' + new Date().getTime());
         
         if (!response.ok) {
-              throw new Error(`Arquivo ${fileName} não encontrado.`);
+                throw new Error(`Arquivo ${fileName} não encontrado.`);
         }
         
         rankingData = await response.json();
@@ -310,7 +329,11 @@ function displayRanking() {
 dateSelector.addEventListener('change', loadRanking);
 searchInput.addEventListener('input', displayRanking);
 
-document.addEventListener('DOMContentLoaded', loadRanking);
+// ### ALTERADO ### Agora, chama a função para atualizar as datas antes de carregar o ranking inicial
+document.addEventListener('DOMContentLoaded', () => {
+    updateDateLabels();
+    loadRanking();
+});
 </script>
 </body>
 </html>
