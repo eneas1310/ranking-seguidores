@@ -1,3 +1,19 @@
+<div id="ranking-container">
+    <h1 class="text-3xl font-bold text-center mb-1 text-[#a7ff83]">💥 ARENA DO INSTA 🏆</h1>
+
+    <a href="hall-da-fama.html" class="hof-button">🏆 Ver Hall da Fama 🏆</a>
+
+    <div id="date-selector-container">
+        <span class="text-lg font-bold mr-3 text-gray-300">Ranking do Dia:</span>
+        ```
+
+---
+
+### Código `index.html` Completo e Atualizado
+
+Aqui está o arquivo `index.html` completo com o novo botão. Após substituir o seu código por este e subir para o Git, o botão "Ver Hall da Fama" vai aparecer na sua página principal, conectando tudo.
+
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -145,12 +161,33 @@ body {
     color: #ffc107;
     font-weight: 500;
 }
+
+/* NOVO: Estilo para o botão do Hall da Fama */
+.hof-button {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 20px auto; /* Centraliza o botão */
+    padding: 10px 25px;
+    background-color: #8b5cf6; /* Roxo vibrante */
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.hof-button:hover {
+    background-color: #7c3aed;
+    transform: scale(1.05);
+}
 </style>
 </head>
 <body>
 
 <div id="ranking-container">
     <h1 class="text-3xl font-bold text-center mb-1 text-[#a7ff83]">💥 ARENA DO INSTA 🏆</h1>
+
+    <a href="hall-da-fama.html" class="hof-button">🏆 Ver Hall da Fama 🏆</a>
 
     <div id="date-selector-container">
         <span class="text-lg font-bold mr-3 text-gray-300">Ranking do Dia:</span>
