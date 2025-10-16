@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Arena do Insta - Histórico de Rankings</title>
 <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- ✅ NOVO LINK DO CSS EXTERNO -->
+<link rel="stylesheet" href="css/style.css">
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
@@ -167,6 +171,29 @@ body {
 </head>
 <body>
 
+<!-- ✅ NOVO CABEÇALHO UNIFICADO -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">ARENA DO INSTA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Ranking do Dia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hall-da-fama.html">Hall da Fama</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- 🔚 FIM DO NOVO CABEÇALHO -->
+
 <div id="ranking-container">
     <h1 class="text-3xl font-bold text-center mb-1 text-[#a7ff83]">💥 ARENA DO INSTA 🏆</h1>
 
@@ -187,8 +214,7 @@ body {
     
     <div id="ranking-list-title" class="text-xl font-bold text-center mt-4 text-[#ffc107]"></div>
     
-    <div id="ranking-list">
-        </div>
+    <div id="ranking-list"></div>
 </div>
 
 <script>
