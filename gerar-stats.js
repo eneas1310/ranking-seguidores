@@ -4,7 +4,6 @@ const fs = require('fs');
 const path = require('path');
 
 // IMPORTANTE: LISTA DE DATAS DOS RANKINGS
-// Para adicionar um novo ranking, basta adicionar a data aqui no formato 'AAAA-MM-DD'
 const dates = [
     '2025-10-15',
     '2025-10-14',
@@ -37,7 +36,10 @@ dates.forEach(date => {
                     };
                 }
 
-                playerStats[username].totalKills += player.eliminatedCount;
+                // --- LINHA CORRIGIDA ---
+                // Agora, ele soma 0 se a propriedade 'eliminatedCount' não existir
+                playerStats[username].totalKills += player.eliminatedCount || 0;
+                
                 playerStats[username].participations++;
                 if (player.rank === 1) playerStats[username].wins++;
                 if (player.rank <= 3) playerStats[username].podiums++;
