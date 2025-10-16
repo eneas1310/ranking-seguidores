@@ -173,7 +173,7 @@ body {
 <div id="ranking-container">
     <h1 class="text-3xl font-bold text-center mb-1 text-[#a7ff83]">💥 ARENA DO INSTA 🏆</h1>
 
-    <a href="hall-da-fama.html" class="hof-button">🏆 Ver Hall da Fama 🏆</a>
+    <a href="hall-da-fama.html" class="hof-button">🏆 Ver Lendas da Arena 🏆</a>
 
     <div id="date-selector-container">
         <span class="text-lg font-bold mr-3 text-gray-300">Ranking do Dia:</span>
@@ -201,19 +201,15 @@ const loadingMessage = document.getElementById('loading');
 const dateSelector = document.getElementById('dateSelector');
 const rankingListTitle = document.getElementById('ranking-list-title');
 
-// ### NOVO ### Esta função atualiza a etiqueta "(Hoje)" dinamicamente
 function updateDateLabels() {
     const hoje = new Date();
     const ano = hoje.getFullYear();
     const mes = String(hoje.getMonth() + 1).padStart(2, '0');
     const dia = String(hoje.getDate()).padStart(2, '0');
-    const dataAtualFormatada = `${ano}-${mes}-${dia}`; // Formato YYYY-MM-DD
+    const dataAtualFormatada = `${ano}-${mes}-${dia}`;
 
     for (const option of dateSelector.options) {
-        // Limpa qualquer etiqueta "(Hoje)" existente
         option.textContent = option.textContent.replace(' (Hoje)', '');
-
-        // Adiciona a etiqueta se a data da opção for a data atual
         if (option.value === dataAtualFormatada) {
             option.textContent += ' (Hoje)';
         }
@@ -329,7 +325,6 @@ function displayRanking() {
 dateSelector.addEventListener('change', loadRanking);
 searchInput.addEventListener('input', displayRanking);
 
-// ### ALTERADO ### Agora, chama a função para atualizar as datas antes de carregar o ranking inicial
 document.addEventListener('DOMContentLoaded', () => {
     updateDateLabels();
     loadRanking();
