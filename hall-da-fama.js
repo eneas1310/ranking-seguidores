@@ -1,63 +1,52 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Pega o container onde as informações serão exibidas
-    const container = document.getElementById('carrasco-do-dia-container');
+    const rankingListContainer = document.getElementById('ranking-list');
 
-    // 1. GERA O NOME DO ARQUIVO DE RANKING DO DIA ATUAL
-    const hoje = new Date();
-    const ano = hoje.getFullYear();
-    // getMonth() retorna 0-11, então somamos 1. Adicionamos '0' se for menor que 10.
-    const mes = String(hoje.getMonth() + 1).padStart(2, '0'); 
-    const dia = String(hoje.getDate()).padStart(2, '0');
-    
-    const nomeArquivo = `ranking_${ano}-${mes}-${dia}.json`; // Ex: "ranking_2025-10-15.json"
-
-    // 2. BUSCA E PROCESSA O ARQUIVO JSON
-    fetch(nomeArquivo)
+    // Busca o arquivo JSON com as estatísticas compiladas
+    fetch('hall_of_fame_stats.json')
         .then(response => {
             if (!response.ok) {
-                // Lança um erro se o arquivo não for encontrado (ex: ranking não gerado)
-                throw new Error('Arquivo de ranking para o dia de hoje não encontrado.');
+                throw new Error('Não foi possível carregar o Hall da Fama. Execute o script de geração de stats.');
             }
             return response.json();
         })
-        .then(dadosRanking => {
-            // Verifica se há dados no arquivo
-            if (!dadosRanking || dadosRanking.length === 0) {
-                container.innerHTML = '<p>Não há participantes no ranking de hoje.</p>';
+        .then(data => {
+            // Limpa a mensagem de "carregando"
+            rankingListContainer.innerHTML = ''; 
+
+            // Pega apenas os 50 primeiros do ranking
+            const top50 = data.slice(0, 50);
+
+            if (top50.length === 0) {
+                rankingListContainer.innerHTML = '<p class="loading-message">Ainda não há dados no Hall da Fama.</p>';
                 return;
             }
 
-            // 3. ENCONTRA O "MAIS CARRASCO" (QUEM TEM MAIS ELIMINAÇÕES)
-            const maisCarrasco = dadosRanking.reduce((maior, atual) => {
-                // Compara as eliminações do 'maior' encontrado até agora com o 'atual'
-                return (atual.eliminacoes > maior.eliminacoes) ? atual : maior;
-            }, dadosRanking[0]); // Começa a comparação com o primeiro participante
+            // Cria e adiciona cada item do ranking na página
+            top50.forEach((player, index) => {
+                const rank = index + 1;
+                const playerElement = document.createElement('div');
+                playerElement.classList.add('ranking-item');
 
-            // 4. EXIBE O RESULTADO NA TELA
-            exibirCarrasco(maisCarrasco);
+                // Adiciona classes especiais para o pódio (1º, 2º, 3º)
+                if (rank === 1) playerElement.classList.add('gold');
+                if (rank === 2) playerElement.classList.add('silver');
+                if (rank === 3) playerElement.classList.add('bronze');
+
+                playerElement.innerHTML = `
+                    <div class="rank">
+                        <span>${rank}º</span>
+                    </div>
+                    <img src="${player.profile_pic_url}" alt="Foto de ${player.username}" class="profile-pic">
+                    <div class="user-info">
+                        <span class="username">@${player.username}</span>
+                        <span class="eliminations">💀 ${player.eliminacoes} eliminações</span>
+                    </div>
+                `;
+                rankingListContainer.appendChild(playerElement);
+            });
         })
         .catch(error => {
-            // Exibe uma mensagem de erro amigável na página
-            console.error('Erro:', error);
-            container.innerHTML = `<p>Ainda não há ranking para o dia ${dia}/${mes}/${ano}.</p>`;
+            console.error(error);
+            rankingListContainer.innerHTML = `<p class="loading-message" style="color: #ff6b6b;">${error.message}</p>`;
         });
-
-    // Função para criar o HTML e exibir o carrasco na página
-    function exibirCarrasco(carrasco) {
-        // Limpa a mensagem de "carregando"
-        container.innerHTML = ''; 
-
-        const htmlCarrasco = `
-            <div class="carrasco-card">
-                <h3>MAIOR CARRASCO DE HOJE</h3>
-                <img src="${carrasco.profile_pic_url}" alt="Foto de ${carrasco.username}" class="profile-pic">
-                <h2>@${carrasco.username}</h2>
-                <div class="stats">
-                    <span class="eliminacoes-count">💀 ${carrasco.eliminacoes} ELIMINAÇÕES 💀</span>
-                </div>
-            </div>
-        `;
-        
-        container.innerHTML = htmlCarrasco;
-    }
 });

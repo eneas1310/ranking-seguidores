@@ -1,70 +1,70 @@
 const fs = require('fs');
 const path = require('path');
 
-const historicoPath = path.join(__dirname, '..', 'data', 'historico_batalhas.json');
-const stats = {};
+const diretorioAtual = __dirname;
+const nomeArquivoSaida = 'hall_of_fame_stats.json';
 
-// Verifica se o arquivo de histórico existe
-if (!fs.existsSync(historicoPath)) {
-    console.log("Arquivo de histórico não encontrado. Criando um Hall da Fama vazio.");
-    
-    const emptyStats = {
-        topKillers: [],
-        topPodiums: []
-    };
-    
-    fs.writeFileSync(
-        path.join(__dirname, '..', 'data', 'hall_of_fame_stats.json'),
-        JSON.stringify(emptyStats, null, 2)
-    );
+// Função principal para gerar as estatísticas
+async function gerarHallDaFama() {
+    console.log('Iniciando a compilação das estatísticas de todos os tempos...');
 
-} else {
-    const historico = JSON.parse(fs.readFileSync(historicoPath, 'utf-8'));
+    const statsGerais = {}; // Objeto para guardar os dados acumulados
 
-    historico.forEach(batalha => {
-        batalha.rankingFinal.forEach((player, index) => {
-            if (!stats[player.username]) {
-                stats[player.username] = {
-                    username: player.username,
-                    totalKills: 0,
-                    wins: 0,
-                    podiums: 0,
-                    participations: 0,
-                    imageUrl: player.imageUrl // Pega a URL da imagem da última participação
-                };
+    try {
+        // Lê todos os arquivos no diretório
+        const arquivos = fs.readdirSync(diretorioAtual);
+
+        // Filtra para pegar apenas os arquivos de ranking diário
+        const arquivosDeRanking = arquivos.filter(file => file.startsWith('ranking_') && file.endsWith('.json'));
+
+        if (arquivosDeRanking.length === 0) {
+            console.log('Nenhum arquivo de ranking diário encontrado.');
+            return;
+        }
+
+        console.log(`Encontrados ${arquivosDeRanking.length} arquivos de ranking para processar...`);
+
+        // Processa cada arquivo de ranking
+        for (const arquivo of arquivosDeRanking) {
+            const conteudo = fs.readFileSync(path.join(diretorioAtual, arquivo), 'utf-8');
+            const dadosDoDia = JSON.parse(conteudo);
+
+            for (const jogador of dadosDoDia) {
+                const username = jogador.username;
+                const eliminacoes = jogador.eliminacoes || 0;
+
+                // Se o jogador já existe nas estatísticas, soma as eliminações
+                if (statsGerais[username]) {
+                    statsGerais[username].eliminacoes += eliminacoes;
+                    // Atualiza a foto para a mais recente
+                    statsGerais[username].profile_pic_url = jogador.profile_pic_url;
+                } else {
+                    // Se não existe, adiciona o jogador
+                    statsGerais[username] = {
+                        username: username,
+                        profile_pic_url: jogador.profile_pic_url,
+                        eliminacoes: eliminacoes,
+                    };
+                }
             }
-            const pStats = stats[player.username];
-            pStats.totalKills += player.kills;
-            pStats.participations++;
+        }
 
-            if (index === 0) {
-                pStats.wins++;
-                pStats.podiums++;
-            } else if (index === 1 || index === 2) {
-                pStats.podiums++;
-            }
-        });
-    });
+        // Converte o objeto de estatísticas em um array
+        const rankingArray = Object.values(statsGerais);
 
-    const allPlayers = Object.values(stats);
+        // Ordena o array por número de eliminações (do maior para o menor)
+        rankingArray.sort((a, b) => b.eliminacoes - a.eliminacoes);
 
-    // Ordena por Kills
-    const topKillers = [...allPlayers]
-        .sort((a, b) => b.totalKills - a.totalKills || b.wins - a.wins)
-        .slice(0, 10);
+        // Salva o resultado no arquivo final
+        fs.writeFileSync(nomeArquivoSaida, JSON.stringify(rankingArray, null, 2));
 
-    // Ordena por Pódios
-    const topPodiums = [...allPlayers]
-        .filter(p => p.podiums > 0)
-        .sort((a, b) => b.podiums - a.podiums || b.totalKills - a.totalKills)
-        .slice(0, 10);
-    
-    const hallOfFameStats = {
-        topKillers,
-        topPodiums,
-    };
-    
-    fs.writeFileSync(path.join(__dirname, '..', 'data', 'hall_of_fame_stats.json'), JSON.stringify(hallOfFameStats, null, 2));
+        console.log(`✅ Sucesso! Hall da Fama atualizado e salvo em "${nomeArquivoSaida}".`);
+        console.log(`🏆 O maior carrasco de todos os tempos é @${rankingArray[0].username} com ${rankingArray[0].eliminacoes} eliminações.`);
 
-    console.log('Estatísticas do Hall da Fama geradas com sucesso!');
+    } catch (error) {
+        console.error('❌ Erro ao gerar as estatísticas do Hall da Fama:', error);
+    }
 }
+
+// Executa a função
+gerarHallDaFama();

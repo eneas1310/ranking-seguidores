@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hall da Fama - Arena do Insta</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Arena do Insta</h1>
-        <nav>
-            <a href="index.html">Simulador</a>
-            <a href="hall-da-fama.html">Hall da Fama</a>
-        </nav>
-    </header>
+    <div class="main-container">
+        <header class="arena-header">
+            <h1>ARENA DO INSTA 🏆</h1>
+            <nav>
+                <a href="index.html" class="nav-button">Página Inicial</a>
+            </nav>
+        </header>
 
-    <main class="container">
-        <div class="hall-of-fame-header">
-            🏆
-            <h2>Hall da Fama</h2>
-            🏆
-            <p>O maior carrasco da Arena no dia de hoje!</p>
-        </div>
-
-        <div id="carrasco-do-dia-container">
-            <p>Carregando informações do carrasco do dia...</p>
-        </div>
-    </main>
+        <section class="ranking-container">
+            <div class="ranking-header">
+                <h2>💀 MAIORES CARRASCOS (ALL-TIME) 💀</h2>
+                <p>O ranking dos 50 jogadores com mais eliminações em toda a história da Arena.</p>
+            </div>
+            
+            <div id="ranking-list">
+                <p class="loading-message">Carregando Hall da Fama...</p>
+            </div>
+        </section>
+    </div>
 
     <script src="hall-da-fama.js"></script>
 </body>
