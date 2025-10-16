@@ -1,156 +1,54 @@
 /* Arquivo: css/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
-/* Importação de fonte do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap');
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 body {
-    background-color: #1e1e2f;
-    background-image: linear-gradient(180deg, #161625 0%, #1e1e2f 100%);
-    color: #e0e0e0;
-    font-family: 'Arial', sans-serif;
-    min-height: 100vh;
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
 }
 
-/* --- Novo Cabeçalho e Navegação --- */
-.navbar {
-    background-color: #161625 !important;
-    border-bottom: 1px solid #4a5a70;
-    padding: 0.5rem 1rem;
+/* Animação de entrada dos itens da lista */
+.ranking-item {
+    animation: fadeIn 0.4s ease-out forwards;
+    opacity: 0;
+    transform: translateY(10px);
 }
 
-.navbar-brand {
-    font-family: 'Teko', sans-serif;
-    font-size: 2.2rem;
-    font-weight: 700;
-    background-image: linear-gradient(45deg, #f3ec78, #af4261);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+.ranking-item:nth-child(1) { animation-delay: 0.0s; }
+.ranking-item:nth-child(2) { animation-delay: 0.1s; }
+.ranking-item:nth-child(3) { animation-delay: 0.2s; }
+.ranking-item:not(:nth-child(-n+3)) { animation-delay: 0.3s; }
+
+/* Sombra e borda das imagens de perfil */
+.ranking-item img {
+    box-shadow: 0 0 0 2px #4a4e69, inset 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.nav-link {
-    font-family: 'Teko', sans-serif;
-    font-size: 1.6rem;
-    color: #c0c0c0 !important;
-    margin: 0 10px;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+.ranking-item:nth-child(1) img {
+    box-shadow: 0 0 0 4px gold, inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.ranking-item:nth-child(2) img {
+    box-shadow: 0 0 0 4px silver, inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.ranking-item:nth-child(3) img {
+    box-shadow: 0 0 0 4px #cd7f32, inset 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
-.nav-link.active,
-.nav-link:hover {
-    color: #ffffff !important;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
-}
-
-/* --- Títulos Principais --- */
-.main-title {
-    font-family: 'Teko', sans-serif;
-    font-weight: 700;
-    font-size: 3.5rem;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-    background: linear-gradient(90deg, #e94057, #f27121);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-.lead {
-    text-align: center;
-    color: #a0a0b0;
-    margin-bottom: 2.5rem;
-}
-
-/* --- Estilo dos Cards (Hall da Fama) --- */
-.ranking-card {
-    background-color: #2a3444;
-    border: 1px solid #4a5a70;
-    border-radius: 12px;
-    padding: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-    height: 100%;
-}
-
-.ranking-title {
-    font-family: 'Teko', sans-serif;
-    font-size: 2.2rem;
-    color: #ffffff;
-    border-bottom: 2px solid #e94057;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.ranking-title .fas, .ranking-title .fa-solid {
-    margin-right: 12px;
-    color: #e94057;
-}
-
-/* --- Estilos da Lista de Jogadores (Hall da Fama) --- */
-.player-entry {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #1e1e2f;
-    border-radius: 8px;
-    border: 1px solid #4a5a70;
-    transition: background-color 0.3s, border-color 0.3s;
-}
-
-.player-entry:hover {
-    background-color: #3a4454;
-    border-color: #e94057;
-}
-
-.player-rank {
-    font-family: 'Teko', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #f3ec78;
-    margin-right: 15px;
-    width: 30px;
-    text-align: center;
-}
-
-.player-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 15px;
-    border: 2px solid #f27121;
-}
-
-.player-info {
-    flex-grow: 1;
-}
-
-.player-name {
-    font-weight: bold;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-
-.player-name:hover {
-    color: #e94057;
-}
-
-.player-stats {
-    font-size: 0.8rem;
-    color: #a0a0b0;
-    margin-top: 4px;
-}
-
-.player-stats span {
-    margin-right: 10px;
-}
-
-.player-main-stat {
-    font-family: 'Teko', sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #ffffff;
+/* Garante que o texto de stats não quebre a linha */
+.stat-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 350px; /* Ajuste se necessário */
 }
