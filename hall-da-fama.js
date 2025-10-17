@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const pontuacaoContainer = document.getElementById('pontuacao-list');
-    const carrascosContainer = document.getElementById('carrascos-list');
 
-    function renderRanking(container, players, tipo) {
+    function renderRanking(container, players) {
         container.innerHTML = ''; 
 
         if (!players || players.length === 0) {
@@ -19,10 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (rank === 2) playerElement.classList.add('silver');
             if (rank === 3) playerElement.classList.add('bronze');
 
-            // Define o que será exibido (pontos ou eliminações)
-            const statHtml = tipo === 'pontos'
-                ? `<span class="eliminations" style="color: #34d399;">⭐ ${player.pontos} Pontos</span>`
-                : `<span class="eliminations">💀 ${player.eliminacoes} eliminações</span>`;
+            const statHtml = `<span class="eliminations" style="color: #34d399;">⭐ ${player.pontos} Pontos</span>`;
 
             playerElement.innerHTML = `
                 <div class="rank"><span>${rank}º</span></div>
@@ -36,20 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // O fetch agora espera um array simples de jogadores, não mais um objeto complexo
     fetch('hall_of_fame_stats.json?' + new Date().getTime())
         .then(response => response.json())
         .then(data => {
-            // Renderiza o ranking de Pontuação da Temporada
-            const pontuacaoTemporada = data.pontuacaoTemporada ? data.pontuacaoTemporada["2025-10"] : [];
-            renderRanking(pontuacaoContainer, pontuacaoTemporada, 'pontos');
-
-            // Renderiza o ranking de Maiores Carrascos
-            const maioresCarrascos = data.maioresCarrascos || [];
-            renderRanking(carrascosContainer, maioresCarrascos, 'carrascos');
+            renderRanking(pontuacaoContainer, data);
         })
         .catch(error => {
             console.error(error);
             pontuacaoContainer.innerHTML = `<p class="loading-message" style="color: #ff6b6b;">Erro ao carregar os dados.</p>`;
-            carrascosContainer.innerHTML = `<p class="loading-message" style="color: #ff6b6b;">Erro ao carregar os dados.</p>`;
         });
 });

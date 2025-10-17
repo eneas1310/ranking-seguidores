@@ -19,9 +19,9 @@ function getPontosPorPosicao(rank) {
     return 0;
 }
 
-async function gerarHallDaFama() {
-    console.log('Iniciando a compilação das estatísticas...');
-    const statsGerais = {};
+async function gerarRankingDePontos() {
+    console.log('Iniciando a compilação do ranking de pontos...');
+    const statsTemporada = {};
 
     try {
         const arquivos = fs.readdirSync(diretorioAtual);
@@ -35,60 +35,33 @@ async function gerarHallDaFama() {
         for (const arquivo of arquivosDeRanking) {
             const conteudo = fs.readFileSync(path.join(diretorioAtual, arquivo), 'utf-8');
             const dadosDoDia = JSON.parse(conteudo);
-            const [, ano, mes] = path.parse(arquivo).name.split('_');
-            const temporada = `${ano}-${mes}`;
 
             for (const jogador of dadosDoDia) {
                 const username = jogador.username;
-                if (!statsGerais[username]) {
-                    statsGerais[username] = {
+                if (!statsTemporada[username]) {
+                    statsTemporada[username] = {
                         username: username,
                         imageUrl: jogador.imageUrl,
-                        eliminacoes: 0,
-                        pontosPorTemporada: {}
+                        pontos: 0
                     };
                 }
                 
-                statsGerais[username].imageUrl = jogador.imageUrl;
-                statsGerais[username].eliminacoes += jogador.eliminatedCount || 0;
-
-                const pontosDoDia = getPontosPorPosicao(jogador.rank);
-                if (pontosDoDia > 0) {
-                    if (!statsGerais[username].pontosPorTemporada[temporada]) {
-                        statsGerais[username].pontosPorTemporada[temporada] = 0;
-                    }
-                    statsGerais[username].pontosPorTemporada[temporada] += pontosDoDia;
-                }
+                statsTemporada[username].imageUrl = jogador.imageUrl;
+                statsTemporada[username].pontos += getPontosPorPosicao(jogador.rank);
             }
         }
 
-        const todosOsJogadores = Object.values(statsGerais);
-        const dadosFinais = {
-            maioresCarrascos: todosOsJogadores
-                .map(p => ({
-                    username: p.username,
-                    imageUrl: p.imageUrl,
-                    eliminacoes: p.eliminacoes
-                }))
-                .sort((a, b) => b.eliminacoes - a.eliminacoes),
-            pontuacaoTemporada: {
-                "2025-10": todosOsJogadores
-                    .filter(p => p.pontosPorTemporada && p.pontosPorTemporada["2025-10"])
-                    .map(p => ({
-                        username: p.username,
-                        imageUrl: p.imageUrl,
-                        pontos: p.pontosPorTemporada["2025-10"]
-                    }))
-                    .sort((a, b) => b.pontos - a.pontos)
-            }
-        };
+        const rankingArray = Object.values(statsTemporada)
+            .filter(p => p.pontos > 0) // Inclui apenas jogadores que pontuaram
+            .sort((a, b) => b.pontos - a.pontos);
 
-        fs.writeFileSync(nomeArquivoSaida, JSON.stringify(dadosFinais, null, 2));
-        console.log(`✅ Sucesso! Estatísticas salvas em "${nomeArquivoSaida}".`);
+        // O arquivo final agora terá apenas a lista de pontuação
+        fs.writeFileSync(nomeArquivoSaida, JSON.stringify(rankingArray, null, 2));
+        console.log(`✅ Sucesso! Ranking de pontos salvo em "${nomeArquivoSaida}".`);
 
     } catch (error) {
         console.error('❌ Erro ao gerar as estatísticas:', error);
     }
 }
 
-gerarHallDaFama();
+gerarRankingDePontos();
