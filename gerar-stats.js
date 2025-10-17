@@ -4,18 +4,20 @@ const path = require('path');
 const diretorioAtual = __dirname;
 const nomeArquivoSaida = 'hall_of_fame_stats.json';
 
-// Função para calcular os pontos baseados na posição
+// ### ALTERADO ### Nova tabela de pontos "Competitivo"
 function getPontosPorPosicao(rank) {
-    if (rank === 1) return 500;
-    if (rank === 2) return 400;
-    if (rank === 3) return 350;
-    if (rank >= 4 && rank <= 10) return 250;
-    if (rank >= 11 && rank <= 50) return 150;
-    if (rank >= 51 && rank <= 100) return 100;
-    if (rank >= 101 && rank <= 250) return 75;
-    if (rank >= 251 && rank <= 500) return 50;
-    if (rank >= 501 && rank <= 1000) return 25;
-    if (rank >= 1001 && rank <= 2000) return 10;
+    if (rank === 1) return 100;
+    if (rank === 2) return 90;
+    if (rank === 3) return 80;
+    if (rank >= 4 && rank <= 10) return 60;
+    if (rank >= 11 && rank <= 50) return 40;
+    if (rank >= 51 && rank <= 100) return 30;
+    if (rank >= 101 && rank <= 250) return 20;
+    if (rank >= 251 && rank <= 500) return 15;
+    if (rank >= 501 && rank <= 1000) return 10;
+    if (rank >= 1001 && rank <= 2000) return 5;
+    if (rank >= 2001 && rank <= 3000) return 3;
+    if (rank >= 3001 && rank <= 4000) return 1;
     return 0;
 }
 
@@ -52,10 +54,8 @@ async function gerarRankingDePontos() {
         }
 
         const rankingArray = Object.values(statsTemporada)
-            .filter(p => p.pontos > 0) // Inclui apenas jogadores que pontuaram
             .sort((a, b) => b.pontos - a.pontos);
 
-        // O arquivo final agora terá apenas a lista de pontuação
         fs.writeFileSync(nomeArquivoSaida, JSON.stringify(rankingArray, null, 2));
         console.log(`✅ Sucesso! Ranking de pontos salvo em "${nomeArquivoSaida}".`);
 
