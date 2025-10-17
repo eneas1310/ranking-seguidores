@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const pontuacaoContainer = document.getElementById('pontuacao-list');
     const searchInput = document.getElementById('searchInput');
-    let allPlayersData = []; // Guarda todos os jogadores carregados
+    let allPlayersData = []; 
 
     function renderRanking(playersToRender) {
         pontuacaoContainer.innerHTML = ''; 
@@ -11,8 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        playersToRender.forEach((player, index) => {
-            const rank = index + 1;
+        playersToRender.forEach((player) => { // O 'index' foi removido daqui
+            // ### CORRIGIDO ### Usa a posição real que foi guardada, em vez do índice da lista filtrada
+            const rank = player.realRank; 
             const playerElement = document.createElement('div');
             playerElement.classList.add('ranking-item');
 
@@ -20,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (rank === 2) playerElement.classList.add('silver');
             if (rank === 3) playerElement.classList.add('bronze');
 
-            // Lógica para o indicador de posição
             let rankChangeHtml = '';
             if (player.rankChange === 'new') {
                 rankChangeHtml = `<span class="rank-change new">⭐ Novo</span>`;
@@ -47,28 +47,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Carrega os dados iniciais
     fetch('hall_of_fame_stats.json?' + new Date().getTime())
         .then(response => response.json())
         .then(data => {
+            // ### CORRIGIDO ### Adiciona a propriedade 'realRank' a cada jogador assim que os dados são carregados
+            data.forEach((player, index) => {
+                player.realRank = index + 1;
+            });
             allPlayersData = data;
-            renderRanking(allPlayersData); // Renderiza a lista completa
+            renderRanking(allPlayersData);
         })
         .catch(error => {
             console.error(error);
             pontuacaoContainer.innerHTML = `<p class="loading-message" style="color: #ff6b6b;">Erro ao carregar os dados.</p>`;
         });
 
-    // Lógica da busca automática
     searchInput.addEventListener('input', () => {
         const searchTerm = searchInput.value.toLowerCase().trim();
         
-        // Filtra o array de DADOS original, não o HTML
         const filteredPlayers = allPlayersData.filter(player => 
             player.username.toLowerCase().includes(searchTerm)
         );
         
-        // Re-renderiza a lista apenas com os jogadores filtrados
         renderRanking(filteredPlayers);
     });
 });
