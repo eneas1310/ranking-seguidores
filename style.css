@@ -55,7 +55,7 @@ body {
     transform: scale(1.05);
 }
 
-/* --- BARRA DE PESQUISA --- */
+/* --- BARRA DE PESQUISA (USADA NO INDEX.HTML) --- */
 
 .search-container {
     margin: 20px 0;
@@ -69,7 +69,7 @@ body {
     background-color: #2c2c3e;
     color: #ecf0f1;
     font-size: 1rem;
-    box-sizing: border-box; /* Garante que padding não afete a largura total */
+    box-sizing: border-box;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
@@ -95,7 +95,7 @@ body {
 }
 
 .ranking-header h2 {
-    color: #f1c40f; /* Cor dourada para o título */
+    color: #f1c40f;
     margin-bottom: 5px;
 }
 
@@ -115,7 +115,7 @@ body {
 /* --- ITENS DA LISTA DO RANKING --- */
 
 .ranking-item {
-    background-color: #4a306d; /* Roxo mais escuro para os itens */
+    background-color: #4a306d;
     border-radius: 12px;
     padding: 10px 15px;
     margin-bottom: 10px;
@@ -164,30 +164,52 @@ body {
 
 .eliminations {
     font-size: 0.9rem;
-    color: #e74c3c; /* Vermelho para as eliminações */
+    color: #e74c3c;
     font-weight: bold;
 }
 
-/* --- ESTILOS PARA PÁGINA LENDAS DA ARENA (NOVOS) --- */
+/* --- ESTILOS PARA PÁGINA LENDAS DA ARENA --- */
 
-/* Caixa de Regras */
-.rules-container {
-    background-color: #1a1a2e;
+.leaderboards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.ranking-container .ranking-header h2 {
+    font-size: 1.3rem;
+}
+
+.ranking-container #pontuacao-list,
+.ranking-container #carrascos-list {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.rules-collapsible {
+    background-color: #2c2c54;
     border: 2px solid #4a4e69;
     border-radius: 12px;
     padding: 15px 20px;
-    margin-bottom: 30px;
-    text-align: center;
+    margin-top: 30px;
+    transition: background-color 0.3s;
 }
 
-.rules-container h3 {
+.rules-collapsible[open] {
+    background-color: #1a1a2e;
+}
+
+.rules-collapsible summary {
     color: #facc15;
-    margin-top: 0;
-    margin-bottom: 15px;
     font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
 }
 
-.rules-grid {
+.rules-collapsible .rules-grid {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 10px;
@@ -201,52 +223,33 @@ body {
     border-radius: 6px;
 }
 
-/* Layout dos Leaderboards */
-.leaderboards-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
-    gap: 30px; /* Espaço entre as colunas */
-}
-
-/* Ajustes para o ranking dentro das colunas */
-.ranking-container .ranking-header h2 {
-    font-size: 1.3rem; /* Título um pouco menor para caber melhor */
-}
-
-.ranking-container #pontuacao-list,
-.ranking-container #carrascos-list {
-    max-height: 60vh; /* Aumenta a altura máxima da lista */
-    overflow-y: auto;
-    padding-right: 5px;
-}
 
 /* --- AJUSTES PARA CELULAR (RESPONSIVIDADE) --- */
 
 @media (max-width: 900px) {
-    /* Ajuste para o layout de duas colunas virar uma só */
     .leaderboards-wrapper {
-        grid-template-columns: 1fr; /* Uma coluna em telas menores */
-        gap: 40px; /* Aumenta o espaço quando empilhado */
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 }
 
 @media (max-width: 768px) {
     
     .arena-header {
-        flex-direction: column; /* Empilha o título e o botão verticalmente */
-        gap: 15px;             /* Adiciona um espaço entre eles */
+        flex-direction: column;
+        gap: 15px;
     }
 
     .main-container {
-        padding: 20px 15px; /* Reduz um pouco o espaçamento lateral no celular */
+        padding: 20px 15px;
     }
 
     .arena-header h1 {
-        font-size: 1.6rem;  /* Diminui um pouco o título principal para caber melhor */
+        font-size: 1.6rem;
     }
 
     .ranking-item {
-        padding: 10px; /* Otimiza o espaço interno dos itens do ranking */
+        padding: 10px;
     }
 
     .rank {
