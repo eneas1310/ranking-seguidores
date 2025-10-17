@@ -4,7 +4,6 @@ const path = require('path');
 const diretorioAtual = __dirname;
 const nomeArquivoSaida = 'hall_of_fame_stats.json';
 
-// ### ALTERADO ### Nova tabela de pontos "Competitivo"
 function getPontosPorPosicao(rank) {
     if (rank === 1) return 100;
     if (rank === 2) return 90;
@@ -21,47 +20,75 @@ function getPontosPorPosicao(rank) {
     return 0;
 }
 
-async function gerarRankingDePontos() {
-    console.log('Iniciando a compilação do ranking de pontos...');
+// Função auxiliar para calcular o ranking a partir de uma lista de arquivos
+function calcularRanking(arquivos) {
     const statsTemporada = {};
+    for (const arquivo of arquivos) {
+        const conteudo = fs.readFileSync(path.join(diretorioAtual, arquivo), 'utf-8');
+        const dadosDoDia = JSON.parse(conteudo);
+        for (const jogador of dadosDoDia) {
+            const username = jogador.username;
+            if (!statsTemporada[username]) {
+                statsTemporada[username] = {
+                    username: username,
+                    imageUrl: jogador.imageUrl,
+                    pontos: 0
+                };
+            }
+            statsTemporada[username].imageUrl = jogador.imageUrl;
+            statsTemporada[username].pontos += getPontosPorPosicao(jogador.rank);
+        }
+    }
+    const rankingArray = Object.values(statsTemporada).sort((a, b) => b.pontos - a.pontos);
+    
+    // Cria um mapa de username para rank para fácil acesso
+    const rankingMap = new Map();
+    rankingArray.forEach((player, index) => {
+        rankingMap.set(player.username, index + 1);
+    });
+    return { rankingArray, rankingMap };
+}
 
+
+async function gerarRankingComMudanca() {
+    console.log('Iniciando a compilação do ranking...');
     try {
         const arquivos = fs.readdirSync(diretorioAtual);
-        const arquivosDeRanking = arquivos.filter(file => file.startsWith('ranking_') && file.endsWith('.json'));
+        const arquivosDeRanking = arquivos.filter(file => file.startsWith('ranking_') && file.endsWith('.json')).sort();
 
         if (arquivosDeRanking.length === 0) {
-            throw new Error("Nenhum arquivo de ranking (ranking_*.json) foi encontrado.");
+            throw new Error("Nenhum arquivo de ranking encontrado.");
         }
-        console.log(`Encontrados ${arquivosDeRanking.length} arquivos de ranking...`);
 
-        for (const arquivo of arquivosDeRanking) {
-            const conteudo = fs.readFileSync(path.join(diretorioAtual, arquivo), 'utf-8');
-            const dadosDoDia = JSON.parse(conteudo);
+        // Calcula o ranking ATUAL (com todos os arquivos)
+        const { rankingArray: rankingAtual, rankingMap: rankingMapAtual } = calcularRanking(arquivosDeRanking);
+        
+        // Calcula o ranking ANTERIOR (com todos os arquivos MENOS o último)
+        const arquivosAnteriores = arquivosDeRanking.slice(0, -1);
+        const { rankingMap: rankingMapAnterior } = arquivosAnteriores.length > 0 ? calcularRanking(arquivosAnteriores) : { rankingMap: new Map() };
 
-            for (const jogador of dadosDoDia) {
-                const username = jogador.username;
-                if (!statsTemporada[username]) {
-                    statsTemporada[username] = {
-                        username: username,
-                        imageUrl: jogador.imageUrl,
-                        pontos: 0
-                    };
-                }
-                
-                statsTemporada[username].imageUrl = jogador.imageUrl;
-                statsTemporada[username].pontos += getPontosPorPosicao(jogador.rank);
+        // Adiciona a informação de mudança de rank para cada jogador
+        const rankingFinal = rankingAtual.map((player, index) => {
+            const rankAtual = index + 1;
+            const rankAnterior = rankingMapAnterior.get(player.username);
+            
+            let rankChange = 'new'; // Padrão para novos jogadores
+            if (rankAnterior) {
+                rankChange = rankAnterior - rankAtual; // Positivo = subiu, Negativo = desceu
             }
-        }
+            
+            return {
+                ...player,
+                rankChange: rankChange
+            };
+        });
 
-        const rankingArray = Object.values(statsTemporada)
-            .sort((a, b) => b.pontos - a.pontos);
-
-        fs.writeFileSync(nomeArquivoSaida, JSON.stringify(rankingArray, null, 2));
-        console.log(`✅ Sucesso! Ranking de pontos salvo em "${nomeArquivoSaida}".`);
+        fs.writeFileSync(nomeArquivoSaida, JSON.stringify(rankingFinal, null, 2));
+        console.log(`✅ Sucesso! Ranking salvo em "${nomeArquivoSaida}".`);
 
     } catch (error) {
         console.error('❌ Erro ao gerar as estatísticas:', error);
     }
 }
 
-gerarRankingDePontos();
+gerarRankingComMudanca();
