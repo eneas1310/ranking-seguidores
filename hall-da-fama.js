@@ -1,69 +1,55 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const rankingListContainer = document.getElementById('ranking-list');
-    const searchInput = document.getElementById('searchInput');
+    const pontuacaoContainer = document.getElementById('pontuacao-list');
+    const carrascosContainer = document.getElementById('carrascos-list');
 
-    // Função para renderizar a lista de jogadores
-    function renderRanking(players) {
-        rankingListContainer.innerHTML = ''; // Limpa a lista antes de renderizar
+    function renderRanking(container, players, tipo) {
+        container.innerHTML = ''; 
 
-        if (players.length === 0) {
-            rankingListContainer.innerHTML = '<p class="loading-message">Nenhum jogador encontrado.</p>';
+        if (!players || players.length === 0) {
+            container.innerHTML = `<p class="loading-message">Ainda não há dados para este ranking.</p>`;
             return;
         }
 
         players.forEach((player, index) => {
-            const rank = index + 1; // O rank é baseado na ordem da lista original
+            const rank = index + 1;
             const playerElement = document.createElement('div');
             playerElement.classList.add('ranking-item');
-            playerElement.dataset.username = player.username.toLowerCase(); // Guarda o username para a busca
 
             if (rank === 1) playerElement.classList.add('gold');
             if (rank === 2) playerElement.classList.add('silver');
             if (rank === 3) playerElement.classList.add('bronze');
 
+            // Define o que será exibido (pontos ou eliminações)
+            const statHtml = tipo === 'pontos'
+                ? `<span class="eliminations" style="color: #34d399;">⭐ ${player.pontos} Pontos</span>`
+                : `<span class="eliminations">💀 ${player.eliminacoes} eliminações</span>`;
+
             playerElement.innerHTML = `
-                <div class="rank">
-                    <span>${rank}º</span>
-                </div>
+                <div class="rank"><span>${rank}º</span></div>
                 <img src="${player.imageUrl}" alt="Foto de ${player.username}" class="profile-pic">
                 <div class="user-info">
                     <span class="username">@${player.username}</span>
-                    <span class="eliminations">💀 ${player.eliminacoes} eliminações</span>
+                    ${statHtml}
                 </div>
             `;
-            rankingListContainer.appendChild(playerElement);
+            container.appendChild(playerElement);
         });
     }
 
-    // Variável para guardar todos os jogadores carregados
-    let allPlayersData = [];
-
-    // Busca os dados do JSON
-    fetch('hall_of_fame_stats.json')
+    fetch('hall_of_fame_stats.json?' + new Date().getTime())
         .then(response => response.json())
         .then(data => {
-            allPlayersData = data;
-            // ### ALTERADO ### Remove o limite de 50 e renderiza TODOS os jogadores
-            renderRanking(allPlayersData); 
+            // Renderiza o ranking de Pontuação da Temporada
+            const pontuacaoTemporada = data.pontuacaoTemporada ? data.pontuacaoTemporada["2025-10"] : [];
+            renderRanking(pontuacaoContainer, pontuacaoTemporada, 'pontos');
+
+            // Renderiza o ranking de Maiores Carrascos
+            const maioresCarrascos = data.maioresCarrascos || [];
+            renderRanking(carrascosContainer, maioresCarrascos, 'carrascos');
         })
         .catch(error => {
             console.error(error);
-            rankingListContainer.innerHTML = `<p class="loading-message" style="color: #ff6b6b;">Não foi possível carregar o Hall da Fama.</p>`;
+            pontuacaoContainer.innerHTML = `<p class="loading-message" style="color: #ff6b6b;">Erro ao carregar os dados.</p>`;
+            carrascosContainer.innerHTML = `<p class="loading-message" style="color: #ff6b6b;">Erro ao carregar os dados.</p>`;
         });
-
-    // ### FUNCIONALIDADE DE BUSCA ADICIONADA ###
-    searchInput.addEventListener('input', () => {
-        const searchTerm = searchInput.value.toLowerCase().trim();
-        const todosOsItens = rankingListContainer.querySelectorAll('.ranking-item');
-
-        todosOsItens.forEach(item => {
-            const username = item.dataset.username;
-            // Se o username do item incluir o termo da busca, mostra; senão, esconde.
-            if (username.includes(searchTerm)) {
-                item.style.display = 'flex';
-            } else {
-                item.style.display = 'none';
-            }
-        });
-    });
 });

@@ -168,8 +168,67 @@ body {
     font-weight: bold;
 }
 
+/* --- ESTILOS PARA PÁGINA LENDAS DA ARENA (NOVOS) --- */
+
+/* Caixa de Regras */
+.rules-container {
+    background-color: #1a1a2e;
+    border: 2px solid #4a4e69;
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.rules-container h3 {
+    color: #facc15;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    color: #e0e0e0;
+}
+
+.rules-grid span {
+    background-color: #2c2c54;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+/* Layout dos Leaderboards */
+.leaderboards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
+    gap: 30px; /* Espaço entre as colunas */
+}
+
+/* Ajustes para o ranking dentro das colunas */
+.ranking-container .ranking-header h2 {
+    font-size: 1.3rem; /* Título um pouco menor para caber melhor */
+}
+
+.ranking-container #pontuacao-list,
+.ranking-container #carrascos-list {
+    max-height: 60vh; /* Aumenta a altura máxima da lista */
+    overflow-y: auto;
+    padding-right: 5px;
+}
 
 /* --- AJUSTES PARA CELULAR (RESPONSIVIDADE) --- */
+
+@media (max-width: 900px) {
+    /* Ajuste para o layout de duas colunas virar uma só */
+    .leaderboards-wrapper {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+        gap: 40px; /* Aumenta o espaço quando empilhado */
+    }
+}
 
 @media (max-width: 768px) {
     

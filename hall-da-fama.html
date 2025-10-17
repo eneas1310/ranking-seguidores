@@ -19,22 +19,43 @@
             </nav>
         </header>
 
-        <section class="ranking-container">
-            
-            <div class="ranking-header">
-                <h2>💀 MAIORES CARRASCOS 💀</h2>
-                <p>Os Mais Temidos: Ranking de quem mais eliminou na Arena a partir de 15/10/2025.</p>
+        <section class="rules-container">
+            <h3>📜 Regras de Pontuação (Temporada de Outubro)</h3>
+            <div class="rules-grid">
+                <span><strong>1º:</strong> 500 Pts</span>
+                <span><strong>2º:</strong> 400 Pts</span>
+                <span><strong>3º:</strong> 350 Pts</span>
+                <span><strong>4º-10º:</strong> 250 Pts</span>
+                <span><strong>11º-50º:</strong> 150 Pts</span>
+                <span><strong>51º-100º:</strong> 100 Pts</span>
+                <span><strong>101º-250º:</strong> 75 Pts</span>
+                <span><strong>251º-500º:</strong> 50 Pts</span>
+                <span><strong>501º-1000º:</strong> 25 Pts</span>
+                <span><strong>1001º-2000º:</strong> 10 Pts</span>
             </div>
-
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Pesquise seu @username...">
-            </div>
-            
-            <div id="ranking-list">
-                <p class="loading-message">Carregando Lendas da Arena...</p>
-            </div>
-
         </section>
+
+        <div class="leaderboards-wrapper">
+            <section class="ranking-container">
+                <div class="ranking-header">
+                    <h2>⭐ Pontuação do Mês de Outubro ⭐</h2>
+                    <p>Ranking de pontos acumulados na temporada.</p>
+                </div>
+                <div id="pontuacao-list">
+                    <p class="loading-message">Carregando ranking de pontos...</p>
+                </div>
+            </section>
+
+            <section class="ranking-container">
+                <div class="ranking-header">
+                    <h2>💀 Maiores Carrascos (All-Time) 💀</h2>
+                    <p>Ranking geral de eliminações.</p>
+                </div>
+                <div id="carrascos-list">
+                    <p class="loading-message">Carregando ranking de carrascos...</p>
+                </div>
+            </section>
+        </div>
     </div>
 
     <script src="hall-da-fama.js"></script>
