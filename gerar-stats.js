@@ -10,7 +10,6 @@ if (!fs.existsSync(statsDir)) {
 }
 
 // --- Lógica Principal ---
-
 async function processarTodosOsRankings() {
     console.log('Iniciando processamento de todos os dados...');
     try {
@@ -44,7 +43,7 @@ async function processarTodosOsRankings() {
                         maioresCarrascos: {}
                     };
                 }
-                
+
                 masterStats[username].imageUrl = jogador.imageUrl;
 
                 masterStats[username].historicoDeBatalhas.push({
@@ -54,8 +53,7 @@ async function processarTodosOsRankings() {
                     eliminatedBy: jogador.eliminatedBy
                 });
 
-                // ### CORREÇÃO AQUI ###
-                // Adicionamos uma verificação para garantir que a lista de vítimas existe antes de tentar lê-la.
+                // Garantir que eliminatedList existe antes de usar
                 if (jogador.eliminatedList && Array.isArray(jogador.eliminatedList)) {
                     jogador.eliminatedList.forEach(vitima => {
                         masterStats[username].maioresVitimas[vitima] = (masterStats[username].maioresVitimas[vitima] || 0) + 1;
@@ -69,16 +67,16 @@ async function processarTodosOsRankings() {
             }
         }
 
-        // 2. Processa os dados agregados para criar os arquivos de perfil
+        // 2. Gera e salva os perfis individuais
         for (const username in masterStats) {
             const stats = masterStats[username];
 
             const totalEliminacoes = stats.historicoDeBatalhas.reduce((sum, b) => sum + b.eliminatedCount, 0);
             const totalParticipacoes = stats.historicoDeBatalhas.length;
             const somaDosRanks = stats.historicoDeBatalhas.reduce((sum, b) => sum + b.rank, 0);
-            
-            let melhorBatalha = stats.historicoDeBatalhas.reduce((best, current) => current.rank < best.rank ? current : best);
-            let piorBatalha = stats.historicoDeBatalhas.reduce((worst, current) => current.rank > worst.rank ? current : worst);
+
+            const melhorBatalha = stats.historicoDeBatalhas.reduce((best, current) => current.rank < best.rank ? current : best);
+            const piorBatalha = stats.historicoDeBatalhas.reduce((worst, current) => current.rank > worst.rank ? current : worst);
 
             const perfilJogador = {
                 username: stats.username,
@@ -97,10 +95,33 @@ async function processarTodosOsRankings() {
             fs.writeFileSync(path.join(statsDir, `${username}.json`), JSON.stringify(perfilJogador, null, 2));
         }
 
-        console.log(`✅ Sucesso! Perfis individuais salvos na pasta "${statsDir}".`);
+        console.log(`✅ Perfis individuais salvos na pasta "${statsDir}".`);
+
+        // 3. Gera o hall_of_fame_stats.json com resumo geral
+        const hallOfFameArray = Object.values(masterStats).map(stats => {
+            const totalEliminacoes = stats.historicoDeBatalhas.reduce((sum, b) => sum + b.eliminatedCount, 0);
+            const totalParticipacoes = stats.historicoDeBatalhas.length;
+            const somaDosRanks = stats.historicoDeBatalhas.reduce((sum, b) => sum + b.rank, 0);
+
+            return {
+                username: stats.username,
+                imageUrl: stats.imageUrl,
+                totalParticipacoes: totalParticipacoes,
+                totalEliminacoes: totalEliminacoes,
+                mediaRank: (somaDosRanks / totalParticipacoes).toFixed(2),
+                mediaEliminacoes: (totalEliminacoes / totalParticipacoes).toFixed(2)
+            };
+        });
+
+        fs.writeFileSync(
+            path.join(diretorioAtual, 'hall_of_fame_stats.json'),
+            JSON.stringify(hallOfFameArray, null, 2)
+        );
+
+        console.log(`🏆 Arquivo "hall_of_fame_stats.json" atualizado com sucesso!`);
 
     } catch (error) {
-        console.error('❌ Erro ao gerar os perfis individuais:', error);
+        console.error('❌ Erro ao gerar os perfis e o hall da fama:', error);
     }
 }
 
