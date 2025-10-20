@@ -1,9 +1,9 @@
 {
   "username": "felipedosrs",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZTAxMDAwMGYwMDEwMDAwZmMwMTAwMDAwNzAyMDAwMDEyMDIwMDAwMWUwMjAwMDAyYTAyMDAwMDgzMDIwMDAwOGUwMjAwMDA5OTAyMDAwMGE3MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACkAAQEBAAAAAAAAAAAAAAAAAAAHARABAQAAAAAAAAAAAAAAAAAAYID/2gAMAwEAAgADAAAAAa0M0AAAAAAABJa1JStAAAAAAAAASWtSUrQAAAAAAAAElrUlK0AAAAAAAABJa1JStAAAAAAAAASWtSUrQAAAAAAAAElrUlK0AAAAAAAABJa1JStAAAAAAAAASWtSUrQAAAAAAAAElrUlK0korSSitJKK0korSSitJKK0korSSitJKK1JQ//aAAgBAQABBQKaf//aAAgBAwABPwFJ/9oACAECAAE/AUn/2gAIAQEABj8Cmn//2gAIAQEAAT8hmn//2gAMAwEAAgADAAAAEPffffffffafffffffffafffffffffafffffffffafffffffffafffffffffafffffffffafffffffffafffffffffacccccccccYf/aAAgBAwABPxBJ/9oACAECAAE/EEn/2gAIAQEAAT8Qmn//2Q==",
-  "totalParticipacoes": 6,
+  "totalParticipacoes": 7,
   "totalEliminacoes": null,
-  "mediaRank": "1828.33",
+  "mediaRank": "1971.86",
   "mediaEliminacoes": "NaN",
   "melhorRank": {
     "rank": 630,
@@ -51,6 +51,10 @@
     [
       "vinicius_sl29",
       1
+    ],
+    [
+      "Desconhecido",
+      1
     ]
   ],
   "historicoDeBatalhas": [
@@ -85,6 +89,11 @@
       "rank": 2308,
       "eliminatedCount": 3,
       "eliminatedBy": "vinicius_sl29"
+    },
+    {
+      "date": "2025-10-19",
+      "rank": 2833,
+      "eliminatedBy": "Desconhecido"
     }
   ]
 }

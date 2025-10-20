@@ -1,13 +1,13 @@
 {
   "username": "tonyvianna_1",
   "imageUrl": "data:image/jpeg;base64,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",
-  "totalParticipacoes": 6,
+  "totalParticipacoes": 7,
   "totalEliminacoes": null,
-  "mediaRank": "2382.67",
+  "mediaRank": "2095.00",
   "mediaEliminacoes": "NaN",
   "melhorRank": {
-    "rank": 421,
-    "date": "2025-10-14"
+    "rank": 369,
+    "date": "2025-10-19"
   },
   "piorRank": {
     "rank": 4206,
@@ -33,6 +33,10 @@
     ],
     [
       "solanosimm",
+      1
+    ],
+    [
+      "Desconhecido",
       1
     ]
   ],
@@ -68,6 +72,11 @@
       "rank": 4035,
       "eliminatedCount": 0,
       "eliminatedBy": "solanosimm"
+    },
+    {
+      "date": "2025-10-19",
+      "rank": 369,
+      "eliminatedBy": "Desconhecido"
     }
   ]
 }

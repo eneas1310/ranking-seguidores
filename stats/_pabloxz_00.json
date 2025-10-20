@@ -1,9 +1,9 @@
 {
   "username": "_pabloxz_00",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2ODAxMDAwMDBhMDIwMDAwMTYwMjAwMDAyMjAyMDAwMDJlMDIwMDAwM2EwMjAwMDA0NjAyMDAwMDlmMDIwMDAwYWIwMjAwMDBiNzAyMDAwMGQ2MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADMAAQEBAQAAAAAAAAAAAAAAAAAHAQIQAAECBwEAAAAAAAAAAAAAAAERYAAQIDBAUIBw/9oADAMBAAIAAwAAAAGNDoAAAAAAAAssaspGgAAAAAAAALLGrKRoAAAAAAAACyxqy4jQ0AAAAAAAAssaspG8AAAAAAAABZY1ZcRoaANGAANwbgAAWWNWUjQAGgzRjcDRhpgANskbshGgbmgzQAABm4AAbZI1ZSNmGs0ZozQAAAAwCyxqykaWURrbII1tkEbWQRtZBG1kEbWQRtZBGllEasof/9oACAEBAAEFAuaf/9oACAEDAAE/AXJ//9oACAECAAE/AXJ//9oACAEBAAY/Auaf/9oACAEBAAE/Ieaf/9oADAMBAAIAAwAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAQwAAQgAIASBzyCwwAgByRSzRhgQBzBjwxxyxwgBxSTzwgjgBCCDLLJICAD/2gAIAQMAAT8Qcn//2gAIAQIAAT8Qcn//2gAIAQEAAT8Q8YO8GOmMNcs1kZLWlC4JqELBv//Z",
-  "totalParticipacoes": 6,
+  "totalParticipacoes": 7,
   "totalEliminacoes": null,
-  "mediaRank": "3107.17",
+  "mediaRank": "3233.86",
   "mediaEliminacoes": "NaN",
   "melhorRank": {
     "rank": 2090,
@@ -55,6 +55,10 @@
     [
       "tiaguiton7",
       1
+    ],
+    [
+      "Desconhecido",
+      1
     ]
   ],
   "historicoDeBatalhas": [
@@ -89,6 +93,11 @@
       "rank": 3389,
       "eliminatedCount": 1,
       "eliminatedBy": "tiaguiton7"
+    },
+    {
+      "date": "2025-10-19",
+      "rank": 3994,
+      "eliminatedBy": "Desconhecido"
     }
   ]
 }

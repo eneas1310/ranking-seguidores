@@ -1,9 +1,9 @@
 {
   "username": "henri.daroit",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MzAxMDAwMDE0MDIwMDAwMjAwMjAwMDAyYjAyMDAwMDM2MDIwMDAwNDIwMjAwMDA0ZTAyMDAwMGI0MDIwMDAwYmYwMjAwMDBjYTAyMDAwMGRjMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAC4AAQEBAAAAAAAAAAAAAAAAAAABBxAAAgIDAAAAAAAAAAAAAAAAYIAAEQEQQP/aAAwDAQACAAMAAAABxsWghLCFWBUFQUAK2TG9kjGxYhFgAABQRUtANkxvZJcbFkAEAAAAALLTZMb2SXG5ZYEAAAAABSyjZMb2QxsgAEAAAAALBdkxrZTGxUAEAABQQAstNkxvZIxsUlgAEAABQFA2TG9kXGwAgEWQFACxKUA2TG9klxtZQIAAAAAACtkxzYzHGxjHJsgxtshMbbIMbbIMbbIXG2yExtsgxtshcc2Mj//aAAgBAQABBQJaf//aAAgBAwABPwEk/9oACAECAAE/AST/2gAIAQEABj8CWn//2gAIAQEAAT8hWn//2gAMAwEAAgADAAAAEEAS3XTTQYCgX3/9/fyQYgff9/8A/wD/AKQlf/8A/wD/AP8A2kEW3/8A+3//ALywff8A/wD97/pDBV9//wD/AH0EAAEHf33uEErUEEEEEEEACJCEEEAEFAP/2gAIAQMAAT8QJP/aAAgBAgABPxAk/9oACAEBAAE/EJaqY3Urg//Z",
-  "totalParticipacoes": 6,
+  "totalParticipacoes": 7,
   "totalEliminacoes": null,
-  "mediaRank": "2421.33",
+  "mediaRank": "2332.29",
   "mediaEliminacoes": "NaN",
   "melhorRank": {
     "rank": 1367,
@@ -39,6 +39,10 @@
     [
       "laarysb24_",
       1
+    ],
+    [
+      "Desconhecido",
+      1
     ]
   ],
   "historicoDeBatalhas": [
@@ -73,6 +77,11 @@
       "rank": 3700,
       "eliminatedCount": 0,
       "eliminatedBy": "laarysb24_"
+    },
+    {
+      "date": "2025-10-19",
+      "rank": 1798,
+      "eliminatedBy": "Desconhecido"
     }
   ]
 }

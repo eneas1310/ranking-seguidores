@@ -1,22 +1,26 @@
 {
   "username": "silva_chw",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjCziMLOIws4jCziMLOIws4jCziMLOIws4jFnD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 1,
-  "totalEliminacoes": 0,
-  "mediaRank": "1456.00",
-  "mediaEliminacoes": "0.00",
+  "totalParticipacoes": 2,
+  "totalEliminacoes": null,
+  "mediaRank": "2750.50",
+  "mediaEliminacoes": "NaN",
   "melhorRank": {
     "rank": 1456,
     "date": "2025-10-18"
   },
   "piorRank": {
-    "rank": 1456,
-    "date": "2025-10-18"
+    "rank": 4045,
+    "date": "2025-10-19"
   },
   "maioresVitimas": [],
   "maioresCarrascos": [
     [
       "marcokgbressane",
+      1
+    ],
+    [
+      "Desconhecido",
       1
     ]
   ],
@@ -26,6 +30,11 @@
       "rank": 1456,
       "eliminatedCount": 0,
       "eliminatedBy": "marcokgbressane"
+    },
+    {
+      "date": "2025-10-19",
+      "rank": 4045,
+      "eliminatedBy": "Desconhecido"
     }
   ]
 }

@@ -1,17 +1,17 @@
 {
   "username": "jovisafe",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE3ODAxMDAwMDE5MDIwMDAwNDMwMjAwMDA1MzAyMDAwMDY2MDIwMDAwOWMwMjAwMDBkYjAyMDAwMDM0MDMwMDAwNDYwMzAwMDA1ODAzMDAwMDljMDMwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAEMAAQEAAwEBAAAAAAAAAAAAAAAHAQIDCAQQAAIABAQEBQUAAAAAAAAAAAERAgMhMQBAUHAEElFhBTBBcYEikbHR8P/aAAwDAQACAAMAAAABjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAZPs19E576eamccNwAAAFnjFnIwABnAru0gddQ5bAAAALPGLORgAAAAAAAACzxizkYAAAAAAAAAs8Ys5GAAAAAAAAALPGLORhZxGFnEYWcRhZxGFnEYWcRhZxGFnEYWcRizh/9oACAEBAAEFAtnpcmOZiZKil5KVKEiDiuFE6VkeD8VhMPG+LQCDaP8A/9oACAEDAAE/AdL5vK5dP//aAAgBAgABPwHSzJQb8ozilp//2gAIAQEABj8C2e+iExeweFFCYT3CyQlwUQr+8RQmtGD0PXJATDyxgJmxxFBKPNFHQmwG0n//2gAIAQEAAT8h2eOkFxdifbB/sob8siMIMQZVJIr3l4rVgfRIae/r2yQclySwECUCj1whzEQQSEU6kqgptJ//2gAMAwEAAgADAAAAEPPPPPPPPPKPPPPPPPPPKPPPPPPPPPKPPPPPPPPPKPPPBNPPPPKPPLLPPPPPKPPPPPPPPPKPPPPPPPPPKPPPPPPPPPKMMMMMMMMMIP/aAAgBAwABPxDS715St6f/AP/aAAgBAgABPxDS+oHTyidPP//aAAgBAQABPxDZ63gh8wSmG1qxAR2QP4yIMgdcEptjXofxGE+ENFT7F6rLMskLnFUmwD0+oVu8dmIpail2CC+0n//Z",
-  "totalParticipacoes": 2,
-  "totalEliminacoes": 3,
-  "mediaRank": "1166.50",
-  "mediaEliminacoes": "1.50",
+  "totalParticipacoes": 3,
+  "totalEliminacoes": null,
+  "mediaRank": "1645.00",
+  "mediaEliminacoes": "NaN",
   "melhorRank": {
     "rank": 1154,
     "date": "2025-10-17"
   },
   "piorRank": {
-    "rank": 1179,
-    "date": "2025-10-18"
+    "rank": 2602,
+    "date": "2025-10-19"
   },
   "maioresVitimas": [
     [
@@ -35,6 +35,10 @@
     [
       "janaina_barbosa18",
       1
+    ],
+    [
+      "Desconhecido",
+      1
     ]
   ],
   "historicoDeBatalhas": [
@@ -49,6 +53,11 @@
       "rank": 1179,
       "eliminatedCount": 2,
       "eliminatedBy": "janaina_barbosa18"
+    },
+    {
+      "date": "2025-10-19",
+      "rank": 2602,
+      "eliminatedBy": "Desconhecido"
     }
   ]
 }
