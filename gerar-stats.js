@@ -4,6 +4,7 @@ const path = require('path');
 const diretorioAtual = __dirname;
 const nomeArquivoSaida = 'hall_of_fame_stats.json';
 
+// ... (a função getPontosPorPosicao continua a mesma)
 function getPontosPorPosicao(rank) {
     if (rank === 1) return 100;
     if (rank === 2) return 90;
@@ -20,28 +21,42 @@ function getPontosPorPosicao(rank) {
     return 0;
 }
 
-// Função auxiliar para calcular o ranking a partir de uma lista de arquivos
+
 function calcularRanking(arquivos) {
     const statsTemporada = {};
     for (const arquivo of arquivos) {
+        // NOVO: Extrair a data do nome do arquivo
+        const dateMatch = arquivo.match(/ranking_(\d{4}-\d{2}-\d{2})\.json/);
+        if (!dateMatch) continue; // Pula arquivos que não correspondem ao padrão
+        const dataDaRodada = dateMatch[1];
+
         const conteudo = fs.readFileSync(path.join(diretorioAtual, arquivo), 'utf-8');
         const dadosDoDia = JSON.parse(conteudo);
+
         for (const jogador of dadosDoDia) {
             const username = jogador.username;
             if (!statsTemporada[username]) {
                 statsTemporada[username] = {
                     username: username,
                     imageUrl: jogador.imageUrl,
-                    pontos: 0
+                    pontos: 0,
+                    // NOVO: Inicializa os campos de melhor posição
+                    bestRank: Infinity,
+                    bestRankDate: ''
                 };
             }
             statsTemporada[username].imageUrl = jogador.imageUrl;
             statsTemporada[username].pontos += getPontosPorPosicao(jogador.rank);
+
+            // NOVO: Verifica e atualiza a melhor posição
+            if (jogador.rank < statsTemporada[username].bestRank) {
+                statsTemporada[username].bestRank = jogador.rank;
+                statsTemporada[username].bestRankDate = dataDaRodada;
+            }
         }
     }
     const rankingArray = Object.values(statsTemporada).sort((a, b) => b.pontos - a.pontos);
     
-    // Cria um mapa de username para rank para fácil acesso
     const rankingMap = new Map();
     rankingArray.forEach((player, index) => {
         rankingMap.set(player.username, index + 1);
@@ -49,7 +64,7 @@ function calcularRanking(arquivos) {
     return { rankingArray, rankingMap };
 }
 
-
+// ... (a função gerarRankingComMudanca continua a mesma, pois já usa calcularRanking)
 async function gerarRankingComMudanca() {
     console.log('Iniciando a compilação do ranking...');
     try {
@@ -60,21 +75,18 @@ async function gerarRankingComMudanca() {
             throw new Error("Nenhum arquivo de ranking encontrado.");
         }
 
-        // Calcula o ranking ATUAL (com todos os arquivos)
         const { rankingArray: rankingAtual, rankingMap: rankingMapAtual } = calcularRanking(arquivosDeRanking);
         
-        // Calcula o ranking ANTERIOR (com todos os arquivos MENOS o último)
         const arquivosAnteriores = arquivosDeRanking.slice(0, -1);
         const { rankingMap: rankingMapAnterior } = arquivosAnteriores.length > 0 ? calcularRanking(arquivosAnteriores) : { rankingMap: new Map() };
 
-        // Adiciona a informação de mudança de rank para cada jogador
         const rankingFinal = rankingAtual.map((player, index) => {
             const rankAtual = index + 1;
             const rankAnterior = rankingMapAnterior.get(player.username);
             
-            let rankChange = 'new'; // Padrão para novos jogadores
+            let rankChange = 'new';
             if (rankAnterior) {
-                rankChange = rankAnterior - rankAtual; // Positivo = subiu, Negativo = desceu
+                rankChange = rankAnterior - rankAtual;
             }
             
             return {

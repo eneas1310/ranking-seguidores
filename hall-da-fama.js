@@ -1,19 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
     const pontuacaoContainer = document.getElementById('pontuacao-list');
     const searchInput = document.getElementById('searchInput');
-    let allPlayersData = []; 
+    let allPlayersData = [];
 
     function renderRanking(playersToRender) {
-        pontuacaoContainer.innerHTML = ''; 
+        pontuacaoContainer.innerHTML = '';
 
         if (!playersToRender || playersToRender.length === 0) {
             pontuacaoContainer.innerHTML = `<p class="loading-message">Nenhum jogador encontrado.</p>`;
             return;
         }
 
-        playersToRender.forEach((player) => { // O 'index' foi removido daqui
-            // ### CORRIGIDO ### Usa a posição real que foi guardada, em vez do índice da lista filtrada
-            const rank = player.realRank; 
+        playersToRender.forEach((player) => {
+            const rank = player.realRank;
             const playerElement = document.createElement('div');
             playerElement.classList.add('ranking-item');
 
@@ -34,12 +33,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const statHtml = `<span class="eliminations" style="color: #34d399;">⭐ ${player.pontos} Pontos</span>`;
 
+            // ### NOVO: Lógica para formatar a data da melhor posição ###
+            // Verifica se os dados existem antes de tentar formatar
+            let bestRankHtml = '';
+            if (player.bestRank && player.bestRankDate) {
+                const [ano, mes, dia] = player.bestRankDate.split('-');
+                const dataFormatada = `${dia}/${mes}/${ano}`;
+                bestRankHtml = `
+                    <small class="best-rank">
+                        🏆 Melhor Posição: <strong>${player.bestRank}º lugar</strong> (${dataFormatada})
+                    </small>
+                `;
+            }
+
             playerElement.innerHTML = `
                 <div class="rank"><span>${rank}º</span></div>
                 <img src="${player.imageUrl}" alt="Foto de ${player.username}" class="profile-pic">
                 <div class="user-info">
                     <span class="username">@${player.username}</span>
                     ${statHtml}
+                    ${bestRankHtml}
                 </div>
                 ${rankChangeHtml}
             `;
@@ -50,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('hall_of_fame_stats.json?' + new Date().getTime())
         .then(response => response.json())
         .then(data => {
-            // ### CORRIGIDO ### Adiciona a propriedade 'realRank' a cada jogador assim que os dados são carregados
             data.forEach((player, index) => {
                 player.realRank = index + 1;
             });

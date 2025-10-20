@@ -272,3 +272,16 @@ body {
        width: 100%; /* Ocupa a largura toda na quebra */
     }
 }
+
+/* ### NOVO CÓDIGO ADICIONADO ### */
+/* Estilo para a nova informação de "Melhor Posição" */
+.best-rank {
+    font-size: 0.8rem;
+    color: #bdc3c7; /* Cinza claro */
+    margin-top: 4px;
+    opacity: 0.9;
+}
+
+.best-rank strong {
+    color: #f1c40f; /* Amarelo/Dourado */
+}
