@@ -31,7 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 rankChangeHtml = `<span class="rank-change stable">–</span>`;
             }
 
-            const statHtml = `<span class="eliminations" style="color: #34d399;">⭐ ${player.pontos} Pontos</span>`;
+            // ### LINHA CORRIGIDA ABAIXO ###
+            // Trocamos 'player.pontos' por 'player.totalEliminacoes'
+            const statHtml = `<span class="eliminations" style="color: #34d399;">⭐ ${player.totalEliminacoes} Pontos</span>`;
 
             let bestRankHtml = '';
             if (player.bestRank && player.bestRankDate) {
@@ -44,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             }
 
-            // ### ALTERAÇÃO AQUI: Adicionado <a> envolvendo o nome do usuário ###
             playerElement.innerHTML = `
                 <div class="rank"><span>${rank}º</span></div>
                 <img src="${player.imageUrl}" alt="Foto de ${player.username}" class="profile-pic">
@@ -64,10 +65,15 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('hall_of_fame_stats.json?' + new Date().getTime())
         .then(response => response.json())
         .then(data => {
-            data.forEach((player, index) => {
+            // Ordenar os dados por 'totalEliminacoes' em ordem decrescente
+            const sortedData = data.sort((a, b) => b.totalEliminacoes - a.totalEliminacoes);
+            
+            // Adicionar o 'realRank' baseado na ordem
+            sortedData.forEach((player, index) => {
                 player.realRank = index + 1;
             });
-            allPlayersData = data;
+
+            allPlayersData = sortedData;
             renderRanking(allPlayersData);
         })
         .catch(error => {
