@@ -1,0 +1,90 @@
+{
+  "username": "felipedosrs",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZTAxMDAwMGYwMDEwMDAwZmMwMTAwMDAwNzAyMDAwMDEyMDIwMDAwMWUwMjAwMDAyYTAyMDAwMDgzMDIwMDAwOGUwMjAwMDA5OTAyMDAwMGE3MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACkAAQEBAAAAAAAAAAAAAAAAAAAHARABAQAAAAAAAAAAAAAAAAAAYID/2gAMAwEAAgADAAAAAa0M0AAAAAAABJa1JStAAAAAAAAASWtSUrQAAAAAAAAElrUlK0AAAAAAAABJa1JStAAAAAAAAASWtSUrQAAAAAAAAElrUlK0AAAAAAAABJa1JStAAAAAAAAASWtSUrQAAAAAAAAElrUlK0korSSitJKK0korSSitJKK0korSSitJKK1JQ//aAAgBAQABBQKaf//aAAgBAwABPwFJ/9oACAECAAE/AUn/2gAIAQEABj8Cmn//2gAIAQEAAT8hmn//2gAMAwEAAgADAAAAEPffffffffafffffffffafffffffffafffffffffafffffffffafffffffffafffffffffafffffffffafffffffffacccccccccYf/aAAgBAwABPxBJ/9oACAECAAE/EEn/2gAIAQEAAT8Qmn//2Q==",
+  "totalParticipacoes": 6,
+  "totalEliminacoes": null,
+  "mediaRank": "1828.33",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 630,
+    "date": "2025-10-14"
+  },
+  "piorRank": {
+    "rank": 4183,
+    "date": "2025-10-15"
+  },
+  "maioresVitimas": [
+    [
+      "iagopediatra",
+      1
+    ],
+    [
+      "___joaovicto__",
+      1
+    ],
+    [
+      "lucasshelbys",
+      1
+    ],
+    [
+      "manumachadokempa",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      2
+    ],
+    [
+      "ianbaroli",
+      1
+    ],
+    [
+      "dav_zlk7",
+      1
+    ],
+    [
+      "vt_ygrm9",
+      1
+    ],
+    [
+      "vinicius_sl29",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-13",
+      "rank": 1622
+    },
+    {
+      "date": "2025-10-14",
+      "rank": 630
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 4183,
+      "eliminatedCount": 0,
+      "eliminatedBy": "ianbaroli"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 881,
+      "eliminatedCount": 1,
+      "eliminatedBy": "dav_zlk7"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 1346,
+      "eliminatedCount": 0,
+      "eliminatedBy": "vt_ygrm9"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 2308,
+      "eliminatedCount": 3,
+      "eliminatedBy": "vinicius_sl29"
+    }
+  ]
+}

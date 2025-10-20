@@ -33,8 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const statHtml = `<span class="eliminations" style="color: #34d399;">⭐ ${player.pontos} Pontos</span>`;
 
-            // ### NOVO: Lógica para formatar a data da melhor posição ###
-            // Verifica se os dados existem antes de tentar formatar
             let bestRankHtml = '';
             if (player.bestRank && player.bestRankDate) {
                 const [ano, mes, dia] = player.bestRankDate.split('-');
@@ -46,11 +44,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             }
 
+            // ### ALTERAÇÃO AQUI: Adicionado <a> envolvendo o nome do usuário ###
             playerElement.innerHTML = `
                 <div class="rank"><span>${rank}º</span></div>
                 <img src="${player.imageUrl}" alt="Foto de ${player.username}" class="profile-pic">
                 <div class="user-info">
-                    <span class="username">@${player.username}</span>
+                    <a href="perfil.html?user=${player.username}" class="username-link">
+                        <span class="username">@${player.username}</span>
+                    </a>
                     ${statHtml}
                     ${bestRankHtml}
                 </div>

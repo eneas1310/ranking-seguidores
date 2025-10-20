@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Jogador - Arena do Insta</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <header class="arena-header">
+            <h1 id="profile-title">Carregando Perfil...</h1>
+            <nav>
+                <a href="index.html" class="nav-button">Ranking Diário</a>
+                <a href="hall-da-fama.html" class="nav-button">Hall da Fama</a>
+            </nav>
+        </header>
+
+        <section id="profile-content" style="display: none;">
+            <div class="stats-summary-grid">
+                <div class="stat-card">
+                    <h4>Participações</h4>
+                    <p id="total-participacoes"></p>
+                </div>
+                <div class="stat-card">
+                    <h4>Total de Kills</h4>
+                    <p id="total-eliminacoes"></p>
+                </div>
+                <div class="stat-card">
+                    <h4>Média de Posição</h4>
+                    <p id="media-rank"></p>
+                </div>
+                <div class="stat-card">
+                    <h4>Melhor Posição</h4>
+                    <p id="melhor-rank"></p>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h3>Histórico de Posições</h3>
+                <canvas id="historyChart"></canvas>
+            </div>
+
+            <div class="rivals-grid">
+                <div class="rivals-list">
+                    <h3>Maiores Vítimas</h3>
+                    <ul id="maiores-vitimas"></ul>
+                </div>
+                <div class="rivals-list">
+                    <h3>Maiores Carrascos</h3>
+                    <ul id="maiores-carrascos"></ul>
+                </div>
+            </div>
+        </section>
+
+        <div id="error-message" class="loading-message" style="display: none;"></div>
+    </div>
+    <script src="perfil.js"></script>
+</body>
+</html>

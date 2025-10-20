@@ -1,0 +1,106 @@
+{
+  "username": "maryaaah_sx",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjKzCMrMIyswjKzCMrMIyswjKzCMrMIyswjNmD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzhTzzzyjzzzjxzzzyjzzzzTzjzyjzxjizzzTyjzzzTzDzzyjzyTDzyxzyjzzzyzjjzyDyzzzSzzzwjzzzTyzxzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
+  "totalParticipacoes": 6,
+  "totalEliminacoes": null,
+  "mediaRank": "1805.17",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 46,
+    "date": "2025-10-13"
+  },
+  "piorRank": {
+    "rank": 3575,
+    "date": "2025-10-16"
+  },
+  "maioresVitimas": [
+    [
+      "lucas.comenale55",
+      1
+    ],
+    [
+      "leo_bremstrop_",
+      1
+    ],
+    [
+      "vanessabritonascimento",
+      1
+    ],
+    [
+      "wagner_saviio",
+      1
+    ],
+    [
+      "sittagxz",
+      1
+    ],
+    [
+      "hello.pontes",
+      1
+    ],
+    [
+      "braia2k25",
+      1
+    ],
+    [
+      "mart.xdd7",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      2
+    ],
+    [
+      "machado_fernando91",
+      1
+    ],
+    [
+      "phoenix.proo",
+      1
+    ],
+    [
+      "braia2k25",
+      1
+    ],
+    [
+      "adegamacallandf",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-13",
+      "rank": 46
+    },
+    {
+      "date": "2025-10-14",
+      "rank": 620
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 2306,
+      "eliminatedCount": 3,
+      "eliminatedBy": "machado_fernando91"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 3575,
+      "eliminatedCount": 1,
+      "eliminatedBy": "phoenix.proo"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 935,
+      "eliminatedCount": 3,
+      "eliminatedBy": "braia2k25"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 3349,
+      "eliminatedCount": 1,
+      "eliminatedBy": "adegamacallandf"
+    }
+  ]
+}

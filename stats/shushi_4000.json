@@ -1,0 +1,94 @@
+{
+  "username": "shushi_4000",
+  "imageUrl": "data:image/jpeg;base64,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",
+  "totalParticipacoes": 5,
+  "totalEliminacoes": null,
+  "mediaRank": "2071.20",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 1172,
+    "date": "2025-10-17"
+  },
+  "piorRank": {
+    "rank": 3317,
+    "date": "2025-10-14"
+  },
+  "maioresVitimas": [
+    [
+      "desativadalplplplp",
+      1
+    ],
+    [
+      "samuelmelo2013",
+      1
+    ],
+    [
+      "queroaparecernovideo",
+      1
+    ],
+    [
+      "joaovitor__mm",
+      1
+    ],
+    [
+      "muriloft_15",
+      1
+    ],
+    [
+      "thierry11henry",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      1
+    ],
+    [
+      "queroaparecernovideo",
+      1
+    ],
+    [
+      "pedroabreu._",
+      1
+    ],
+    [
+      "rau.diney",
+      1
+    ],
+    [
+      "miguelbarbosa_srs",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-14",
+      "rank": 3317
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 1368,
+      "eliminatedCount": 3,
+      "eliminatedBy": "queroaparecernovideo"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 3056,
+      "eliminatedCount": 0,
+      "eliminatedBy": "pedroabreu._"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 1172,
+      "eliminatedCount": 3,
+      "eliminatedBy": "rau.diney"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 1443,
+      "eliminatedCount": 0,
+      "eliminatedBy": "miguelbarbosa_srs"
+    }
+  ]
+}

@@ -179,12 +179,12 @@ body {
         <span class="text-lg font-bold mr-3 text-gray-300">Ranking do Dia:</span>
         <select id="dateSelector" class="bg-[#1a1a2e] border-2 border-[#4a4e69] text-[#a7ff83] p-2 rounded-lg cursor-pointer font-semibold">
             <option value="2025-10-19" selected>19/10/2025</option>
-	    <option value="2025-10-18">18/10/2025</option>
-	    <option value="2025-10-17">17/10/2025</option>
+        <option value="2025-10-18">18/10/2025</option>
+        <option value="2025-10-17">17/10/2025</option>
             <option value="2025-10-16">16/10/2025</option>
             <option value="2025-10-15">15/10/2025</option>
             <option value="2025-10-14">14/10/2025</option>
- 	    <option value="2025-10-13">13/10/2025</option>
+           <option value="2025-10-13">13/10/2025</option>
         </select>
     </div>
 
@@ -309,11 +309,14 @@ function displayRanking() {
         const div = document.createElement('div');
         div.className = 'ranking-item';
 
+        // ### ALTERAÇÃO AQUI: Adicionado <a> envolvendo o nome de usuário ###
         div.innerHTML = `
             <span class="rank-number">${item.rank}º</span>
             <img src="${item.imageUrl}" alt="${item.username}">
             <div class="info-wrapper">
-                <span class="username">@${item.username}</span>
+                <a href="perfil.html?user=${item.username}" class="username-link">
+                    <span class="username">@${item.username}</span>
+                </a>
                 <div class="stats-details">
                     <span class="stat-line">⚔️ Eliminações: <strong>${item.eliminatedCount}</strong></span>
                     <span class="stat-line">💀 Eliminado por: <strong>${eliminatedByText}</strong></span>

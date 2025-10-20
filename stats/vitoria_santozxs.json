@@ -1,0 +1,78 @@
+{
+  "username": "vitoria_santozxs",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MzAxMDAwMDAwMDIwMDAwMGMwMjAwMDAxODAyMDAwMDI0MDIwMDAwMzAwMjAwMDAzYzAyMDAwMDk1MDIwMDAwYTEwMjAwMDBiNjAyMDAwMGM0MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAC4AAQEBAAAAAAAAAAAAAAAAAAAHARAAAgIDAAAAAAAAAAAAAAAAABFggAEgUP/aAAwDAQACAAMAAAABjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAaY0Y0Y0Y0Y0Y0Y0ZZ4zZiM5uDcAG4AGsAG4DcG2aMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjCziMLOIws4jCziMLOIws4jCziMLOIws4jFnD//2gAIAQEAAQUCrT//2gAIAQMAAT8Bkn//2gAIAQIAAT8Bkn//2gAIAQEABj8CrT//2gAIAQEAAT8hrT//2gAMAwEAAgADAAAAEPPPPPPPPPKPPPPPPPPPKPPPPPPPPPKPPPPPPPPPKPOsssssssolrvHPDvHrivPPPPPPPPKPPPPPPPPPKPPPPPPPPPKMMMMMMMMMIP/aAAgBAwABPxCSf//aAAgBAgABPxDkoQhCEIQjOr0fJ//aAAgBAQABPxCtP//Z",
+  "totalParticipacoes": 6,
+  "totalEliminacoes": null,
+  "mediaRank": "2233.17",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 1094,
+    "date": "2025-10-18"
+  },
+  "piorRank": {
+    "rank": 3869,
+    "date": "2025-10-15"
+  },
+  "maioresVitimas": [
+    [
+      "leosesilvahotmailcom",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      2
+    ],
+    [
+      "heitor_x7z",
+      1
+    ],
+    [
+      "slucasdavidos",
+      1
+    ],
+    [
+      "d1gu1nh0_0",
+      1
+    ],
+    [
+      "rafa.gamesofc",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-13",
+      "rank": 2746
+    },
+    {
+      "date": "2025-10-14",
+      "rank": 2247
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 3869,
+      "eliminatedCount": 0,
+      "eliminatedBy": "heitor_x7z"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 1557,
+      "eliminatedCount": 0,
+      "eliminatedBy": "slucasdavidos"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 1886,
+      "eliminatedCount": 1,
+      "eliminatedBy": "d1gu1nh0_0"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 1094,
+      "eliminatedCount": 0,
+      "eliminatedBy": "rafa.gamesofc"
+    }
+  ]
+}

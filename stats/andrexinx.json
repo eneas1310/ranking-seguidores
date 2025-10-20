@@ -1,0 +1,74 @@
+{
+  "username": "andrexinx",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MTAxMDAwMGY0MDEwMDAwMDAwMjAwMDAwYjAyMDAwMDE2MDIwMDAwMjIwMjAwMDAyZTAyMDAwMDg3MDIwMDAwOTUwMjAwMDBhMDAyMDAwMGFlMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACwAAQEBAQAAAAAAAAAAAAAAAAAHAQIQAQEBAQAAAAAAAAAAAAAAAGCAASD/2gAMAwEAAgADAAAAAY6OtAAAAAAAAWKO2IjoAAAAAAAAFijtiI6AAAAAAAABYo7YiOgAAAAAAAAWKO2IjoAAAAAAAAFijtiI6AAAAAAAABYo7YiOgAAAAAAAAWKO2IjoAAAAAAAAFijtiI5oAAAAAAAAZY47YiOrEI6sQjqxCOrEI6sQjqxCOrEI6sQjqxCO2IP/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABBT3333X1n0nT333332y0mz333333kgnjn33333mSBiBR1jz2gyG3hz3j3mgCmwzmyRR2DiBgCDyQT0DECQAQznBwiiIDFBHCDADEH/2gAIAQMAAT8QP7z/AP/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
+  "totalParticipacoes": 5,
+  "totalEliminacoes": null,
+  "mediaRank": "2296.00",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 622,
+    "date": "2025-10-14"
+  },
+  "piorRank": {
+    "rank": 3957,
+    "date": "2025-10-15"
+  },
+  "maioresVitimas": [
+    [
+      "elo_ollveira",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      1
+    ],
+    [
+      "rkd_fz25",
+      1
+    ],
+    [
+      "arthurzx13_",
+      1
+    ],
+    [
+      "juninho_016x",
+      1
+    ],
+    [
+      "samuel1.4souza",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-14",
+      "rank": 622
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 3957,
+      "eliminatedCount": 0,
+      "eliminatedBy": "rkd_fz25"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 1507,
+      "eliminatedCount": 0,
+      "eliminatedBy": "arthurzx13_"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 3551,
+      "eliminatedCount": 1,
+      "eliminatedBy": "juninho_016x"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 1843,
+      "eliminatedCount": 0,
+      "eliminatedBy": "samuel1.4souza"
+    }
+  ]
+}

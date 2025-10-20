@@ -1,0 +1,114 @@
+{
+  "username": "hiagozx777",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjCziMLOIws4jCziMLOIws4jCziMLOIws4jFnD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
+  "totalParticipacoes": 6,
+  "totalEliminacoes": null,
+  "mediaRank": "2295.00",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 87,
+    "date": "2025-10-17"
+  },
+  "piorRank": {
+    "rank": 4584,
+    "date": "2025-10-18"
+  },
+  "maioresVitimas": [
+    [
+      "rafa.henri20",
+      1
+    ],
+    [
+      "oyagodias.s",
+      1
+    ],
+    [
+      "ellyonn_cost.lyo.09",
+      1
+    ],
+    [
+      "vandinei_monteiro",
+      1
+    ],
+    [
+      "021_pedrinxxzx",
+      1
+    ],
+    [
+      "gabriel.fumagalli",
+      1
+    ],
+    [
+      "sagaz.2k08_",
+      1
+    ],
+    [
+      "larav_it47",
+      1
+    ],
+    [
+      "marcosalexandre_999",
+      1
+    ],
+    [
+      "dzzz.pvd",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      2
+    ],
+    [
+      "_josejunior12",
+      1
+    ],
+    [
+      "sagaz.2k08_",
+      1
+    ],
+    [
+      "jessica4661silva",
+      1
+    ],
+    [
+      "misaelmpm16",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-13",
+      "rank": 2946
+    },
+    {
+      "date": "2025-10-14",
+      "rank": 3860
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 1683,
+      "eliminatedCount": 3,
+      "eliminatedBy": "_josejunior12"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 610,
+      "eliminatedCount": 4,
+      "eliminatedBy": "sagaz.2k08_"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 87,
+      "eliminatedCount": 4,
+      "eliminatedBy": "jessica4661silva"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 4584,
+      "eliminatedCount": 0,
+      "eliminatedBy": "misaelmpm16"
+    }
+  ]
+}

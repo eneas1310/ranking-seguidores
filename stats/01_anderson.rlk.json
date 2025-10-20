@@ -1,0 +1,86 @@
+{
+  "username": "01_anderson.rlk",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MDAxMDAwMGY2MDEwMDAwMDIwMjAwMDAwZDAyMDAwMDE4MDIwMDAwMjQwMjAwMDAzMDAyMDAwMDg5MDIwMDAwOTQwMjAwMDA5ZjAyMDAwMGIwMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACsAAQEBAAAAAAAAAAAAAAAAAAAHARABAQEBAAAAAAAAAAAAAAAAYIABcP/aAAwDAQACAAMAAAABjIAAAAAAADAs8Ys5GQAAAAAAAY0ZZ4zZiMgAAAAAAAAyzxizkZAAAAAAAABlnjFnIyAAAAAAAADLPGLORkAAAAAAAACzRizkZAAAAAAAABlnjFnIyAAAAAAABmjLPGbMRkAAAAAAAACzRizkZWYRlZhGVmEZWYRlZhGVmEZWYRlZhGVmEYs4f//aAAgBAQABBQKaf//aAAgBAwABPwFJ/9oACAECAAE/AUn/2gAIAQEABj8Cmn//2gAIAQEAAT8hmn//2gAMAwEAAgADAAAAEPPPPPPPKDKPPPPPPPLMIPPPPPPPPOKPPPPPPPPKKPPPPPPPPKKPPPPPPPPKCPPPPPPPPKKPPPPPPPPOIPPPPPPPPOCMMMMMMMMIIP/aAAgBAwABPxBJ/9oACAECAAE/EEn/2gAIAQEAAT8Q5TozWn//2Q==",
+  "totalParticipacoes": 5,
+  "totalEliminacoes": null,
+  "mediaRank": "2830.00",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 443,
+    "date": "2025-10-15"
+  },
+  "piorRank": {
+    "rank": 4108,
+    "date": "2025-10-17"
+  },
+  "maioresVitimas": [
+    [
+      "ygzinn.wz_",
+      1
+    ],
+    [
+      "negaxx.x7",
+      1
+    ],
+    [
+      "otakinho_brasi_l1",
+      1
+    ],
+    [
+      "ian.renato007",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      1
+    ],
+    [
+      "ruangabrielsousao",
+      1
+    ],
+    [
+      "negaxx.x7",
+      1
+    ],
+    [
+      "ian.renato007",
+      1
+    ],
+    [
+      "enzo.boniatti",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-14",
+      "rank": 2730
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 443,
+      "eliminatedCount": 1,
+      "eliminatedBy": "ruangabrielsousao"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 3496,
+      "eliminatedCount": 2,
+      "eliminatedBy": "negaxx.x7"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 4108,
+      "eliminatedCount": 1,
+      "eliminatedBy": "ian.renato007"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 3373,
+      "eliminatedCount": 0,
+      "eliminatedBy": "enzo.boniatti"
+    }
+  ]
+}

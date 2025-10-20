@@ -162,10 +162,25 @@ body {
     font-size: 1.1rem;
 }
 
+.username-link {
+    text-decoration: none;
+}
+
 .eliminations {
     font-size: 0.9rem;
     color: #e74c3c;
     font-weight: bold;
+}
+
+.best-rank {
+    font-size: 0.8rem;
+    color: #bdc3c7;
+    margin-top: 4px;
+    opacity: 0.9;
+}
+
+.best-rank strong {
+    color: #f1c40f;
 }
 
 /* --- ESTILOS PARA PÁGINA LENDAS DA ARENA --- */
@@ -273,15 +288,92 @@ body {
     }
 }
 
-/* ### NOVO CÓDIGO ADICIONADO ### */
-/* Estilo para a nova informação de "Melhor Posição" */
-.best-rank {
-    font-size: 0.8rem;
-    color: #bdc3c7; /* Cinza claro */
-    margin-top: 4px;
-    opacity: 0.9;
+/* --- ESTILOS PARA A PÁGINA DE PERFIL --- */
+
+#profile-title { 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
 }
 
-.best-rank strong {
-    color: #f1c40f; /* Amarelo/Dourado */
+.stats-summary-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 15px; 
+    margin: 20px 0; 
+}
+
+.stat-card { 
+    background-color: #2c2c3e; 
+    padding: 15px; 
+    border-radius: 10px; 
+    text-align: center; 
+}
+
+.stat-card h4 { 
+    margin: 0 0 5px 0; 
+    color: #bdc3c7; 
+    font-size: 0.9rem; 
+}
+
+.stat-card p { 
+    margin: 0; 
+    font-size: 1.8rem; 
+    font-weight: bold; 
+    color: #ffffff; 
+}
+
+.chart-container { 
+    background-color: #2c2c3e; 
+    padding: 20px; 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+}
+
+.chart-container h3 { 
+    text-align: center; 
+    margin-top: 0; 
+}
+
+.rivals-grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+
+.rivals-list h3 { 
+    text-align: center; 
+}
+
+.rivals-list ul { 
+    list-style: none; 
+    padding: 0; 
+    background-color: #2c2c3e; 
+    border-radius: 10px; 
+    padding: 15px; 
+}
+
+.rivals-list li { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 8px 0; 
+    border-bottom: 1px solid #4a306d; 
+}
+
+.rivals-list li:last-child { 
+    border-bottom: none; 
+}
+
+.rivals-list a { 
+    color: #ecf0f1; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.rivals-list a:hover { 
+    color: #f1c40f; 
+}
+
+.rivals-list span { 
+    color: #bdc3c7; 
 }

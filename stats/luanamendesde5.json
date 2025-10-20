@@ -1,0 +1,90 @@
+{
+  "username": "luanamendesde5",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MDAxMDAwMDBhMDIwMDAwMTYwMjAwMDAyMTAyMDAwMDJjMDIwMDAwMzgwMjAwMDA0NDAyMDAwMGE1MDIwMDAwYjAwMjAwMDBiZDAyMDAwMGNiMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACsAAQEBAAAAAAAAAAAAAAAAAAABBxAAAwEAAAAAAAAAAAAAAAAAUGCAEf/aAAwDAQACAAMAAAABxwWgAAAAAALBdixzYzHAAAACkAAAA2PHNjMcAAAKAARYAANjxzYzHAAUAASgJVQIA2PHNjMcABQoAQAFJSQDY8c2MxwACygKEABSWIA2PHNjMcAAsFCgAAkAA2PHNjMcAAAsFQWAAAA2PHdiMcWApKEAWAApCgDYsd2Ix1sSsdmxoxy7EMdmxjHGxjHGxjHWxDHGxjHWxLcd2Ik//9oACAEBAAEFApp//9oACAEDAAE/AWT/2gAIAQIAAT8BZP/aAAgBAQAGPwKaf//aAAgBAQABPyGaf//aAAwDAQACAAMAAAAQ773v99//ALyx9/8A3n33/wDjH/8AeQQdfea//QQfjmPfaf8A0Rz3yhH2n/2nz76hX2n/ANtQwgB99p//APbTXfffY9+4/wDf/vsMMFONPPMPMAP/2gAIAQMAAT8QZP/aAAgBAgABPxAtg7//2gAIAQEAAT8Qmn//2Q==",
+  "totalParticipacoes": 6,
+  "totalEliminacoes": null,
+  "mediaRank": "1482.67",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 593,
+    "date": "2025-10-14"
+  },
+  "piorRank": {
+    "rank": 2856,
+    "date": "2025-10-18"
+  },
+  "maioresVitimas": [
+    [
+      "adryann255",
+      1
+    ],
+    [
+      "ycar0.g",
+      1
+    ],
+    [
+      "isabelaoficials",
+      1
+    ],
+    [
+      "markym.silva.10",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      2
+    ],
+    [
+      "cesinhadf306",
+      1
+    ],
+    [
+      "joaofelipenf",
+      1
+    ],
+    [
+      "lucasterr4",
+      1
+    ],
+    [
+      "renan_ogum35",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-13",
+      "rank": 790
+    },
+    {
+      "date": "2025-10-14",
+      "rank": 593
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 2041,
+      "eliminatedCount": 0,
+      "eliminatedBy": "cesinhadf306"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 1005,
+      "eliminatedCount": 1,
+      "eliminatedBy": "joaofelipenf"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 1611,
+      "eliminatedCount": 1,
+      "eliminatedBy": "lucasterr4"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 2856,
+      "eliminatedCount": 2,
+      "eliminatedBy": "renan_ogum35"
+    }
+  ]
+}

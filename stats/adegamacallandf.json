@@ -1,0 +1,82 @@
+{
+  "username": "adegamacallandf",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE4MjAxMDAwMDRkMDIwMDAwOWUwMjAwMDBkNDAyMDAwMGYyMDIwMDAwNTEwMzAwMDAwYTA0MDAwMDYzMDQwMDAwYmMwNDAwMDBlZDA0MDAwMGMxMDUwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAE0AAQEAAwEBAAAAAAAAAAAAAAAHAQIEAwUQAAECAgYHBgUFAAAAAAAAAAEAESExAhIwQVFhECBxgZGhsRNAUMHR8DJCYHDxIjNiguH/2gAMAwEAAgADAAAAAZQPXyAAAAAAAAVeUVclAAAAAAAAAFXlFXJQAAAdjHG7DXjdmDkDcABV5RVyUAAAdfJ6Mefr5fc21+H18nVjPKMbAAKvKKuSgABv6sc722Od6++XH0742xyPfGmfFvoyAq8oq5KAAenrzGPf142cdW3GOnXwHTjnG+hjYBV5RVyUAAAAAAAAAVeUVclAAAAAAAAAFXlFXJQAAAAAAAABV5RVyUKuJQq4lCriUKuJQq4lCriUKuJQq4lCriUVcP/aAAgBAQABBQL6mogM9BPQT0FTAa2+RVSypfDbPBUv21S+HuVKVmA67MqoV2ZVUqjRKCLldmVUKIaxFJl2hVcrtCq67QoFVl2hVcol/s7/AP/aAAgBAwABPwHu5LKt/E8vVV5QIewIVOkzZmOxH5dvkdd1WGKrBOqwx1qoVUYKqFVVUYeGf//aAAgBAgABPwHwEKjRd8kL9dkyATTTazp06dP4Z//aAAgBAQAGPwL6mcvNoKVLiPRSpcR6KVLiPRUSHi88rf8AsOh0Pdjoob+tu2b6KryApNt/Oihv69zo7+tsM1726Phf/F8I5+qZh+nRuey26NineuKn7KnNbZ6NzfZ7/9oACAEBAAE/IfqZ/GUIAgJgm8HDUevXo7CAwEDM1wFuJtFEQNLyQLhImNHKW+/I5jNoZiIcMCRcvKQ+AicVzXBzsURmvaY2qQaZhmQW6rJvAumR5ERXY8ix5rAHEiPFIhE73cdxBkhhgOJvKyJECYmVAdvQ9lHNjMWJnNcY7FEeE3lkyJmjM4heYoEnPE4e5nKcwDhrjSv6oAZgDF5SMyYfEIlIYp4cvESE2ESDK8KE0GwLk/c/Z3//2gAMAwEAAgADAAAAEPffffffffafffffffffaffXeM8/ffafffSqKLffaffc8uLKvPaffRtXuRfPafffffffffafffffffffafffffffffacccccccccYf/aAAgBAwABPxDu7d2JiAwm5T0giAvDAlmdibibgbB5siDwRIYdgTQkeGbTgyGOQteIiZHFZDjhDqjiDjhNEHEZRnk3mshxQL6pJMBZTgsrlimLKcEA0PC//9oACAECAAE/EO7gJs01h6luA/vc6k2PMa7sE7ApzLcUwCJ3DCBxB8k7DWdjqZ/hn//aAAgBAQABPxD6mg8d6HU6jBw4cITgEIN6mdncWBaizaGDMA9xaDyFwZmFwMdAsezQHH3aOUtNk2qy5K0XCD7qAgdSEQuA7MwR5J4KPMHjiYEIixbeCDMz8+SCOYDiH54uO5JjDglI4cl7Lo5MUZIBN5EU2CI7hCOGMQXwOoQRA3eMQeYhYsc2uAF8CJ8gwnHkFFnhFhoEdzUTEWSw6ihBRJCBBviDaARYoA4MR9U/xTd16zB1fnCCXsKfGI9hboFfgREEc3u5GI05aQYQDCH2d//Z",
+  "totalParticipacoes": 6,
+  "totalEliminacoes": null,
+  "mediaRank": "2121.00",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 842,
+    "date": "2025-10-17"
+  },
+  "piorRank": {
+    "rank": 3424,
+    "date": "2025-10-18"
+  },
+  "maioresVitimas": [
+    [
+      "chzins244_",
+      1
+    ],
+    [
+      "maryaaah_sx",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      2
+    ],
+    [
+      "maysonevaristo",
+      1
+    ],
+    [
+      "_jhonyzzk",
+      1
+    ],
+    [
+      "johnaleanndro",
+      1
+    ],
+    [
+      "_akkn2",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-13",
+      "rank": 1107
+    },
+    {
+      "date": "2025-10-14",
+      "rank": 1577
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 3330,
+      "eliminatedCount": 0,
+      "eliminatedBy": "maysonevaristo"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 2446,
+      "eliminatedCount": 0,
+      "eliminatedBy": "_jhonyzzk"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 842,
+      "eliminatedCount": 1,
+      "eliminatedBy": "johnaleanndro"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 3424,
+      "eliminatedCount": 1,
+      "eliminatedBy": "_akkn2"
+    }
+  ]
+}

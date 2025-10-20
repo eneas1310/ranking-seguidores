@@ -1,0 +1,58 @@
+{
+  "username": "lcw_prasempre",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZTAxMDAwMGY0MDEwMDAwMDAwMjAwMDAwYjAyMDAwMDE2MDIwMDAwMjIwMjAwMDAyZTAyMDAwMDg3MDIwMDAwOTIwMjAwMDA5ZDAyMDAwMGFiMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACkAAQEBAAAAAAAAAAAAAAAAAAAHARABAQAAAAAAAAAAAAAAAAAAYID/2gAMAwEAAgADAAAAAY2NMAAAAABuDQLJG7IRvAAAAAAAAAWWNWUjQAAAAAAAAFljVlI0AAAAAAAABZY1ZSNAAAAAAAAAWWNWUjQAAAAAAAAFljVlI0AAAAAAAABZY1ZSNAAAAAAAAAWWNWUjeaMbgAAAAAAaMssbshG1kEbWQRpZRGllEaWURpZRGllEbWQRtZBG7IH/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABABzzzzzywABzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyhDTzzzzzzCAADDDDDAAAD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
+  "totalParticipacoes": 4,
+  "totalEliminacoes": null,
+  "mediaRank": "1785.75",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 224,
+    "date": "2025-10-14"
+  },
+  "piorRank": {
+    "rank": 3827,
+    "date": "2025-10-15"
+  },
+  "maioresVitimas": [
+    [
+      "davimudinho",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      2
+    ],
+    [
+      "nickcristina3113",
+      1
+    ],
+    [
+      "davimudinho",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-13",
+      "rank": 2167
+    },
+    {
+      "date": "2025-10-14",
+      "rank": 224
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 3827,
+      "eliminatedCount": 0,
+      "eliminatedBy": "nickcristina3113"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 925,
+      "eliminatedCount": 1,
+      "eliminatedBy": "davimudinho"
+    }
+  ]
+}

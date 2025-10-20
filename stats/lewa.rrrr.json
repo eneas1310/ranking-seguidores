@@ -1,0 +1,82 @@
+{
+  "username": "lewa.rrrr",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE3ZDAxMDAwMDM4MDIwMDAwODcwMjAwMDA5MzAyMDAwMDlmMDIwMDAwYzUwMjAwMDAyYTAzMDAwMDgzMDMwMDAwOGYwMzAwMDA5YjAzMDAwMDJjMDQwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAEgAAQEAAgMBAAAAAAAAAAAAAAAHAQIEBQYDEAABAwEGBAMJAQAAAAAAAAABABEhMQIDMEFRYQQQcIFgcZEFEhMiMkCx0eGh/9oADAMBAAIAAwAAAAGMAAAAAAAAAzZozZiMAAAAAAAAAzZozZiMAAAAAAAAAzZozZiMAAAGxqzgNtQAADNmjNmIwAAbHN7LtvmeT0+Y53O4fsSf453ENAAZs0ZsxGAANtR6n0c17E5PXdtxzt9fO8Q5Hz+QAAzZozZiMAAAAAAAAAzZozZiMAAAAAAAAAzZozZiMAAAAAAAAAzZozZiMrMIyswjKzCMrMIyswjKzCMrMIyswjKzCM2YP//aAAgBAQABBQLoe2PdXXvLiB8MWGRZXf1XvDtjcOA3tCzHK4D2rci3YTYnD3qi2L7hTZQurRVzdiwry+RtI2nxAWVniCFZ4tkeJRvSeh3/2gAIAQMAAT8B8Sf/2gAIAQIAAT8B8Sf/2gAIAQEABj8C6PgDNfM7TTXJR3Tap8eydOY2+wZRIVFv9jr0Q//aAAgBAQABPyHoYATTnQ+OWeSZU1ZUugyHhqydn2VKVKtdtkIIBTVq37RhZTFAdMjap3yI9+frpysxZEwz54YLICmFLiUf/uWaEBkyQQ4dPk7r0mISjkRXOBBmMoruAyz5Ev0N/9oADAMBAAIAAwAAABDzzzzzzzzwDzzzzzzzzwDzzzzzzzzwDzzzjTzzzwDzzjxwBzzwDzyzgxzzzwDzzzzzzzzwDzzzzzzzzwDzzzzzzzzwAAAAAAAAAAD/2gAIAQMAAT8Q8Sf/2gAIAQIAAT8Q8Sf/2gAIAQEAAT8Q6GOjCWktkEeTtj8Y8ip/0occ/YUvTWsdjukmlZkcYAKy8CXY0ljVPaQA+o7ZMaYOTBED0iYRhAzeRRzMQKS9v6mNEeaAHnZCSAgSGG/BGSBOT5j9IQCDQIrOxahGmAtzARuXKhQZBwakZr0BhiEHJimPNk+nQmJD8wd0SWwNRaaRai/Q3//Z",
+  "totalParticipacoes": 6,
+  "totalEliminacoes": null,
+  "mediaRank": "2805.33",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 2098,
+    "date": "2025-10-18"
+  },
+  "piorRank": {
+    "rank": 3504,
+    "date": "2025-10-15"
+  },
+  "maioresVitimas": [
+    [
+      "isa_valcacio",
+      1
+    ],
+    [
+      "silvaxz099_",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      2
+    ],
+    [
+      "pedrinkkjzx_",
+      1
+    ],
+    [
+      "bryanborges97",
+      1
+    ],
+    [
+      "sara_scanova",
+      1
+    ],
+    [
+      "silvaxz099_",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-13",
+      "rank": 2841
+    },
+    {
+      "date": "2025-10-14",
+      "rank": 3254
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 3504,
+      "eliminatedCount": 0,
+      "eliminatedBy": "pedrinkkjzx_"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 2864,
+      "eliminatedCount": 0,
+      "eliminatedBy": "bryanborges97"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 2271,
+      "eliminatedCount": 1,
+      "eliminatedBy": "sara_scanova"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 2098,
+      "eliminatedCount": 1,
+      "eliminatedBy": "silvaxz099_"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "username": "luwxs.sk8",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2NjAxMDAwMDE1MDIwMDAwMjEwMjAwMDAyZDAyMDAwMDM5MDIwMDAwNDUwMjAwMDA1MTAyMDAwMGFhMDIwMDAwYjYwMjAwMDBjMjAyMDAwMGY2MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADEAAQEBAAAAAAAAAAAAAAAAAAABBxAAAQQDAQEAAAAAAAAAAAAAARARIDAAQGCAUP/aAAwDAQACAAMAAAABxwAABBQEoQUCxF2LHdiMcRVgAAAAAVKEo2PHNjjHIUAAAAWACgA2PHNjjGxQAABQlEABUF2PHNjjGxQAAFgWAsAAF2PG9kMbAAAsFiiWApAANkxzY4xsUAAABQIFBKE2TG9kjGxQFgAUAEoAANjxzY4xyWUWAAFgVKAAWA2PHNjjHJsisbbIMcmyDG2yDG7sYxxsYxxsaMcbGMcbGrHNjI//2gAIAQEAAQUC80//2gAIAQMAAT8B6T//2gAIAQIAAT8B6T//2gAIAQEABj8C80//2gAIAQEAAT8h80//2gAMAwEAAgADAAAAEOMADACPNLgyENEAPOAOCiMBGNEPIEIAAANMEOMCAgAEOGGDHECAAAJGNOPPIgLCINAHFIKiJDPAEPOKChFLPHDOPHKkMEMIEEssIv/aAAgBAwABPxDpP//aAAgBAgABPxDpP//aAAgBAQABPxCZveRg8nVkG+N5sHxWm9xm+2IGRrKHGidRrheENww/LE2QqMKNgpfP/9k=",
+  "totalParticipacoes": 6,
+  "totalEliminacoes": null,
+  "mediaRank": "1920.83",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 281,
+    "date": "2025-10-13"
+  },
+  "piorRank": {
+    "rank": 4148,
+    "date": "2025-10-18"
+  },
+  "maioresVitimas": [
+    [
+      "eubielcarlos",
+      1
+    ],
+    [
+      "moniquebbarross",
+      1
+    ],
+    [
+      "elom_146568",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      2
+    ],
+    [
+      "moniquebbarross",
+      1
+    ],
+    [
+      "carloxx_vasconcelos",
+      1
+    ],
+    [
+      "taly.a589",
+      1
+    ],
+    [
+      "joaofirmino04",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-13",
+      "rank": 281
+    },
+    {
+      "date": "2025-10-14",
+      "rank": 591
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 430,
+      "eliminatedCount": 2,
+      "eliminatedBy": "moniquebbarross"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 2304,
+      "eliminatedCount": 1,
+      "eliminatedBy": "carloxx_vasconcelos"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 3771,
+      "eliminatedCount": 0,
+      "eliminatedBy": "taly.a589"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 4148,
+      "eliminatedCount": 0,
+      "eliminatedBy": "joaofirmino04"
+    }
+  ]
+}

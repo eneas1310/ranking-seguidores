@@ -1,0 +1,110 @@
+{
+  "username": "sanntoss.xy",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjCziMLOIws4jCziMLOIws4jCziMLOIws4jFnD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
+  "totalParticipacoes": 6,
+  "totalEliminacoes": null,
+  "mediaRank": "1755.00",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 98,
+    "date": "2025-10-15"
+  },
+  "piorRank": {
+    "rank": 3355,
+    "date": "2025-10-14"
+  },
+  "maioresVitimas": [
+    [
+      "kira_rbk",
+      1
+    ],
+    [
+      "itz_ni_colly",
+      1
+    ],
+    [
+      "biiiilll",
+      1
+    ],
+    [
+      "darlyson_freitas",
+      1
+    ],
+    [
+      "joaoxz.__075",
+      1
+    ],
+    [
+      "gg___santiago",
+      1
+    ],
+    [
+      "laylakathillen",
+      1
+    ],
+    [
+      "fran.cislanyo",
+      1
+    ],
+    [
+      "bernardoalves102142",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      2
+    ],
+    [
+      "gg___santiago",
+      1
+    ],
+    [
+      "rzt_guizin_xz",
+      1
+    ],
+    [
+      "wendelllucaslopes",
+      1
+    ],
+    [
+      "brunoney7",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-13",
+      "rank": 1383
+    },
+    {
+      "date": "2025-10-14",
+      "rank": 3355
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 98,
+      "eliminatedCount": 6,
+      "eliminatedBy": "gg___santiago"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 1313,
+      "eliminatedCount": 2,
+      "eliminatedBy": "rzt_guizin_xz"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 1166,
+      "eliminatedCount": 1,
+      "eliminatedBy": "wendelllucaslopes"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 3215,
+      "eliminatedCount": 0,
+      "eliminatedBy": "brunoney7"
+    }
+  ]
+}

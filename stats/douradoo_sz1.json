@@ -1,0 +1,106 @@
+{
+  "username": "douradoo_sz1",
+  "imageUrl": "data:image/jpeg;base64,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",
+  "totalParticipacoes": 6,
+  "totalEliminacoes": null,
+  "mediaRank": "2214.00",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 73,
+    "date": "2025-10-15"
+  },
+  "piorRank": {
+    "rank": 3423,
+    "date": "2025-10-17"
+  },
+  "maioresVitimas": [
+    [
+      "evandrosantos1988",
+      1
+    ],
+    [
+      "munique_unica",
+      1
+    ],
+    [
+      "gustavo_kjk",
+      1
+    ],
+    [
+      "lh_candini",
+      1
+    ],
+    [
+      "dhinnho_zo",
+      1
+    ],
+    [
+      "tiago_royer",
+      1
+    ],
+    [
+      "assucenados",
+      1
+    ],
+    [
+      "fernandoteixeira255",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      2
+    ],
+    [
+      "iuri_carvalho02",
+      1
+    ],
+    [
+      "dhinnho_zo",
+      1
+    ],
+    [
+      "daniel.alves.bsb",
+      1
+    ],
+    [
+      "fernandoteixeira255",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-13",
+      "rank": 2696
+    },
+    {
+      "date": "2025-10-14",
+      "rank": 647
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 73,
+      "eliminatedCount": 3,
+      "eliminatedBy": "iuri_carvalho02"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 3335,
+      "eliminatedCount": 3,
+      "eliminatedBy": "dhinnho_zo"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 3423,
+      "eliminatedCount": 1,
+      "eliminatedBy": "daniel.alves.bsb"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 3110,
+      "eliminatedCount": 1,
+      "eliminatedBy": "fernandoteixeira255"
+    }
+  ]
+}

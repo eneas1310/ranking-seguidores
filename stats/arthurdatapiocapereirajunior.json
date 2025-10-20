@@ -1,0 +1,86 @@
+{
+  "username": "arthurdatapiocapereirajunior",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjAAAAAAAAAFnjNmIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjCziMLOIws4jCziMLOIws4jCziMLOIws4jFnD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
+  "totalParticipacoes": 5,
+  "totalEliminacoes": null,
+  "mediaRank": "1616.60",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 103,
+    "date": "2025-10-15"
+  },
+  "piorRank": {
+    "rank": 2907,
+    "date": "2025-10-16"
+  },
+  "maioresVitimas": [
+    [
+      "soares.jp7",
+      1
+    ],
+    [
+      "cley.passos",
+      1
+    ],
+    [
+      "v.cortes.07",
+      1
+    ],
+    [
+      "_.mferreiiraaz._",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      1
+    ],
+    [
+      "lealromerio",
+      1
+    ],
+    [
+      "jeozinfx027",
+      1
+    ],
+    [
+      "gv_da_paz_",
+      1
+    ],
+    [
+      "phoenix.proo",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-14",
+      "rank": 479
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 103,
+      "eliminatedCount": 2,
+      "eliminatedBy": "lealromerio"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 2907,
+      "eliminatedCount": 0,
+      "eliminatedBy": "jeozinfx027"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 2773,
+      "eliminatedCount": 1,
+      "eliminatedBy": "gv_da_paz_"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 1821,
+      "eliminatedCount": 1,
+      "eliminatedBy": "phoenix.proo"
+    }
+  ]
+}

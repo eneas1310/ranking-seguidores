@@ -1,0 +1,98 @@
+{
+  "username": "rangel.anjos",
+  "imageUrl": "data:image/jpeg;base64,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",
+  "totalParticipacoes": 6,
+  "totalEliminacoes": null,
+  "mediaRank": "1232.00",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 56,
+    "date": "2025-10-13"
+  },
+  "piorRank": {
+    "rank": 3049,
+    "date": "2025-10-16"
+  },
+  "maioresVitimas": [
+    [
+      "meninaemanuelly_",
+      1
+    ],
+    [
+      "milhao_polimentos",
+      1
+    ],
+    [
+      "samuelbarreto270",
+      1
+    ],
+    [
+      "ferreira_._021",
+      1
+    ],
+    [
+      "a_sousa___096",
+      1
+    ],
+    [
+      "ripardo_antonio",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      2
+    ],
+    [
+      "neguinho_abada_capoeira",
+      1
+    ],
+    [
+      "robertadfoliveira",
+      1
+    ],
+    [
+      "rodrigoborgesflores",
+      1
+    ],
+    [
+      "borgesbrenon",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-13",
+      "rank": 56
+    },
+    {
+      "date": "2025-10-14",
+      "rank": 762
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 2256,
+      "eliminatedCount": 2,
+      "eliminatedBy": "neguinho_abada_capoeira"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 3049,
+      "eliminatedCount": 0,
+      "eliminatedBy": "robertadfoliveira"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 1173,
+      "eliminatedCount": 1,
+      "eliminatedBy": "rodrigoborgesflores"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 96,
+      "eliminatedCount": 3,
+      "eliminatedBy": "borgesbrenon"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "username": "luczxx_1",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE3NDAxMDAwMDBkMDIwMDAwMmIwMjAwMDAzNzAyMDAwMDQzMDIwMDAwNTMwMjAwMDA3NTAyMDAwMGNlMDIwMDAwZGEwMjAwMDBlNjAyMDAwMDE1MDMwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAD8AAQEBAAMBAAAAAAAAAAAAAAAHAQIDBAUQAAECAwcEAwAAAAAAAAAAAAERQAAxQQIQEiFgcYADUWGRoeHw/9oADAMBAAIAAwAAAAGMAAAAAAAAA2zRmzEYAAAAAAAABtmjNmIwAAAAAAAADbNGbMRgAAAAAAAAG2aM2YjAAAAAAAAANs0ZsxGAAAAAAAAAbZozZiMAAAAAAAAA2zRmzEYAAAAAAAABtmkFfIwAAAAAAABz4faO+jTOmEZWYRlZhGVmEZWYRlZhGVmEZWYRlZhKfdSDJRVw/9oACAEBAAEFAuF9ixiZALAGFl07GGCWPRsQTBMf/9oACAEDAAE/AdSf/9oACAECAAE/AdSf/9oACAEBAAY/AuISMvLJb//aAAgBAQABPyHheVaUZEIATMCAB+LJIpm+AywHPSQ83x//2gAMAwEAAgADAAAAEPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPCPPPPPPPPKCAAAAAAAAIYf/aAAgBAwABPxDUn//aAAgBAgABPxDUn//aAAgBAQABPxDheayAJiZbMhpKRBFFiZ71Fl2Hfo3NfUZjFRzAaewp2uzLH//Z",
+  "totalParticipacoes": 5,
+  "totalEliminacoes": null,
+  "mediaRank": "1642.60",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 322,
+    "date": "2025-10-17"
+  },
+  "piorRank": {
+    "rank": 3118,
+    "date": "2025-10-16"
+  },
+  "maioresVitimas": [
+    [
+      "bangchaysn1",
+      1
+    ],
+    [
+      "cle_coelho_mr",
+      1
+    ],
+    [
+      "gleidson.junio.9",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      1
+    ],
+    [
+      "rhyan_rick_7",
+      1
+    ],
+    [
+      "sousxande_",
+      1
+    ],
+    [
+      "yagofirmino_",
+      1
+    ],
+    [
+      "orta_glenys",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-14",
+      "rank": 1525
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 2926,
+      "eliminatedCount": 0,
+      "eliminatedBy": "rhyan_rick_7"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 3118,
+      "eliminatedCount": 0,
+      "eliminatedBy": "sousxande_"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 322,
+      "eliminatedCount": 2,
+      "eliminatedBy": "yagofirmino_"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 322,
+      "eliminatedCount": 1,
+      "eliminatedBy": "orta_glenys"
+    }
+  ]
+}

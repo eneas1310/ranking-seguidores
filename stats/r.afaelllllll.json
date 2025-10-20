@@ -1,0 +1,54 @@
+{
+  "username": "r.afaelllllll",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZTAxMDAwMDAxMDIwMDAwMGQwMjAwMDAxODAyMDAwMDIzMDIwMDAwMmYwMjAwMDAzYjAyMDAwMDk2MDIwMDAwYTEwMjAwMDBhYzAyMDAwMGJhMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACkAAQEBAAAAAAAAAAAAAAAAAAAHARABAQAAAAAAAAAAAAAAAAAAYID/2gAMAwEAAgADAAAAAY+xoAAAAAAADbBH7AR4AAAAAAAACwx6wtjwYABgAAANZoAsMesJHgADAMBoABuaALDHrCR4AGAADAaAbg0Cwx6wkeABjcAAAADQAsMesLY8GAAY3AAAaAALDHrCR/AAAzQxow0AAAWGPWEjzTcDAAAAAAANsEfsDY+sBke2wCPLCI8sIjywiPLCI8sIj22AR7bAI/YA/9oACAEBAAEFApp//9oACAEDAAE/AUn/2gAIAQIAAT8BSf/aAAgBAQAGPwKaf//aAAgBAQABPyGaf//aAAwDAQACAAMAAAAQN5hBBBBB9B5hBBBBBBhohBB9999JFpBBF/8AffaQaQQfff8A320GkEHX3333EGi0EHX33kFWl00GHHkEF2nD0kEEEVX0AGHGEEGGGGP/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
+  "totalParticipacoes": 2,
+  "totalEliminacoes": 3,
+  "mediaRank": "2657.50",
+  "mediaEliminacoes": "1.50",
+  "melhorRank": {
+    "rank": 1291,
+    "date": "2025-10-17"
+  },
+  "piorRank": {
+    "rank": 4024,
+    "date": "2025-10-18"
+  },
+  "maioresVitimas": [
+    [
+      "labarcapsul",
+      1
+    ],
+    [
+      "alexabade_cmr6",
+      1
+    ],
+    [
+      "pedro.vini14",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "htt_karoline",
+      1
+    ],
+    [
+      "_.strayytr",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-17",
+      "rank": 1291,
+      "eliminatedCount": 2,
+      "eliminatedBy": "htt_karoline"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 4024,
+      "eliminatedCount": 1,
+      "eliminatedBy": "_.strayytr"
+    }
+  ]
+}

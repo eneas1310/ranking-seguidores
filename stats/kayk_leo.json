@@ -1,0 +1,102 @@
+{
+  "username": "kayk_leo",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MzAxMDAwMDBjMDIwMDAwMTgwMjAwMDAyMzAyMDAwMDJlMDIwMDAwM2EwMjAwMDA0NjAyMDAwMDlmMDIwMDAwYWEwMjAwMDBiNTAyMDAwMGNjMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAC4AAQEBAAAAAAAAAAAAAAAAAAABBxAAAgIDAAAAAAAAAAAAAAAAAWBQgBARQP/aAAwDAQACAAMAAAABxoAoABLBUFSkoEo2TG9kMaAoAAAAAARQ2TG9kMaAsoAAAAAAA2TG9kMaAsFlAACWCwUhUo2TG9kMaAKAAACFlEWAF2TGtlMaUSgAAIUEWAAF2TGtlMaAsFlgBUFlEsAADZca2UxoAAAAAAAADZca2UxoAAAAAAAADZca2UxpsoxpsoxpsoxpsoxpsoxpsoxpsoxpsoxpsoxrZQ//2gAIAQEAAQUCrT//2gAIAQMAAT8BZP/aAAgBAgABPwFk/9oACAEBAAY/Aq0//9oACAEBAAE/Ia0//9oADAMBAAIAAwAAABADgACgwiAABSAAAAAABAACgAAAAAAAACxAABSwQgADgAAARDRQgCAAAQCTxQiCRTwxCzxCABDDDDDAACgAAAACgAACgAAAAAAAAAD/2gAIAQMAAT8QZP/aAAgBAgABPxBk/9oACAEBAAE/EGESm+EZHGIYSm1P/9k=",
+  "totalParticipacoes": 6,
+  "totalEliminacoes": null,
+  "mediaRank": "1297.00",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 80,
+    "date": "2025-10-15"
+  },
+  "piorRank": {
+    "rank": 3155,
+    "date": "2025-10-16"
+  },
+  "maioresVitimas": [
+    [
+      "dirleyhillesheim",
+      1
+    ],
+    [
+      "_eliiaslima",
+      1
+    ],
+    [
+      "__felipealves00",
+      1
+    ],
+    [
+      "ester_aquino.b",
+      1
+    ],
+    [
+      "silvinh_1.0",
+      1
+    ],
+    [
+      "rocha_th08",
+      1
+    ],
+    [
+      "anapaula1986",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      2
+    ],
+    [
+      "__felipealves00",
+      1
+    ],
+    [
+      "silvinh_1.0",
+      1
+    ],
+    [
+      "leonardoyohandesouza",
+      1
+    ],
+    [
+      "anapaula1986",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-13",
+      "rank": 2071
+    },
+    {
+      "date": "2025-10-14",
+      "rank": 325
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 80,
+      "eliminatedCount": 3,
+      "eliminatedBy": "__felipealves00"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 3155,
+      "eliminatedCount": 2,
+      "eliminatedBy": "silvinh_1.0"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 812,
+      "eliminatedCount": 0,
+      "eliminatedBy": "leonardoyohandesouza"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 1339,
+      "eliminatedCount": 2,
+      "eliminatedBy": "anapaula1986"
+    }
+  ]
+}

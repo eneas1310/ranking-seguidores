@@ -1,0 +1,50 @@
+{
+  "username": "sndes_0011",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZTAxMDAwMGY0MDEwMDAwMDAwMjAwMDAwYjAyMDAwMDE2MDIwMDAwMjIwMjAwMDAyZTAyMDAwMDg3MDIwMDAwOTIwMjAwMDA5ZDAyMDAwMGFiMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACkAAQEBAAAAAAAAAAAAAAAAAAAHARABAQAAAAAAAAAAAAAAAAAAYID/2gAMAwEAAgADAAAAAY2NMAAAAABuDQLJG7IRvAAAAAAAAAWWNWUjQAAAAAAAAFljVlI0AAAAAAAABZY1ZSNAAAAAAAAAWWNWUjQAAAAAAAAFljVlI0AAAAAAAABZY1ZSNAAAAAAAAAWWNWUjeaMbgAAAAAAaMssbshG1kEbWQRpZRGllEaWURpZRGllEbWQRtZBG7IH/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABABzzzzzywABzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyhDTzzzzzzCAADDDDDAAAD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
+  "totalParticipacoes": 2,
+  "totalEliminacoes": 2,
+  "mediaRank": "2401.00",
+  "mediaEliminacoes": "1.00",
+  "melhorRank": {
+    "rank": 804,
+    "date": "2025-10-18"
+  },
+  "piorRank": {
+    "rank": 3998,
+    "date": "2025-10-17"
+  },
+  "maioresVitimas": [
+    [
+      "rau_sem_rau",
+      1
+    ],
+    [
+      "sayukawaii1",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "david_pzo",
+      1
+    ],
+    [
+      "henriqueocf88",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-17",
+      "rank": 3998,
+      "eliminatedCount": 1,
+      "eliminatedBy": "david_pzo"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 804,
+      "eliminatedCount": 1,
+      "eliminatedBy": "henriqueocf88"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "username": "yt_flavi0",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABsoAAAAAAAAEassaLKAAAAAAAABGrLGiygAAAAAAAARqyxosoAAAAAAAAEassaLKAAAAAAAABGrLGiygAAAAAAAARqyxosoAAAAAAAAEassaLKAAAAAAAABGrLGiygAAAAAAAARqyxosqNCyo0LKjQsqNCyo0LKjQsqNCyo0LKjQssaD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
+  "totalParticipacoes": 6,
+  "totalEliminacoes": null,
+  "mediaRank": "1638.83",
+  "mediaEliminacoes": "NaN",
+  "melhorRank": {
+    "rank": 599,
+    "date": "2025-10-13"
+  },
+  "piorRank": {
+    "rank": 2781,
+    "date": "2025-10-14"
+  },
+  "maioresVitimas": [
+    [
+      "jesko5019",
+      1
+    ],
+    [
+      "antonellafreitasromano",
+      1
+    ],
+    [
+      "dara_fernandes_25",
+      1
+    ],
+    [
+      "j.gblook",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "undefined",
+      2
+    ],
+    [
+      "_itallac",
+      1
+    ],
+    [
+      "seung.only.da.rafa",
+      1
+    ],
+    [
+      "andrew.trk",
+      1
+    ],
+    [
+      "enzo.correia86",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-13",
+      "rank": 599
+    },
+    {
+      "date": "2025-10-14",
+      "rank": 2781
+    },
+    {
+      "date": "2025-10-15",
+      "rank": 2182,
+      "eliminatedCount": 1,
+      "eliminatedBy": "_itallac"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 1559,
+      "eliminatedCount": 1,
+      "eliminatedBy": "seung.only.da.rafa"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 1465,
+      "eliminatedCount": 1,
+      "eliminatedBy": "andrew.trk"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 1247,
+      "eliminatedCount": 1,
+      "eliminatedBy": "enzo.correia86"
+    }
+  ]
+}

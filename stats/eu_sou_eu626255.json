@@ -1,0 +1,66 @@
+{
+  "username": "eu_sou_eu626255",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjKzCMrMIyswjKzCMrMIyswjKzCMrMIyswjNmD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyhzzzzzzzzyDDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
+  "totalParticipacoes": 4,
+  "totalEliminacoes": 1,
+  "mediaRank": "3273.75",
+  "mediaEliminacoes": "0.25",
+  "melhorRank": {
+    "rank": 1644,
+    "date": "2025-10-18"
+  },
+  "piorRank": {
+    "rank": 4272,
+    "date": "2025-10-17"
+  },
+  "maioresVitimas": [
+    [
+      "tininha_156",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "jessica4661silva",
+      1
+    ],
+    [
+      "gio.manfredi18",
+      1
+    ],
+    [
+      "naluh_.linhares",
+      1
+    ],
+    [
+      "otavio_bc09",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-15",
+      "rank": 3096,
+      "eliminatedCount": 1,
+      "eliminatedBy": "jessica4661silva"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 4083,
+      "eliminatedCount": 0,
+      "eliminatedBy": "gio.manfredi18"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 4272,
+      "eliminatedCount": 0,
+      "eliminatedBy": "naluh_.linhares"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 1644,
+      "eliminatedCount": 0,
+      "eliminatedBy": "otavio_bc09"
+    }
+  ]
+}

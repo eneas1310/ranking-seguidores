@@ -1,0 +1,74 @@
+{
+  "username": "__yasmin35",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MTAxMDAwMDBjMDIwMDAwMTgwMjAwMDAyMzAyMDAwMDJlMDIwMDAwM2EwMjAwMDA0NjAyMDAwMGEzMDIwMDAwYWUwMjAwMDBiOTAyMDAwMGM4MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACwAAQEBAQAAAAAAAAAAAAAAAAABBwIQAQEBAQAAAAAAAAAAAAAAAGCAATD/2gAMAwEAAgADAAAAAcesTqpQFACAAoAEbBj2wmPFCVQAlAABAohGw49sJjwBVJYBQAARCgRsOPbCY8AFqWAUAESwCgRsOPbCY8AAFqIWBYoAEEGxY9sJjxCgAABQQgAsBsWO7EmPEUAACwAAAFhGxY7sVY6AIAABQAQABsWO7FWOgAAAAAAAAbFjuxGOtiGOtiGOtiGOtiGOtiGOtiGOtiGOtiGOtiGO7EH/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABC0kDHf/mCEvsgFL778A2v3gsIAINz2PXwsIINeSEINHA++zgEWIYEEHAE3xysbzz13zz6+n3//AP8Avv8A/wDp9951x9991iTBBRBxxxRi/9oACAEDAAE/EEn/2gAIAQIAAT8QSf/aAAgBAQABPxCXM6//2Q==",
+  "totalParticipacoes": 4,
+  "totalEliminacoes": 3,
+  "mediaRank": "1838.00",
+  "mediaEliminacoes": "0.75",
+  "melhorRank": {
+    "rank": 196,
+    "date": "2025-10-17"
+  },
+  "piorRank": {
+    "rank": 4182,
+    "date": "2025-10-16"
+  },
+  "maioresVitimas": [
+    [
+      "lc00014",
+      1
+    ],
+    [
+      "_dandan_1999",
+      1
+    ],
+    [
+      "eo_lukinhas.062",
+      1
+    ]
+  ],
+  "maioresCarrascos": [
+    [
+      "vieira__078",
+      1
+    ],
+    [
+      "marcio_jofer",
+      1
+    ],
+    [
+      "dudumaracaipe",
+      1
+    ],
+    [
+      "seyy.y6",
+      1
+    ]
+  ],
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-15",
+      "rank": 270,
+      "eliminatedCount": 1,
+      "eliminatedBy": "vieira__078"
+    },
+    {
+      "date": "2025-10-16",
+      "rank": 4182,
+      "eliminatedCount": 0,
+      "eliminatedBy": "marcio_jofer"
+    },
+    {
+      "date": "2025-10-17",
+      "rank": 196,
+      "eliminatedCount": 2,
+      "eliminatedBy": "dudumaracaipe"
+    },
+    {
+      "date": "2025-10-18",
+      "rank": 2704,
+      "eliminatedCount": 0,
+      "eliminatedBy": "seyy.y6"
+    }
+  ]
+}
