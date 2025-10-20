@@ -1,9 +1,9 @@
 {
   "username": "fk_.morais",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2YzAxMDAwMDJlMDIwMDAwM2EwMjAwMDA0NjAyMDAwMDUyMDIwMDAwNWUwMjAwMDA3NDAyMDAwMGNlMDIwMDAwZTEwMjAwMDBmMTAyMDAwMDcwMDMwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADcAAQEBAQAAAAAAAAAAAAAAAAABBwIQAAICAgEDBQAAAAAAAAAAAAERABAgMFAhQGAxUXCAsf/aAAwDAQACAAMAAAABxoADrkWAAKQBYLA2XGtlMc5pYsQUhQkKAlKlVFSbLjWymNLCkBSWCwCxSxFgqUmy41spjSiKIoiiFEsLLACgux41stuNCQUSwqFWUgQUSwAbLjWymNKEsLKWBACwFEpYsRsuNbKY0CwCwKJUAFgqBQmy41spjQAKAhSkiiAAWUbJjWy1jSWBSAsVSUQQUAgGy41spjTZRjTZRjTZRjTZRjV2QY1dkLjc2UmNXZBjc2UuNbKJ/9oACAEBAAEFAvrT/9oACAEDAAE/AfJP/9oACAECAAE/AfJP/9oACAEBAAY/AvrT/9oACAEBAAE/IfgQca+RPCjwJ908v//aAAwDAQACAAMAAAAQ22BD97knvqQdKf1yMIbozH66fcVdJqxxjz53V/jBV6a84xaBGABdY9MndSlr2d1xjp/pjpeQD8x2L2LAuie6A/8AQfaMUoUoQkcUIP/aAAgBAwABPxDhnAvbD97h8D//2gAIAQIAAT8Q0vvnzv8A/9oACAEBAAE/EKFkQnQRoGKsnQYMlPTJRYOOHsR0jgjgt6BgoA4sjFCNSyNCE5mA4BBDZpaibFCGhoFrEQwwJTgNgaVoWt2bNOzSgNBHBbxEMd+kcEOgdKJomhZyHAQ7XqUOK0KERQCjagiwFLpBFAkPW27Op4ERwQwWMBv/2Q==",
-  "totalParticipacoes": 7,
+  "totalParticipacoes": 8,
   "totalEliminacoes": null,
-  "mediaRank": "2354.43",
+  "mediaRank": "2220.88",
   "mediaEliminacoes": "NaN",
   "melhorRank": {
     "rank": 157,
@@ -33,6 +33,10 @@
     [
       "adriano_urbanek",
       1
+    ],
+    [
+      "santanaasussu",
+      1
     ]
   ],
   "maioresCarrascos": [
@@ -58,6 +62,10 @@
     ],
     [
       "Desconhecido",
+      1
+    ],
+    [
+      "thiago.rikelme38",
       1
     ]
   ],
@@ -98,6 +106,12 @@
       "date": "2025-10-19",
       "rank": 4638,
       "eliminatedBy": "Desconhecido"
+    },
+    {
+      "date": "2025-10-20",
+      "rank": 1286,
+      "eliminatedCount": 1,
+      "eliminatedBy": "thiago.rikelme38"
     }
   ]
 }

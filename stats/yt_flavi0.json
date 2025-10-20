@@ -1,9 +1,9 @@
 {
   "username": "yt_flavi0",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABsoAAAAAAAAEassaLKAAAAAAAABGrLGiygAAAAAAAARqyxosoAAAAAAAAEassaLKAAAAAAAABGrLGiygAAAAAAAARqyxosoAAAAAAAAEassaLKAAAAAAAABGrLGiygAAAAAAAARqyxosqNCyo0LKjQsqNCyo0LKjQsqNCyo0LKjQssaD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 7,
+  "totalParticipacoes": 8,
   "totalEliminacoes": null,
-  "mediaRank": "1747.43",
+  "mediaRank": "1685.50",
   "mediaEliminacoes": "NaN",
   "melhorRank": {
     "rank": 599,
@@ -28,6 +28,10 @@
     ],
     [
       "j.gblook",
+      1
+    ],
+    [
+      "erlanne_personall",
       1
     ]
   ],
@@ -54,6 +58,10 @@
     ],
     [
       "Desconhecido",
+      1
+    ],
+    [
+      "guilherme_h_016",
       1
     ]
   ],
@@ -94,6 +102,12 @@
       "date": "2025-10-19",
       "rank": 2399,
       "eliminatedBy": "Desconhecido"
+    },
+    {
+      "date": "2025-10-20",
+      "rank": 1252,
+      "eliminatedCount": 1,
+      "eliminatedBy": "guilherme_h_016"
     }
   ]
 }

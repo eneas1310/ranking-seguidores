@@ -1,17 +1,17 @@
 {
   "username": "x.hts__",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZjAxMDAwMDAwMDIwMDAwMGMwMjAwMDAxNzAyMDAwMDIyMDIwMDAwMmUwMjAwMDAzYTAyMDAwMDk1MDIwMDAwYTAwMjAwMDBhYjAyMDAwMGI5MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACoAAQEBAQAAAAAAAAAAAAAAAAAHAQIQAQEAAAAAAAAAAAAAAAAAAGCA/9oADAMBAAIAAwAAAAGPB0AAAAAAAAsMesLI8GgAAAAAAALDHrCyPBoAAAAAAACwx6wsjwaAAAAAAAAsMesLI8GgAAANwAG4DRYI9YWR4NAAAbgAAAGmWGPWFkeDQAAAG4ABpgFhj1hZHg0AAAAGAA0BYY9YWR4NABgANABgANWGPWFkeWER5YRHlhEeWER5YRHlhEeWER5YTY8sJkesI3//2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDJJIb5obZ4MILo577476nr4b777776N77r7z7776P77z7y77bov77767777qv777z677r6vz7777v/AO+r+6X/ALvv9/o880Yc0w8EYv/aAAgBAwABPxBJ/9oACAECAAE/EEn/2gAIAQEAAT8Qmn//2Q==",
-  "totalParticipacoes": 7,
+  "totalParticipacoes": 8,
   "totalEliminacoes": null,
-  "mediaRank": "2420.71",
+  "mediaRank": "2651.25",
   "mediaEliminacoes": "NaN",
   "melhorRank": {
     "rank": 1174,
     "date": "2025-10-17"
   },
   "piorRank": {
-    "rank": 3924,
-    "date": "2025-10-15"
+    "rank": 4265,
+    "date": "2025-10-20"
   },
   "maioresVitimas": [
     [
@@ -63,6 +63,10 @@
     [
       "Desconhecido",
       1
+    ],
+    [
+      "enzo.boniatti",
+      1
     ]
   ],
   "historicoDeBatalhas": [
@@ -102,6 +106,12 @@
       "date": "2025-10-19",
       "rank": 1983,
       "eliminatedBy": "Desconhecido"
+    },
+    {
+      "date": "2025-10-20",
+      "rank": 4265,
+      "eliminatedCount": 0,
+      "eliminatedBy": "enzo.boniatti"
     }
   ]
 }

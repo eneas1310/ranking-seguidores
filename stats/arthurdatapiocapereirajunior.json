@@ -1,17 +1,17 @@
 {
   "username": "arthurdatapiocapereirajunior",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjAAAAAAAAAFnjNmIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjCziMLOIws4jCziMLOIws4jCziMLOIws4jFnD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 6,
+  "totalParticipacoes": 7,
   "totalEliminacoes": null,
-  "mediaRank": "1393.67",
+  "mediaRank": "1672.29",
   "mediaEliminacoes": "NaN",
   "melhorRank": {
     "rank": 103,
     "date": "2025-10-15"
   },
   "piorRank": {
-    "rank": 2907,
-    "date": "2025-10-16"
+    "rank": 3344,
+    "date": "2025-10-20"
   },
   "maioresVitimas": [
     [
@@ -55,6 +55,10 @@
     [
       "Desconhecido",
       1
+    ],
+    [
+      "arthur.dnts7",
+      1
     ]
   ],
   "historicoDeBatalhas": [
@@ -90,6 +94,12 @@
       "date": "2025-10-19",
       "rank": 279,
       "eliminatedBy": "Desconhecido"
+    },
+    {
+      "date": "2025-10-20",
+      "rank": 3344,
+      "eliminatedCount": 0,
+      "eliminatedBy": "arthur.dnts7"
     }
   ]
 }

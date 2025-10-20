@@ -1,9 +1,9 @@
 {
   "username": "andrexinx",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MTAxMDAwMGY0MDEwMDAwMDAwMjAwMDAwYjAyMDAwMDE2MDIwMDAwMjIwMjAwMDAyZTAyMDAwMDg3MDIwMDAwOTUwMjAwMDBhMDAyMDAwMGFlMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACwAAQEBAQAAAAAAAAAAAAAAAAAHAQIQAQEBAQAAAAAAAAAAAAAAAGCAASD/2gAMAwEAAgADAAAAAY6OtAAAAAAAAWKO2IjoAAAAAAAAFijtiI6AAAAAAAABYo7YiOgAAAAAAAAWKO2IjoAAAAAAAAFijtiI6AAAAAAAABYo7YiOgAAAAAAAAWKO2IjoAAAAAAAAFijtiI5oAAAAAAAAZY47YiOrEI6sQjqxCOrEI6sQjqxCOrEI6sQjqxCO2IP/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABBT3333X1n0nT333332y0mz333333kgnjn33333mSBiBR1jz2gyG3hz3j3mgCmwzmyRR2DiBgCDyQT0DECQAQznBwiiIDFBHCDADEH/2gAIAQMAAT8QP7z/AP/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 6,
+  "totalParticipacoes": 7,
   "totalEliminacoes": null,
-  "mediaRank": "2002.67",
+  "mediaRank": "1931.00",
   "mediaEliminacoes": "NaN",
   "melhorRank": {
     "rank": 536,
@@ -16,6 +16,18 @@
   "maioresVitimas": [
     [
       "elo_ollveira",
+      1
+    ],
+    [
+      "gabs_lauanda",
+      1
+    ],
+    [
+      "antoni_ce._ofc",
+      1
+    ],
+    [
+      "lizy.dbrc",
       1
     ]
   ],
@@ -42,6 +54,10 @@
     ],
     [
       "Desconhecido",
+      1
+    ],
+    [
+      "antoni_ce._ofc",
       1
     ]
   ],
@@ -78,6 +94,12 @@
       "date": "2025-10-19",
       "rank": 536,
       "eliminatedBy": "Desconhecido"
+    },
+    {
+      "date": "2025-10-20",
+      "rank": 1501,
+      "eliminatedCount": 3,
+      "eliminatedBy": "antoni_ce._ofc"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
   "username": "heinemannmurilo",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2NTAxMDAwMDEzMDIwMDAwMWYwMjAwMDAyYjAyMDAwMDM3MDIwMDAwNDMwMjAwMDA0ZjAyMDAwMGE4MDIwMDAwYmUwMjAwMDBjYTAyMDAwMGQ4MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADAAAQEBAQAAAAAAAAAAAAAAAAABBwIQAAAHAQAAAAAAAAAAAAAAAAABESBAYIAw/9oADAMBAAIAAwAAAAHGAACkKEpFEAAA2fGNnMYAAKShFAEUQADZ8Y2cxhRKAASgAAgVFDZsY2cxkAAssooCURYgWJRNnxjZzGKAQsqgoACUQOUqmzYzsxjIAgVQUAAQBylU2bGdmMZAAC1LKAAggWANmxnZjGQAAAtQAAgADZsZ2YxkAAAAAAAAhdmxjZzGWzDGWzDGWzDGWzDGWzDGWzDGWzDGWzDGZs4xjZw//9oACAEBAAEFAs0//9oACAEDAAE/AbJ//9oACAECAAE/AbJ//9oACAEBAAY/As0//9oACAEBAAE/Ic0//9oADAMBAAIAAwAAABDzzjgjDzzyjzziTQjDzyjCF37778jAgFHqIlLe1GiT+sE0FD9gAz7sGEEb/ADBHQoEJ/mGE003wHz0EUkBzzz33ygQhDDDDDBCBCD/2gAIAQMAAT8QjoECQSYbiYfJeCyv/9oACAECAAE/ELJ//9oACAEBAAE/EM0//9k=",
-  "totalParticipacoes": 3,
+  "totalParticipacoes": 4,
   "totalEliminacoes": null,
-  "mediaRank": "1104.00",
+  "mediaRank": "1051.00",
   "mediaEliminacoes": "NaN",
   "melhorRank": {
     "rank": 267,
@@ -25,6 +25,10 @@
     [
       "guizin_csr",
       1
+    ],
+    [
+      "_william_038",
+      1
     ]
   ],
   "maioresCarrascos": [
@@ -38,6 +42,10 @@
     ],
     [
       "Desconhecido",
+      1
+    ],
+    [
+      "francilene.ferreir",
       1
     ]
   ],
@@ -58,6 +66,12 @@
       "date": "2025-10-19",
       "rank": 1806,
       "eliminatedBy": "Desconhecido"
+    },
+    {
+      "date": "2025-10-20",
+      "rank": 892,
+      "eliminatedCount": 1,
+      "eliminatedBy": "francilene.ferreir"
     }
   ]
 }

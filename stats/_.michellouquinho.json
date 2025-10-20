@@ -1,9 +1,9 @@
 {
   "username": "_.michellouquinho",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2NDAxMDAwMGY1MDEwMDAwMDEwMjAwMDAwZDAyMDAwMDE5MDIwMDAwMjUwMjAwMDA1MjAyMDAwMGFiMDIwMDAwYjcwMjAwMDBjMzAyMDAwMDA1MDMwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAC8AAQEAAAAAAAAAAAAAAAAAAAAHEAABBQEBAQAAAAAAAAAAAAAAEVFhkbHRYID/2gAMAwEAAgADAAAAAbKAAAAAAAABGrLGiygAAAAAAAARqyxosoAAAAAAAAEassaLKAAAAAAAABGrLGiygAAAAAAAARqyxosoAAAAAAAAEassaLKAAAAAAAABGrLGiygAAAAAAAARqyxosoAAAAAAAAEassaLGjgsaOCxo4LGjgsaOCxo4LGjgsaOCxo4LHHA/9oACAEBAAEFAvmn/9oACAEDAAE/AfSf/9oACAECAAE/AfSf/9oACAEBAAY/Avmn/9oACAEBAAE/IflZJwScEnBJwScEnBJwScEnBJwScEnBJwScEnBJwScEnBJw/9oADAMBAAIAAwAAABDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjDDDDDDDDCD/2gAIAQMAAT8Q9J//2gAIAQIAAT8Q9J//2gAIAQEAAT8Q+VlvrgW+uBb64FvrgW+uBb64FvrgW+uBb64FvrgW+uBb64FvrgW+uBb64FvrgW+uBb64Fvrg/9k=",
-  "totalParticipacoes": 7,
+  "totalParticipacoes": 8,
   "totalEliminacoes": null,
-  "mediaRank": "2762.71",
+  "mediaRank": "2858.13",
   "mediaEliminacoes": "NaN",
   "melhorRank": {
     "rank": 1396,
@@ -42,6 +42,10 @@
     ],
     [
       "Desconhecido",
+      1
+    ],
+    [
+      "henrique.s.c.p",
       1
     ]
   ],
@@ -82,6 +86,12 @@
       "date": "2025-10-19",
       "rank": 3379,
       "eliminatedBy": "Desconhecido"
+    },
+    {
+      "date": "2025-10-20",
+      "rank": 3526,
+      "eliminatedCount": 0,
+      "eliminatedBy": "henrique.s.c.p"
     }
   ]
 }

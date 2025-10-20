@@ -1,13 +1,13 @@
 {
   "username": "r.afaelllllll",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZTAxMDAwMDAxMDIwMDAwMGQwMjAwMDAxODAyMDAwMDIzMDIwMDAwMmYwMjAwMDAzYjAyMDAwMDk2MDIwMDAwYTEwMjAwMDBhYzAyMDAwMGJhMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACkAAQEBAAAAAAAAAAAAAAAAAAAHARABAQAAAAAAAAAAAAAAAAAAYID/2gAMAwEAAgADAAAAAY+xoAAAAAAADbBH7AR4AAAAAAAACwx6wtjwYABgAAANZoAsMesJHgADAMBoABuaALDHrCR4AGAADAaAbg0Cwx6wkeABjcAAAADQAsMesLY8GAAY3AAAaAALDHrCR/AAAzQxow0AAAWGPWEjzTcDAAAAAAANsEfsDY+sBke2wCPLCI8sIjywiPLCI8sIj22AR7bAI/YA/9oACAEBAAEFApp//9oACAEDAAE/AUn/2gAIAQIAAT8BSf/aAAgBAQAGPwKaf//aAAgBAQABPyGaf//aAAwDAQACAAMAAAAQN5hBBBBB9B5hBBBBBBhohBB9999JFpBBF/8AffaQaQQfff8A320GkEHX3333EGi0EHX33kFWl00GHHkEF2nD0kEEEVX0AGHGEEGGGGP/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 3,
+  "totalParticipacoes": 4,
   "totalEliminacoes": null,
-  "mediaRank": "2635.33",
+  "mediaRank": "2175.50",
   "mediaEliminacoes": "NaN",
   "melhorRank": {
-    "rank": 1291,
-    "date": "2025-10-17"
+    "rank": 796,
+    "date": "2025-10-20"
   },
   "piorRank": {
     "rank": 4024,
@@ -25,6 +25,10 @@
     [
       "pedro.vini14",
       1
+    ],
+    [
+      "saymon_jx",
+      1
     ]
   ],
   "maioresCarrascos": [
@@ -38,6 +42,10 @@
     ],
     [
       "Desconhecido",
+      1
+    ],
+    [
+      "vitinho7.rs_",
       1
     ]
   ],
@@ -58,6 +66,12 @@
       "date": "2025-10-19",
       "rank": 2591,
       "eliminatedBy": "Desconhecido"
+    },
+    {
+      "date": "2025-10-20",
+      "rank": 796,
+      "eliminatedCount": 1,
+      "eliminatedBy": "vitinho7.rs_"
     }
   ]
 }

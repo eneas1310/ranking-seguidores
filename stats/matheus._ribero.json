@@ -1,9 +1,9 @@
 {
   "username": "matheus._ribero",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2NTAxMDAwMDE5MDIwMDAwMjUwMjAwMDAzMTAyMDAwMDNkMDIwMDAwNDkwMjAwMDA1NTAyMDAwMGIwMDIwMDAwYmYwMjAwMDBjYjAyMDAwMGU0MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADAAAQEBAQAAAAAAAAAAAAAAAAABBwMQAAEFAQEAAAAAAAAAAAAAAEABEVBggCAw/9oADAMBAAIAAwAAAAHHxOoAAAAAACUTYcf2BMfCgCrAFgACAATYcf2BMfCikooAARFlAgDYMf2BMfC1KoASgAgEWUCNgx/YEx+wtChABYoAIllAjYMf2BMfC0KEAAoAIhQI2DH9gTHwtCgABACWAUCNgx/YEx8KBYqoFShBSAADYMf2BMfAAsCwAoqJYqyiBdfx/YEx9sAx9sAx9sAx9sBcgmwDIGvjIGvjH2wDH2wDH9gE/9oACAEBAAEFAs0//9oACAEDAAE/AbJ//9oACAECAAE/AbJ//9oACAEBAAY/As0//9oACAEBAAE/Ic0//9oADAMBAAIAAwAAABCUVU120kFCID3jzTy0ECB3GAgEvTkkP0gX658vQ0M0B9/b6tQUN0R//wC2jcJD1AAx/wA1vLaVfWHCDBPPKMvbbfKVKDCAU8cEAAMIIP/aAAgBAwABPxDxU5YhRf/aAAgBAgABPxCyf//aAAgBAQABPxAlLchDkvyhbGMK8q8X/9k=",
-  "totalParticipacoes": 6,
+  "totalParticipacoes": 7,
   "totalEliminacoes": null,
-  "mediaRank": "1997.67",
+  "mediaRank": "1795.14",
   "mediaEliminacoes": "NaN",
   "melhorRank": {
     "rank": 440,
@@ -45,6 +45,10 @@
     [
       "yagofirmino_",
       1
+    ],
+    [
+      "luazinha_sant",
+      1
     ]
   ],
   "maioresCarrascos": [
@@ -70,6 +74,10 @@
     ],
     [
       "Desconhecido",
+      1
+    ],
+    [
+      "davi.rodriguesdasilva.94",
       1
     ]
   ],
@@ -106,6 +114,12 @@
       "date": "2025-10-19",
       "rank": 2556,
       "eliminatedBy": "Desconhecido"
+    },
+    {
+      "date": "2025-10-20",
+      "rank": 580,
+      "eliminatedCount": 1,
+      "eliminatedBy": "davi.rodriguesdasilva.94"
     }
   ]
 }

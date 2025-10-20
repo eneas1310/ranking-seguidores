@@ -1,9 +1,9 @@
 {
   "username": "jotazin.x7._",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZTAxMDAwMGYzMDEwMDAwZmYwMTAwMDAwYTAyMDAwMDE1MDIwMDAwMjEwMjAwMDAyZDAyMDAwMDg2MDIwMDAwOTEwMjAwMDA5YzAyMDAwMGFhMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACkAAQEBAAAAAAAAAAAAAAAAAAAHARABAQAAAAAAAAAAAAAAAAAAYID/2gAMAwEAAgADAAAAAYwAAAAAAAADbNGbMRgAAAAAAAAG2aM2YjAAAAAAAAANs0ZsxGAAAAAAAAAbZozZiMAAAAAAAAA2zRmzEYAAAAAAAABtmjNmIwAAAAAAAADbNGbMRgAAAAAAAAG2aM2YjAAAAAAAAANs0ZsxGVmEZWYRlZhGVmEZWYRlZhGVmEZWYRlZhGbMH//aAAgBAQABBQKaf//aAAgBAwABPwFJ/9oACAECAAE/AUn/2gAIAQEABj8Cmn//2gAIAQEAAT8hmn//2gAMAwEAAgADAAAAEPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAAAAAAAAAAAP/aAAgBAwABPxBJ/9oACAECAAE/EEn/2gAIAQEAAT8Qmn//2Q==",
-  "totalParticipacoes": 7,
+  "totalParticipacoes": 8,
   "totalEliminacoes": null,
-  "mediaRank": "2336.71",
+  "mediaRank": "2275.88",
   "mediaEliminacoes": "NaN",
   "melhorRank": {
     "rank": 518,
@@ -20,6 +20,14 @@
     ],
     [
       "marcialima_bsb26",
+      1
+    ],
+    [
+      "andersonxgouveia",
+      1
+    ],
+    [
+      "cami01_00",
       1
     ]
   ],
@@ -46,6 +54,10 @@
     ],
     [
       "Desconhecido",
+      1
+    ],
+    [
+      "thiagovianateixeiralage",
       1
     ]
   ],
@@ -86,6 +98,12 @@
       "date": "2025-10-19",
       "rank": 2588,
       "eliminatedBy": "Desconhecido"
+    },
+    {
+      "date": "2025-10-20",
+      "rank": 1850,
+      "eliminatedCount": 2,
+      "eliminatedBy": "thiagovianateixeiralage"
     }
   ]
 }

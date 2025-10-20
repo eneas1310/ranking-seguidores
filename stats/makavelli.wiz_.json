@@ -1,13 +1,13 @@
 {
   "username": "makavelli.wiz_",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE5OTAxMDAwMDNjMDMwMDAwNGUwNDAwMDA4MzA0MDAwMGFhMDQwMDAwYzgwNDAwMDAzMjA2MDAwMDhjMDYwMDAwZDAwNjAwMDAwZjA3MDAwMGY5MDkwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAGQAAAIDAQEBAAAAAAAAAAAAAAECAAMEBgUHEAACAgEEAQQCAwAAAAAAAAAAAQIREAMSIDAhEzFQUQRAFEFwEQADAAICAQQCAwADAAAAAAAAAREQITFRQSBhcYGRsaHB8NHh8f/aAAwDAQACAAMAAAAB+bublsOoaoW016oUS+uRAtMls87IJ6nnYFBvXNoku1I5Fna8J3ZHz2+vWG0XqSLLqGkurxeeDvwZccF1VJK2JW5l/oY1U7ZjUHX9D+Y/ToeEsQw6Xokm2jJ5DI+ekRXWsEWSt5LHrSG9aroWts3JZn+jcZ2aNwl3nvbVrx48kF+RAVYAQNApjythGmnfD5d+xVs1+lT6K2Zeu5nppPlmdEsztXJArhjElkkQXIRb7PldbDr87oOXV6qrdNV92zHrKv0PPdC6fIF00mtIbJKTHkud7A1FzXEW+/44VvS8CvSrv6E0xhcwZF6TnOjI+bYfZwgZl96uHwbbMxXXfgcN6B8xAdtdO2S30atQay1WKsawwfpeX6hTxVljmaM2plbx+f8AoHPsnNPYWWt3uBr9CnSr36M90lsrEjlXIfqOU6sjl7c+gNNWVEbo/IauyvFh9qsHwR69anzLdtcNVgEFgUmPFcqvY8b2RnGaupinmK+rgbmr/ehnN5+skHI1dnFPGnsYRxK9xJOIbtZJxjdjHXkeukg//9oACAEBAAEFAiiOEhLjZuJalD1Wy8UJYQhCQhZY2OQ5l4sirxZeErEuLZKRKQ5ZsirxZZeI5WHMeoPUHLF4RuNxuNxeEyxPEpkpDkX0qNi0ih5lMlLossSFESFncSkOfUhGnGyihSN45DfQiMLFpDjRRpYobLL6IpGjoKR/GUVRLybSPjN9F4jCz8aoGq/E5kcrooo2np0RjRpQ3GtqjIYSzXFCeUJ0S1WbrIxNolwkhiiMoo2G0pG4eoe4okVxslEULfpmjoqbaLFI3F5iIWbLwzTRQobjU0ySxWUhLN8aEsafvNGrpWOIlwXQsP20/BrYlpo9EcDbzWEJ4ZGZuvg0UUUPkhPLiRyyTLLLGyxcf//aAAgBAwABPwHlZeK4tl87L4xiUWXyUT2L5wES40bTYIustFYTRvLvn7lFFckvBVdMSXR//9oACAECAAE/AedYvhfe2X0XiucsLjZuNw8Vm8Ubeqx8n7l30sXR/9oACAEBAAY/Av8AIvJ9/DeDav0q/r6/ed/XzS+V/9oACAEBAQE/IUhV7iUSPquBrFOBjUSPMQdYQgUZCCZCDQzTDM6x0UeCWsimRJQQhv0C0Gyjwyc9AggsMUkMeKhcKJfUtPEsTgQls5djMKXCWKUQ8MYgkgkPTE+PsvhsuUXJfFDBP7Lo/wDR75YbL6aXFdDM5T2MqCRB5lhvopcJRg7zyhBNImR8xhv0RkIMcoQktn0cgILQmsF0KcDrDZMo4yYxfXev5K0R0tjbJssE4xMzK1x3G3hyhyDfg8+EaqWPn7H65En9iRTkawwyD9Cpxh8z2HFTnRpHiWNR6pU83sKLEhKEghcFOCPliiJUWN5TuI4GwCjNL3HI0GFl94ggmNKP0WDZwK4tXoimuf6ZHyIVEJg4vcQrg2XCR5EjhGqat18eRrbqhyJB6GkEhYITGy4WSHEMn0xv86Gl5GroeWghHA2U4DGxJj1C+Bw5uHobJePSCxfSPBwLF1h0vsYb4sRxat4TmOD/2gAMAwEBAgEDAQAAEGehl/WznjaDIYUIa7B5ylNpd2uBFAo5k9h5Xz9sAqyyOiXHlqqa1x42/wD+QQF9wu0d6COWJQDZiHiA5IEyOWVdS9EuINJCBJGFGGP/2gAIAQMBAT8QnomIXrZ6EhFzoO/QsE4M3NF6JuZ6RijRPRfgJNLBfQeDpHsRXLD9C4Y8CKjLzRl2L1TZcMNsXpZKf//aAAgBAgEBPxDMKNkwmCxcJSZeUQnqaIT1MS+kiCHHjPWdhIWCebbBqYWHh8o4ww1xREw0yniiFlBRrLFin//aAAgBAQEBPxBT4QmN7K0TVW0z2qxYS4dGKG19lGtnoTdMfae8Po6o6Q7k8L15OhyKBJiX5KpXs1cbKu0LxLBexPli/JaL6b8HcHgMReBNPY7YMhYvHwaeTiXXfRoM97NKRNbxNHjaaYENxohweFr18kRIjXehDc9qUqXu/j9Cfk2NZ1yMq58DibNRIOMFz+Cze/r9D5GcqZVsvf8AgYm3yXfuXncHpHqDY1N8KKh0NatHsEu9HkBV3qlfy/YwZo1rsUvsw+hPjK5GKKFTbxBLVeRRTa0Fq1fMH/G/Ae1rYbN6LYPYsVZ6Q6YPsQytUkPMKvk6uPD7J+D/AIPnGgmMTyVlR4Qmm9sJJceXD9kxrKKjdors+hhUgkTFQgmfwBixWK18J/kjyfYsiT/mQJ+RUoJ9CgsKYSkENsdMKS8GlKfLmVBHKl6hRrqp+zFPduo/WVS8+BkZtd/kbwaEhwho3C6MjyQJCc8F1o4Jwnv4N2l0/sC6suT8Ktn7ieNsK8xWnwp1iS7Y+iaEz12aon4G/wB7Gj4I/DIuGKO2r5Rb7OLp1/Tc/Y+hHezJkv8AM8L8ESExkePb+xGIS2h/Yr88He+ULnb+zwmOc3b8IWy9OHQrghvs/wByK15KNiPIxx+w8Dp01+z7+CXX6PEtf9CDvC7h4S2OFji49aQmEWG63+hNPwfp/wAnzCjrkbm026V3+xiTy635EKTlVqQWHgc59hD2JV9nVD7NeeSlhe6NvElb937LP5G6stqkWJ7tjeM91trs4ul38jUmv4KNVZPQz0h9/VPJPb7PZx+sG0tobkU3l1Bunn13/DFe63Yc0lTPIjZ9ex68cS+z6OHEPG3iF2/kaifTn9oqKhOxS8mgS/lCxD15ng5Jv+tD1TUmkO6/k/k0xG15KPcSueSLxyattCeVgxDw/wDeSrob62Vca8CjqCngaL40aW35Hxycmxk2JJ8T5Q32ax2qI4U5NKjYBGwPQ9F7n//Z",
-  "totalParticipacoes": 7,
+  "totalParticipacoes": 8,
   "totalEliminacoes": null,
-  "mediaRank": "2656.00",
+  "mediaRank": "2404.13",
   "mediaEliminacoes": "NaN",
   "melhorRank": {
-    "rank": 1425,
-    "date": "2025-10-15"
+    "rank": 641,
+    "date": "2025-10-20"
   },
   "piorRank": {
     "rank": 3935,
@@ -28,6 +28,10 @@
     ],
     [
       "tutukca",
+      1
+    ],
+    [
+      "thiago.marinato",
       1
     ]
   ],
@@ -54,6 +58,10 @@
     ],
     [
       "Desconhecido",
+      1
+    ],
+    [
+      "juanmeloc_",
       1
     ]
   ],
@@ -94,6 +102,12 @@
       "date": "2025-10-19",
       "rank": 3935,
       "eliminatedBy": "Desconhecido"
+    },
+    {
+      "date": "2025-10-20",
+      "rank": 641,
+      "eliminatedCount": 1,
+      "eliminatedBy": "juanmeloc_"
     }
   ]
 }

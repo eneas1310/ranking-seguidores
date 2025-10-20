@@ -1,17 +1,17 @@
 {
   "username": "lewa.rrrr",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE3ZDAxMDAwMDM4MDIwMDAwODcwMjAwMDA5MzAyMDAwMDlmMDIwMDAwYzUwMjAwMDAyYTAzMDAwMDgzMDMwMDAwOGYwMzAwMDA5YjAzMDAwMDJjMDQwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAEgAAQEAAgMBAAAAAAAAAAAAAAAHAQIEBQYDEAABAwEGBAMJAQAAAAAAAAABABEhMQIDMEFRYQQQcIFgcZEFEhMiMkCx0eGh/9oADAMBAAIAAwAAAAGMAAAAAAAAAzZozZiMAAAAAAAAAzZozZiMAAAAAAAAAzZozZiMAAAGxqzgNtQAADNmjNmIwAAbHN7LtvmeT0+Y53O4fsSf453ENAAZs0ZsxGAANtR6n0c17E5PXdtxzt9fO8Q5Hz+QAAzZozZiMAAAAAAAAAzZozZiMAAAAAAAAAzZozZiMAAAAAAAAAzZozZiMrMIyswjKzCMrMIyswjKzCMrMIyswjKzCM2YP//aAAgBAQABBQLoe2PdXXvLiB8MWGRZXf1XvDtjcOA3tCzHK4D2rci3YTYnD3qi2L7hTZQurRVzdiwry+RtI2nxAWVniCFZ4tkeJRvSeh3/2gAIAQMAAT8B8Sf/2gAIAQIAAT8B8Sf/2gAIAQEABj8C6PgDNfM7TTXJR3Tap8eydOY2+wZRIVFv9jr0Q//aAAgBAQABPyHoYATTnQ+OWeSZU1ZUugyHhqydn2VKVKtdtkIIBTVq37RhZTFAdMjap3yI9+frpysxZEwz54YLICmFLiUf/uWaEBkyQQ4dPk7r0mISjkRXOBBmMoruAyz5Ev0N/9oADAMBAAIAAwAAABDzzzzzzzzwDzzzzzzzzwDzzzzzzzzwDzzzjTzzzwDzzjxwBzzwDzyzgxzzzwDzzzzzzzzwDzzzzzzzzwDzzzzzzzzwAAAAAAAAAAD/2gAIAQMAAT8Q8Sf/2gAIAQIAAT8Q8Sf/2gAIAQEAAT8Q6GOjCWktkEeTtj8Y8ip/0occ/YUvTWsdjukmlZkcYAKy8CXY0ljVPaQA+o7ZMaYOTBED0iYRhAzeRRzMQKS9v6mNEeaAHnZCSAgSGG/BGSBOT5j9IQCDQIrOxahGmAtzARuXKhQZBwakZr0BhiEHJimPNk+nQmJD8wd0SWwNRaaRai/Q3//Z",
-  "totalParticipacoes": 7,
+  "totalParticipacoes": 8,
   "totalEliminacoes": null,
-  "mediaRank": "2461.86",
+  "mediaRank": "2710.38",
   "mediaEliminacoes": "NaN",
   "melhorRank": {
     "rank": 401,
     "date": "2025-10-19"
   },
   "piorRank": {
-    "rank": 3504,
-    "date": "2025-10-15"
+    "rank": 4450,
+    "date": "2025-10-20"
   },
   "maioresVitimas": [
     [
@@ -20,6 +20,10 @@
     ],
     [
       "silvaxz099_",
+      1
+    ],
+    [
+      "szmidiaa",
       1
     ]
   ],
@@ -46,6 +50,10 @@
     ],
     [
       "Desconhecido",
+      1
+    ],
+    [
+      "dodx152",
       1
     ]
   ],
@@ -86,6 +94,12 @@
       "date": "2025-10-19",
       "rank": 401,
       "eliminatedBy": "Desconhecido"
+    },
+    {
+      "date": "2025-10-20",
+      "rank": 4450,
+      "eliminatedCount": 1,
+      "eliminatedBy": "dodx152"
     }
   ]
 }

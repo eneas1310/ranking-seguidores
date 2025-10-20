@@ -1,17 +1,17 @@
 {
   "username": "auakpjl",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE4MDAxMDAwMDMyMDIwMDAwNzUwMjAwMDA4MTAyMDAwMDhkMDIwMDAwZWMwMjAwMDA3MDAzMDAwMGM5MDMwMDAwZDUwMzAwMDBlMTAzMDAwMDczMDQwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAEsAAQEBAQEBAQAAAAAAAAAAAAAHAQUGAgQQAAEDAgMECAQHAAAAAAAAAAECESEAMQNAQVFhcHEEBRIwYIGRsRBQofAUIjJSweHx/9oADAMBAAIAAwAAAAGMAAAAAAAAAWeMWcjAAAAAGgz6wwACzxizkYAAAABuaGAAAs8Ys5GAAAAHSw5wAABplnjFnIwAAAD11C8V28Tb8Xr/ACGgAAFnjFnIw3AABuadH1HF4x9/l3AAABZ4xZyMAA3AaDAAAAAWeMWcjAANwG5pgAAAAFnjFnIwAADQY3AAAABZ4xZyMLOIws4jG2YRnbKIws4jCziMLOIws4jCziMWcP/aAAgBAQABBQLganouIpC+jYiBkersfFSerVfiU42CrBVkOqMJKyleF0ausVoWrIYC1g4uO6cTEOIchhNhpUsq4H//2gAIAQMAAT8B8Sf/2gAIAQIAAT8B8Sf/2gAIAQEABj8C4GlYQSkFnrtKQoDaRkinDJsSwrFSs9rtCd3lzooUGIyOK5b8kHnSkYSiXbd+nUkwK7QKlEm+nZHvkWRdUUxLhN1fu3ToNPXZTnIkkyoQNf8APe3BD//aAAgBAQABPyHga9m4EOH96sEsOQHNslJc3hbWYAGvpTTosg8aQBY8i48qeNNiPY8iJyMiUMA9zawvyo4XZhc5AhiBd3htKNI7igYGDh5auwEcsheMyzbLj7s16EASKMOTdwJcTtvPDKPTubDcBYDIs/BoGSB9mX13D1eLCw2PwDPef//aAAwDAQACAAMAAAAQ888888888o88888gQ88o88888Qc88o888848884o8888Vc888o088o4U888o88cgc8888o88co88888o888A08888owwwgwwwwwg/9oACAEDAAE/EPEn/9oACAECAAE/EPEn/9oACAEBAAE/EPmT5J4amdzbd4IiTmWRiJXDsGDh6mw0A64EkQSLPktNHiDW/njs3qcDO+N+jIbqhyjsPUG0gAdhyLgOl4vc30vhGOVRBJHUC+8xn/IMhIqaMI/wFtX1LK+lLEgpma7MAgkcemQ/u/cjuA3tQQ/70hWQnc2Gp660Q0HvQHgZUZEZZvm7xR71/9k=",
-  "totalParticipacoes": 6,
+  "totalParticipacoes": 7,
   "totalEliminacoes": null,
-  "mediaRank": "1884.50",
+  "mediaRank": "2233.29",
   "mediaEliminacoes": "NaN",
   "melhorRank": {
     "rank": 256,
     "date": "2025-10-17"
   },
   "piorRank": {
-    "rank": 3880,
-    "date": "2025-10-19"
+    "rank": 4326,
+    "date": "2025-10-20"
   },
   "maioresVitimas": [
     [
@@ -45,6 +45,10 @@
     [
       "kaua10007o",
       1
+    ],
+    [
+      "joaolucas_mlksonhado",
+      1
     ]
   ],
   "maioresCarrascos": [
@@ -70,6 +74,10 @@
     ],
     [
       "Desconhecido",
+      1
+    ],
+    [
+      "isabeli.orqis",
       1
     ]
   ],
@@ -106,6 +114,12 @@
       "date": "2025-10-19",
       "rank": 3880,
       "eliminatedBy": "Desconhecido"
+    },
+    {
+      "date": "2025-10-20",
+      "rank": 4326,
+      "eliminatedCount": 1,
+      "eliminatedBy": "isabeli.orqis"
     }
   ]
 }
