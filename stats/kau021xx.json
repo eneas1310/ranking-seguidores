@@ -1,11 +1,11 @@
 {
   "username": "kau021xx",
-  "imageUrl": "blob:null/5014cc53-f88e-49f7-83a7-25ce2d0c6ce8",
-  "totalParticipacoes": 9,
-  "totalEliminacoes": 8,
-  "pontosAcumulados": 20,
-  "mediaRank": "2886.89",
-  "mediaEliminacoes": "0.89",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAUGBgsICwsLCwsNCwsLDQ4ODQ0ODg8NDg4ODQ8QEBARERAQEBAPExITDxARExQUExETFhYWExYVFRYZFhkWFhIBBQUFCgcKCAkJCAsICggLCgoJCQoKDAkKCQoJDA0LCgsLCgsNDAsLCAsLDAwMDQ0MDA0KCwoNDA0NDBMUExMTnP/AABEIAJYAlgMBIgACEQEDEQH/xABQAAEAAwEBAQEAAAAAAAAAAAAABAUGAwIBCBAAAgEBAwcKBQQDAAAAAAAAAAECAwQRIQUSEzFBUYEiMlJhcZGhwdHhQmKSsfAVIzNyFKLx/9oADAMBAAIAAwAAPwD9lgAAAHOpUjTWdJ3IA6EataqdLnSx3LFlJaMoynhDkx3/ABP0KoAuqmVG+ZG7rePgQJ2yrLXN8MPsRAAenOT1tvizyAAdI1ZR1SkuLJULfVj8Wd24+5BABf0sqJ8+N3WsfAtadWNRXxkmYs9Rm4O+Lae9AG3BSWbKV/JqYfNs4l2neAAAAAAAADnUqKnFylgkAeK9eNGOdLgtrZla9olWd8uC2IWiu60s58FuRHAAAAAAAAAAAAAAAABY2S2ujyXjD7dnoVwANvGSkk0709TPRmLDa9E82XMf+r9N5pwAAAAZvKNoz5Zi5sdfXL2Lu1VtFTlLbqXazHgAAAAAAA9wpym7opyfUTrJYnW5Twh4vs9TSU6caauirkAZ2GTKj15seN/2Ov6VLpruZoQAZapk+rDYpf1fkV7V2DwZuSNXs0Ky5Sx2Na0AY8Ei0WeVGVz4PeRwAAAAaPJ1oz45j50dXWvYzh2oVdFOMt2vs2gGzB8TvV61MAFDlSpe4w3YvjqKUl2yedVm+u7uwIgAAAAJNloaaajs1y7CMaPJlO6Dltk/Be94BaxiopJYJH0AAAAAAAAj2igq0XF8HuZj5RcW09adzNwZrKdPNqKXSXivxAFWAAAAADUZOqZ9JLbHD0BAyXO6U470n3f9ABUTd7b3t/c8gAAAAA1ti/hh2GSNVk+edSj8t68QCeAAAAAAAAAUuVVhDtf2LoocqzxhHtfkAUgAAAAAJFnqZkr+r0BwQAPdWObKS3Sf3OZOt8M2rL5se/3IIAAAALfJlbNk4P4tXavYqAnditaANyCBY7WqyueE1rW/rRPAAAAAAABj7VW0tSUtmpdiLO32y++nB/2fl6lGAAAAAAATLJS0k2vl80CwyVDny7F5+gAPeVKV6jPdg+OrxKA2lWmqkZRe1GNnBwbi9adzAPIAAAASvAPqbTvTua2lzQym1hUV/wAy80VWhn0JfSxoJ9CX0sA1ULXSnqmuOH3Oulh0496MhoJ9CX0saCfQl9LANNUt1KHxZz3Rx9imtGUJ1MI8iPi+JC0E+hL6WNBPoS+lgHIHR0pLXGS4M5gAAAAAmWOhpaiWxYvsXqAaGxUtHSitrxfEEwAApMpWa/8Acjs53ZvLsNXgGGCV5YW2yaF3x5j8Or0J+TbOrtI8W9XV7gHiz5N21PpXmy5hSjDCMUuw6AAAAAAAAAAAEarZadXnRV+9YPvJIAMtarDKjylyob9q7fUrzctXmVt1nVGeHNliluAICV5rLHZ9DDHnSxl6cCDYLHd+5NY/Ct3WXYAAAAAAB5lFSTTV6etFJOlUsks+nyqe1fn3L0AEWhaYVlyXjtjtRKKuvYE3nU3mS8PY4xtlSjya0L10l+XMAugRqVqp1ObJX7tTJIAAAAAAABBq26lT+LOe6OPsQXUr2nmrRw3++vuAJdpt0afJjyp7t35uONnscpS0lbGWxevoSrPY4UcedLpPy3E0AAAAAAAAAAAAAHxpPBq9AAFfVydSnqWa+r0I/wDhVqfMrYdd/uAARp2mvT1yi+Hsjn+o1fl7gADvCpaKuqcV4eR2/T5T/kquXV/30AAJtKxUqeqN73vEmAAAAAAAAAAAH//Z",
+  "totalParticipacoes": 8,
+  "totalEliminacoes": 7,
+  "pontosAcumulados": 17,
+  "mediaRank": "2957.63",
+  "mediaEliminacoes": "0.88",
   "melhorRank": {
     "rank": 1354,
     "date": "2025-10-20"
@@ -68,13 +68,6 @@
       "pontos": 5,
       "eliminatedCount": 3,
       "eliminatedBy": "djotazz"
-    },
-    {
-      "date": "2025-10-21",
-      "rank": 2321,
-      "pontos": 3,
-      "eliminatedCount": 1,
-      "eliminatedBy": "arthur.slzz"
     }
   ]
 }

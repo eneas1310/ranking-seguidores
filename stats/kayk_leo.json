@@ -1,18 +1,18 @@
 {
   "username": "kayk_leo",
-  "imageUrl": "blob:null/567be652-2b91-4bc7-bd9c-55e49307fd65",
-  "totalParticipacoes": 9,
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MzAxMDAwMDBjMDIwMDAwMTgwMjAwMDAyMzAyMDAwMDJlMDIwMDAwM2EwMjAwMDA0NjAyMDAwMDlmMDIwMDAwYWEwMjAwMDBiNTAyMDAwMGNjMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAC4AAQEBAAAAAAAAAAAAAAAAAAABBxAAAgIDAAAAAAAAAAAAAAAAAWBQgBARQP/aAAwDAQACAAMAAAABxoAoABLBUFSkoEo2TG9kMaAoAAAAAARQ2TG9kMaAsoAAAAAAA2TG9kMaAsFlAACWCwUhUo2TG9kMaAKAAACFlEWAF2TGtlMaUSgAAIUEWAAF2TGtlMaAsFlgBUFlEsAADZca2UxoAAAAAAAADZca2UxoAAAAAAAADZca2UxpsoxpsoxpsoxpsoxpsoxpsoxpsoxpsoxpsoxrZQ//2gAIAQEAAQUCrT//2gAIAQMAAT8BZP/aAAgBAgABPwFk/9oACAEBAAY/Aq0//9oACAEBAAE/Ia0//9oADAMBAAIAAwAAABADgACgwiAABSAAAAAABAACgAAAAAAAACxAABSwQgADgAAARDRQgCAAAQCTxQiCRTwxCzxCABDDDDDAACgAAAACgAACgAAAAAAAAAD/2gAIAQMAAT8QZP/aAAgBAgABPxBk/9oACAEBAAE/EGESm+EZHGIYSm1P/9k=",
+  "totalParticipacoes": 8,
   "totalEliminacoes": 7,
-  "pontosAcumulados": 88,
-  "mediaRank": "1614.56",
-  "mediaEliminacoes": "0.78",
+  "pontosAcumulados": 87,
+  "mediaRank": "1336.75",
+  "mediaEliminacoes": "0.88",
   "melhorRank": {
     "rank": 80,
     "date": "2025-10-15"
   },
   "piorRank": {
-    "rank": 3837,
-    "date": "2025-10-21"
+    "rank": 3155,
+    "date": "2025-10-16"
   },
   "historicoDeBatalhas": [
     {
@@ -68,13 +68,6 @@
       "pontos": 3,
       "eliminatedCount": 0,
       "eliminatedBy": "miriade61"
-    },
-    {
-      "date": "2025-10-21",
-      "rank": 3837,
-      "pontos": 1,
-      "eliminatedCount": 0,
-      "eliminatedBy": "_roberto.nascimento_"
     }
   ]
 }

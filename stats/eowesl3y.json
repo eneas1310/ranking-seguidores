@@ -1,11 +1,11 @@
 {
   "username": "eowesl3y",
-  "imageUrl": "blob:null/a7dec100-d79a-4edf-a973-2db59bd6ce08",
-  "totalParticipacoes": 9,
-  "totalEliminacoes": 11,
-  "pontosAcumulados": 38,
-  "mediaRank": "2103.33",
-  "mediaEliminacoes": "1.22",
+  "imageUrl": "data:image/jpeg;base64,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",
+  "totalParticipacoes": 8,
+  "totalEliminacoes": 9,
+  "pontosAcumulados": 33,
+  "mediaRank": "2171.25",
+  "mediaEliminacoes": "1.13",
   "melhorRank": {
     "rank": 778,
     "date": "2025-10-16"
@@ -68,13 +68,6 @@
       "pontos": 5,
       "eliminatedCount": 1,
       "eliminatedBy": "f_oliveira9"
-    },
-    {
-      "date": "2025-10-21",
-      "rank": 1560,
-      "pontos": 5,
-      "eliminatedCount": 2,
-      "eliminatedBy": "glauberr_rocha"
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
   "username": "jotazin.x7._",
-  "imageUrl": "blob:null/8b707cac-7662-4e2b-bfb5-0beddaa459d9",
-  "totalParticipacoes": 9,
-  "totalEliminacoes": 5,
-  "pontosAcumulados": 36,
-  "mediaRank": "2208.78",
-  "mediaEliminacoes": "0.56",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZTAxMDAwMGYzMDEwMDAwZmYwMTAwMDAwYTAyMDAwMDE1MDIwMDAwMjEwMjAwMDAyZDAyMDAwMDg2MDIwMDAwOTEwMjAwMDA5YzAyMDAwMGFhMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACkAAQEBAAAAAAAAAAAAAAAAAAAHARABAQAAAAAAAAAAAAAAAAAAYID/2gAMAwEAAgADAAAAAYwAAAAAAAADbNGbMRgAAAAAAAAG2aM2YjAAAAAAAAANs0ZsxGAAAAAAAAAbZozZiMAAAAAAAAA2zRmzEYAAAAAAAABtmjNmIwAAAAAAAADbNGbMRgAAAAAAAAG2aM2YjAAAAAAAAANs0ZsxGVmEZWYRlZhGVmEZWYRlZhGVmEZWYRlZhGbMH//aAAgBAQABBQKaf//aAAgBAwABPwFJ/9oACAECAAE/AUn/2gAIAQEABj8Cmn//2gAIAQEAAT8hmn//2gAMAwEAAgADAAAAEPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAAAAAAAAAAAP/aAAgBAwABPxBJ/9oACAECAAE/EEn/2gAIAQEAAT8Qmn//2Q==",
+  "totalParticipacoes": 8,
+  "totalEliminacoes": 4,
+  "pontosAcumulados": 31,
+  "mediaRank": "2275.88",
+  "mediaEliminacoes": "0.50",
   "melhorRank": {
     "rank": 518,
     "date": "2025-10-14"
@@ -68,13 +68,6 @@
       "pontos": 5,
       "eliminatedCount": 2,
       "eliminatedBy": "thiagovianateixeiralage"
-    },
-    {
-      "date": "2025-10-21",
-      "rank": 1672,
-      "pontos": 5,
-      "eliminatedCount": 1,
-      "eliminatedBy": "brendinha_gonzaga"
     }
   ]
 }

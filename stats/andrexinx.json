@@ -1,11 +1,11 @@
 {
   "username": "andrexinx",
-  "imageUrl": "blob:null/1c9a77dd-675c-40b4-9ffa-91b3dd894a04",
-  "totalParticipacoes": 8,
-  "totalEliminacoes": 5,
-  "pontosAcumulados": 47,
-  "mediaRank": "1798.63",
-  "mediaEliminacoes": "0.63",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MTAxMDAwMGY0MDEwMDAwMDAwMjAwMDAwYjAyMDAwMDE2MDIwMDAwMjIwMjAwMDAyZTAyMDAwMDg3MDIwMDAwOTUwMjAwMDBhMDAyMDAwMGFlMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACwAAQEBAQAAAAAAAAAAAAAAAAAHAQIQAQEBAQAAAAAAAAAAAAAAAGCAASD/2gAMAwEAAgADAAAAAY6OtAAAAAAAAWKO2IjoAAAAAAAAFijtiI6AAAAAAAABYo7YiOgAAAAAAAAWKO2IjoAAAAAAAAFijtiI6AAAAAAAABYo7YiOgAAAAAAAAWKO2IjoAAAAAAAAFijtiI5oAAAAAAAAZY47YiOrEI6sQjqxCOrEI6sQjqxCOrEI6sQjqxCO2IP/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABBT3333X1n0nT333332y0mz333333kgnjn33333mSBiBR1jz2gyG3hz3j3mgCmwzmyRR2DiBgCDyQT0DECQAQznBwiiIDFBHCDADEH/2gAIAQMAAT8QP7z/AP/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
+  "totalParticipacoes": 7,
+  "totalEliminacoes": 4,
+  "pontosAcumulados": 37,
+  "mediaRank": "1931.00",
+  "mediaEliminacoes": "0.57",
   "melhorRank": {
     "rank": 536,
     "date": "2025-10-19"
@@ -62,13 +62,6 @@
       "pontos": 5,
       "eliminatedCount": 3,
       "eliminatedBy": "antoni_ce._ofc"
-    },
-    {
-      "date": "2025-10-21",
-      "rank": 872,
-      "pontos": 10,
-      "eliminatedCount": 1,
-      "eliminatedBy": "matheus_moraesh10"
     }
   ]
 }

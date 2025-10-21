@@ -1,11 +1,11 @@
 {
   "username": "x.hts__",
-  "imageUrl": "blob:null/da0f46c7-4802-45e6-88c4-afbed9275d73",
-  "totalParticipacoes": 9,
-  "totalEliminacoes": 7,
-  "pontosAcumulados": 28,
-  "mediaRank": "2527.11",
-  "mediaEliminacoes": "0.78",
+  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZjAxMDAwMDAwMDIwMDAwMGMwMjAwMDAxNzAyMDAwMDIyMDIwMDAwMmUwMjAwMDAzYTAyMDAwMDk1MDIwMDAwYTAwMjAwMDBhYjAyMDAwMGI5MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACoAAQEBAQAAAAAAAAAAAAAAAAAHAQIQAQEAAAAAAAAAAAAAAAAAAGCA/9oADAMBAAIAAwAAAAGPB0AAAAAAAAsMesLI8GgAAAAAAALDHrCyPBoAAAAAAACwx6wsjwaAAAAAAAAsMesLI8GgAAANwAG4DRYI9YWR4NAAAbgAAAGmWGPWFkeDQAAAG4ABpgFhj1hZHg0AAAAGAA0BYY9YWR4NABgANABgANWGPWFkeWER5YRHlhEeWER5YRHlhEeWER5YTY8sJkesI3//2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDJJIb5obZ4MILo577476nr4b777776N77r7z7776P77z7y77bov77767777qv777z677r6vz7777v/AO+r+6X/ALvv9/o880Yc0w8EYv/aAAgBAwABPxBJ/9oACAECAAE/EEn/2gAIAQEAAT8Qmn//2Q==",
+  "totalParticipacoes": 8,
+  "totalEliminacoes": 6,
+  "pontosAcumulados": 23,
+  "mediaRank": "2651.25",
+  "mediaEliminacoes": "0.75",
   "melhorRank": {
     "rank": 1174,
     "date": "2025-10-17"
@@ -68,13 +68,6 @@
       "pontos": 0,
       "eliminatedCount": 0,
       "eliminatedBy": "enzo.boniatti"
-    },
-    {
-      "date": "2025-10-21",
-      "rank": 1534,
-      "pontos": 5,
-      "eliminatedCount": 1,
-      "eliminatedBy": "fernandafelix1907"
     }
   ]
 }
