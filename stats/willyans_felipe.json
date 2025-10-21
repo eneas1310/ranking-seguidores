@@ -1,0 +1,26 @@
+{
+  "username": "willyans_felipe",
+  "imageUrl": "blob:null/db5490ac-a07f-4671-94a6-010e406fbb34",
+  "totalParticipacoes": 1,
+  "totalEliminacoes": 0,
+  "pontosAcumulados": 3,
+  "mediaRank": "2754.00",
+  "mediaEliminacoes": "0.00",
+  "melhorRank": {
+    "rank": 2754,
+    "date": "2025-10-21"
+  },
+  "piorRank": {
+    "rank": 2754,
+    "date": "2025-10-21"
+  },
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-21",
+      "rank": 2754,
+      "pontos": 3,
+      "eliminatedCount": 0,
+      "eliminatedBy": "ianfernann"
+    }
+  ]
+}

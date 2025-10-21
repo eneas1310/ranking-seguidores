@@ -1,0 +1,26 @@
+{
+  "username": "y__gomesz_",
+  "imageUrl": "blob:null/ebc3f82d-671e-41a3-9172-6efb608dde69",
+  "totalParticipacoes": 1,
+  "totalEliminacoes": 2,
+  "pontosAcumulados": 5,
+  "mediaRank": "1167.00",
+  "mediaEliminacoes": "2.00",
+  "melhorRank": {
+    "rank": 1167,
+    "date": "2025-10-21"
+  },
+  "piorRank": {
+    "rank": 1167,
+    "date": "2025-10-21"
+  },
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-21",
+      "rank": 1167,
+      "pontos": 5,
+      "eliminatedCount": 2,
+      "eliminatedBy": "kaiqui.zx7"
+    }
+  ]
+}

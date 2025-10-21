@@ -1,0 +1,26 @@
+{
+  "username": "santos_cwh",
+  "imageUrl": "blob:null/6780b0f9-4c2f-4efb-b6c3-3eaa0a9341aa",
+  "totalParticipacoes": 1,
+  "totalEliminacoes": 0,
+  "pontosAcumulados": 3,
+  "mediaRank": "2848.00",
+  "mediaEliminacoes": "0.00",
+  "melhorRank": {
+    "rank": 2848,
+    "date": "2025-10-21"
+  },
+  "piorRank": {
+    "rank": 2848,
+    "date": "2025-10-21"
+  },
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-21",
+      "rank": 2848,
+      "pontos": 3,
+      "eliminatedCount": 0,
+      "eliminatedBy": "felipedosrs"
+    }
+  ]
+}

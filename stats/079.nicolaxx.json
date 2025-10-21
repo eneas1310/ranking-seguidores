@@ -1,0 +1,26 @@
+{
+  "username": "079.nicolaxx",
+  "imageUrl": "blob:null/a93dc0c7-a3d8-4ead-8d4f-f8b1b8085fd1",
+  "totalParticipacoes": 1,
+  "totalEliminacoes": 0,
+  "pontosAcumulados": 0,
+  "mediaRank": "4195.00",
+  "mediaEliminacoes": "0.00",
+  "melhorRank": {
+    "rank": 4195,
+    "date": "2025-10-21"
+  },
+  "piorRank": {
+    "rank": 4195,
+    "date": "2025-10-21"
+  },
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-21",
+      "rank": 4195,
+      "pontos": 0,
+      "eliminatedCount": 0,
+      "eliminatedBy": "joaodp.10"
+    }
+  ]
+}

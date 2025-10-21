@@ -1,0 +1,26 @@
+{
+  "username": "pv.juninmrx",
+  "imageUrl": "blob:null/dbe63cf6-6782-4a18-afe0-86cc98667ae6",
+  "totalParticipacoes": 1,
+  "totalEliminacoes": 1,
+  "pontosAcumulados": 5,
+  "mediaRank": "1377.00",
+  "mediaEliminacoes": "1.00",
+  "melhorRank": {
+    "rank": 1377,
+    "date": "2025-10-21"
+  },
+  "piorRank": {
+    "rank": 1377,
+    "date": "2025-10-21"
+  },
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-21",
+      "rank": 1377,
+      "pontos": 5,
+      "eliminatedCount": 1,
+      "eliminatedBy": "thejotinhaa"
+    }
+  ]
+}

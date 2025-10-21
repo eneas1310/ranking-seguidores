@@ -1,18 +1,18 @@
 {
   "username": "arthurdatapiocapereirajunior",
-  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjAAAAAAAAAFnjNmIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjCziMLOIws4jCziMLOIws4jCziMLOIws4jFnD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 7,
+  "imageUrl": "blob:null/f2577c76-4367-423a-9167-c5316800c6f0",
+  "totalParticipacoes": 8,
   "totalEliminacoes": 4,
-  "pontosAcumulados": 62,
-  "mediaRank": "1672.29",
-  "mediaEliminacoes": "0.57",
+  "pontosAcumulados": 63,
+  "mediaRank": "1932.75",
+  "mediaEliminacoes": "0.50",
   "melhorRank": {
     "rank": 103,
     "date": "2025-10-15"
   },
   "piorRank": {
-    "rank": 3344,
-    "date": "2025-10-20"
+    "rank": 3756,
+    "date": "2025-10-21"
   },
   "historicoDeBatalhas": [
     {
@@ -62,6 +62,13 @@
       "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "arthur.dnts7"
+    },
+    {
+      "date": "2025-10-21",
+      "rank": 3756,
+      "pontos": 1,
+      "eliminatedCount": 0,
+      "eliminatedBy": "vitor_hugoo1206"
     }
   ]
 }

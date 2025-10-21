@@ -1,0 +1,26 @@
+{
+  "username": "mgxzx_",
+  "imageUrl": "blob:null/e6a73437-e868-446c-876e-c82d78d06148",
+  "totalParticipacoes": 1,
+  "totalEliminacoes": 0,
+  "pontosAcumulados": 1,
+  "mediaRank": "3309.00",
+  "mediaEliminacoes": "0.00",
+  "melhorRank": {
+    "rank": 3309,
+    "date": "2025-10-21"
+  },
+  "piorRank": {
+    "rank": 3309,
+    "date": "2025-10-21"
+  },
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-21",
+      "rank": 3309,
+      "pontos": 1,
+      "eliminatedCount": 0,
+      "eliminatedBy": "pedro.antonio0920"
+    }
+  ]
+}

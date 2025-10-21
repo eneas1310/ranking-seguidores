@@ -1,0 +1,26 @@
+{
+  "username": "elvis.machado78",
+  "imageUrl": "blob:null/295e5563-c356-414e-bb64-d74841be0389",
+  "totalParticipacoes": 1,
+  "totalEliminacoes": 1,
+  "pontosAcumulados": 0,
+  "mediaRank": "4074.00",
+  "mediaEliminacoes": "1.00",
+  "melhorRank": {
+    "rank": 4074,
+    "date": "2025-10-21"
+  },
+  "piorRank": {
+    "rank": 4074,
+    "date": "2025-10-21"
+  },
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-21",
+      "rank": 4074,
+      "pontos": 0,
+      "eliminatedCount": 1,
+      "eliminatedBy": "o_paulloricardo"
+    }
+  ]
+}

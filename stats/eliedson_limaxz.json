@@ -1,0 +1,26 @@
+{
+  "username": "eliedson_limaxz",
+  "imageUrl": "blob:null/a998c6c0-817f-4a1d-94be-e783ee3b84cb",
+  "totalParticipacoes": 1,
+  "totalEliminacoes": 1,
+  "pontosAcumulados": 5,
+  "mediaRank": "1577.00",
+  "mediaEliminacoes": "1.00",
+  "melhorRank": {
+    "rank": 1577,
+    "date": "2025-10-21"
+  },
+  "piorRank": {
+    "rank": 1577,
+    "date": "2025-10-21"
+  },
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-21",
+      "rank": 1577,
+      "pontos": 5,
+      "eliminatedCount": 1,
+      "eliminatedBy": "pvp._ket"
+    }
+  ]
+}

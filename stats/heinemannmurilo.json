@@ -1,18 +1,18 @@
 {
   "username": "heinemannmurilo",
-  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2NTAxMDAwMDEzMDIwMDAwMWYwMjAwMDAyYjAyMDAwMDM3MDIwMDAwNDMwMjAwMDA0ZjAyMDAwMGE4MDIwMDAwYmUwMjAwMDBjYTAyMDAwMGQ4MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADAAAQEBAQAAAAAAAAAAAAAAAAABBwIQAAAHAQAAAAAAAAAAAAAAAAABESBAYIAw/9oADAMBAAIAAwAAAAHGAACkKEpFEAAA2fGNnMYAAKShFAEUQADZ8Y2cxhRKAASgAAgVFDZsY2cxkAAssooCURYgWJRNnxjZzGKAQsqgoACUQOUqmzYzsxjIAgVQUAAQBylU2bGdmMZAAC1LKAAggWANmxnZjGQAAAtQAAgADZsZ2YxkAAAAAAAAhdmxjZzGWzDGWzDGWzDGWzDGWzDGWzDGWzDGWzDGZs4xjZw//9oACAEBAAEFAs0//9oACAEDAAE/AbJ//9oACAECAAE/AbJ//9oACAEBAAY/As0//9oACAEBAAE/Ic0//9oADAMBAAIAAwAAABDzzjgjDzzyjzziTQjDzyjCF37778jAgFHqIlLe1GiT+sE0FD9gAz7sGEEb/ADBHQoEJ/mGE003wHz0EUkBzzz33ygQhDDDDDBCBCD/2gAIAQMAAT8QjoECQSYbiYfJeCyv/9oACAECAAE/ELJ//9oACAEBAAE/EM0//9k=",
-  "totalParticipacoes": 4,
+  "imageUrl": "blob:null/b6c9d808-2893-41ab-980c-390009e0e448",
+  "totalParticipacoes": 5,
   "totalEliminacoes": 4,
   "pontosAcumulados": 35,
-  "mediaRank": "1051.00",
-  "mediaEliminacoes": "1.00",
+  "mediaRank": "1699.00",
+  "mediaEliminacoes": "0.80",
   "melhorRank": {
     "rank": 267,
     "date": "2025-10-17"
   },
   "piorRank": {
-    "rank": 1806,
-    "date": "2025-10-19"
+    "rank": 4291,
+    "date": "2025-10-21"
   },
   "historicoDeBatalhas": [
     {
@@ -42,6 +42,13 @@
       "pontos": 10,
       "eliminatedCount": 1,
       "eliminatedBy": "francilene.ferreir"
+    },
+    {
+      "date": "2025-10-21",
+      "rank": 4291,
+      "pontos": 0,
+      "eliminatedCount": 0,
+      "eliminatedBy": "thomassilva023"
     }
   ]
 }

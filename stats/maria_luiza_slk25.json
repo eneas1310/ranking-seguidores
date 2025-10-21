@@ -1,0 +1,26 @@
+{
+  "username": "maria_luiza_slk25",
+  "imageUrl": "blob:null/a2068ccd-75e4-4e9f-94f2-31d2b6ea68b4",
+  "totalParticipacoes": 1,
+  "totalEliminacoes": 0,
+  "pontosAcumulados": 3,
+  "mediaRank": "2703.00",
+  "mediaEliminacoes": "0.00",
+  "melhorRank": {
+    "rank": 2703,
+    "date": "2025-10-21"
+  },
+  "piorRank": {
+    "rank": 2703,
+    "date": "2025-10-21"
+  },
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-21",
+      "rank": 2703,
+      "pontos": 3,
+      "eliminatedCount": 0,
+      "eliminatedBy": "joao_v_faustino"
+    }
+  ]
+}

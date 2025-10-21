@@ -1,0 +1,26 @@
+{
+  "username": "phoenix.aee",
+  "imageUrl": "blob:null/71bb9207-d05e-4f5b-a14b-d1cf6ce9df92",
+  "totalParticipacoes": 1,
+  "totalEliminacoes": 0,
+  "pontosAcumulados": 0,
+  "mediaRank": "4075.00",
+  "mediaEliminacoes": "0.00",
+  "melhorRank": {
+    "rank": 4075,
+    "date": "2025-10-21"
+  },
+  "piorRank": {
+    "rank": 4075,
+    "date": "2025-10-21"
+  },
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-21",
+      "rank": 4075,
+      "pontos": 0,
+      "eliminatedCount": 0,
+      "eliminatedBy": "elpochita_chainsaw"
+    }
+  ]
+}

@@ -1,18 +1,18 @@
 {
   "username": "maryaaah_sx",
-  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjKzCMrMIyswjKzCMrMIyswjKzCMrMIyswjNmD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzhTzzzyjzzzjxzzzyjzzzzTzjzyjzxjizzzTyjzzzTzDzzyjzyTDzyxzyjzzzyzjjzyDyzzzSzzzwjzzzTyzxzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 8,
-  "totalEliminacoes": 9,
+  "imageUrl": "blob:null/92dfa4a6-fd0a-4e1e-bfd5-288f2e127d2f",
+  "totalParticipacoes": 9,
+  "totalEliminacoes": 10,
   "pontosAcumulados": 70,
-  "mediaRank": "2090.88",
-  "mediaEliminacoes": "1.13",
+  "mediaRank": "2330.33",
+  "mediaEliminacoes": "1.11",
   "melhorRank": {
     "rank": 46,
     "date": "2025-10-13"
   },
   "piorRank": {
-    "rank": 4167,
-    "date": "2025-10-20"
+    "rank": 4246,
+    "date": "2025-10-21"
   },
   "historicoDeBatalhas": [
     {
@@ -68,6 +68,13 @@
       "pontos": 0,
       "eliminatedCount": 1,
       "eliminatedBy": "viktordesouza"
+    },
+    {
+      "date": "2025-10-21",
+      "rank": 4246,
+      "pontos": 0,
+      "eliminatedCount": 1,
+      "eliminatedBy": "nicolasnevesmendes"
     }
   ]
 }

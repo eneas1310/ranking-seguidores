@@ -1,11 +1,11 @@
 {
   "username": "__yasmin35",
-  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MTAxMDAwMDBjMDIwMDAwMTgwMjAwMDAyMzAyMDAwMDJlMDIwMDAwM2EwMjAwMDA0NjAyMDAwMGEzMDIwMDAwYWUwMjAwMDBiOTAyMDAwMGM4MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACwAAQEBAQAAAAAAAAAAAAAAAAABBwIQAQEBAQAAAAAAAAAAAAAAAGCAATD/2gAMAwEAAgADAAAAAcesTqpQFACAAoAEbBj2wmPFCVQAlAABAohGw49sJjwBVJYBQAARCgRsOPbCY8AFqWAUAESwCgRsOPbCY8AAFqIWBYoAEEGxY9sJjxCgAABQQgAsBsWO7EmPEUAACwAAAFhGxY7sVY6AIAABQAQABsWO7FWOgAAAAAAAAbFjuxGOtiGOtiGOtiGOtiGOtiGOtiGOtiGOtiGOtiGO7EH/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABC0kDHf/mCEvsgFL778A2v3gsIAINz2PXwsIINeSEINHA++zgEWIYEEHAE3xysbzz13zz6+n3//AP8Avv8A/wDp9951x9991iTBBRBxxxRi/9oACAEDAAE/EEn/2gAIAQIAAT8QSf/aAAgBAQABPxCXM6//2Q==",
-  "totalParticipacoes": 6,
-  "totalEliminacoes": 3,
-  "pontosAcumulados": 39,
-  "mediaRank": "2480.83",
-  "mediaEliminacoes": "0.50",
+  "imageUrl": "blob:null/cc2a2077-fc5e-4e3c-bced-e7999cd6c786",
+  "totalParticipacoes": 7,
+  "totalEliminacoes": 5,
+  "pontosAcumulados": 49,
+  "mediaRank": "2251.57",
+  "mediaEliminacoes": "0.71",
   "melhorRank": {
     "rank": 196,
     "date": "2025-10-17"
@@ -56,6 +56,13 @@
       "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "biell___10"
+    },
+    {
+      "date": "2025-10-21",
+      "rank": 876,
+      "pontos": 10,
+      "eliminatedCount": 2,
+      "eliminatedBy": "angelaleandrodejesus"
     }
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "username": "nadylla8910",
+  "imageUrl": "blob:null/789ba594-882f-4332-9c1e-b747debe6b76",
+  "totalParticipacoes": 1,
+  "totalEliminacoes": 2,
+  "pontosAcumulados": 3,
+  "mediaRank": "2156.00",
+  "mediaEliminacoes": "2.00",
+  "melhorRank": {
+    "rank": 2156,
+    "date": "2025-10-21"
+  },
+  "piorRank": {
+    "rank": 2156,
+    "date": "2025-10-21"
+  },
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-21",
+      "rank": 2156,
+      "pontos": 3,
+      "eliminatedCount": 2,
+      "eliminatedBy": "duduu__alvss"
+    }
+  ]
+}

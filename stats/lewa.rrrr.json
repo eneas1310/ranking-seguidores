@@ -1,11 +1,11 @@
 {
   "username": "lewa.rrrr",
-  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE3ZDAxMDAwMDM4MDIwMDAwODcwMjAwMDA5MzAyMDAwMDlmMDIwMDAwYzUwMjAwMDAyYTAzMDAwMDgzMDMwMDAwOGYwMzAwMDA5YjAzMDAwMDJjMDQwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAEgAAQEAAgMBAAAAAAAAAAAAAAAHAQIEBQYDEAABAwEGBAMJAQAAAAAAAAABABEhMQIDMEFRYQQQcIFgcZEFEhMiMkCx0eGh/9oADAMBAAIAAwAAAAGMAAAAAAAAAzZozZiMAAAAAAAAAzZozZiMAAAAAAAAAzZozZiMAAAGxqzgNtQAADNmjNmIwAAbHN7LtvmeT0+Y53O4fsSf453ENAAZs0ZsxGAANtR6n0c17E5PXdtxzt9fO8Q5Hz+QAAzZozZiMAAAAAAAAAzZozZiMAAAAAAAAAzZozZiMAAAAAAAAAzZozZiMrMIyswjKzCMrMIyswjKzCMrMIyswjKzCM2YP//aAAgBAQABBQLoe2PdXXvLiB8MWGRZXf1XvDtjcOA3tCzHK4D2rci3YTYnD3qi2L7hTZQurRVzdiwry+RtI2nxAWVniCFZ4tkeJRvSeh3/2gAIAQMAAT8B8Sf/2gAIAQIAAT8B8Sf/2gAIAQEABj8C6PgDNfM7TTXJR3Tap8eydOY2+wZRIVFv9jr0Q//aAAgBAQABPyHoYATTnQ+OWeSZU1ZUugyHhqydn2VKVKtdtkIIBTVq37RhZTFAdMjap3yI9+frpysxZEwz54YLICmFLiUf/uWaEBkyQQ4dPk7r0mISjkRXOBBmMoruAyz5Ev0N/9oADAMBAAIAAwAAABDzzzzzzzzwDzzzzzzzzwDzzzzzzzzwDzzzjTzzzwDzzjxwBzzwDzyzgxzzzwDzzzzzzzzwDzzzzzzzzwDzzzzzzzzwAAAAAAAAAAD/2gAIAQMAAT8Q8Sf/2gAIAQIAAT8Q8Sf/2gAIAQEAAT8Q6GOjCWktkEeTtj8Y8ip/0occ/YUvTWsdjukmlZkcYAKy8CXY0ljVPaQA+o7ZMaYOTBED0iYRhAzeRRzMQKS9v6mNEeaAHnZCSAgSGG/BGSBOT5j9IQCDQIrOxahGmAtzARuXKhQZBwakZr0BhiEHJimPNk+nQmJD8wd0SWwNRaaRai/Q3//Z",
-  "totalParticipacoes": 8,
-  "totalEliminacoes": 3,
-  "pontosAcumulados": 29,
-  "mediaRank": "2710.38",
-  "mediaEliminacoes": "0.38",
+  "imageUrl": "blob:null/6e8526ee-d1d5-42ed-8339-8610c1545f10",
+  "totalParticipacoes": 9,
+  "totalEliminacoes": 5,
+  "pontosAcumulados": 30,
+  "mediaRank": "2751.11",
+  "mediaEliminacoes": "0.56",
   "melhorRank": {
     "rank": 401,
     "date": "2025-10-19"
@@ -68,6 +68,13 @@
       "pontos": 0,
       "eliminatedCount": 1,
       "eliminatedBy": "dodx152"
+    },
+    {
+      "date": "2025-10-21",
+      "rank": 3077,
+      "pontos": 1,
+      "eliminatedCount": 2,
+      "eliminatedBy": "arturclvg"
     }
   ]
 }

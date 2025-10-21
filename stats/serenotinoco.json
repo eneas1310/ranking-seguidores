@@ -1,11 +1,11 @@
 {
   "username": "serenotinoco",
-  "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2ODAxMDAwMDI3MDIwMDAwMzMwMjAwMDAzZjAyMDAwMDRiMDIwMDAwNTcwMjAwMDA2ODAyMDAwMGMxMDIwMDAwY2QwMjAwMDBkOTAyMDAwMDRjMDMwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADMAAQEBAQAAAAAAAAAAAAAAAAABBwIQAQADAQEBAAMBAAAAAAAAAAEAEBEgMGAhQYBQ/9oADAMBAAIAAwAAAAHGaBYASoFEspAAANmxrZTGqCWAAAhYpFgAA2bGdmMaIdJSSgABKJQgAGzYzsxjSUAKCdHKiSwAALC7LjWymNJ0QFShKECUTrmhBUDZsZ2YxpOiAJQUiiLCOuQAC7LjWymNASwoF5HSUAkUiwAuy41spjIACwAdQUhFhYAF2XGtlMZKJYWAULz0CCWAADZsZ2Yxpsoxm7KMamzDGpswxnrZBjc2UY1NmGM3ZRjU2YY1sof/2gAIAQEAAQUC/mn/2gAIAQMAAT8B+k//2gAIAQIAAT8B+k//2gAIAQEABj8C/mn/2gAIAQEAAT8h+4P80+3Pjf/aAAwDAQACAAMAAAAQoEAk44880ggUEkMY088oUAccsQg88oIY4oQc880AIIYIMQoMMoY04Qwk088AAUQMQAY08A8808kE088A4UcwIEc88oggQwgQQgQA/9oACAEDAAE/EPpP/9oACAECAAE/EPpP/9oACAEBAAE/EIcNZwHZZQexCFM2ZWTfIoiXtbwTfAprLJvoOcEyEeHtrYTZ+0XfM5PxMmw6OcmcDGspeWwgcJWQrY9HRRbycPBTW00TbyOdF7RzlZGEeCZwRLG8oi8B7Efx6jh6PV6PV7TJvLZ1lk//2Q==",
-  "totalParticipacoes": 4,
-  "totalEliminacoes": 1,
-  "pontosAcumulados": 26,
-  "mediaRank": "1781.75",
-  "mediaEliminacoes": "0.25",
+  "imageUrl": "blob:null/c7dfe422-972b-4b21-a328-1b4c2d33225c",
+  "totalParticipacoes": 5,
+  "totalEliminacoes": 2,
+  "pontosAcumulados": 27,
+  "mediaRank": "2078.80",
+  "mediaEliminacoes": "0.40",
   "melhorRank": {
     "rank": 433,
     "date": "2025-10-20"
@@ -42,6 +42,13 @@
       "pontos": 15,
       "eliminatedCount": 1,
       "eliminatedBy": "barbalhovitzel"
+    },
+    {
+      "date": "2025-10-21",
+      "rank": 3267,
+      "pontos": 1,
+      "eliminatedCount": 1,
+      "eliminatedBy": "pitterxx.001"
     }
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "username": "jessicaa.moraess_",
+  "imageUrl": "blob:null/ed0b6f4f-354a-4026-b16d-a4d7fa72dc6b",
+  "totalParticipacoes": 1,
+  "totalEliminacoes": 0,
+  "pontosAcumulados": 3,
+  "mediaRank": "2718.00",
+  "mediaEliminacoes": "0.00",
+  "melhorRank": {
+    "rank": 2718,
+    "date": "2025-10-21"
+  },
+  "piorRank": {
+    "rank": 2718,
+    "date": "2025-10-21"
+  },
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-21",
+      "rank": 2718,
+      "pontos": 3,
+      "eliminatedCount": 0,
+      "eliminatedBy": "vidyzin"
+    }
+  ]
+}

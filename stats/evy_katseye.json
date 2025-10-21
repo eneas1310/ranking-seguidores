@@ -1,0 +1,26 @@
+{
+  "username": "evy_katseye",
+  "imageUrl": "blob:null/6667a94b-24de-4d08-9210-00fdf03d46cc",
+  "totalParticipacoes": 1,
+  "totalEliminacoes": 0,
+  "pontosAcumulados": 0,
+  "mediaRank": "4529.00",
+  "mediaEliminacoes": "0.00",
+  "melhorRank": {
+    "rank": 4529,
+    "date": "2025-10-21"
+  },
+  "piorRank": {
+    "rank": 4529,
+    "date": "2025-10-21"
+  },
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-21",
+      "rank": 4529,
+      "pontos": 0,
+      "eliminatedCount": 0,
+      "eliminatedBy": "nubiagoncalvesdosreis"
+    }
+  ]
+}

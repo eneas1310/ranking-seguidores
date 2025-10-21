@@ -1,0 +1,26 @@
+{
+  "username": "buchinha71",
+  "imageUrl": "blob:null/a7b9c2d5-552f-4808-998e-b578950c8520",
+  "totalParticipacoes": 1,
+  "totalEliminacoes": 1,
+  "pontosAcumulados": 15,
+  "mediaRank": "256.00",
+  "mediaEliminacoes": "1.00",
+  "melhorRank": {
+    "rank": 256,
+    "date": "2025-10-21"
+  },
+  "piorRank": {
+    "rank": 256,
+    "date": "2025-10-21"
+  },
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-21",
+      "rank": 256,
+      "pontos": 15,
+      "eliminatedCount": 1,
+      "eliminatedBy": "josex.z2"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "username": "kaiquekrb",
+  "imageUrl": "blob:null/60e4df75-2bab-4bf3-943c-e4e78b2464be",
+  "totalParticipacoes": 1,
+  "totalEliminacoes": 0,
+  "pontosAcumulados": 1,
+  "mediaRank": "3401.00",
+  "mediaEliminacoes": "0.00",
+  "melhorRank": {
+    "rank": 3401,
+    "date": "2025-10-21"
+  },
+  "piorRank": {
+    "rank": 3401,
+    "date": "2025-10-21"
+  },
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-21",
+      "rank": 3401,
+      "pontos": 1,
+      "eliminatedCount": 0,
+      "eliminatedBy": "priprado.judo"
+    }
+  ]
+}

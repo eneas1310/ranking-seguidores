@@ -1,0 +1,26 @@
+{
+  "username": "01.tg__",
+  "imageUrl": "blob:null/0cc2db17-e79d-4a53-a396-6914a3059c08",
+  "totalParticipacoes": 1,
+  "totalEliminacoes": 0,
+  "pontosAcumulados": 0,
+  "mediaRank": "4198.00",
+  "mediaEliminacoes": "0.00",
+  "melhorRank": {
+    "rank": 4198,
+    "date": "2025-10-21"
+  },
+  "piorRank": {
+    "rank": 4198,
+    "date": "2025-10-21"
+  },
+  "historicoDeBatalhas": [
+    {
+      "date": "2025-10-21",
+      "rank": 4198,
+      "pontos": 0,
+      "eliminatedCount": 0,
+      "eliminatedBy": "thiago.rikelme38"
+    }
+  ]
+}
