@@ -2,9 +2,10 @@
   "username": "rlk_theuzin.07",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MTAxMDAwMDFhMDIwMDAwMjYwMjAwMDAzMTAyMDAwMDNjMDIwMDAwNDgwMjAwMDA1NDAyMDAwMGFkMDIwMDAwYjkwMjAwMDBjNDAyMDAwMGQyMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACwAAQEBAQAAAAAAAAAAAAAAAAABBwIQAQEBAQAAAAAAAAAAAAAAAGCAAAH/2gAMAwEAAgADAAAAAceS9dIFAEABQEpAg2LHthTHpShQEqFIUAQAhTYsd2KMeS0ASghREoJQFIsTYse2FMeFsoCFSiUJQAEJYNix7YUx6UoUEEoAJVSiWRQTYse2FMeChQAQABFAhZYXYce2Ex4AUAAAIKQAi02HHthjHgBQAAQIWKAANhx7YTHkoFBAAAAEoCF2HHthTHmwrcebCjHmwjHmwqx5sIx6bEMduwox27CrHWxDHdiJP//aAAgBAQABBQKaf//aAAgBAwABPwFJ/9oACAECAAE/AUn/2gAIAQEABj8Cmn//2gAIAQEAAT8hmn//2gAMAwEAAgADAAAAECHAAggQIhoUgAJBAAgnKCACBAokgGowIBCEEAAlo0gAighCFgowgAAggshlgggQAABIgmAggAAQhmgggCgAgggwohgwAwgAEIoMIv/aAAgBAwABPxBH3f/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
   "totalParticipacoes": 8,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 3,
+  "pontosAcumulados": 46,
   "mediaRank": "1870.50",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "0.38",
   "melhorRank": {
     "rank": 672,
     "date": "2025-10-17"
@@ -28,10 +29,6 @@
     ]
   ],
   "maioresCarrascos": [
-    [
-      "undefined",
-      2
-    ],
     [
       "grazyelle_imperiano",
       1
@@ -60,44 +57,55 @@
   "historicoDeBatalhas": [
     {
       "date": "2025-10-13",
-      "rank": 2795
+      "rank": 2795,
+      "pontos": 3,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-14",
-      "rank": 1481
+      "rank": 1481,
+      "pontos": 5,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-15",
       "rank": 723,
+      "pontos": 10,
       "eliminatedCount": 0,
       "eliminatedBy": "grazyelle_imperiano"
     },
     {
       "date": "2025-10-16",
       "rank": 1719,
+      "pontos": 5,
       "eliminatedCount": 0,
       "eliminatedBy": "gs_oficiall01"
     },
     {
       "date": "2025-10-17",
       "rank": 672,
+      "pontos": 10,
       "eliminatedCount": 1,
       "eliminatedBy": "11_freitzlx07"
     },
     {
       "date": "2025-10-18",
       "rank": 698,
+      "pontos": 10,
       "eliminatedCount": 1,
       "eliminatedBy": "daniel.saopaulino_17"
     },
     {
       "date": "2025-10-19",
       "rank": 4334,
+      "pontos": 0,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     },
     {
       "date": "2025-10-20",
       "rank": 2542,
+      "pontos": 3,
       "eliminatedCount": 1,
       "eliminatedBy": "nissin_artees_1"
     }

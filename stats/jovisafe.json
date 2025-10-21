@@ -2,9 +2,10 @@
   "username": "jovisafe",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE3ODAxMDAwMDE5MDIwMDAwNDMwMjAwMDA1MzAyMDAwMDY2MDIwMDAwOWMwMjAwMDBkYjAyMDAwMDM0MDMwMDAwNDYwMzAwMDA1ODAzMDAwMDljMDMwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAEMAAQEAAwEBAAAAAAAAAAAAAAAHAQIDCAQQAAIABAQEBQUAAAAAAAAAAAERAgMhMQBAUHAEElFhBTBBcYEikbHR8P/aAAwDAQACAAMAAAABjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAZPs19E576eamccNwAAAFnjFnIwABnAru0gddQ5bAAAALPGLORgAAAAAAAACzxizkYAAAAAAAAAs8Ys5GAAAAAAAAALPGLORhZxGFnEYWcRhZxGFnEYWcRhZxGFnEYWcRizh/9oACAEBAAEFAtnpcmOZiZKil5KVKEiDiuFE6VkeD8VhMPG+LQCDaP8A/9oACAEDAAE/AdL5vK5dP//aAAgBAgABPwHSzJQb8ozilp//2gAIAQEABj8C2e+iExeweFFCYT3CyQlwUQr+8RQmtGD0PXJATDyxgJmxxFBKPNFHQmwG0n//2gAIAQEAAT8h2eOkFxdifbB/sob8siMIMQZVJIr3l4rVgfRIae/r2yQclySwECUCj1whzEQQSEU6kqgptJ//2gAMAwEAAgADAAAAEPPPPPPPPPKPPPPPPPPPKPPPPPPPPPKPPPPPPPPPKPPPBNPPPPKPPLLPPPPPKPPPPPPPPPKPPPPPPPPPKPPPPPPPPPKMMMMMMMMMIP/aAAgBAwABPxDS715St6f/AP/aAAgBAgABPxDS+oHTyidPP//aAAgBAQABPxDZ63gh8wSmG1qxAR2QP4yIMgdcEptjXofxGE+ENFT7F6rLMskLnFUmwD0+oVu8dmIpail2CC+0n//Z",
   "totalParticipacoes": 4,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 3,
+  "pontosAcumulados": 14,
   "mediaRank": "2158.25",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "0.75",
   "melhorRank": {
     "rank": 1154,
     "date": "2025-10-17"
@@ -49,23 +50,28 @@
     {
       "date": "2025-10-17",
       "rank": 1154,
+      "pontos": 5,
       "eliminatedCount": 1,
       "eliminatedBy": "_.danielgarciaaaa"
     },
     {
       "date": "2025-10-18",
       "rank": 1179,
+      "pontos": 5,
       "eliminatedCount": 2,
       "eliminatedBy": "janaina_barbosa18"
     },
     {
       "date": "2025-10-19",
       "rank": 2602,
+      "pontos": 3,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     },
     {
       "date": "2025-10-20",
       "rank": 3698,
+      "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "pretinhoo_061"
     }

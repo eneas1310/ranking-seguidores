@@ -2,9 +2,10 @@
   "username": "carlosnenoo",
   "imageUrl": "data:image/jpeg;base64,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",
   "totalParticipacoes": 8,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 3,
+  "pontosAcumulados": 27,
   "mediaRank": "2557.75",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "0.38",
   "melhorRank": {
     "rank": 761,
     "date": "2025-10-17"
@@ -28,10 +29,6 @@
     ]
   ],
   "maioresCarrascos": [
-    [
-      "undefined",
-      2
-    ],
     [
       "daviback14",
       1
@@ -60,44 +57,55 @@
   "historicoDeBatalhas": [
     {
       "date": "2025-10-13",
-      "rank": 3038
+      "rank": 3038,
+      "pontos": 1,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-14",
-      "rank": 3927
+      "rank": 3927,
+      "pontos": 1,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-15",
       "rank": 3934,
+      "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "daviback14"
     },
     {
       "date": "2025-10-16",
       "rank": 2852,
+      "pontos": 3,
       "eliminatedCount": 1,
       "eliminatedBy": "vidaemcristocristao"
     },
     {
       "date": "2025-10-17",
       "rank": 761,
+      "pontos": 10,
       "eliminatedCount": 2,
       "eliminatedBy": "gb.lmy_"
     },
     {
       "date": "2025-10-18",
       "rank": 1309,
+      "pontos": 5,
       "eliminatedCount": 0,
       "eliminatedBy": "larissa_crispims2"
     },
     {
       "date": "2025-10-19",
       "rank": 1403,
+      "pontos": 5,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     },
     {
       "date": "2025-10-20",
       "rank": 3238,
+      "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "luisa.tenedini"
     }

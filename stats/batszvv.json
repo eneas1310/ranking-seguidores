@@ -2,9 +2,10 @@
   "username": "batszvv",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABkwAAAAAAAAFZk1ZJMAAAAAAAABWZNWSTAAAAAAAAAVmTVkkwAAAAAAAAFZk1ZJMAAAAAAAABWZNWSTAAAAAAAAAVmTVkkwAAAAAAAAFZk1ZJMAAAAAAAABWZNWSTAAAAAAAAAVmTVkkysiTKyJMrIkysiTKyJMrIkysiTKyJMrIk1ZD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
   "totalParticipacoes": 4,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 5,
+  "pontosAcumulados": 68,
   "mediaRank": "799.00",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "1.25",
   "melhorRank": {
     "rank": 84,
     "date": "2025-10-19"
@@ -57,23 +58,28 @@
     {
       "date": "2025-10-17",
       "rank": 415,
+      "pontos": 15,
       "eliminatedCount": 3,
       "eliminatedBy": "916kaua_"
     },
     {
       "date": "2025-10-18",
       "rank": 2531,
+      "pontos": 3,
       "eliminatedCount": 1,
       "eliminatedBy": "zx.phzix_777"
     },
     {
       "date": "2025-10-19",
       "rank": 84,
+      "pontos": 30,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     },
     {
       "date": "2025-10-20",
       "rank": 166,
+      "pontos": 20,
       "eliminatedCount": 1,
       "eliminatedBy": "flavio.mello.969"
     }

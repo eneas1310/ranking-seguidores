@@ -2,9 +2,10 @@
   "username": "vinny.10_",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjCziMLOIws4jCziMLOIws4jCziMLOIws4jFnD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
   "totalParticipacoes": 7,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 4,
+  "pontosAcumulados": 47,
   "mediaRank": "2563.71",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "0.57",
   "melhorRank": {
     "rank": 110,
     "date": "2025-10-20"
@@ -33,10 +34,6 @@
   ],
   "maioresCarrascos": [
     [
-      "undefined",
-      1
-    ],
-    [
       "weweretooclosetothestars01",
       1
     ],
@@ -64,40 +61,49 @@
   "historicoDeBatalhas": [
     {
       "date": "2025-10-14",
-      "rank": 155
+      "rank": 155,
+      "pontos": 20,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-15",
       "rank": 3408,
+      "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "weweretooclosetothestars01"
     },
     {
       "date": "2025-10-16",
       "rank": 2859,
+      "pontos": 3,
       "eliminatedCount": 1,
       "eliminatedBy": "caio_luaan"
     },
     {
       "date": "2025-10-17",
       "rank": 2491,
+      "pontos": 3,
       "eliminatedCount": 0,
       "eliminatedBy": "gabrielroma94"
     },
     {
       "date": "2025-10-18",
       "rank": 4350,
+      "pontos": 0,
       "eliminatedCount": 0,
       "eliminatedBy": "lauren.priuli.b"
     },
     {
       "date": "2025-10-19",
       "rank": 4573,
+      "pontos": 0,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     },
     {
       "date": "2025-10-20",
       "rank": 110,
+      "pontos": 20,
       "eliminatedCount": 3,
       "eliminatedBy": "01ricardinn"
     }

@@ -2,9 +2,10 @@
   "username": "maryaaah_sx",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjKzCMrMIyswjKzCMrMIyswjKzCMrMIyswjNmD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzhTzzzyjzzzjxzzzyjzzzzTzjzyjzxjizzzTyjzzzTzDzzyjzyTDzyxzyjzzzyzjjzyDyzzzSzzzwjzzzTyzxzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
   "totalParticipacoes": 8,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 9,
+  "pontosAcumulados": 70,
   "mediaRank": "2090.88",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "1.13",
   "melhorRank": {
     "rank": 46,
     "date": "2025-10-13"
@@ -53,10 +54,6 @@
   ],
   "maioresCarrascos": [
     [
-      "undefined",
-      2
-    ],
-    [
       "machado_fernando91",
       1
     ],
@@ -84,44 +81,55 @@
   "historicoDeBatalhas": [
     {
       "date": "2025-10-13",
-      "rank": 46
+      "rank": 46,
+      "pontos": 40,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-14",
-      "rank": 620
+      "rank": 620,
+      "pontos": 10,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-15",
       "rank": 2306,
+      "pontos": 3,
       "eliminatedCount": 3,
       "eliminatedBy": "machado_fernando91"
     },
     {
       "date": "2025-10-16",
       "rank": 3575,
+      "pontos": 1,
       "eliminatedCount": 1,
       "eliminatedBy": "phoenix.proo"
     },
     {
       "date": "2025-10-17",
       "rank": 935,
+      "pontos": 10,
       "eliminatedCount": 3,
       "eliminatedBy": "braia2k25"
     },
     {
       "date": "2025-10-18",
       "rank": 3349,
+      "pontos": 1,
       "eliminatedCount": 1,
       "eliminatedBy": "adegamacallandf"
     },
     {
       "date": "2025-10-19",
       "rank": 1729,
+      "pontos": 5,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     },
     {
       "date": "2025-10-20",
       "rank": 4167,
+      "pontos": 0,
       "eliminatedCount": 1,
       "eliminatedBy": "viktordesouza"
     }

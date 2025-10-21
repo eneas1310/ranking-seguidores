@@ -2,9 +2,10 @@
   "username": "luczxx_1",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2NDAxMDAwMDA2MDIwMDAwMTIwMjAwMDAxZDAyMDAwMDI4MDIwMDAwMzQwMjAwMDA0MDAyMDAwMDk5MDIwMDAwYTQwMjAwMDBhZjAyMDAwMGM2MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAC8AAQEBAAAAAAAAAAAAAAAAAAAHARAAAgEFAAAAAAAAAAAAAAAAAWCAABEwQFD/2gAMAwEAAgADAAAAAYyAAAAAAAADLPGbMRlmgw0AAAAAACzRmzEZzRmgAAAABmsNAs0ZsxGNzQDNAAAADGgBZozZiMgAAAAAAAAWaM2YjOaAAAAAAABhtmjNmIxrDQAAAZuaAAAZZ4xZyMmGs0AAAAAAAWaM2YjIGaDNAAAAADNFmjNmIws4jCziMLOIyswjKzCMbZhGNswjCziMbZhGLOH/2gAIAQEAAQUCjT//2gAIAQMAAT8BZP/aAAgBAgABPwFk/9oACAEBAAY/Ao0//9oACAEBAAE/IY0//9oADAMBAAIAAwAAABCwzgCQxzzCggThyzzzQihCADTzgyTSiijRzRSjzyAiBQggBTzyjAhRSjwzzwCRDzzjjzwSiQjzzQzzgAgRhjzzRTjyjDDAACCDCCD/2gAIAQMAAT8QZP/aAAgBAgABPxBk/9oACAEBAAE/EMQoth1jjsonqXTP/9k=",
   "totalParticipacoes": 7,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 6,
+  "pontosAcumulados": 45,
   "mediaRank": "1925.29",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "0.86",
   "melhorRank": {
     "rank": 322,
     "date": "2025-10-17"
@@ -41,10 +42,6 @@
   ],
   "maioresCarrascos": [
     [
-      "undefined",
-      1
-    ],
-    [
       "rhyan_rick_7",
       1
     ],
@@ -72,40 +69,49 @@
   "historicoDeBatalhas": [
     {
       "date": "2025-10-14",
-      "rank": 1525
+      "rank": 1525,
+      "pontos": 5,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-15",
       "rank": 2926,
+      "pontos": 3,
       "eliminatedCount": 0,
       "eliminatedBy": "rhyan_rick_7"
     },
     {
       "date": "2025-10-16",
       "rank": 3118,
+      "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "sousxande_"
     },
     {
       "date": "2025-10-17",
       "rank": 322,
+      "pontos": 15,
       "eliminatedCount": 2,
       "eliminatedBy": "yagofirmino_"
     },
     {
       "date": "2025-10-18",
       "rank": 322,
+      "pontos": 15,
       "eliminatedCount": 1,
       "eliminatedBy": "orta_glenys"
     },
     {
       "date": "2025-10-19",
       "rank": 2482,
+      "pontos": 3,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     },
     {
       "date": "2025-10-20",
       "rank": 2782,
+      "pontos": 3,
       "eliminatedCount": 3,
       "eliminatedBy": "jhonata__129"
     }

@@ -2,9 +2,10 @@
   "username": "arthurdatapiocapereirajunior",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjAAAAAAAAAFnjNmIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjCziMLOIws4jCziMLOIws4jCziMLOIws4jFnD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
   "totalParticipacoes": 7,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 4,
+  "pontosAcumulados": 62,
   "mediaRank": "1672.29",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "0.57",
   "melhorRank": {
     "rank": 103,
     "date": "2025-10-15"
@@ -33,10 +34,6 @@
   ],
   "maioresCarrascos": [
     [
-      "undefined",
-      1
-    ],
-    [
       "lealromerio",
       1
     ],
@@ -64,40 +61,49 @@
   "historicoDeBatalhas": [
     {
       "date": "2025-10-14",
-      "rank": 479
+      "rank": 479,
+      "pontos": 15,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-15",
       "rank": 103,
+      "pontos": 20,
       "eliminatedCount": 2,
       "eliminatedBy": "lealromerio"
     },
     {
       "date": "2025-10-16",
       "rank": 2907,
+      "pontos": 3,
       "eliminatedCount": 0,
       "eliminatedBy": "jeozinfx027"
     },
     {
       "date": "2025-10-17",
       "rank": 2773,
+      "pontos": 3,
       "eliminatedCount": 1,
       "eliminatedBy": "gv_da_paz_"
     },
     {
       "date": "2025-10-18",
       "rank": 1821,
+      "pontos": 5,
       "eliminatedCount": 1,
       "eliminatedBy": "phoenix.proo"
     },
     {
       "date": "2025-10-19",
       "rank": 279,
+      "pontos": 15,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     },
     {
       "date": "2025-10-20",
       "rank": 3344,
+      "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "arthur.dnts7"
     }

@@ -2,9 +2,10 @@
   "username": "eu_sou_eu626255",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjKzCMrMIyswjKzCMrMIyswjKzCMrMIyswjNmD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyhzzzzzzzzyDDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
   "totalParticipacoes": 6,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 1,
+  "pontosAcumulados": 12,
   "mediaRank": "3056.50",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "0.17",
   "melhorRank": {
     "rank": 1410,
     "date": "2025-10-19"
@@ -49,35 +50,42 @@
     {
       "date": "2025-10-15",
       "rank": 3096,
+      "pontos": 1,
       "eliminatedCount": 1,
       "eliminatedBy": "jessica4661silva"
     },
     {
       "date": "2025-10-16",
       "rank": 4083,
+      "pontos": 0,
       "eliminatedCount": 0,
       "eliminatedBy": "gio.manfredi18"
     },
     {
       "date": "2025-10-17",
       "rank": 4272,
+      "pontos": 0,
       "eliminatedCount": 0,
       "eliminatedBy": "naluh_.linhares"
     },
     {
       "date": "2025-10-18",
       "rank": 1644,
+      "pontos": 5,
       "eliminatedCount": 0,
       "eliminatedBy": "otavio_bc09"
     },
     {
       "date": "2025-10-19",
       "rank": 1410,
+      "pontos": 5,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     },
     {
       "date": "2025-10-20",
       "rank": 3834,
+      "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "pqp_oliver0dz9"
     }

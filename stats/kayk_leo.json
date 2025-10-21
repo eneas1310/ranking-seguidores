@@ -2,9 +2,10 @@
   "username": "kayk_leo",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MzAxMDAwMDBjMDIwMDAwMTgwMjAwMDAyMzAyMDAwMDJlMDIwMDAwM2EwMjAwMDA0NjAyMDAwMDlmMDIwMDAwYWEwMjAwMDBiNTAyMDAwMGNjMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAC4AAQEBAAAAAAAAAAAAAAAAAAABBxAAAgIDAAAAAAAAAAAAAAAAAWBQgBARQP/aAAwDAQACAAMAAAABxoAoABLBUFSkoEo2TG9kMaAoAAAAAARQ2TG9kMaAsoAAAAAAA2TG9kMaAsFlAACWCwUhUo2TG9kMaAKAAACFlEWAF2TGtlMaUSgAAIUEWAAF2TGtlMaAsFlgBUFlEsAADZca2UxoAAAAAAAADZca2UxoAAAAAAAADZca2UxpsoxpsoxpsoxpsoxpsoxpsoxpsoxpsoxpsoxrZQ//2gAIAQEAAQUCrT//2gAIAQMAAT8BZP/aAAgBAgABPwFk/9oACAEBAAY/Aq0//9oACAEBAAE/Ia0//9oADAMBAAIAAwAAABADgACgwiAABSAAAAAABAACgAAAAAAAACxAABSwQgADgAAARDRQgCAAAQCTxQiCRTwxCzxCABDDDDDAACgAAAACgAACgAAAAAAAAAD/2gAIAQMAAT8QZP/aAAgBAgABPxBk/9oACAEBAAE/EGESm+EZHGIYSm1P/9k=",
   "totalParticipacoes": 8,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 7,
+  "pontosAcumulados": 87,
   "mediaRank": "1336.75",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "0.88",
   "melhorRank": {
     "rank": 80,
     "date": "2025-10-15"
@@ -45,10 +46,6 @@
   ],
   "maioresCarrascos": [
     [
-      "undefined",
-      2
-    ],
-    [
       "__felipealves00",
       1
     ],
@@ -76,44 +73,55 @@
   "historicoDeBatalhas": [
     {
       "date": "2025-10-13",
-      "rank": 2071
+      "rank": 2071,
+      "pontos": 3,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-14",
-      "rank": 325
+      "rank": 325,
+      "pontos": 15,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-15",
       "rank": 80,
+      "pontos": 30,
       "eliminatedCount": 3,
       "eliminatedBy": "__felipealves00"
     },
     {
       "date": "2025-10-16",
       "rank": 3155,
+      "pontos": 1,
       "eliminatedCount": 2,
       "eliminatedBy": "silvinh_1.0"
     },
     {
       "date": "2025-10-17",
       "rank": 812,
+      "pontos": 10,
       "eliminatedCount": 0,
       "eliminatedBy": "leonardoyohandesouza"
     },
     {
       "date": "2025-10-18",
       "rank": 1339,
+      "pontos": 5,
       "eliminatedCount": 2,
       "eliminatedBy": "anapaula1986"
     },
     {
       "date": "2025-10-19",
       "rank": 193,
+      "pontos": 20,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     },
     {
       "date": "2025-10-20",
       "rank": 2719,
+      "pontos": 3,
       "eliminatedCount": 0,
       "eliminatedBy": "miriade61"
     }

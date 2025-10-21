@@ -2,9 +2,10 @@
   "username": "andrexinx",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MTAxMDAwMGY0MDEwMDAwMDAwMjAwMDAwYjAyMDAwMDE2MDIwMDAwMjIwMjAwMDAyZTAyMDAwMDg3MDIwMDAwOTUwMjAwMDBhMDAyMDAwMGFlMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACwAAQEBAQAAAAAAAAAAAAAAAAAHAQIQAQEBAQAAAAAAAAAAAAAAAGCAASD/2gAMAwEAAgADAAAAAY6OtAAAAAAAAWKO2IjoAAAAAAAAFijtiI6AAAAAAAABYo7YiOgAAAAAAAAWKO2IjoAAAAAAAAFijtiI6AAAAAAAABYo7YiOgAAAAAAAAWKO2IjoAAAAAAAAFijtiI5oAAAAAAAAZY47YiOrEI6sQjqxCOrEI6sQjqxCOrEI6sQjqxCO2IP/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABBT3333X1n0nT333332y0mz333333kgnjn33333mSBiBR1jz2gyG3hz3j3mgCmwzmyRR2DiBgCDyQT0DECQAQznBwiiIDFBHCDADEH/2gAIAQMAAT8QP7z/AP/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
   "totalParticipacoes": 7,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 4,
+  "pontosAcumulados": 37,
   "mediaRank": "1931.00",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "0.57",
   "melhorRank": {
     "rank": 536,
     "date": "2025-10-19"
@@ -33,10 +34,6 @@
   ],
   "maioresCarrascos": [
     [
-      "undefined",
-      1
-    ],
-    [
       "rkd_fz25",
       1
     ],
@@ -64,40 +61,49 @@
   "historicoDeBatalhas": [
     {
       "date": "2025-10-14",
-      "rank": 622
+      "rank": 622,
+      "pontos": 10,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-15",
       "rank": 3957,
+      "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "rkd_fz25"
     },
     {
       "date": "2025-10-16",
       "rank": 1507,
+      "pontos": 5,
       "eliminatedCount": 0,
       "eliminatedBy": "arthurzx13_"
     },
     {
       "date": "2025-10-17",
       "rank": 3551,
+      "pontos": 1,
       "eliminatedCount": 1,
       "eliminatedBy": "juninho_016x"
     },
     {
       "date": "2025-10-18",
       "rank": 1843,
+      "pontos": 5,
       "eliminatedCount": 0,
       "eliminatedBy": "samuel1.4souza"
     },
     {
       "date": "2025-10-19",
       "rank": 536,
+      "pontos": 10,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     },
     {
       "date": "2025-10-20",
       "rank": 1501,
+      "pontos": 5,
       "eliminatedCount": 3,
       "eliminatedBy": "antoni_ce._ofc"
     }

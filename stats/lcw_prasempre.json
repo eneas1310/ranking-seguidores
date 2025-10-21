@@ -2,9 +2,10 @@
   "username": "lcw_prasempre",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZTAxMDAwMGY0MDEwMDAwMDAwMjAwMDAwYjAyMDAwMDE2MDIwMDAwMjIwMjAwMDAyZTAyMDAwMDg3MDIwMDAwOTIwMjAwMDA5ZDAyMDAwMGFiMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACkAAQEBAAAAAAAAAAAAAAAAAAAHARABAQAAAAAAAAAAAAAAAAAAYID/2gAMAwEAAgADAAAAAY2NMAAAAABuDQLJG7IRvAAAAAAAAAWWNWUjQAAAAAAAAFljVlI0AAAAAAAABZY1ZSNAAAAAAAAAWWNWUjQAAAAAAAAFljVlI0AAAAAAAABZY1ZSNAAAAAAAAAWWNWUjeaMbgAAAAAAaMssbshG1kEbWQRpZRGllEaWURpZRGllEbWQRtZBG7IH/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABABzzzzzywABzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyhDTzzzzzzCAADDDDDAAAD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
   "totalParticipacoes": 4,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 1,
+  "pontosAcumulados": 34,
   "mediaRank": "1785.75",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "0.25",
   "melhorRank": {
     "rank": 224,
     "date": "2025-10-14"
@@ -21,10 +22,6 @@
   ],
   "maioresCarrascos": [
     [
-      "undefined",
-      2
-    ],
-    [
       "nickcristina3113",
       1
     ],
@@ -36,21 +33,27 @@
   "historicoDeBatalhas": [
     {
       "date": "2025-10-13",
-      "rank": 2167
+      "rank": 2167,
+      "pontos": 3,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-14",
-      "rank": 224
+      "rank": 224,
+      "pontos": 20,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-15",
       "rank": 3827,
+      "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "nickcristina3113"
     },
     {
       "date": "2025-10-16",
       "rank": 925,
+      "pontos": 10,
       "eliminatedCount": 1,
       "eliminatedBy": "davimudinho"
     }

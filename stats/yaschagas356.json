@@ -2,9 +2,10 @@
   "username": "yaschagas356",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZTAxMDAwMGZiMDEwMDAwMDcwMjAwMDAxMjAyMDAwMDFkMDIwMDAwMjkwMjAwMDAzNTAyMDAwMDkwMDIwMDAwOWIwMjAwMDBhNjAyMDAwMGI0MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACkAAQEBAAAAAAAAAAAAAAAAAAAHARABAQAAAAAAAAAAAAAAAAAAYID/2gAMAwEAAgADAAAAAYyAAAAMwN0AABZozZiMgAAAAAAAAWaM2YjIzA3QAYDQAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2bMjI3QAYDQAAYDQFmjNmzIyN0AAAAAAABZozZiMhgNAADAAbm4ANWaM2YjIAAAAAAAAFmjNmIyswjKzCMrMIyswjKzCMrMIyswjKzCMrMIzZg//9oACAEBAAEFApp//9oACAEDAAE/AUn/2gAIAQIAAT8BSf/aAAgBAQAGPwKaf//aAAgBAQABPyGaf//aAAwDAQACAAMAAAAQ8888/wDPPPKPPPPPPPPPKP8Azz3zzzzyjzzzzzzzzyjzzzzzzzzyvzz3zzz3zyvzzzzzzzzyj3zzz7713yjzzzzzzzzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
   "totalParticipacoes": 2,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 0,
+  "pontosAcumulados": 10,
   "mediaRank": "2373.00",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "0.00",
   "melhorRank": {
     "rank": 618,
     "date": "2025-10-13"
@@ -14,20 +15,19 @@
     "date": "2025-10-14"
   },
   "maioresVitimas": [],
-  "maioresCarrascos": [
-    [
-      "undefined",
-      2
-    ]
-  ],
+  "maioresCarrascos": [],
   "historicoDeBatalhas": [
     {
       "date": "2025-10-13",
-      "rank": 618
+      "rank": 618,
+      "pontos": 10,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-14",
-      "rank": 4128
+      "rank": 4128,
+      "pontos": 0,
+      "eliminatedCount": 0
     }
   ]
 }

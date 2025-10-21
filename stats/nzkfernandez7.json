@@ -2,9 +2,10 @@
   "username": "nzkfernandez7",
   "imageUrl": "data:image/jpeg;base64,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",
   "totalParticipacoes": 8,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 5,
+  "pontosAcumulados": 31,
   "mediaRank": "2629.38",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "0.63",
   "melhorRank": {
     "rank": 649,
     "date": "2025-10-19"
@@ -33,10 +34,6 @@
   ],
   "maioresCarrascos": [
     [
-      "undefined",
-      2
-    ],
-    [
       "leafar878",
       1
     ],
@@ -64,44 +61,55 @@
   "historicoDeBatalhas": [
     {
       "date": "2025-10-13",
-      "rank": 2906
+      "rank": 2906,
+      "pontos": 3,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-14",
-      "rank": 850
+      "rank": 850,
+      "pontos": 10,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-15",
       "rank": 2352,
+      "pontos": 3,
       "eliminatedCount": 4,
       "eliminatedBy": "leafar878"
     },
     {
       "date": "2025-10-16",
       "rank": 3863,
+      "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "ruanfreits_"
     },
     {
       "date": "2025-10-17",
       "rank": 3739,
+      "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "th_souza57y"
     },
     {
       "date": "2025-10-18",
       "rank": 2252,
+      "pontos": 3,
       "eliminatedCount": 1,
       "eliminatedBy": "gregoriomalmacedo"
     },
     {
       "date": "2025-10-19",
       "rank": 649,
+      "pontos": 10,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     },
     {
       "date": "2025-10-20",
       "rank": 4424,
+      "pontos": 0,
       "eliminatedCount": 0,
       "eliminatedBy": "israel_oliveira00975"
     }

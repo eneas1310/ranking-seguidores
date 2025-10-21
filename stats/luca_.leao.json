@@ -2,9 +2,10 @@
   "username": "luca_.leao",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2YjAxMDAwMDY4MDIwMDAwODEwMjAwMDA4ZDAyMDAwMDk5MDIwMDAwYTgwMjAwMDBmMDAyMDAwMDQ5MDMwMDAwNTUwMzAwMDA2MTAzMDAwMDEwMDQwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADYAAQEBAQEAAAAAAAAAAAAAAAABAgcDEAADAAMBAAIDAQAAAAAAAAAAAREQIDBAIWAxUHCA/9oADAMBAAIAAwAAAAHkICjNQzAAlAACpS9g4/2A5EACZ35kBLQqkURoYWDsPHuwnI2RqMjFgs0Ch64M6AozneSdg5D145DQZsGd4FUtQ1fKnrmbPO+mTEsL17kHXzkKCywZ1BZoq0xNZFlN3zozROv8h68chgLBrFhfXy9TL0pnPpDO5RNYMLox1zk/WDj6wEKg16efob3nYxvBNZoxBrfnTXV+TdZOPywSiVDfp5bPbWNFk8zUgmsZPRinp1nkfXDjyiLABrI99+Psalp5TXmYyCwa6/x7sJx92AcfdgHHnYRx52Ece9euDlN6qOTeHYBx52EcevYBx/sAf//aAAgBAQABBQL+TX3whCE9M+l33LyJ5e//2gAIAQMAAT8B+yf/2gAIAQIAAT8B+yf/2gAIAQEABj8C/wA0/wD/2gAIAQEAAT8h/VvjOT8NLtPHSeVru8JlxBonWaIUb8EITmtYJEJzQmXS5YlhOC3YxckLZvohbrmhPD1uF4pi2fVtGN+AT4v/2gAMAwEAAgADAAAAEHANKALDPGIBDPJNKFLCAFAGCCJJOEAICBFPEJIMIPDGGPHMMPCGIEDEHLBBANMDLOFCJPCNEJBEJOAPIMBAHEFLODCIAIEMIMMIAP/aAAgBAwABPxD7J//aAAgBAgABPxD7J//aAAgBAQABPxBYmWxvrCaMfRPVrZCEJhN4PRCawg0NZpRhl61lImGPMGMeELCR+AxBapCw8sQkJEEImSlGLLwx4QsGxginc1xliY8sQhEGF8FE8D2kGiZTEyobxCskITSlGIqqULRMkDQ+RuCKNiCePxKalKXCwSEhjQkTBqfAo91kQx4p84hifBDYXDGNjGGIu6egVjTyz4CCF4jiw0NDG0vIQtE/AFGg3dJj/9k=",
   "totalParticipacoes": 8,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 5,
+  "pontosAcumulados": 56,
   "mediaRank": "2013.88",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "0.63",
   "melhorRank": {
     "rank": 94,
     "date": "2025-10-16"
@@ -37,10 +38,6 @@
   ],
   "maioresCarrascos": [
     [
-      "undefined",
-      2
-    ],
-    [
       "lucaaswzl",
       1
     ],
@@ -68,44 +65,55 @@
   "historicoDeBatalhas": [
     {
       "date": "2025-10-13",
-      "rank": 2160
+      "rank": 2160,
+      "pontos": 3,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-14",
-      "rank": 2234
+      "rank": 2234,
+      "pontos": 3,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-15",
       "rank": 3497,
+      "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "lucaaswzl"
     },
     {
       "date": "2025-10-16",
       "rank": 94,
+      "pontos": 30,
       "eliminatedCount": 4,
       "eliminatedBy": "ezra_gabriel25"
     },
     {
       "date": "2025-10-17",
       "rank": 2543,
+      "pontos": 3,
       "eliminatedCount": 0,
       "eliminatedBy": "eu_silvahbk"
     },
     {
       "date": "2025-10-18",
       "rank": 3570,
+      "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "lucas.gabriel9.8"
     },
     {
       "date": "2025-10-19",
       "rank": 598,
+      "pontos": 10,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     },
     {
       "date": "2025-10-20",
       "rank": 1415,
+      "pontos": 5,
       "eliminatedCount": 1,
       "eliminatedBy": "chaga___off"
     }

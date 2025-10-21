@@ -2,9 +2,10 @@
   "username": "vinicius_vinizim",
   "imageUrl": "data:image/jpeg;base64,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",
   "totalParticipacoes": 8,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 8,
+  "pontosAcumulados": 32,
   "mediaRank": "2289.25",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "1.00",
   "melhorRank": {
     "rank": 974,
     "date": "2025-10-17"
@@ -49,10 +50,6 @@
   ],
   "maioresCarrascos": [
     [
-      "undefined",
-      2
-    ],
-    [
       "gezinha508df",
       1
     ],
@@ -80,44 +77,55 @@
   "historicoDeBatalhas": [
     {
       "date": "2025-10-13",
-      "rank": 1413
+      "rank": 1413,
+      "pontos": 5,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-14",
-      "rank": 1406
+      "rank": 1406,
+      "pontos": 5,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-15",
       "rank": 1233,
+      "pontos": 5,
       "eliminatedCount": 4,
       "eliminatedBy": "gezinha508df"
     },
     {
       "date": "2025-10-16",
       "rank": 2471,
+      "pontos": 3,
       "eliminatedCount": 0,
       "eliminatedBy": "wilker_da_junior_"
     },
     {
       "date": "2025-10-17",
       "rank": 974,
+      "pontos": 10,
       "eliminatedCount": 2,
       "eliminatedBy": "pdr100midia"
     },
     {
       "date": "2025-10-18",
       "rank": 4224,
+      "pontos": 0,
       "eliminatedCount": 1,
       "eliminatedBy": "davi_.silvaax"
     },
     {
       "date": "2025-10-19",
       "rank": 2839,
+      "pontos": 3,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     },
     {
       "date": "2025-10-20",
       "rank": 3754,
+      "pontos": 1,
       "eliminatedCount": 1,
       "eliminatedBy": "ig.henrique01"
     }

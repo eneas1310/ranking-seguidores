@@ -2,9 +2,10 @@
   "username": "luanamendesde5",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MDAxMDAwMDBhMDIwMDAwMTYwMjAwMDAyMTAyMDAwMDJjMDIwMDAwMzgwMjAwMDA0NDAyMDAwMGE1MDIwMDAwYjAwMjAwMDBiZDAyMDAwMGNiMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACsAAQEBAAAAAAAAAAAAAAAAAAABBxAAAwEAAAAAAAAAAAAAAAAAUGCAEf/aAAwDAQACAAMAAAABxwWgAAAAAALBdixzYzHAAAACkAAAA2PHNjMcAAAKAARYAANjxzYzHAAUAASgJVQIA2PHNjMcABQoAQAFJSQDY8c2MxwACygKEABSWIA2PHNjMcAAsFCgAAkAA2PHNjMcAAAsFQWAAAA2PHdiMcWApKEAWAApCgDYsd2Ix1sSsdmxoxy7EMdmxjHGxjHGxjHWxDHGxjHWxLcd2Ik//9oACAEBAAEFApp//9oACAEDAAE/AWT/2gAIAQIAAT8BZP/aAAgBAQAGPwKaf//aAAgBAQABPyGaf//aAAwDAQACAAMAAAAQ773v99//ALyx9/8A3n33/wDjH/8AeQQdfea//QQfjmPfaf8A0Rz3yhH2n/2nz76hX2n/ANtQwgB99p//APbTXfffY9+4/wDf/vsMMFONPPMPMAP/2gAIAQMAAT8QZP/aAAgBAgABPxAtg7//2gAIAQEAAT8Qmn//2Q==",
   "totalParticipacoes": 8,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 4,
+  "pontosAcumulados": 46,
   "mediaRank": "1716.38",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "0.50",
   "melhorRank": {
     "rank": 593,
     "date": "2025-10-14"
@@ -33,10 +34,6 @@
   ],
   "maioresCarrascos": [
     [
-      "undefined",
-      2
-    ],
-    [
       "cesinhadf306",
       1
     ],
@@ -64,44 +61,55 @@
   "historicoDeBatalhas": [
     {
       "date": "2025-10-13",
-      "rank": 790
+      "rank": 790,
+      "pontos": 10,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-14",
-      "rank": 593
+      "rank": 593,
+      "pontos": 10,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-15",
       "rank": 2041,
+      "pontos": 3,
       "eliminatedCount": 0,
       "eliminatedBy": "cesinhadf306"
     },
     {
       "date": "2025-10-16",
       "rank": 1005,
+      "pontos": 5,
       "eliminatedCount": 1,
       "eliminatedBy": "joaofelipenf"
     },
     {
       "date": "2025-10-17",
       "rank": 1611,
+      "pontos": 5,
       "eliminatedCount": 1,
       "eliminatedBy": "lucasterr4"
     },
     {
       "date": "2025-10-18",
       "rank": 2856,
+      "pontos": 3,
       "eliminatedCount": 2,
       "eliminatedBy": "renan_ogum35"
     },
     {
       "date": "2025-10-19",
       "rank": 652,
+      "pontos": 10,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     },
     {
       "date": "2025-10-20",
       "rank": 4183,
+      "pontos": 0,
       "eliminatedCount": 0,
       "eliminatedBy": "valdeirmarquesd"
     }

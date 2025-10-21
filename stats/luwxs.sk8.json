@@ -2,9 +2,10 @@
   "username": "luwxs.sk8",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2NjAxMDAwMDE1MDIwMDAwMjEwMjAwMDAyZDAyMDAwMDM5MDIwMDAwNDUwMjAwMDA1MTAyMDAwMGFhMDIwMDAwYjYwMjAwMDBjMjAyMDAwMGY2MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADEAAQEBAAAAAAAAAAAAAAAAAAABBxAAAQQDAQEAAAAAAAAAAAAAARARIDAAQGCAUP/aAAwDAQACAAMAAAABxwAABBQEoQUCxF2LHdiMcRVgAAAAAVKEo2PHNjjHIUAAAAWACgA2PHNjjGxQAABQlEABUF2PHNjjGxQAAFgWAsAAF2PG9kMbAAAsFiiWApAANkxzY4xsUAAABQIFBKE2TG9kjGxQFgAUAEoAANjxzY4xyWUWAAFgVKAAWA2PHNjjHJsisbbIMcmyDG2yDG7sYxxsYxxsaMcbGMcbGrHNjI//2gAIAQEAAQUC80//2gAIAQMAAT8B6T//2gAIAQIAAT8B6T//2gAIAQEABj8C80//2gAIAQEAAT8h80//2gAMAwEAAgADAAAAEOMADACPNLgyENEAPOAOCiMBGNEPIEIAAANMEOMCAgAEOGGDHECAAAJGNOPPIgLCINAHFIKiJDPAEPOKChFLPHDOPHKkMEMIEEssIv/aAAgBAwABPxDpP//aAAgBAgABPxDpP//aAAgBAQABPxCZveRg8nVkG+N5sHxWm9xm+2IGRrKHGidRrheENww/LE2QqMKNgpfP/9k=",
   "totalParticipacoes": 8,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 3,
+  "pontosAcumulados": 47,
   "mediaRank": "2279.50",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "0.38",
   "melhorRank": {
     "rank": 281,
     "date": "2025-10-13"
@@ -28,10 +29,6 @@
     ]
   ],
   "maioresCarrascos": [
-    [
-      "undefined",
-      2
-    ],
     [
       "moniquebbarross",
       1
@@ -60,44 +57,55 @@
   "historicoDeBatalhas": [
     {
       "date": "2025-10-13",
-      "rank": 281
+      "rank": 281,
+      "pontos": 15,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-14",
-      "rank": 591
+      "rank": 591,
+      "pontos": 10,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-15",
       "rank": 430,
+      "pontos": 15,
       "eliminatedCount": 2,
       "eliminatedBy": "moniquebbarross"
     },
     {
       "date": "2025-10-16",
       "rank": 2304,
+      "pontos": 3,
       "eliminatedCount": 1,
       "eliminatedBy": "carloxx_vasconcelos"
     },
     {
       "date": "2025-10-17",
       "rank": 3771,
+      "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "taly.a589"
     },
     {
       "date": "2025-10-18",
       "rank": 4148,
+      "pontos": 0,
       "eliminatedCount": 0,
       "eliminatedBy": "joaofirmino04"
     },
     {
       "date": "2025-10-19",
       "rank": 4085,
+      "pontos": 0,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     },
     {
       "date": "2025-10-20",
       "rank": 2626,
+      "pontos": 3,
       "eliminatedCount": 0,
       "eliminatedBy": "pk_pedro_lucas_"
     }

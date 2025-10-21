@@ -2,9 +2,10 @@
   "username": "matheus._ribero",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2NTAxMDAwMDE5MDIwMDAwMjUwMjAwMDAzMTAyMDAwMDNkMDIwMDAwNDkwMjAwMDA1NTAyMDAwMGIwMDIwMDAwYmYwMjAwMDBjYjAyMDAwMGU0MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADAAAQEBAQAAAAAAAAAAAAAAAAABBwMQAAEFAQEAAAAAAAAAAAAAAEABEVBggCAw/9oADAMBAAIAAwAAAAHHxOoAAAAAACUTYcf2BMfCgCrAFgACAATYcf2BMfCikooAARFlAgDYMf2BMfC1KoASgAgEWUCNgx/YEx+wtChABYoAIllAjYMf2BMfC0KEAAoAIhQI2DH9gTHwtCgABACWAUCNgx/YEx8KBYqoFShBSAADYMf2BMfAAsCwAoqJYqyiBdfx/YEx9sAx9sAx9sAx9sBcgmwDIGvjIGvjH2wDH2wDH9gE/9oACAEBAAEFAs0//9oACAEDAAE/AbJ//9oACAECAAE/AbJ//9oACAEBAAY/As0//9oACAEBAAE/Ic0//9oADAMBAAIAAwAAABCUVU120kFCID3jzTy0ECB3GAgEvTkkP0gX658vQ0M0B9/b6tQUN0R//wC2jcJD1AAx/wA1vLaVfWHCDBPPKMvbbfKVKDCAU8cEAAMIIP/aAAgBAwABPxDxU5YhRf/aAAgBAgABPxCyf//aAAgBAQABPxAlLchDkvyhbGMK8q8X/9k=",
   "totalParticipacoes": 7,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 9,
+  "pontosAcumulados": 50,
   "mediaRank": "1795.14",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "1.29",
   "melhorRank": {
     "rank": 440,
     "date": "2025-10-16"
@@ -53,10 +54,6 @@
   ],
   "maioresCarrascos": [
     [
-      "undefined",
-      1
-    ],
-    [
       "legasy132",
       1
     ],
@@ -84,40 +81,49 @@
   "historicoDeBatalhas": [
     {
       "date": "2025-10-14",
-      "rank": 2008
+      "rank": 2008,
+      "pontos": 3,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-15",
       "rank": 2953,
+      "pontos": 3,
       "eliminatedCount": 1,
       "eliminatedBy": "legasy132"
     },
     {
       "date": "2025-10-16",
       "rank": 440,
+      "pontos": 15,
       "eliminatedCount": 3,
       "eliminatedBy": "felix_gabriel_cr7"
     },
     {
       "date": "2025-10-17",
       "rank": 493,
+      "pontos": 15,
       "eliminatedCount": 3,
       "eliminatedBy": "jeandre.jv"
     },
     {
       "date": "2025-10-18",
       "rank": 3536,
+      "pontos": 1,
       "eliminatedCount": 1,
       "eliminatedBy": "yagofirmino_"
     },
     {
       "date": "2025-10-19",
       "rank": 2556,
+      "pontos": 3,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     },
     {
       "date": "2025-10-20",
       "rank": 580,
+      "pontos": 10,
       "eliminatedCount": 1,
       "eliminatedBy": "davi.rodriguesdasilva.94"
     }

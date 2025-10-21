@@ -9,8 +9,7 @@ if (!fs.existsSync(statsDir)) {
     fs.mkdirSync(statsDir);
 }
 
-// --- NOVA FUNÇÃO ---
-// Adicionada função para calcular pontos com base no rank
+// Função para calcular pontos com base no rank
 function calcularPontos(rank) {
     if (rank === 1) return 100;
     if (rank === 2) return 90;
@@ -24,7 +23,7 @@ function calcularPontos(rank) {
     if (rank >= 1001 && rank <= 2000) return 5;
     if (rank >= 2001 && rank <= 3000) return 3;
     if (rank >= 3001 && rank <= 4000) return 1;
-    return 0; // Se o rank for maior que 4000, não ganha pontos
+    return 0;
 }
 
 
@@ -32,15 +31,34 @@ function calcularPontos(rank) {
 async function processarTodosOsRankings() {
     console.log('Iniciando processamento de todos os dados...');
     try {
-        // --- FILTRO DE MÊS ATUAL ADICIONADO ---
-        // Pega o mês atual no formato 'YYYY-MM' (ex: '2025-10')
-        // Isso faz com que o ranking seja "do Mês" como diz seu título
-        const mesAtual = new Date().toISOString().slice(0, 7);
+        // --- 1. LER DADOS ANTIGOS PARA COMPARAR RANK ---
+        const hallOfFamePath = path.join(diretorioAtual, 'hall_of_fame_stats.json');
+        const previousRanksMap = new Map();
+        let oldData = [];
+
+        if (fs.existsSync(hallOfFamePath)) {
+            try {
+                const oldContent = fs.readFileSync(hallOfFamePath, 'utf-8');
+                oldData = JSON.parse(oldContent);
+                
+                // Ordena os dados antigos pelos pontos para saber o rank anterior
+                oldData.sort((a, b) => b.pontosAcumulados - a.pontosAcumulados);
+                
+                oldData.forEach((player, index) => {
+                    previousRanksMap.set(player.username, index + 1); // Salva o rank anterior (ex: 1º, 2º)
+                });
+                console.log('Dados de rank anterior carregados.');
+            } catch (e) {
+                console.warn('Arquivo hall_of_fame_stats.json antigo corrompido. Ignorando...');
+                previousRanksMap.clear();
+            }
+        }
+
+        // --- FILTRO DE MÊS ATUAL ---
+        const mesAtual = new Date().toISOString().slice(0, 7); // ex: '2025-10'
         console.log(`Filtrando arquivos de ranking para o mês: ${mesAtual}`);
 
         const arquivos = fs.readdirSync(diretorioAtual);
-        
-        // Modificado para filtrar arquivos apenas do mês atual
         const arquivosDeRanking = arquivos
             .filter(file => file.startsWith('ranking_') && file.endsWith('.json') && file.includes(mesAtual))
             .sort();
@@ -53,7 +71,7 @@ async function processarTodosOsRankings() {
 
         const masterStats = {};
 
-        // 1. Agrega todos os dados de todas as rodadas
+        // 2. Agrega todos os dados de todas as rodadas
         for (const arquivo of arquivosDeRanking) {
             const dateMatch = arquivo.match(/ranking_(\d{4}-\d{2}-\d{2})\.json/);
             if (!dateMatch) continue;
@@ -69,69 +87,127 @@ async function processarTodosOsRankings() {
                     masterStats[username] = {
                         username: username,
                         imageUrl: jogador.imageUrl,
-                        pontosAcumulados: 0, // <-- PROPRIEDADE DE PONTOS ADICIONADA
+                        pontosAcumulados: 0,
                         historicoDeBatalhas: [],
                         maioresVitimas: {},
                         maioresCarrascos: {}
                     };
                 }
 
-                masterStats[username].imageUrl = jogador.imageUrl;
+                // Atualiza a URL da imagem se for mais recente (evita imagem quebrada)
+                if (jogador.imageUrl) {
+                    masterStats[username].imageUrl = jogador.imageUrl;
+                }
 
-                // --- CÁLCULO DE PONTOS ADICIONADO ---
                 const pontosDoDia = calcularPontos(jogador.rank);
                 masterStats[username].pontosAcumulados += pontosDoDia;
 
                 masterStats[username].historicoDeBatalhas.push({
                     date: dataDaRodada,
                     rank: jogador.rank,
-                    pontos: pontosDoDia, // <-- Salva os pontos do dia no histórico
-                    eliminatedCount: jogador.eliminatedCount,
+                    pontos: pontosDoDia, 
+                    eliminatedCount: jogador.eliminatedCount || 0, // Garante que é um número
                     eliminatedBy: jogador.eliminatedBy
                 });
 
-                // Garantir que eliminatedList existe antes de usar
                 if (jogador.eliminatedList && Array.isArray(jogador.eliminatedList)) {
                     jogador.eliminatedList.forEach(vitima => {
                         masterStats[username].maioresVitimas[vitima] = (masterStats[username].maioresVitimas[vitima] || 0) + 1;
                     });
                 }
 
-                if (jogador.eliminatedBy !== 'Sobrevivente') {
+                if (jogador.eliminatedBy && jogador.eliminatedBy !== 'Sobrevivente') {
                     const carrasco = jogador.eliminatedBy;
                     masterStats[username].maioresCarrascos[carrasco] = (masterStats[username].maioresCarrascos[carrasco] || 0) + 1;
                 }
             }
         }
 
-        // 2. Gera e salva os perfis individuais
+        // 3. Gera e salva os perfis individuais
         for (const username in masterStats) {
             const stats = masterStats[username];
             
-            // ... (cálculos de perfil)
-            // (O resto desta seção de "perfis individuais" pode continuar a mesma)
-            // ...
-        }
-
-        // 3. Gera o hall_of_fame_stats.json com resumo geral
-        const hallOfFameArray = Object.values(masterStats).map(stats => {
-            const totalEliminacoes = stats.historicoDeBatalhas.reduce((sum, b) => sum + b.eliminatedCount, 0);
+            const totalEliminacoes = stats.historicoDeBatalhas.reduce((sum, b) => sum + (b.eliminatedCount || 0), 0);
             const totalParticipacoes = stats.historicoDeBatalhas.length;
             const somaDosRanks = stats.historicoDeBatalhas.reduce((sum, b) => sum + b.rank, 0);
+            
+            let melhorBatalha = { rank: Infinity, date: '' };
+            if (stats.historicoDeBatalhas.length > 0) {
+                 melhorBatalha = stats.historicoDeBatalhas.reduce((best, current) => current.rank < best.rank ? current : best);
+            }
+            
+            let piorBatalha = { rank: -Infinity, date: '' };
+             if (stats.historicoDeBatalhas.length > 0) {
+                piorBatalha = stats.historicoDeBatalhas.reduce((worst, current) => current.rank > worst.rank ? current : worst);
+            }
+
+            const perfilJogador = {
+                username: stats.username,
+                imageUrl: stats.imageUrl,
+                totalParticipacoes: totalParticipacoes,
+                totalEliminacoes: totalEliminacoes,
+                pontosAcumulados: stats.pontosAcumulados, // Adiciona pontos ao perfil
+                mediaRank: (somaDosRanks / totalParticipacoes).toFixed(2),
+                mediaEliminacoes: (totalEliminacoes / totalParticipacoes).toFixed(2),
+                melhorRank: { rank: melhorBatalha.rank === Infinity ? null : melhorBatalha.rank, date: melhorBatalha.rank === Infinity ? null : melhorBatalha.date },
+                piorRank: { rank: piorBatalha.rank === -Infinity ? null : piorBatalha.rank, date: piorBatalha.rank === -Infinity ? null : piorBatalha.date },
+                maioresVitimas: Object.entries(stats.maioresVitimas).sort((a, b) => b[1] - a[1]).slice(0, 10),
+                maioresCarrascos: Object.entries(stats.maioresCarrascos).sort((a, b) => b[1] - a[1]).slice(0, 10),
+                historicoDeBatalhas: stats.historicoDeBatalhas.sort((a, b) => new Date(a.date) - new Date(b.date))
+            };
+
+            fs.writeFileSync(path.join(statsDir, `${username}.json`), JSON.stringify(perfilJogador, null, 2));
+        }
+        console.log(`Perfis individuais da pasta /stats/ atualizados.`);
+
+        // 4. Gera o hall_of_fame_stats.json com resumo geral
+        const hallOfFameArray = Object.values(masterStats).map(stats => {
+            const totalEliminacoes = stats.historicoDeBatalhas.reduce((sum, b) => sum + (b.eliminatedCount || 0), 0);
+            const totalParticipacoes = stats.historicoDeBatalhas.length;
+            const somaDosRanks = stats.historicoDeBatalhas.reduce((sum, b) => sum + b.rank, 0);
+
+            let melhorBatalha = { rank: Infinity, date: '' };
+            if (stats.historicoDeBatalhas.length > 0) {
+                 melhorBatalha = stats.historicoDeBatalhas.reduce((best, current) => current.rank < best.rank ? current : best);
+            }
 
             return {
                 username: stats.username,
                 imageUrl: stats.imageUrl,
-                pontosAcumulados: stats.pontosAcumulados, // <-- PROPRIEDADE DE PONTOS ADICIONADA
+                pontosAcumulados: stats.pontosAcumulados,
                 totalParticipacoes: totalParticipacoes,
                 totalEliminacoes: totalEliminacoes,
                 mediaRank: (somaDosRanks / totalParticipacoes).toFixed(2),
-                mediaEliminacoes: (totalEliminacoes / totalParticipacoes).toFixed(2)
+                mediaEliminacoes: (totalEliminacoes / totalParticipacoes).toFixed(2),
+                // --- SALVANDO MELHOR RANK E DATA ---
+                bestRank: melhorBatalha.rank === Infinity ? null : melhorBatalha.rank,
+                bestRankDate: melhorBatalha.rank === Infinity ? null : melhorBatalha.date,
+                // --- SALVANDO RANK ANTERIOR ---
+                previousRank: previousRanksMap.get(stats.username) || null
             };
         });
 
+        // 5. CALCULAR MUDANÇA DE RANK
+        // Ordena o NOVO array por pontos para saber o rank atual
+        hallOfFameArray.sort((a, b) => b.pontosAcumulados - a.pontosAcumulados);
+
+        // Agora, calcula a mudança de rank
+        hallOfFameArray.forEach((player, index) => {
+            const currentRank = index + 1;
+            const previousRank = player.previousRank; // Pega o rank antigo que salvamos
+            
+            if (previousRank) {
+                player.rankChange = previousRank - currentRank; // (ex: era 5º, agora é 3º. 5 - 3 = +2 (subiu 2))
+            } else {
+                player.rankChange = 'new'; // É um jogador novo no ranking
+            }
+            
+            delete player.previousRank; // Remove a propriedade auxiliar
+        });
+
+
         fs.writeFileSync(
-            path.join(diretorioAtual, 'hall_of_fame_stats.json'),
+            hallOfFamePath,
             JSON.stringify(hallOfFameArray, null, 2)
         );
 

@@ -2,9 +2,10 @@
   "username": "_pabloxz_00",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2ODAxMDAwMDBhMDIwMDAwMTYwMjAwMDAyMjAyMDAwMDJlMDIwMDAwM2EwMjAwMDA0NjAyMDAwMDlmMDIwMDAwYWIwMjAwMDBiNzAyMDAwMGQ2MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADMAAQEBAQAAAAAAAAAAAAAAAAAHAQIQAAECBwEAAAAAAAAAAAAAAAERYAAQIDBAUIBw/9oADAMBAAIAAwAAAAGNDoAAAAAAAAssaspGgAAAAAAAALLGrKRoAAAAAAAACyxqy4jQ0AAAAAAAAssaspG8AAAAAAAABZY1ZcRoaANGAANwbgAAWWNWUjQAGgzRjcDRhpgANskbshGgbmgzQAABm4AAbZI1ZSNmGs0ZozQAAAAwCyxqykaWURrbII1tkEbWQRtZBG1kEbWQRtZBGllEasof/9oACAEBAAEFAuaf/9oACAEDAAE/AXJ//9oACAECAAE/AXJ//9oACAEBAAY/Auaf/9oACAEBAAE/Ieaf/9oADAMBAAIAAwAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAQwAAQgAIASBzyCwwAgByRSzRhgQBzBjwxxyxwgBxSTzwgjgBCCDLLJICAD/2gAIAQMAAT8Qcn//2gAIAQIAAT8Qcn//2gAIAQEAAT8Q8YO8GOmMNcs1kZLWlC4JqELBv//Z",
   "totalParticipacoes": 7,
-  "totalEliminacoes": null,
+  "totalEliminacoes": 5,
+  "pontosAcumulados": 12,
   "mediaRank": "3233.86",
-  "mediaEliminacoes": "NaN",
+  "mediaEliminacoes": "0.71",
   "melhorRank": {
     "rank": 2090,
     "date": "2025-10-13"
@@ -37,10 +38,6 @@
   ],
   "maioresCarrascos": [
     [
-      "undefined",
-      2
-    ],
-    [
       "wilmarlimma",
       1
     ],
@@ -64,39 +61,49 @@
   "historicoDeBatalhas": [
     {
       "date": "2025-10-13",
-      "rank": 2090
+      "rank": 2090,
+      "pontos": 3,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-14",
-      "rank": 2744
+      "rank": 2744,
+      "pontos": 3,
+      "eliminatedCount": 0
     },
     {
       "date": "2025-10-15",
       "rank": 2800,
+      "pontos": 3,
       "eliminatedCount": 1,
       "eliminatedBy": "wilmarlimma"
     },
     {
       "date": "2025-10-16",
       "rank": 3503,
+      "pontos": 1,
       "eliminatedCount": 3,
       "eliminatedBy": "castellhanos"
     },
     {
       "date": "2025-10-17",
       "rank": 4117,
+      "pontos": 0,
       "eliminatedCount": 0,
       "eliminatedBy": "edmirtonassuncao"
     },
     {
       "date": "2025-10-18",
       "rank": 3389,
+      "pontos": 1,
       "eliminatedCount": 1,
       "eliminatedBy": "tiaguiton7"
     },
     {
       "date": "2025-10-19",
       "rank": 3994,
+      "pontos": 1,
+      "eliminatedCount": 0,
       "eliminatedBy": "Desconhecido"
     }
   ]
