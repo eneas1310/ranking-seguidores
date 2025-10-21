@@ -158,8 +158,12 @@ body {
 
 .username {
     font-weight: bold;
-    color: #ffffff;
+    color: #a7ff83;
     font-size: 1.1rem;
+}
+
+.username-link:hover .username {
+    text-decoration: underline;
 }
 
 .username-link {
