@@ -89,8 +89,8 @@ async function processarTodosOsRankings() {
                         imageUrl: jogador.imageUrl,
                         pontosAcumulados: 0,
                         historicoDeBatalhas: [],
-                        maioresVitimas: {},
-                        maioresCarrascos: {}
+                        // maioresVitimas: {},   // <-- REMOVIDO
+                        // maioresCarrascos: {}  // <-- REMOVIDO
                     };
                 }
 
@@ -110,16 +110,17 @@ async function processarTodosOsRankings() {
                     eliminatedBy: jogador.eliminatedBy
                 });
 
-                if (jogador.eliminatedList && Array.isArray(jogador.eliminatedList)) {
-                    jogador.eliminatedList.forEach(vitima => {
-                        masterStats[username].maioresVitimas[vitima] = (masterStats[username].maioresVitimas[vitima] || 0) + 1;
-                    });
-                }
+                // --- BLOCOS REMOVIDOS ---
+                // if (jogador.eliminatedList && Array.isArray(jogador.eliminatedList)) {
+                //     jogador.eliminatedList.forEach(vitima => {
+                //         masterStats[username].maioresVitimas[vitima] = (masterStats[username].maioresVitimas[vitima] || 0) + 1;
+                //     });
+                // }
 
-                if (jogador.eliminatedBy && jogador.eliminatedBy !== 'Sobrevivente') {
-                    const carrasco = jogador.eliminatedBy;
-                    masterStats[username].maioresCarrascos[carrasco] = (masterStats[username].maioresCarrascos[carrasco] || 0) + 1;
-                }
+                // if (jogador.eliminatedBy && jogador.eliminatedBy !== 'Sobrevivente') {
+                //     const carrasco = jogador.eliminatedBy;
+                //     masterStats[username].maioresCarrascos[carrasco] = (masterStats[username].maioresCarrascos[carrasco] || 0) + 1;
+                // }
             }
         }
 
@@ -151,8 +152,8 @@ async function processarTodosOsRankings() {
                 mediaEliminacoes: (totalEliminacoes / totalParticipacoes).toFixed(2),
                 melhorRank: { rank: melhorBatalha.rank === Infinity ? null : melhorBatalha.rank, date: melhorBatalha.rank === Infinity ? null : melhorBatalha.date },
                 piorRank: { rank: piorBatalha.rank === -Infinity ? null : piorBatalha.rank, date: piorBatalha.rank === -Infinity ? null : piorBatalha.date },
-                maioresVitimas: Object.entries(stats.maioresVitimas).sort((a, b) => b[1] - a[1]).slice(0, 10),
-                maioresCarrascos: Object.entries(stats.maioresCarrascos).sort((a, b) => b[1] - a[1]).slice(0, 10),
+                // maioresVitimas: Object.entries(stats.maioresVitimas).sort((a, b) => b[1] - a[1]).slice(0, 10),    // <-- REMOVIDO
+                // maioresCarrascos: Object.entries(stats.maioresCarrascos).sort((a, b) => b[1] - a[1]).slice(0, 10), // <-- REMOVIDO
                 historicoDeBatalhas: stats.historicoDeBatalhas.sort((a, b) => new Date(a.date) - new Date(b.date))
             };
 
@@ -179,30 +180,26 @@ async function processarTodosOsRankings() {
                 totalEliminacoes: totalEliminacoes,
                 mediaRank: (somaDosRanks / totalParticipacoes).toFixed(2),
                 mediaEliminacoes: (totalEliminacoes / totalParticipacoes).toFixed(2),
-                // --- SALVANDO MELHOR RANK E DATA ---
                 bestRank: melhorBatalha.rank === Infinity ? null : melhorBatalha.rank,
                 bestRankDate: melhorBatalha.rank === Infinity ? null : melhorBatalha.date,
-                // --- SALVANDO RANK ANTERIOR ---
                 previousRank: previousRanksMap.get(stats.username) || null
             };
         });
 
         // 5. CALCULAR MUDANÇA DE RANK
-        // Ordena o NOVO array por pontos para saber o rank atual
         hallOfFameArray.sort((a, b) => b.pontosAcumulados - a.pontosAcumulados);
 
-        // Agora, calcula a mudança de rank
         hallOfFameArray.forEach((player, index) => {
             const currentRank = index + 1;
-            const previousRank = player.previousRank; // Pega o rank antigo que salvamos
+            const previousRank = player.previousRank;
             
             if (previousRank) {
-                player.rankChange = previousRank - currentRank; // (ex: era 5º, agora é 3º. 5 - 3 = +2 (subiu 2))
+                player.rankChange = previousRank - currentRank;
             } else {
-                player.rankChange = 'new'; // É um jogador novo no ranking
+                player.rankChange = 'new';
             }
             
-            delete player.previousRank; // Remove a propriedade auxiliar
+            delete player.previousRank;
         });
 
 

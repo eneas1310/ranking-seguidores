@@ -377,3 +377,8 @@ body {
 .rivals-list span { 
     color: #bdc3c7; 
 }
+
+/* Esconde as seções de Vítimas e Carrascos no perfil */
+.rivals-grid {
+    display: none;
+}
