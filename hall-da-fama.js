@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Pega os elementos do seu HTML
     const pontuacaoContainer = document.getElementById('pontuacao-list');
     const searchInput = document.getElementById('searchInput');
-    let allPlayersData = [];
+    let allPlayersData = []; // Para guardar os dados dos jogadores
 
+    // Função que desenha o ranking na tela
     function renderRanking(playersToRender) {
-        pontuacaoContainer.innerHTML = '';
+        pontuacaoContainer.innerHTML = ''; // Limpa a lista
 
         if (!playersToRender || playersToRender.length === 0) {
             pontuacaoContainer.innerHTML = `<p class="loading-message">Nenhum jogador encontrado.</p>`;
@@ -12,40 +14,34 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         playersToRender.forEach((player) => {
-            const rank = player.realRank;
+            const rank = player.realRank; // Usa o rank real calculado
+            
+            // Cria o elemento <div> para o jogador
             const playerElement = document.createElement('div');
-            playerElement.classList.add('ranking-item');
+            // Adiciona a classe 'ranking-item' (do seu style.css)
+            playerElement.classList.add('ranking-item'); 
 
+            // Adiciona classes de medalha (do seu style.css)
             if (rank === 1) playerElement.classList.add('gold');
             if (rank === 2) playerElement.classList.add('silver');
             if (rank === 3) playerElement.classList.add('bronze');
 
-            let rankChangeHtml = '';
-            if (player.rankChange === 'new') {
-                rankChangeHtml = `<span class="rank-change new">⭐ Novo</span>`;
-            } else if (player.rankChange > 0) {
-                rankChangeHtml = `<span class="rank-change up">▲ ${player.rankChange}</span>`;
-            } else if (player.rankChange < 0) {
-                rankChangeHtml = `<span class="rank-change down">▼ ${Math.abs(player.rankChange)}</span>`;
-            } else {
-                rankChangeHtml = `<span class="rank-change stable">–</span>`;
-            }
+            
+            // ===================================================================
+            // ### A CORREÇÃO ESTÁ AQUI ###
+            // Trocamos 'player.totalEliminacoes' 
+            // pela nova propriedade 'player.pontosAcumulados'
+            //
+            // ANTES:
+            // const statHtml = `<span>⭐ ${player.totalEliminacoes} Pontos</span>`;
+            //
+            // AGORA (CORRETO):
+            const statHtml = `<span class="eliminations">⭐ ${player.pontosAcumulados} Pontos</span>`;
+            // ===================================================================
 
-            // ### LINHA CORRIGIDA ABAIXO ###
-            // Trocamos 'player.pontos' por 'player.totalEliminacoes'
-            const statHtml = `<span class="eliminations" style="color: #34d399;">⭐ ${player.totalEliminacoes} Pontos</span>`;
 
-            let bestRankHtml = '';
-            if (player.bestRank && player.bestRankDate) {
-                const [ano, mes, dia] = player.bestRankDate.split('-');
-                const dataFormatada = `${dia}/${mes}/${ano}`;
-                bestRankHtml = `
-                    <small class="best-rank">
-                        🏆 Melhor Posição: <strong>${player.bestRank}º lugar</strong> (${dataFormatada})
-                    </small>
-                `;
-            }
-
+            // Monta o HTML interno do <div> do jogador
+            // (Ajuste as classes 'rank', 'profile-pic' etc. para bater com seu 'style.css')
             playerElement.innerHTML = `
                 <div class="rank"><span>${rank}º</span></div>
                 <img src="${player.imageUrl}" alt="Foto de ${player.username}" class="profile-pic">
@@ -54,33 +50,36 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span class="username">@${player.username}</span>
                     </a>
                     ${statHtml}
-                    ${bestRankHtml}
                 </div>
-                ${rankChangeHtml}
             `;
+            // Adiciona o elemento do jogador na lista
             pontuacaoContainer.appendChild(playerElement);
         });
     }
 
-    fetch('hall_of_fame_stats.json?' + new Date().getTime())
+    // Busca o arquivo JSON
+    fetch('hall_of_fame_stats.json?' + new Date().getTime()) // Adiciona cache-bust
         .then(response => response.json())
         .then(data => {
-            // Ordenar os dados por 'totalEliminacoes' em ordem decrescente
-            const sortedData = data.sort((a, b) => b.totalEliminacoes - a.totalEliminacoes);
             
-            // Adicionar o 'realRank' baseado na ordem
+            // --- MUDANÇA NA ORDENAÇÃO ---
+            // Ordena os jogadores pelos 'pontosAcumulados' (maior primeiro)
+            const sortedData = data.sort((a, b) => b.pontosAcumulados - a.pontosAcumulados);
+            
+            // Adiciona a posição (rank) correta em cada jogador
             sortedData.forEach((player, index) => {
                 player.realRank = index + 1;
             });
 
-            allPlayersData = sortedData;
-            renderRanking(allPlayersData);
+            allPlayersData = sortedData; // Salva os dados ordenados
+            renderRanking(allPlayersData); // Desenha o ranking na tela
         })
         .catch(error => {
-            console.error(error);
+            console.error("Erro ao carregar hall_of_fame_stats.json:", error);
             pontuacaoContainer.innerHTML = `<p class="loading-message" style="color: #ff6b6b;">Erro ao carregar os dados.</p>`;
         });
 
+    // Adiciona o filtro de busca
     searchInput.addEventListener('input', () => {
         const searchTerm = searchInput.value.toLowerCase().trim();
         
@@ -88,6 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
             player.username.toLowerCase().includes(searchTerm)
         );
         
-        renderRanking(filteredPlayers);
+        renderRanking(filteredPlayers); // Redesenha o ranking com os resultados filtrados
     });
 });
+
+
