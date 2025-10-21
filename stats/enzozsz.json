@@ -1,18 +1,18 @@
 {
   "username": "enzozsz",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2NDAxMDAwMDEyMDIwMDAwMWUwMjAwMDAyYTAyMDAwMDM2MDIwMDAwNDIwMjAwMDA0ZTAyMDAwMGE3MDIwMDAwYjMwMjAwMDBjZTAyMDAwMGU4MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAC8AAQEBAAAAAAAAAAAAAAAAAAABBxABAQACAwEAAAAAAAAAAAAAEQBggBAwUHD/2gAMAwEAAgADAAAAAcpRVQVBUFQVBUFQVBdWyjVzKEFQVBUFQVBUFQVBdXyfWDKEFQVBUFQVBUFQVBdXyfWDJgAAAAAAAANZybWTJhQAAAAAAADWcm1mMlFAAAAAAAANayXWoyUUAAAAAAAA1rJdajJUVUFQVBUFQVBUFQXWsk1uMkFAAAAAAAANbyTW4yRrZMka2Mka2Mka2Mka2Mka2Mka2Mka2Mka2Mk1sX//2gAIAQEAAQUC1p//2gAIAQMAAT8ByT//2gAIAQIAAT8ByT//2gAIAQEABj8C1p//2gAIAQEAAT8h1p//2gAMAwEAAgADAAAAEAAAAAAAAAADjjjjjjjjijDDDDDDDDCMssssssssqgAAAAAAAAKvPPPPPPPPKvPPPPPPPPKjDDDDDDDDCvPPPPPPPPKs888888884P/aAAgBAwABPxDJP//aAAgBAgABPxDqIiIiIjhmZmZmeCIiIiIj3f/aAAgBAQABPxDH2ZmZmZmZmZmZn5W4b//Z",
-  "totalParticipacoes": 4,
-  "totalEliminacoes": 3,
+  "totalParticipacoes": 5,
+  "totalEliminacoes": 4,
   "pontosAcumulados": 35,
-  "mediaRank": "2520.75",
-  "mediaEliminacoes": "0.75",
+  "mediaRank": "2933.20",
+  "mediaEliminacoes": "0.80",
   "melhorRank": {
     "rank": 93,
     "date": "2025-10-20"
   },
   "piorRank": {
-    "rank": 3779,
-    "date": "2025-10-18"
+    "rank": 4583,
+    "date": "2025-10-21"
   },
   "historicoDeBatalhas": [
     {
@@ -42,6 +42,13 @@
       "pontos": 30,
       "eliminatedCount": 3,
       "eliminatedBy": "victor_novaesfkz"
+    },
+    {
+      "date": "2025-10-21",
+      "rank": 4583,
+      "pontos": 0,
+      "eliminatedCount": 1,
+      "eliminatedBy": "analuizass2713"
     }
   ]
 }

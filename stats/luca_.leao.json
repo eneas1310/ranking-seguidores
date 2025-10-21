@@ -1,11 +1,11 @@
 {
   "username": "luca_.leao",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2YjAxMDAwMDY4MDIwMDAwODEwMjAwMDA4ZDAyMDAwMDk5MDIwMDAwYTgwMjAwMDBmMDAyMDAwMDQ5MDMwMDAwNTUwMzAwMDA2MTAzMDAwMDEwMDQwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADYAAQEBAQEAAAAAAAAAAAAAAAABAgcDEAADAAMBAAIDAQAAAAAAAAAAAREQIDBAIWAxUHCA/9oADAMBAAIAAwAAAAHkICjNQzAAlAACpS9g4/2A5EACZ35kBLQqkURoYWDsPHuwnI2RqMjFgs0Ch64M6AozneSdg5D145DQZsGd4FUtQ1fKnrmbPO+mTEsL17kHXzkKCywZ1BZoq0xNZFlN3zozROv8h68chgLBrFhfXy9TL0pnPpDO5RNYMLox1zk/WDj6wEKg16efob3nYxvBNZoxBrfnTXV+TdZOPywSiVDfp5bPbWNFk8zUgmsZPRinp1nkfXDjyiLABrI99+Psalp5TXmYyCwa6/x7sJx92AcfdgHHnYRx52Ece9euDlN6qOTeHYBx52EcevYBx/sAf//aAAgBAQABBQL+TX3whCE9M+l33LyJ5e//2gAIAQMAAT8B+yf/2gAIAQIAAT8B+yf/2gAIAQEABj8C/wA0/wD/2gAIAQEAAT8h/VvjOT8NLtPHSeVru8JlxBonWaIUb8EITmtYJEJzQmXS5YlhOC3YxckLZvohbrmhPD1uF4pi2fVtGN+AT4v/2gAMAwEAAgADAAAAEHANKALDPGIBDPJNKFLCAFAGCCJJOEAICBFPEJIMIPDGGPHMMPCGIEDEHLBBANMDLOFCJPCNEJBEJOAPIMBAHEFLODCIAIEMIMMIAP/aAAgBAwABPxD7J//aAAgBAgABPxD7J//aAAgBAQABPxBYmWxvrCaMfRPVrZCEJhN4PRCawg0NZpRhl61lImGPMGMeELCR+AxBapCw8sQkJEEImSlGLLwx4QsGxginc1xliY8sQhEGF8FE8D2kGiZTEyobxCskITSlGIqqULRMkDQ+RuCKNiCePxKalKXCwSEhjQkTBqfAo91kQx4p84hifBDYXDGNjGGIu6egVjTyz4CCF4jiw0NDG0vIQtE/AFGg3dJj/9k=",
-  "totalParticipacoes": 8,
-  "totalEliminacoes": 5,
-  "pontosAcumulados": 56,
-  "mediaRank": "2013.88",
-  "mediaEliminacoes": "0.63",
+  "totalParticipacoes": 9,
+  "totalEliminacoes": 7,
+  "pontosAcumulados": 76,
+  "mediaRank": "1809.67",
+  "mediaEliminacoes": "0.78",
   "melhorRank": {
     "rank": 94,
     "date": "2025-10-16"
@@ -68,6 +68,13 @@
       "pontos": 5,
       "eliminatedCount": 1,
       "eliminatedBy": "chaga___off"
+    },
+    {
+      "date": "2025-10-21",
+      "rank": 176,
+      "pontos": 20,
+      "eliminatedCount": 2,
+      "eliminatedBy": "lepracomdengue"
     }
   ]
 }
