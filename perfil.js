@@ -34,31 +34,25 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('total-eliminacoes').textContent = data.totalEliminacoes;
         document.getElementById('media-rank').textContent = `~${Math.round(data.mediaRank)}º`;
         
-        const [ano, mes, dia] = data.melhorRank.date.split('-');
-        document.getElementById('melhor-rank').textContent = `${data.melhorRank.rank}º (${dia}/${mes}/${ano})`;
+        // Adiciona uma verificação para o caso de o jogador ainda não ter um rank
+        if (data.melhorRank && data.melhorRank.date) {
+            const [ano, mes, dia] = data.melhorRank.date.split('-');
+            document.getElementById('melhor-rank').textContent = `${data.melhorRank.rank}º (${dia}/${mes}/${ano})`;
+        } else {
+            document.getElementById('melhor-rank').textContent = 'N/A';
+        }
         
-        populateRivalsList('maiores-vitimas', data.maioresVitimas, 'kills');
-        populateRivalsList('maiores-carrascos', data.maioresCarrascos, 'vezes');
+        // AS LINHAS QUE CAUSAVAM O ERRO FORAM REMOVIDAS DAQUI:
+        // populateRivalsList('maiores-vitimas', data.maioresVitimas, 'kills');
+        // populateRivalsList('maiores-carrascos', data.maioresCarrascos, 'vezes');
         
         createHistoryChart(data.historicoDeBatalhas);
 
         profileContent.style.display = 'block';
     }
     
-    function populateRivalsList(elementId, rivals, unit) {
-        const list = document.getElementById(elementId);
-        list.innerHTML = '';
-        if (rivals.length === 0) {
-            list.innerHTML = '<li>Nenhum dado.</li>';
-            return;
-        }
-        rivals.forEach(rival => {
-            const [name, count] = rival;
-            const li = document.createElement('li');
-            li.innerHTML = `<a href="perfil.html?user=${name}">@${name}</a> <span>(${count} ${unit})</span>`;
-            list.appendChild(li);
-        });
-    }
+    // A FUNÇÃO "populateRivalsList" FOI COMPLETAMENTE REMOVIDA,
+    // POIS NÃO É MAIS NECESSÁRIA.
     
     function createHistoryChart(history) {
         const ctx = document.getElementById('historyChart').getContext('2d');
