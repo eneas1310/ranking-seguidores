@@ -1,11 +1,11 @@
 {
   "username": "jotazin.x7._",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZTAxMDAwMGYzMDEwMDAwZmYwMTAwMDAwYTAyMDAwMDE1MDIwMDAwMjEwMjAwMDAyZDAyMDAwMDg2MDIwMDAwOTEwMjAwMDA5YzAyMDAwMGFhMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACkAAQEBAAAAAAAAAAAAAAAAAAAHARABAQAAAAAAAAAAAAAAAAAAYID/2gAMAwEAAgADAAAAAYwAAAAAAAADbNGbMRgAAAAAAAAG2aM2YjAAAAAAAAANs0ZsxGAAAAAAAAAbZozZiMAAAAAAAAA2zRmzEYAAAAAAAABtmjNmIwAAAAAAAADbNGbMRgAAAAAAAAG2aM2YjAAAAAAAAANs0ZsxGVmEZWYRlZhGVmEZWYRlZhGVmEZWYRlZhGbMH//aAAgBAQABBQKaf//aAAgBAwABPwFJ/9oACAECAAE/AUn/2gAIAQEABj8Cmn//2gAIAQEAAT8hmn//2gAMAwEAAgADAAAAEPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAAAAAAAAAAAP/aAAgBAwABPxBJ/9oACAECAAE/EEn/2gAIAQEAAT8Qmn//2Q==",
-  "totalParticipacoes": 8,
-  "totalEliminacoes": 4,
-  "pontosAcumulados": 31,
-  "mediaRank": "2275.88",
-  "mediaEliminacoes": "0.50",
+  "totalParticipacoes": 10,
+  "totalEliminacoes": 8,
+  "pontosAcumulados": 42,
+  "mediaRank": "2210.30",
+  "mediaEliminacoes": "0.80",
   "melhorRank": {
     "rank": 518,
     "date": "2025-10-14"
@@ -68,6 +68,20 @@
       "pontos": 5,
       "eliminatedCount": 2,
       "eliminatedBy": "thiagovianateixeiralage"
+    },
+    {
+      "date": "2025-10-21",
+      "rank": 3320,
+      "pontos": 1,
+      "eliminatedCount": 2,
+      "eliminatedBy": "albuquerque.rx5"
+    },
+    {
+      "date": "2025-10-22",
+      "rank": 576,
+      "pontos": 10,
+      "eliminatedCount": 2,
+      "eliminatedBy": "brenx0_7"
     }
   ]
 }

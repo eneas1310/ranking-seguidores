@@ -1,18 +1,18 @@
 {
   "username": "henri.daroit",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MzAxMDAwMDE0MDIwMDAwMjAwMjAwMDAyYjAyMDAwMDM2MDIwMDAwNDIwMjAwMDA0ZTAyMDAwMGI0MDIwMDAwYmYwMjAwMDBjYTAyMDAwMGRjMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAC4AAQEBAAAAAAAAAAAAAAAAAAABBxAAAgIDAAAAAAAAAAAAAAAAYIAAEQEQQP/aAAwDAQACAAMAAAABxsWghLCFWBUFQUAK2TG9kjGxYhFgAABQRUtANkxvZJcbFkAEAAAAALLTZMb2SXG5ZYEAAAAABSyjZMb2QxsgAEAAAAALBdkxrZTGxUAEAABQQAstNkxvZIxsUlgAEAABQFA2TG9kXGwAgEWQFACxKUA2TG9klxtZQIAAAAAACtkxzYzHGxjHJsgxtshMbbIMbbIMbbIXG2yExtsgxtshcc2Mj//aAAgBAQABBQJaf//aAAgBAwABPwEk/9oACAECAAE/AST/2gAIAQEABj8CWn//2gAIAQEAAT8hWn//2gAMAwEAAgADAAAAEEAS3XTTQYCgX3/9/fyQYgff9/8A/wD/AKQlf/8A/wD/AP8A2kEW3/8A+3//ALywff8A/wD97/pDBV9//wD/AH0EAAEHf33uEErUEEEEEEEACJCEEEAEFAP/2gAIAQMAAT8QJP/aAAgBAgABPxAk/9oACAEBAAE/EJaqY3Urg//Z",
-  "totalParticipacoes": 8,
+  "totalParticipacoes": 10,
   "totalEliminacoes": 1,
-  "pontosAcumulados": 33,
-  "mediaRank": "2106.63",
-  "mediaEliminacoes": "0.13",
+  "pontosAcumulados": 34,
+  "mediaRank": "2437.00",
+  "mediaEliminacoes": "0.10",
   "melhorRank": {
     "rank": 527,
     "date": "2025-10-20"
   },
   "piorRank": {
-    "rank": 3700,
-    "date": "2025-10-18"
+    "rank": 4146,
+    "date": "2025-10-21"
   },
   "historicoDeBatalhas": [
     {
@@ -68,6 +68,20 @@
       "pontos": 10,
       "eliminatedCount": 0,
       "eliminatedBy": "esther_lilian.30"
+    },
+    {
+      "date": "2025-10-21",
+      "rank": 4146,
+      "pontos": 0,
+      "eliminatedCount": 0,
+      "eliminatedBy": "luiz.spz07"
+    },
+    {
+      "date": "2025-10-22",
+      "rank": 3371,
+      "pontos": 1,
+      "eliminatedCount": 0,
+      "eliminatedBy": "gabriel_.reeis"
     }
   ]
 }

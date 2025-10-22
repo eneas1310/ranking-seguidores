@@ -1,14 +1,14 @@
 {
   "username": "eu_sou_eu626255",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjKzCMrMIyswjKzCMrMIyswjKzCMrMIyswjNmD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyhzzzzzzzzyDDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 6,
-  "totalEliminacoes": 1,
-  "pontosAcumulados": 12,
-  "mediaRank": "3056.50",
-  "mediaEliminacoes": "0.17",
+  "totalParticipacoes": 8,
+  "totalEliminacoes": 2,
+  "pontosAcumulados": 18,
+  "mediaRank": "2917.13",
+  "mediaEliminacoes": "0.25",
   "melhorRank": {
-    "rank": 1410,
-    "date": "2025-10-19"
+    "rank": 1002,
+    "date": "2025-10-21"
   },
   "piorRank": {
     "rank": 4272,
@@ -56,6 +56,20 @@
       "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "pqp_oliver0dz9"
+    },
+    {
+      "date": "2025-10-21",
+      "rank": 1002,
+      "pontos": 5,
+      "eliminatedCount": 1,
+      "eliminatedBy": "mello_kaua_2025"
+    },
+    {
+      "date": "2025-10-22",
+      "rank": 3996,
+      "pontos": 1,
+      "eliminatedCount": 0,
+      "eliminatedBy": "davidsantosgazoli"
     }
   ]
 }

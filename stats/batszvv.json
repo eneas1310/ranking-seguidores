@@ -1,18 +1,18 @@
 {
   "username": "batszvv",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABkwAAAAAAAAFZk1ZJMAAAAAAAABWZNWSTAAAAAAAAAVmTVkkwAAAAAAAAFZk1ZJMAAAAAAAABWZNWSTAAAAAAAAAVmTVkkwAAAAAAAAFZk1ZJMAAAAAAAABWZNWSTAAAAAAAAAVmTVkkysiTKyJMrIkysiTKyJMrIkysiTKyJMrIk1ZD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 4,
-  "totalEliminacoes": 5,
-  "pontosAcumulados": 68,
-  "mediaRank": "799.00",
-  "mediaEliminacoes": "1.25",
+  "totalParticipacoes": 6,
+  "totalEliminacoes": 7,
+  "pontosAcumulados": 79,
+  "mediaRank": "1284.33",
+  "mediaEliminacoes": "1.17",
   "melhorRank": {
     "rank": 84,
     "date": "2025-10-19"
   },
   "piorRank": {
-    "rank": 2531,
-    "date": "2025-10-18"
+    "rank": 3601,
+    "date": "2025-10-22"
   },
   "historicoDeBatalhas": [
     {
@@ -42,6 +42,20 @@
       "pontos": 20,
       "eliminatedCount": 1,
       "eliminatedBy": "flavio.mello.969"
+    },
+    {
+      "date": "2025-10-21",
+      "rank": 909,
+      "pontos": 10,
+      "eliminatedCount": 2,
+      "eliminatedBy": "julio.cesarrlk"
+    },
+    {
+      "date": "2025-10-22",
+      "rank": 3601,
+      "pontos": 1,
+      "eliminatedCount": 0,
+      "eliminatedBy": "cf.centavos"
     }
   ]
 }
