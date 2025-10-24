@@ -1,11 +1,11 @@
 {
   "username": "felipedosrs",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZTAxMDAwMGYwMDEwMDAwZmMwMTAwMDAwNzAyMDAwMDEyMDIwMDAwMWUwMjAwMDAyYTAyMDAwMDgzMDIwMDAwOGUwMjAwMDA5OTAyMDAwMGE3MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACkAAQEBAAAAAAAAAAAAAAAAAAAHARABAQAAAAAAAAAAAAAAAAAAYID/2gAMAwEAAgADAAAAAa0M0AAAAAAABJa1JStAAAAAAAAASWtSUrQAAAAAAAAElrUlK0AAAAAAAABJa1JStAAAAAAAAASWtSUrQAAAAAAAAElrUlK0AAAAAAAABJa1JStAAAAAAAAASWtSUrQAAAAAAAAElrUlK0korSSitJKK0korSSitJKK0korSSitJKK1JQ//aAAgBAQABBQKaf//aAAgBAwABPwFJ/9oACAECAAE/AUn/2gAIAQEABj8Cmn//2gAIAQEAAT8hmn//2gAMAwEAAgADAAAAEPffffffffafffffffffafffffffffafffffffffafffffffffafffffffffafffffffffafffffffffafffffffffacccccccccYf/aAAgBAwABPxBJ/9oACAECAAE/EEn/2gAIAQEAAT8Qmn//2Q==",
-  "totalParticipacoes": 10,
+  "totalParticipacoes": 11,
   "totalEliminacoes": 6,
-  "pontosAcumulados": 41,
-  "mediaRank": "2396.40",
-  "mediaEliminacoes": "0.60",
+  "pontosAcumulados": 44,
+  "mediaRank": "2413.27",
+  "mediaEliminacoes": "0.55",
   "melhorRank": {
     "rank": 630,
     "date": "2025-10-14"
@@ -82,6 +82,13 @@
       "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "daviluiz.lacerda"
+    },
+    {
+      "date": "2025-10-23",
+      "rank": 2582,
+      "pontos": 3,
+      "eliminatedCount": 0,
+      "eliminatedBy": "isabela.albuquerqueee"
     }
   ]
 }

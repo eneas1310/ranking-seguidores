@@ -1,11 +1,11 @@
 {
   "username": "eu_sou_eu626255",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjIAAAAAAAAFmjNmIyAAAAAAAABZozZiMgAAAAAAAAWaM2YjKzCMrMIyswjKzCMrMIyswjKzCMrMIyswjNmD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyhzzzzzzzzyDDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 8,
-  "totalEliminacoes": 2,
-  "pontosAcumulados": 18,
-  "mediaRank": "2917.13",
-  "mediaEliminacoes": "0.25",
+  "totalParticipacoes": 9,
+  "totalEliminacoes": 4,
+  "pontosAcumulados": 19,
+  "mediaRank": "2963.56",
+  "mediaEliminacoes": "0.44",
   "melhorRank": {
     "rank": 1002,
     "date": "2025-10-21"
@@ -70,6 +70,13 @@
       "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "davidsantosgazoli"
+    },
+    {
+      "date": "2025-10-23",
+      "rank": 3335,
+      "pontos": 1,
+      "eliminatedCount": 2,
+      "eliminatedBy": "tiagoojunior31"
     }
   ]
 }

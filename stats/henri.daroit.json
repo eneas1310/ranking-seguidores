@@ -1,11 +1,11 @@
 {
   "username": "henri.daroit",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MzAxMDAwMDE0MDIwMDAwMjAwMjAwMDAyYjAyMDAwMDM2MDIwMDAwNDIwMjAwMDA0ZTAyMDAwMGI0MDIwMDAwYmYwMjAwMDBjYTAyMDAwMGRjMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAC4AAQEBAAAAAAAAAAAAAAAAAAABBxAAAgIDAAAAAAAAAAAAAAAAYIAAEQEQQP/aAAwDAQACAAMAAAABxsWghLCFWBUFQUAK2TG9kjGxYhFgAABQRUtANkxvZJcbFkAEAAAAALLTZMb2SXG5ZYEAAAAABSyjZMb2QxsgAEAAAAALBdkxrZTGxUAEAABQQAstNkxvZIxsUlgAEAABQFA2TG9kXGwAgEWQFACxKUA2TG9klxtZQIAAAAAACtkxzYzHGxjHJsgxtshMbbIMbbIMbbIXG2yExtsgxtshcc2Mj//aAAgBAQABBQJaf//aAAgBAwABPwEk/9oACAECAAE/AST/2gAIAQEABj8CWn//2gAIAQEAAT8hWn//2gAMAwEAAgADAAAAEEAS3XTTQYCgX3/9/fyQYgff9/8A/wD/AKQlf/8A/wD/AP8A2kEW3/8A+3//ALywff8A/wD97/pDBV9//wD/AH0EAAEHf33uEErUEEEEEEEACJCEEEAEFAP/2gAIAQMAAT8QJP/aAAgBAgABPxAk/9oACAEBAAE/EJaqY3Urg//Z",
-  "totalParticipacoes": 10,
-  "totalEliminacoes": 1,
-  "pontosAcumulados": 34,
-  "mediaRank": "2437.00",
-  "mediaEliminacoes": "0.10",
+  "totalParticipacoes": 11,
+  "totalEliminacoes": 2,
+  "pontosAcumulados": 39,
+  "mediaRank": "2322.55",
+  "mediaEliminacoes": "0.18",
   "melhorRank": {
     "rank": 527,
     "date": "2025-10-20"
@@ -82,6 +82,13 @@
       "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "gabriel_.reeis"
+    },
+    {
+      "date": "2025-10-23",
+      "rank": 1178,
+      "pontos": 5,
+      "eliminatedCount": 1,
+      "eliminatedBy": "lecoxre"
     }
   ]
 }

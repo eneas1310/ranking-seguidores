@@ -1,14 +1,14 @@
 {
   "username": "luwxs.bjj",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2NjAxMDAwMDE1MDIwMDAwMjEwMjAwMDAyZDAyMDAwMDM5MDIwMDAwNDUwMjAwMDA1MTAyMDAwMGFhMDIwMDAwYjYwMjAwMDBjMjAyMDAwMGY2MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADEAAQEBAAAAAAAAAAAAAAAAAAABBxAAAQQDAQEAAAAAAAAAAAAAARARIDAAQGCAUP/aAAwDAQACAAMAAAABxwAABBQEoQUCxF2LHdiMcRVgAAAAAVKEo2PHNjjHIUAAAAWACgA2PHNjjGxQAABQlEABUF2PHNjjGxQAAFgWAsAAF2PG9kMbAAAsFiiWApAANkxzY4xsUAAABQIFBKE2TG9kjGxQFgAUAEoAANjxzY4xyWUWAAFgVKAAWA2PHNjjHJsisbbIMcmyDG2yDG7sYxxsYxxsaMcbGMcbGrHNjI//2gAIAQEAAQUC80//2gAIAQMAAT8B6T//2gAIAQIAAT8B6T//2gAIAQEABj8C80//2gAIAQEAAT8h80//2gAMAwEAAgADAAAAEOMADACPNLgyENEAPOAOCiMBGNEPIEIAAANMEOMCAgAEOGGDHECAAAJGNOPPIgLCINAHFIKiJDPAEPOKChFLPHDOPHKkMEMIEEssIv/aAAgBAwABPxDpP//aAAgBAgABPxDpP//aAAgBAQABPxCZveRg8nVkG+N5sHxWm9xm+2IGRrKHGidRrheENww/LE2QqMKNgpfP/9k=",
-  "totalParticipacoes": 1,
-  "totalEliminacoes": 0,
-  "pontosAcumulados": 1,
-  "mediaRank": "3162.00",
-  "mediaEliminacoes": "0.00",
+  "totalParticipacoes": 2,
+  "totalEliminacoes": 3,
+  "pontosAcumulados": 6,
+  "mediaRank": "2084.00",
+  "mediaEliminacoes": "1.50",
   "melhorRank": {
-    "rank": 3162,
-    "date": "2025-10-22"
+    "rank": 1006,
+    "date": "2025-10-23"
   },
   "piorRank": {
     "rank": 3162,
@@ -21,6 +21,13 @@
       "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "wallcott.1"
+    },
+    {
+      "date": "2025-10-23",
+      "rank": 1006,
+      "pontos": 5,
+      "eliminatedCount": 3,
+      "eliminatedBy": "vinicius_cardoso_7375"
     }
   ]
 }

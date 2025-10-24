@@ -1,11 +1,11 @@
 {
   "username": "heinemannmurilo",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2NTAxMDAwMDEzMDIwMDAwMWYwMjAwMDAyYjAyMDAwMDM3MDIwMDAwNDMwMjAwMDA0ZjAyMDAwMGE4MDIwMDAwYmUwMjAwMDBjYTAyMDAwMGQ4MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADAAAQEBAQAAAAAAAAAAAAAAAAABBwIQAAAHAQAAAAAAAAAAAAAAAAABESBAYIAw/9oADAMBAAIAAwAAAAHGAACkKEpFEAAA2fGNnMYAAKShFAEUQADZ8Y2cxhRKAASgAAgVFDZsY2cxkAAssooCURYgWJRNnxjZzGKAQsqgoACUQOUqmzYzsxjIAgVQUAAQBylU2bGdmMZAAC1LKAAggWANmxnZjGQAAAtQAAgADZsZ2YxkAAAAAAAAhdmxjZzGWzDGWzDGWzDGWzDGWzDGWzDGWzDGWzDGZs4xjZw//9oACAEBAAEFAs0//9oACAEDAAE/AbJ//9oACAECAAE/AbJ//9oACAEBAAY/As0//9oACAEBAAE/Ic0//9oADAMBAAIAAwAAABDzzjgjDzzyjzziTQjDzyjCF37778jAgFHqIlLe1GiT+sE0FD9gAz7sGEEb/ADBHQoEJ/mGE003wHz0EUkBzzz33ygQhDDDDDBCBCD/2gAIAQMAAT8QjoECQSYbiYfJeCyv/9oACAECAAE/ELJ//9oACAEBAAE/EM0//9k=",
-  "totalParticipacoes": 6,
-  "totalEliminacoes": 8,
-  "pontosAcumulados": 70,
-  "mediaRank": "1035.17",
-  "mediaEliminacoes": "1.33",
+  "totalParticipacoes": 7,
+  "totalEliminacoes": 9,
+  "pontosAcumulados": 80,
+  "mediaRank": "976.57",
+  "mediaEliminacoes": "1.29",
   "melhorRank": {
     "rank": 80,
     "date": "2025-10-21"
@@ -56,6 +56,13 @@
       "pontos": 5,
       "eliminatedCount": 1,
       "eliminatedBy": "silvaarenatto"
+    },
+    {
+      "date": "2025-10-23",
+      "rank": 625,
+      "pontos": 10,
+      "eliminatedCount": 1,
+      "eliminatedBy": "washingtonsilveriodasilva"
     }
   ]
 }
