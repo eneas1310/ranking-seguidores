@@ -1,14 +1,14 @@
 {
   "username": "yt_flavi0",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABsoAAAAAAAAEassaLKAAAAAAAABGrLGiygAAAAAAAARqyxosoAAAAAAAAEassaLKAAAAAAAABGrLGiygAAAAAAAARqyxosoAAAAAAAAEassaLKAAAAAAAABGrLGiygAAAAAAAARqyxosqNCyo0LKjQsqNCyo0LKjQsqNCyo0LKjQssaD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 11,
-  "totalEliminacoes": 6,
-  "pontosAcumulados": 49,
-  "mediaRank": "1907.55",
-  "mediaEliminacoes": "0.55",
+  "totalParticipacoes": 12,
+  "totalEliminacoes": 11,
+  "pontosAcumulados": 69,
+  "mediaRank": "1767.08",
+  "mediaEliminacoes": "0.92",
   "melhorRank": {
-    "rank": 599,
-    "date": "2025-10-13"
+    "rank": 222,
+    "date": "2025-10-24"
   },
   "piorRank": {
     "rank": 4465,
@@ -89,6 +89,13 @@
       "pontos": 5,
       "eliminatedCount": 1,
       "eliminatedBy": "brenoperc"
+    },
+    {
+      "date": "2025-10-24",
+      "rank": 222,
+      "pontos": 20,
+      "eliminatedCount": 5,
+      "eliminatedBy": "peddru2023"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
   "username": "batszvv",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABkwAAAAAAAAFZk1ZJMAAAAAAAABWZNWSTAAAAAAAAAVmTVkkwAAAAAAAAFZk1ZJMAAAAAAAABWZNWSTAAAAAAAAAVmTVkkwAAAAAAAAFZk1ZJMAAAAAAAABWZNWSTAAAAAAAAAVmTVkkysiTKyJMrIkysiTKyJMrIkysiTKyJMrIk1ZD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 7,
+  "totalParticipacoes": 8,
   "totalEliminacoes": 8,
   "pontosAcumulados": 82,
-  "mediaRank": "1499.00",
-  "mediaEliminacoes": "1.14",
+  "mediaRank": "1883.00",
+  "mediaEliminacoes": "1.00",
   "melhorRank": {
     "rank": 84,
     "date": "2025-10-19"
   },
   "piorRank": {
-    "rank": 3601,
-    "date": "2025-10-22"
+    "rank": 4571,
+    "date": "2025-10-24"
   },
   "historicoDeBatalhas": [
     {
@@ -63,6 +63,13 @@
       "pontos": 3,
       "eliminatedCount": 1,
       "eliminatedBy": "gui.cs7"
+    },
+    {
+      "date": "2025-10-24",
+      "rank": 4571,
+      "pontos": 0,
+      "eliminatedCount": 0,
+      "eliminatedBy": "rebecaisadora338"
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
   "username": "kayk_leo",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MzAxMDAwMDBjMDIwMDAwMTgwMjAwMDAyMzAyMDAwMDJlMDIwMDAwM2EwMjAwMDA0NjAyMDAwMDlmMDIwMDAwYWEwMjAwMDBiNTAyMDAwMGNjMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAC4AAQEBAAAAAAAAAAAAAAAAAAABBxAAAgIDAAAAAAAAAAAAAAAAAWBQgBARQP/aAAwDAQACAAMAAAABxoAoABLBUFSkoEo2TG9kMaAoAAAAAARQ2TG9kMaAsoAAAAAAA2TG9kMaAsFlAACWCwUhUo2TG9kMaAKAAACFlEWAF2TGtlMaUSgAAIUEWAAF2TGtlMaAsFlgBUFlEsAADZca2UxoAAAAAAAADZca2UxoAAAAAAAADZca2UxpsoxpsoxpsoxpsoxpsoxpsoxpsoxpsoxpsoxrZQ//2gAIAQEAAQUCrT//2gAIAQMAAT8BZP/aAAgBAgABPwFk/9oACAEBAAY/Aq0//9oACAEBAAE/Ia0//9oADAMBAAIAAwAAABADgACgwiAABSAAAAAABAACgAAAAAAAACxAABSwQgADgAAARDRQgCAAAQCTxQiCRTwxCzxCABDDDDDAACgAAAACgAACgAAAAAAAAAD/2gAIAQMAAT8QZP/aAAgBAgABPxBk/9oACAEBAAE/EGESm+EZHGIYSm1P/9k=",
-  "totalParticipacoes": 11,
-  "totalEliminacoes": 9,
-  "pontosAcumulados": 110,
-  "mediaRank": "1416.09",
-  "mediaEliminacoes": "0.82",
+  "totalParticipacoes": 12,
+  "totalEliminacoes": 12,
+  "pontosAcumulados": 120,
+  "mediaRank": "1371.17",
+  "mediaEliminacoes": "1.00",
   "melhorRank": {
     "rank": 80,
     "date": "2025-10-15"
@@ -89,6 +89,13 @@
       "pontos": 15,
       "eliminatedCount": 1,
       "eliminatedBy": "lucax_oo"
+    },
+    {
+      "date": "2025-10-24",
+      "rank": 877,
+      "pontos": 10,
+      "eliminatedCount": 3,
+      "eliminatedBy": "otavioo_._"
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
   "username": "andrexinx",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MTAxMDAwMGY0MDEwMDAwMDAwMjAwMDAwYjAyMDAwMDE2MDIwMDAwMjIwMjAwMDAyZTAyMDAwMDg3MDIwMDAwOTUwMjAwMDBhMDAyMDAwMGFlMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACwAAQEBAQAAAAAAAAAAAAAAAAAHAQIQAQEBAQAAAAAAAAAAAAAAAGCAASD/2gAMAwEAAgADAAAAAY6OtAAAAAAAAWKO2IjoAAAAAAAAFijtiI6AAAAAAAABYo7YiOgAAAAAAAAWKO2IjoAAAAAAAAFijtiI6AAAAAAAABYo7YiOgAAAAAAAAWKO2IjoAAAAAAAAFijtiI5oAAAAAAAAZY47YiOrEI6sQjqxCOrEI6sQjqxCOrEI6sQjqxCO2IP/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABBT3333X1n0nT333332y0mz333333kgnjn33333mSBiBR1jz2gyG3hz3j3mgCmwzmyRR2DiBgCDyQT0DECQAQznBwiiIDFBHCDADEH/2gAIAQMAAT8QP7z/AP/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 10,
-  "totalEliminacoes": 5,
+  "totalParticipacoes": 11,
+  "totalEliminacoes": 6,
   "pontosAcumulados": 53,
-  "mediaRank": "2201.10",
-  "mediaEliminacoes": "0.50",
+  "mediaRank": "2405.64",
+  "mediaEliminacoes": "0.55",
   "melhorRank": {
     "rank": 443,
     "date": "2025-10-21"
@@ -83,6 +83,13 @@
       "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "w1n1c1u5_4lv3s"
+    },
+    {
+      "date": "2025-10-24",
+      "rank": 4451,
+      "pontos": 0,
+      "eliminatedCount": 1,
+      "eliminatedBy": "eduardosouza.ramos"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
   "username": "pvd_henrique7z",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2NTAxMDAwMDE0MDIwMDAwMjAwMjAwMDAyYzAyMDAwMDM4MDIwMDAwNDQwMjAwMDA1MDAyMDAwMGIxMDIwMDAwYmQwMjAwMDBjOTAyMDAwMGUxMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADAAAQEBAAAAAAAAAAAAAAAAAAABBxAAAQMFAAAAAAAAAAAAAAAAEQFggAAgMEBQ/9oADAMBAAIAAwAAAAHHIUAIUhYFgUAADZMb2SXGxYIWEAAABVSgDZMb2QxsgWAAQAFBAFFNkxvZJcbFkAEAAAABVSjZMb2SMbFQAQAAAAFLBdkxvZDGwIAQAFBAAUoTZcb2QxsCURYAAABBVANkxvZIxsWggEURRFEoAANkxvZJcclVCkACAAAAArZMc2MxxsYxxsYxybIMbbIMbbITG2yDG2yFxu7GMcbGMc2MP//aAAgBAQABBQKNP//aAAgBAwABPwFyf//aAAgBAgABPwFyf//aAAgBAQAGPwKNP//aAAgBAQABPyGNP//aAAwDAQACAAMAAAAQdRFFddBBRqBFf/8A/wD0kEEXX3r/AM+/BCB9/wDv+/8A0kMH37//AP8A/bQQXX+7f/8A2GEFHX333/EEMwEHHHGEEWpCggEEEE1wDEBCDFHCCGH/2gAIAQMAAT8Qcn//2gAIAQIAAT8Qcn//2gAIAQEAAT8Qo6JgUnKGUWC9cf8A/9k=",
-  "totalParticipacoes": 11,
+  "totalParticipacoes": 12,
   "totalEliminacoes": 8,
-  "pontosAcumulados": 58,
-  "mediaRank": "1768.09",
-  "mediaEliminacoes": "0.73",
+  "pontosAcumulados": 59,
+  "mediaRank": "1930.75",
+  "mediaEliminacoes": "0.67",
   "melhorRank": {
     "rank": 386,
     "date": "2025-10-17"
   },
   "piorRank": {
-    "rank": 3518,
-    "date": "2025-10-21"
+    "rank": 3720,
+    "date": "2025-10-24"
   },
   "historicoDeBatalhas": [
     {
@@ -89,6 +89,13 @@
       "pontos": 10,
       "eliminatedCount": 0,
       "eliminatedBy": "cleyssonrocha93"
+    },
+    {
+      "date": "2025-10-24",
+      "rank": 3720,
+      "pontos": 1,
+      "eliminatedCount": 0,
+      "eliminatedBy": "danilorodrigues1991"
     }
   ]
 }
