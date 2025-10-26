@@ -1,11 +1,11 @@
 {
   "username": "rlk_theuzin.07",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MTAxMDAwMDFhMDIwMDAwMjYwMjAwMDAzMTAyMDAwMDNjMDIwMDAwNDgwMjAwMDA1NDAyMDAwMGFkMDIwMDAwYjkwMjAwMDBjNDAyMDAwMGQyMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACwAAQEBAQAAAAAAAAAAAAAAAAABBwIQAQEBAQAAAAAAAAAAAAAAAGCAAAH/2gAMAwEAAgADAAAAAceS9dIFAEABQEpAg2LHthTHpShQEqFIUAQAhTYsd2KMeS0ASghREoJQFIsTYse2FMeFsoCFSiUJQAEJYNix7YUx6UoUEEoAJVSiWRQTYse2FMeChQAQABFAhZYXYce2Ex4AUAAAIKQAi02HHthjHgBQAAQIWKAANhx7YTHkoFBAAAAEoCF2HHthTHmwrcebCjHmwjHmwqx5sIx6bEMduwox27CrHWxDHdiJP//aAAgBAQABBQKaf//aAAgBAwABPwFJ/9oACAECAAE/AUn/2gAIAQEABj8Cmn//2gAIAQEAAT8hmn//2gAMAwEAAgADAAAAECHAAggQIhoUgAJBAAgnKCACBAokgGowIBCEEAAlo0gAighCFgowgAAggshlgggQAABIgmAggAAQhmgggCgAgggwohgwAwgAEIoMIv/aAAgBAwABPxBH3f/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 12,
-  "totalEliminacoes": 7,
-  "pontosAcumulados": 65,
-  "mediaRank": "1972.33",
-  "mediaEliminacoes": "0.58",
+  "totalParticipacoes": 13,
+  "totalEliminacoes": 9,
+  "pontosAcumulados": 70,
+  "mediaRank": "1907.54",
+  "mediaEliminacoes": "0.69",
   "melhorRank": {
     "rank": 672,
     "date": "2025-10-17"
@@ -96,6 +96,13 @@
       "pontos": 10,
       "eliminatedCount": 2,
       "eliminatedBy": "eu_baaby_007"
+    },
+    {
+      "date": "2025-10-25",
+      "rank": 1130,
+      "pontos": 5,
+      "eliminatedCount": 2,
+      "eliminatedBy": "loppez_888"
     }
   ]
 }
