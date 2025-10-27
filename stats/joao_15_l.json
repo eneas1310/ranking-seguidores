@@ -1,11 +1,11 @@
 {
   "username": "joao_15_l",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE4MjAxMDAwMDc3MDIwMDAwMGEwMzAwMDAxNjAzMDAwMDIyMDMwMDAwNmMwMzAwMDAyMzA0MDAwMDdjMDQwMDAwODgwNDAwMDA5NDA0MDAwMDkzMDUwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAE0AAQACAwEBAAAAAAAAAAAAAAABBwIDBgUEEAACAQEFBQYDCQEAAAAAAAAAAREhAgMwMUEQQFFhgQQSYHGRwQUgUBMUIiMyQqGx0eH/2gAMAwEAAgADAAAAAaYAAAAAAAAAuemLnKYAAATvPnbtRAAAAFz0xc5TAAExsPv9v2LaKA8S66pPFjKCAAALnpi5ymAANmsWX0HD9aa+FsDhTmsdmoAAAXPTFzlMAATMHTc723Nnn7/p+85qNmBAAAFz0xc5TAAMkD6Pb5/6Do+Z9TxiMQgAAC56YucpgAEgj0fgGev0N55DbqIAAAuemLnKYJInZtNEfTgadmP0nxtmoAAAAXPTFzlOZYjbngNuvEYfV8vrHkYJMUwAAALnpi5ymouYVBFwCnc7fFP9N3Qp3XcwpmLnFMLnFMLnFMLnFMXOH//aAAgBAQABBQLwArA7O43dk+yZbuWhrHR8PuUyxcJLtl0X1nHR8Nt0vfiN8z73av7N+PH+HJt3vbLFy7faru0r+2PHuL21c3eYrTQ5jH7Nas2rq+uHYLFxKtR3Xj2bUF32gvrdHb3BHdgXaE1a3FWpTs7nYvYLV6hvFja1jQR8mjWLPyMdB7le2fw7lZrYajD/AP/aAAgBAwABPwHxJ//aAAgBAgABPwHxJ//aAAgBAQAGPwLwnRTuUmW5dT8q7myv3PXyH3rPda3FLid39UZ/8Js7i7VnN0nhtncPs2cjvPLcoKablJDRT6LUy8FWXy3NeWJ//9oACAEBAAE/Ifr8DGQbjK1TM4inI0wesdSY6EzJ4TDoRMeM0Ffx9h0SB/FKpzKhHIycP1EruBKMmZCULTXHTRTiUWQ11XmJeQ+PRAZDne426szLXmKy4xLZBhZuvNlYSkPRQ4NWJIpS4ITHZJo1FZGqlT0DWq+u4OSoaDrniE8G4zq1X8jFsjHZkUEJga0ehPvogRUBrYxVEGGlsQT+Qko4pP1Q04ciIIJ2M6BTjSSZ7GLViZGH/9oADAMBAAIAAwAAABDzzzzzzzzyjzzzjzzzzyjzyxxhjzzyjzyxQCzzzyjzyRBRjzzyjzzBxwjzzyjzzzDiDzzyjywyQTzzzyjDhgiDTzzyjDDACBDDDCD/2gAIAQMAAT8Q8Sf/2gAIAQIAAT8Q8Sf/2gAIAQEAAT8Q+vqQhkaWsdIj1QSUlrFpoKqsvMY1WOhupJq5iosZjXBCsCroS4uMkIrtUIXIP10IoZ+iNWgnDLMR5KrUDJZmbHRXQiHTSSVao4/YH9hiOEsmhmJHj1ro9cR7ieZvibEjUazDk6jxhHuzBSho2E6qvUrslVoPYlh3GFOgnXYQTC4JUb44l/gZlU25YTkeNDR5MaPnRgLiiqKoJxUtvSW5CJcUZBIeMgmFQI0DJ0eQn4kEiCCGumycNSOLtA0JAsHpiBECINCSqHDHGwwxE/lhqgzC6B1Tk+RzMmRSVXheSPYgeEiTQxlN7VKupF7ExwNr0Y8L/9k=",
-  "totalParticipacoes": 13,
-  "totalEliminacoes": 8,
-  "pontosAcumulados": 49,
-  "mediaRank": "2395.38",
-  "mediaEliminacoes": "0.62",
+  "totalParticipacoes": 14,
+  "totalEliminacoes": 9,
+  "pontosAcumulados": 59,
+  "mediaRank": "2290.29",
+  "mediaEliminacoes": "0.64",
   "melhorRank": {
     "rank": 819,
     "date": "2025-10-25"
@@ -103,6 +103,13 @@
       "pontos": 10,
       "eliminatedCount": 2,
       "eliminatedBy": "edu.silva2706"
+    },
+    {
+      "date": "2025-10-26",
+      "rank": 924,
+      "pontos": 10,
+      "eliminatedCount": 1,
+      "eliminatedBy": "juliano_born"
     }
   ]
 }

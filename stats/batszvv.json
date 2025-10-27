@@ -1,11 +1,11 @@
 {
   "username": "batszvv",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABkwAAAAAAAAFZk1ZJMAAAAAAAABWZNWSTAAAAAAAAAVmTVkkwAAAAAAAAFZk1ZJMAAAAAAAABWZNWSTAAAAAAAAAVmTVkkwAAAAAAAAFZk1ZJMAAAAAAAABWZNWSTAAAAAAAAAVmTVkkysiTKyJMrIkysiTKyJMrIkysiTKyJMrIk1ZD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 9,
-  "totalEliminacoes": 9,
-  "pontosAcumulados": 87,
-  "mediaRank": "1854.56",
-  "mediaEliminacoes": "1.00",
+  "totalParticipacoes": 10,
+  "totalEliminacoes": 11,
+  "pontosAcumulados": 92,
+  "mediaRank": "1785.00",
+  "mediaEliminacoes": "1.10",
   "melhorRank": {
     "rank": 84,
     "date": "2025-10-19"
@@ -77,6 +77,13 @@
       "pontos": 5,
       "eliminatedCount": 1,
       "eliminatedBy": "enzomenezesg_"
+    },
+    {
+      "date": "2025-10-26",
+      "rank": 1159,
+      "pontos": 5,
+      "eliminatedCount": 2,
+      "eliminatedBy": "hyara.carla"
     }
   ]
 }

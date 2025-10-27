@@ -1,11 +1,11 @@
 {
   "username": "pvd_henrique7z",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2NTAxMDAwMDE0MDIwMDAwMjAwMjAwMDAyYzAyMDAwMDM4MDIwMDAwNDQwMjAwMDA1MDAyMDAwMGIxMDIwMDAwYmQwMjAwMDBjOTAyMDAwMGUxMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADAAAQEBAAAAAAAAAAAAAAAAAAABBxAAAQMFAAAAAAAAAAAAAAAAEQFggAAgMEBQ/9oADAMBAAIAAwAAAAHHIUAIUhYFgUAADZMb2SXGxYIWEAAABVSgDZMb2QxsgWAAQAFBAFFNkxvZJcbFkAEAAAABVSjZMb2SMbFQAQAAAAFLBdkxvZDGwIAQAFBAAUoTZcb2QxsCURYAAABBVANkxvZIxsWggEURRFEoAANkxvZJcclVCkACAAAAArZMc2MxxsYxxsYxybIMbbIMbbITG2yDG2yFxu7GMcbGMc2MP//aAAgBAQABBQKNP//aAAgBAwABPwFyf//aAAgBAgABPwFyf//aAAgBAQAGPwKNP//aAAgBAQABPyGNP//aAAwDAQACAAMAAAAQdRFFddBBRqBFf/8A/wD0kEEXX3r/AM+/BCB9/wDv+/8A0kMH37//AP8A/bQQXX+7f/8A2GEFHX333/EEMwEHHHGEEWpCggEEEE1wDEBCDFHCCGH/2gAIAQMAAT8Qcn//2gAIAQIAAT8Qcn//2gAIAQEAAT8Qo6JgUnKGUWC9cf8A/9k=",
-  "totalParticipacoes": 13,
+  "totalParticipacoes": 14,
   "totalEliminacoes": 9,
-  "pontosAcumulados": 64,
-  "mediaRank": "1928.77",
-  "mediaEliminacoes": "0.69",
+  "pontosAcumulados": 67,
+  "mediaRank": "2002.71",
+  "mediaEliminacoes": "0.64",
   "melhorRank": {
     "rank": 386,
     "date": "2025-10-17"
@@ -103,6 +103,13 @@
       "pontos": 5,
       "eliminatedCount": 1,
       "eliminatedBy": "tiagosouzapinho"
+    },
+    {
+      "date": "2025-10-26",
+      "rank": 2964,
+      "pontos": 3,
+      "eliminatedCount": 0,
+      "eliminatedBy": "ridney27"
     }
   ]
 }

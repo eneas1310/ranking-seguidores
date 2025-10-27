@@ -1,11 +1,11 @@
 {
   "username": "rlk_theuzin.07",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MTAxMDAwMDFhMDIwMDAwMjYwMjAwMDAzMTAyMDAwMDNjMDIwMDAwNDgwMjAwMDA1NDAyMDAwMGFkMDIwMDAwYjkwMjAwMDBjNDAyMDAwMGQyMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACwAAQEBAQAAAAAAAAAAAAAAAAABBwIQAQEBAQAAAAAAAAAAAAAAAGCAAAH/2gAMAwEAAgADAAAAAceS9dIFAEABQEpAg2LHthTHpShQEqFIUAQAhTYsd2KMeS0ASghREoJQFIsTYse2FMeFsoCFSiUJQAEJYNix7YUx6UoUEEoAJVSiWRQTYse2FMeChQAQABFAhZYXYce2Ex4AUAAAIKQAi02HHthjHgBQAAQIWKAANhx7YTHkoFBAAAAEoCF2HHthTHmwrcebCjHmwjHmwqx5sIx6bEMduwox27CrHWxDHdiJP//aAAgBAQABBQKaf//aAAgBAwABPwFJ/9oACAECAAE/AUn/2gAIAQEABj8Cmn//2gAIAQEAAT8hmn//2gAMAwEAAgADAAAAECHAAggQIhoUgAJBAAgnKCACBAokgGowIBCEEAAlo0gAighCFgowgAAggshlgggQAABIgmAggAAQhmgggCgAgggwohgwAwgAEIoMIv/aAAgBAwABPxBH3f/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 13,
-  "totalEliminacoes": 9,
-  "pontosAcumulados": 70,
-  "mediaRank": "1907.54",
-  "mediaEliminacoes": "0.69",
+  "totalParticipacoes": 14,
+  "totalEliminacoes": 11,
+  "pontosAcumulados": 73,
+  "mediaRank": "1930.43",
+  "mediaEliminacoes": "0.79",
   "melhorRank": {
     "rank": 672,
     "date": "2025-10-17"
@@ -103,6 +103,13 @@
       "pontos": 5,
       "eliminatedCount": 2,
       "eliminatedBy": "loppez_888"
+    },
+    {
+      "date": "2025-10-26",
+      "rank": 2228,
+      "pontos": 3,
+      "eliminatedCount": 2,
+      "eliminatedBy": "rafaelstefanski762"
     }
   ]
 }

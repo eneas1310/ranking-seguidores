@@ -1,18 +1,18 @@
 {
   "username": "gustazzin.spfc",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjoAAAAAAAAFijtiI6AAAAAAAABYo7YiOgAAAAAAAAWKO2IjoAAAAAAAAFijtiI6AAAAAAAABYo7YiOgAAAAAAAAWKO2IjoAAAAAAAAFijtiI6AAAAAAAABYo7YiOgAAAAAAAAWKO2IjqxCOrEI6sQjqxCOrEI6sQjqxCOrEI6sQjtiD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 13,
-  "totalEliminacoes": 8,
+  "totalParticipacoes": 14,
+  "totalEliminacoes": 10,
   "pontosAcumulados": 54,
-  "mediaRank": "1979.62",
-  "mediaEliminacoes": "0.62",
+  "mediaRank": "2154.79",
+  "mediaEliminacoes": "0.71",
   "melhorRank": {
     "rank": 663,
     "date": "2025-10-14"
   },
   "piorRank": {
-    "rank": 3886,
-    "date": "2025-10-17"
+    "rank": 4432,
+    "date": "2025-10-26"
   },
   "historicoDeBatalhas": [
     {
@@ -103,6 +103,13 @@
       "pontos": 3,
       "eliminatedCount": 0,
       "eliminatedBy": "jopzzzzz_"
+    },
+    {
+      "date": "2025-10-26",
+      "rank": 4432,
+      "pontos": 0,
+      "eliminatedCount": 2,
+      "eliminatedBy": "michaelwallace1306"
     }
   ]
 }

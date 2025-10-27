@@ -1,18 +1,18 @@
 {
   "username": "eo_th_777_",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MzAxMDAwMDBkMDIwMDAwMTkwMjAwMDAyNDAyMDAwMDJmMDIwMDAwM2IwMjAwMDA0NzAyMDAwMGEyMDIwMDAwYjMwMjAwMDBiZTAyMDAwMGNjMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAC4AAQEBAAAAAAAAAAAAAAAAAAABBxAAAgIDAAAAAAAAAAAAAAAAYIARQAEQUP/aAAwDAQACAAMAAAABxiyksoAAAAAQWWDZ8Y2cxgpKAAAAAACWDZ8Y2cxigAAEoAAWAANmxnZjGQAAosQBYoIFgDZsZ2YxkAAssUJSpYAgIFNmxnZjGQABFCgoJFgFgDZsZ2YxkAAFRLUogBYAA2bGdmMZAAAAsAAAADZsZ2YxkAAAAAAAADZsZ2YxlswxlswxlswxlswxlswxlswxlswxlswxlswxnZg//9oACAEBAAEFAlp//9oACAEDAAE/AST/2gAIAQIAAT8BJP/aAAgBAQAGPwJaf//aAAgBAQABPyFaf//aAAwDAQACAAMAAAAQooBBBBBMUo4hBNNNBBVohBR+/wDqQQQQQXO/9vgQQUces0lv/wAEEhX8EAPbUEEQHU4p7HEEFAE0WGUkEEFTzzzzzzwEHDDDDDDDCAD/2gAIAQMAAT8QrxqKmev/AP/aAAgBAgABPxAk/9oACAEBAAE/EFp//9k=",
-  "totalParticipacoes": 1,
-  "totalEliminacoes": 2,
-  "pontosAcumulados": 10,
-  "mediaRank": "573.00",
-  "mediaEliminacoes": "2.00",
+  "totalParticipacoes": 2,
+  "totalEliminacoes": 5,
+  "pontosAcumulados": 15,
+  "mediaRank": "971.00",
+  "mediaEliminacoes": "2.50",
   "melhorRank": {
     "rank": 573,
     "date": "2025-10-25"
   },
   "piorRank": {
-    "rank": 573,
-    "date": "2025-10-25"
+    "rank": 1369,
+    "date": "2025-10-26"
   },
   "historicoDeBatalhas": [
     {
@@ -21,6 +21,13 @@
       "pontos": 10,
       "eliminatedCount": 2,
       "eliminatedBy": "lamo.nier"
+    },
+    {
+      "date": "2025-10-26",
+      "rank": 1369,
+      "pontos": 5,
+      "eliminatedCount": 3,
+      "eliminatedBy": "rafael_mendes_27.07.2003"
     }
   ]
 }

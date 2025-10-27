@@ -1,11 +1,11 @@
 {
   "username": "luwxs.bjj",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2NjAxMDAwMDE1MDIwMDAwMjEwMjAwMDAyZDAyMDAwMDM5MDIwMDAwNDUwMjAwMDA1MTAyMDAwMGFhMDIwMDAwYjYwMjAwMDBjMjAyMDAwMGY2MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADEAAQEBAAAAAAAAAAAAAAAAAAABBxAAAQQDAQEAAAAAAAAAAAAAARARIDAAQGCAUP/aAAwDAQACAAMAAAABxwAABBQEoQUCxF2LHdiMcRVgAAAAAVKEo2PHNjjHIUAAAAWACgA2PHNjjGxQAABQlEABUF2PHNjjGxQAAFgWAsAAF2PG9kMbAAAsFiiWApAANkxzY4xsUAAABQIFBKE2TG9kjGxQFgAUAEoAANjxzY4xyWUWAAFgVKAAWA2PHNjjHJsisbbIMcmyDG2yDG7sYxxsYxxsaMcbGMcbGrHNjI//2gAIAQEAAQUC80//2gAIAQMAAT8B6T//2gAIAQIAAT8B6T//2gAIAQEABj8C80//2gAIAQEAAT8h80//2gAMAwEAAgADAAAAEOMADACPNLgyENEAPOAOCiMBGNEPIEIAAANMEOMCAgAEOGGDHECAAAJGNOPPIgLCINAHFIKiJDPAEPOKChFLPHDOPHKkMEMIEEssIv/aAAgBAwABPxDpP//aAAgBAgABPxDpP//aAAgBAQABPxCZveRg8nVkG+N5sHxWm9xm+2IGRrKHGidRrheENww/LE2QqMKNgpfP/9k=",
-  "totalParticipacoes": 4,
-  "totalEliminacoes": 5,
-  "pontosAcumulados": 51,
-  "mediaRank": "1378.50",
-  "mediaEliminacoes": "1.25",
+  "totalParticipacoes": 5,
+  "totalEliminacoes": 8,
+  "pontosAcumulados": 81,
+  "mediaRank": "1122.40",
+  "mediaEliminacoes": "1.60",
   "melhorRank": {
     "rank": 12,
     "date": "2025-10-24"
@@ -42,6 +42,13 @@
       "pontos": 5,
       "eliminatedCount": 1,
       "eliminatedBy": "gabriel_poleto11"
+    },
+    {
+      "date": "2025-10-26",
+      "rank": 98,
+      "pontos": 30,
+      "eliminatedCount": 3,
+      "eliminatedBy": "privx_britoo_"
     }
   ]
 }
