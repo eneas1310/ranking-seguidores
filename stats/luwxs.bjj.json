@@ -1,18 +1,18 @@
 {
   "username": "luwxs.bjj",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2NjAxMDAwMDE1MDIwMDAwMjEwMjAwMDAyZDAyMDAwMDM5MDIwMDAwNDUwMjAwMDA1MTAyMDAwMGFhMDIwMDAwYjYwMjAwMDBjMjAyMDAwMGY2MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADEAAQEBAAAAAAAAAAAAAAAAAAABBxAAAQQDAQEAAAAAAAAAAAAAARARIDAAQGCAUP/aAAwDAQACAAMAAAABxwAABBQEoQUCxF2LHdiMcRVgAAAAAVKEo2PHNjjHIUAAAAWACgA2PHNjjGxQAABQlEABUF2PHNjjGxQAAFgWAsAAF2PG9kMbAAAsFiiWApAANkxzY4xsUAAABQIFBKE2TG9kjGxQFgAUAEoAANjxzY4xyWUWAAFgVKAAWA2PHNjjHJsisbbIMcmyDG2yDG7sYxxsYxxsaMcbGMcbGrHNjI//2gAIAQEAAQUC80//2gAIAQMAAT8B6T//2gAIAQIAAT8B6T//2gAIAQEABj8C80//2gAIAQEAAT8h80//2gAMAwEAAgADAAAAEOMADACPNLgyENEAPOAOCiMBGNEPIEIAAANMEOMCAgAEOGGDHECAAAJGNOPPIgLCINAHFIKiJDPAEPOKChFLPHDOPHKkMEMIEEssIv/aAAgBAwABPxDpP//aAAgBAgABPxDpP//aAAgBAQABPxCZveRg8nVkG+N5sHxWm9xm+2IGRrKHGidRrheENww/LE2QqMKNgpfP/9k=",
-  "totalParticipacoes": 5,
+  "totalParticipacoes": 6,
   "totalEliminacoes": 8,
-  "pontosAcumulados": 81,
-  "mediaRank": "1122.40",
-  "mediaEliminacoes": "1.60",
+  "pontosAcumulados": 82,
+  "mediaRank": "1506.67",
+  "mediaEliminacoes": "1.33",
   "melhorRank": {
     "rank": 12,
     "date": "2025-10-24"
   },
   "piorRank": {
-    "rank": 3162,
-    "date": "2025-10-22"
+    "rank": 3428,
+    "date": "2025-10-27"
   },
   "historicoDeBatalhas": [
     {
@@ -49,6 +49,13 @@
       "pontos": 30,
       "eliminatedCount": 3,
       "eliminatedBy": "privx_britoo_"
+    },
+    {
+      "date": "2025-10-27",
+      "rank": 3428,
+      "pontos": 1,
+      "eliminatedCount": 0,
+      "eliminatedBy": "jotavevrv"
     }
   ]
 }

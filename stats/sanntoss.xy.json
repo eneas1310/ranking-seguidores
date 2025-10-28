@@ -1,18 +1,18 @@
 {
   "username": "sanntoss.xy",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjAAAAAAAAAFnjFnIwAAAAAAAABZ4xZyMAAAAAAAAAWeMWcjCziMLOIws4jCziMLOIws4jCziMLOIws4jFnD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 14,
+  "totalParticipacoes": 15,
   "totalEliminacoes": 15,
   "pontosAcumulados": 62,
-  "mediaRank": "2508.07",
-  "mediaEliminacoes": "1.07",
+  "mediaRank": "2642.07",
+  "mediaEliminacoes": "1.00",
   "melhorRank": {
     "rank": 98,
     "date": "2025-10-15"
   },
   "piorRank": {
-    "rank": 4289,
-    "date": "2025-10-19"
+    "rank": 4518,
+    "date": "2025-10-27"
   },
   "historicoDeBatalhas": [
     {
@@ -110,6 +110,13 @@
       "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "miojolol_"
+    },
+    {
+      "date": "2025-10-27",
+      "rank": 4518,
+      "pontos": 0,
+      "eliminatedCount": 0,
+      "eliminatedBy": "gregoriomalmacedo"
     }
   ]
 }

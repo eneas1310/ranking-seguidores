@@ -1,11 +1,11 @@
 {
   "username": "adegamacallandf",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE4MjAxMDAwMDRlMDIwMDAwOWUwMjAwMDBkNDAyMDAwMGYzMDIwMDAwNTQwMzAwMDAwZDA0MDAwMDY2MDQwMDAwYmIwNDAwMDBlYzA0MDAwMGJkMDUwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAE0AAQEAAwEBAAAAAAAAAAAAAAAHAQIEAwUQAAECAwQHBwMEAwAAAAAAAAEAESExQQISUWEQIDBxkaGxE0BQgcHR8DJgcCIzQoJi4fH/2gAMAwEAAgADAAAAAZQPXyAAAAAAAAVeUVclAAAAAAAAAFXlFXJQAAAdjHG7DXjdmDkDcABV5RVyUAAAdfJ6Mefr5fc21+H18nVjPKMbAAKvKKuSgABv6sc722OfPp7ZcnTvjbHI6NdM+LfRkBV5RVyUAA9PXmMe/txM46tuMdWngOnHON9DGwCryirkoAAAAAAAAAq8oq5KAAAAAAAAAKvKKuSgAAAAAAAACryirkoVcShVxKFXEoVcShVxKFXEoVcShVxKFXEoq4f/2gAIAQEAAQUC+5rIDPYT2E9hWwNv/BXSytfTtngrX7atfT3K1LZgOuzKuFdmVcKs2ToLldmVcKIbYi0y7Qq+V2hV9doUCry7QrtCiX/Dv//aAAgBAwABPwHu5LK9/ieXur8oEPsCFbtM2ZjuR/jv9DrurwxV4J1eGOtdCujBXQrqujDwz//aAAgBAgABPwHwEKzZd8kK67JkAmnFNrOnTp0/hn//2gAIAQEABj8C+5nLzaCla4j2UrXEeyla4j2Vkh4vPLb/ANh0Oh6Y6LH9uu3bN9F15AWm3/8AdFjz69zs+fXbDNfN+j6Qf9L6Rz90zD9OjyfZb9G5TquKn8KnNb56OX4e/9oACAEBAAE/IfuZ/GUIAgJgmoOGo9evRwxAYCBmagG3E2iiIGl5IFBImNHKbdfkcwBtDcRDhgSLl5SHRyHf5xXNQOdyiM1WmN6kGmYbwW6rJqBSZHoRBTHkWPNZgEiPFIhAu9OPkQZIYSw4mZKyJECdSqjex8KObGY2JnNQx3KM8JvLJkTNGZxCpQJOaJw9GcpzAOGaBpV6oCZgDF5SMyZfEIMJDFPDl4iQm6iQZVCgNBmoon7n8O//2gAMAwEAAgADAAAAEPffffffffafffffffffaffffM+/ffafffaqKfffaffc8rLJvPaffZpXHTfPafffffffffafffffffffafffffffffaMccccccccYf/aAAgBAwABPxDu7d2JiAwm5T0giAygEszsTQmgOwebIg8ESGHYE0MUM2nBkMcha4RFRxWQ44Q6o4g44Ig4izRnk3qshxQL6pJMBZTgsrkmLKIBvC//2gAIAQIAAT8Q7uAmzTbAui8gP5/HUm56jXdgnYJzLyKYBMcMIHEH0TsNZ2Op3+Gf/9oACAEBAAE/EPuaDx1Y6nUYOHDhIcAhBqpnd3FgWoqNDcGYB7iwHkLgzOOBjogPhoDj+W2jbWZcloW2ThB/KgIHUhEMA7MwR6J4KPMHjiLghEWLTMEGZnjv5IA5gzCnzilsaSYw4JSuHJfC6OTVKIfMCmwRGDJCLdDEFYHUIIgbqMQeYhsWObUAF8CJcgwnFDcj7wiw0COeakeWSwdxCEFEkIQaxBvAIkWANMPTmDMzqrMFDL4QS+BTcQ7i3QKqTKCOb5RGI05aQYQDS/Dv/9k=",
-  "totalParticipacoes": 14,
-  "totalEliminacoes": 8,
-  "pontosAcumulados": 62,
-  "mediaRank": "2426.07",
-  "mediaEliminacoes": "0.57",
+  "totalParticipacoes": 15,
+  "totalEliminacoes": 10,
+  "pontosAcumulados": 82,
+  "mediaRank": "2273.73",
+  "mediaEliminacoes": "0.67",
   "melhorRank": {
     "rank": 138,
     "date": "2025-10-22"
@@ -110,6 +110,13 @@
       "pontos": 3,
       "eliminatedCount": 0,
       "eliminatedBy": "_m_irleny_13"
+    },
+    {
+      "date": "2025-10-27",
+      "rank": 141,
+      "pontos": 20,
+      "eliminatedCount": 2,
+      "eliminatedBy": "matheus_com_n"
     }
   ]
 }

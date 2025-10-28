@@ -1,18 +1,18 @@
 {
   "username": "jotazin.x7._",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZTAxMDAwMGYzMDEwMDAwZmYwMTAwMDAwYTAyMDAwMDE1MDIwMDAwMjEwMjAwMDAyZDAyMDAwMDg2MDIwMDAwOTEwMjAwMDA5YzAyMDAwMGFhMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACkAAQEBAAAAAAAAAAAAAAAAAAAHARABAQAAAAAAAAAAAAAAAAAAYID/2gAMAwEAAgADAAAAAYwAAAAAAAADbNGbMRgAAAAAAAAG2aM2YjAAAAAAAAANs0ZsxGAAAAAAAAAbZozZiMAAAAAAAAA2zRmzEYAAAAAAAABtmjNmIwAAAAAAAADbNGbMRgAAAAAAAAG2aM2YjAAAAAAAAANs0ZsxGVmEZWYRlZhGVmEZWYRlZhGVmEZWYRlZhGbMH//aAAgBAQABBQKaf//aAAgBAwABPwFJ/9oACAECAAE/AUn/2gAIAQEABj8Cmn//2gAIAQEAAT8hmn//2gAMAwEAAgADAAAAEPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAAAAAAAAAAAP/aAAgBAwABPxBJ/9oACAECAAE/EEn/2gAIAQEAAT8Qmn//2Q==",
-  "totalParticipacoes": 14,
+  "totalParticipacoes": 15,
   "totalEliminacoes": 12,
   "pontosAcumulados": 68,
-  "mediaRank": "2241.64",
-  "mediaEliminacoes": "0.86",
+  "mediaRank": "2394.13",
+  "mediaEliminacoes": "0.80",
   "melhorRank": {
     "rank": 128,
     "date": "2025-10-23"
   },
   "piorRank": {
-    "rank": 4516,
-    "date": "2025-10-26"
+    "rank": 4529,
+    "date": "2025-10-27"
   },
   "historicoDeBatalhas": [
     {
@@ -110,6 +110,13 @@
       "pontos": 0,
       "eliminatedCount": 0,
       "eliminatedBy": "leonardo__jm"
+    },
+    {
+      "date": "2025-10-27",
+      "rank": 4529,
+      "pontos": 0,
+      "eliminatedCount": 0,
+      "eliminatedBy": "costadavi751"
     }
   ]
 }

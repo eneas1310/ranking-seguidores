@@ -1,11 +1,11 @@
 {
   "username": "_.michellouquinho",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2NDAxMDAwMGY1MDEwMDAwMDEwMjAwMDAwZDAyMDAwMDE5MDIwMDAwMjUwMjAwMDA1MjAyMDAwMGFiMDIwMDAwYjcwMjAwMDBjMzAyMDAwMDA1MDMwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EAC8AAQEAAAAAAAAAAAAAAAAAAAAHEAABBQEBAQAAAAAAAAAAAAAAEVFhkbHRYID/2gAMAwEAAgADAAAAAbKAAAAAAAABGrLGiygAAAAAAAARqyxosoAAAAAAAAEassaLKAAAAAAAABGrLGiygAAAAAAAARqyxosoAAAAAAAAEassaLKAAAAAAAABGrLGiygAAAAAAAARqyxosoAAAAAAAAEassaLGjgsaOCxo4LGjgsaOCxo4LGjgsaOCxo4LHHA/9oACAEBAAEFAvmn/9oACAEDAAE/AfSf/9oACAECAAE/AfSf/9oACAEBAAY/Avmn/9oACAEBAAE/IflZJwScEnBJwScEnBJwScEnBJwScEnBJwScEnBJwScEnBJw/9oADAMBAAIAAwAAABDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjDDDDDDDDCD/2gAIAQMAAT8Q9J//2gAIAQIAAT8Q9J//2gAIAQEAAT8Q+VlvrgW+uBb64FvrgW+uBb64FvrgW+uBb64FvrgW+uBb64FvrgW+uBb64FvrgW+uBb64Fvrg/9k=",
-  "totalParticipacoes": 14,
-  "totalEliminacoes": 9,
-  "pontosAcumulados": 55,
-  "mediaRank": "2477.36",
-  "mediaEliminacoes": "0.64",
+  "totalParticipacoes": 15,
+  "totalEliminacoes": 11,
+  "pontosAcumulados": 58,
+  "mediaRank": "2478.80",
+  "mediaEliminacoes": "0.73",
   "melhorRank": {
     "rank": 322,
     "date": "2025-10-26"
@@ -110,6 +110,13 @@
       "pontos": 15,
       "eliminatedCount": 2,
       "eliminatedBy": "_roccomoretti_"
+    },
+    {
+      "date": "2025-10-27",
+      "rank": 2499,
+      "pontos": 3,
+      "eliminatedCount": 2,
+      "eliminatedBy": "soffia.mesquita"
     }
   ]
 }

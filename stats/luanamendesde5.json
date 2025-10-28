@@ -1,11 +1,11 @@
 {
   "username": "luanamendesde5",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2MDAxMDAwMDBhMDIwMDAwMTYwMjAwMDAyMTAyMDAwMDJjMDIwMDAwMzgwMjAwMDA0NDAyMDAwMGE1MDIwMDAwYjAwMjAwMDBiZDAyMDAwMGNiMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACsAAQEBAAAAAAAAAAAAAAAAAAABBxAAAwEAAAAAAAAAAAAAAAAAUGCAEf/aAAwDAQACAAMAAAABxwWgAAAAAALBdixzYzHAAAACkAAAA2PHNjMcAAAKAARYAANjxzYzHAAUAASgJVQIA2PHNjMcABQoAQAFJSQDY8c2MxwACygKEABSWIA2PHNjMcAAsFCgAAkAA2PHNjMcAAAsFQWAAAA2PHdiMcWApKEAWAApCgDYsd2Ix1sSsdmxoxy7EMdmxjHGxjHGxjHWxDHGxjHWxLcd2Ik//9oACAEBAAEFApp//9oACAEDAAE/AWT/2gAIAQIAAT8BZP/aAAgBAQAGPwKaf//aAAgBAQABPyGaf//aAAwDAQACAAMAAAAQ773v99//ALyx9/8A3n33/wDjH/8AeQQdfea//QQfjmPfaf8A0Rz3yhH2n/2nz76hX2n/ANtQwgB99p//APbTXfffY9+4/wDf/vsMMFONPPMPMAP/2gAIAQMAAT8QZP/aAAgBAgABPxAtg7//2gAIAQEAAT8Qmn//2Q==",
-  "totalParticipacoes": 14,
+  "totalParticipacoes": 15,
   "totalEliminacoes": 8,
-  "pontosAcumulados": 67,
-  "mediaRank": "2208.07",
-  "mediaEliminacoes": "0.57",
+  "pontosAcumulados": 68,
+  "mediaRank": "2287.27",
+  "mediaEliminacoes": "0.53",
   "melhorRank": {
     "rank": 432,
     "date": "2025-10-26"
@@ -110,6 +110,13 @@
       "pontos": 15,
       "eliminatedCount": 2,
       "eliminatedBy": "pereiramarcioniliosousa"
+    },
+    {
+      "date": "2025-10-27",
+      "rank": 3396,
+      "pontos": 1,
+      "eliminatedCount": 0,
+      "eliminatedBy": "yxx.lorrayne"
     }
   ]
 }

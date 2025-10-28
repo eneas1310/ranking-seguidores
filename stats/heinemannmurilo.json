@@ -1,18 +1,18 @@
 {
   "username": "heinemannmurilo",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2NTAxMDAwMDEzMDIwMDAwMWYwMjAwMDAyYjAyMDAwMDM3MDIwMDAwNDMwMjAwMDA0ZjAyMDAwMGE4MDIwMDAwYmUwMjAwMDBjYTAyMDAwMGQ4MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADAAAQEBAQAAAAAAAAAAAAAAAAABBwIQAAAHAQAAAAAAAAAAAAAAAAABESBAYIAw/9oADAMBAAIAAwAAAAHGAACkKEpFEAAA2fGNnMYAAKShFAEUQADZ8Y2cxhRKAASgAAgVFDZsY2cxkAAssooCURYgWJRNnxjZzGKAQsqgoACUQOUqmzYzsxjIAgVQUAAQBylU2bGdmMZAAC1LKAAggWANmxnZjGQAAAtQAAgADZsZ2YxkAAAAAAAAhdmxjZzGWzDGWzDGWzDGWzDGWzDGWzDGWzDGWzDGZs4xjZw//9oACAEBAAEFAs0//9oACAEDAAE/AbJ//9oACAECAAE/AbJ//9oACAEBAAY/As0//9oACAEBAAE/Ic0//9oADAMBAAIAAwAAABDzzjgjDzzyjzziTQjDzyjCF37778jAgFHqIlLe1GiT+sE0FD9gAz7sGEEb/ADBHQoEJ/mGE003wHz0EUkBzzz33ygQhDDDDDBCBCD/2gAIAQMAAT8QjoECQSYbiYfJeCyv/9oACAECAAE/ELJ//9oACAEBAAE/EM0//9k=",
-  "totalParticipacoes": 10,
+  "totalParticipacoes": 11,
   "totalEliminacoes": 12,
-  "pontosAcumulados": 96,
-  "mediaRank": "1253.20",
-  "mediaEliminacoes": "1.20",
+  "pontosAcumulados": 97,
+  "mediaRank": "1497.00",
+  "mediaEliminacoes": "1.09",
   "melhorRank": {
     "rank": 80,
     "date": "2025-10-21"
   },
   "piorRank": {
-    "rank": 3861,
-    "date": "2025-10-26"
+    "rank": 3935,
+    "date": "2025-10-27"
   },
   "historicoDeBatalhas": [
     {
@@ -84,6 +84,13 @@
       "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "viana_25ss"
+    },
+    {
+      "date": "2025-10-27",
+      "rank": 3935,
+      "pontos": 1,
+      "eliminatedCount": 0,
+      "eliminatedBy": "slucasdavidos"
     }
   ]
 }
