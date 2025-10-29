@@ -1,11 +1,11 @@
 {
   "username": "gustazzin.spfc",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABjoAAAAAAAAFijtiI6AAAAAAAABYo7YiOgAAAAAAAAWKO2IjoAAAAAAAAFijtiI6AAAAAAAABYo7YiOgAAAAAAAAWKO2IjoAAAAAAAAFijtiI6AAAAAAAABYo7YiOgAAAAAAAAWKO2IjqxCOrEI6sQjqxCOrEI6sQjqxCOrEI6sQjtiD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABDzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjzzzzzzzzyjDDDDDDDDCD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 15,
+  "totalParticipacoes": 16,
   "totalEliminacoes": 10,
   "pontosAcumulados": 57,
-  "mediaRank": "2185.13",
-  "mediaEliminacoes": "0.67",
+  "mediaRank": "2314.31",
+  "mediaEliminacoes": "0.63",
   "melhorRank": {
     "rank": 663,
     "date": "2025-10-14"
@@ -117,6 +117,13 @@
       "pontos": 3,
       "eliminatedCount": 0,
       "eliminatedBy": "yara_alice"
+    },
+    {
+      "date": "2025-10-28",
+      "rank": 4252,
+      "pontos": 0,
+      "eliminatedCount": 0,
+      "eliminatedBy": "idkketelyn"
     }
   ]
 }

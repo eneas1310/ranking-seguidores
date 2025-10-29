@@ -1,11 +1,11 @@
 {
   "username": "jotazin.x7._",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZTAxMDAwMGYzMDEwMDAwZmYwMTAwMDAwYTAyMDAwMDE1MDIwMDAwMjEwMjAwMDAyZDAyMDAwMDg2MDIwMDAwOTEwMjAwMDA5YzAyMDAwMGFhMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACkAAQEBAAAAAAAAAAAAAAAAAAAHARABAQAAAAAAAAAAAAAAAAAAYID/2gAMAwEAAgADAAAAAYwAAAAAAAADbNGbMRgAAAAAAAAG2aM2YjAAAAAAAAANs0ZsxGAAAAAAAAAbZozZiMAAAAAAAAA2zRmzEYAAAAAAAABtmjNmIwAAAAAAAADbNGbMRgAAAAAAAAG2aM2YjAAAAAAAAANs0ZsxGVmEZWYRlZhGVmEZWYRlZhGVmEZWYRlZhGbMH//aAAgBAQABBQKaf//aAAgBAwABPwFJ/9oACAECAAE/AUn/2gAIAQEABj8Cmn//2gAIAQEAAT8hmn//2gAMAwEAAgADAAAAEPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAPPPPPPPPPAAAAAAAAAAAP/aAAgBAwABPxBJ/9oACAECAAE/EEn/2gAIAQEAAT8Qmn//2Q==",
-  "totalParticipacoes": 15,
-  "totalEliminacoes": 12,
-  "pontosAcumulados": 68,
-  "mediaRank": "2394.13",
-  "mediaEliminacoes": "0.80",
+  "totalParticipacoes": 16,
+  "totalEliminacoes": 16,
+  "pontosAcumulados": 78,
+  "mediaRank": "2305.63",
+  "mediaEliminacoes": "1.00",
   "melhorRank": {
     "rank": 128,
     "date": "2025-10-23"
@@ -117,6 +117,13 @@
       "pontos": 0,
       "eliminatedCount": 0,
       "eliminatedBy": "costadavi751"
+    },
+    {
+      "date": "2025-10-28",
+      "rank": 978,
+      "pontos": 10,
+      "eliminatedCount": 4,
+      "eliminatedBy": "wellingtonbsb91"
     }
   ]
 }

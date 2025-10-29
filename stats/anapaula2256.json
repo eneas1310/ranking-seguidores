@@ -1,11 +1,11 @@
 {
   "username": "anapaula2256",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZTAxMDAwMGYwMDEwMDAwZmMwMTAwMDAwNzAyMDAwMDEyMDIwMDAwMWUwMjAwMDAyYTAyMDAwMDg2MDIwMDAwOTEwMjAwMDA5YzAyMDAwMGFhMDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACkAAQEBAAAAAAAAAAAAAAAAAAAHARABAQAAAAAAAAAAAAAAAAAAYID/2gAMAwEAAgADAAAAAY0MwAAAAAAABZY1ZSNAAAAAAAAAWWNWUjQAAAAAAAAFljVlI0AAAAAAAABZY1ZSNAAAAAAAAAWWNWUjQAAAAAAAAFljVlI0AAAAAAAABZY1ZSNAAAAAAAAAWWNWUjQAAAAAAAAFljVlI0sojSyiNLKI0sojSyiNLKI0sojSyiNLKI1ZQ//aAAgBAQABBQKaf//aAAgBAwABPwFJ/9oACAECAAE/AUn/2gAIAQEABj8Cmn//2gAIAQEAAT8hmn//2gAMAwEAAgADAAAAEA3/APNf/d/+sFv9+v8A7D7LjzjDLX/D/DHDDbvT/bvrjTDnXXzprjDTbvb3/wD8awwzw63998awYYyyz+7zw0wy4065QVYw00w40w084//aAAgBAwABPxBJ/9oACAECAAE/EEn/2gAIAQEAAT8Qmn//2Q==",
-  "totalParticipacoes": 15,
-  "totalEliminacoes": 7,
-  "pontosAcumulados": 56,
-  "mediaRank": "2862.40",
-  "mediaEliminacoes": "0.47",
+  "totalParticipacoes": 16,
+  "totalEliminacoes": 8,
+  "pontosAcumulados": 61,
+  "mediaRank": "2769.81",
+  "mediaEliminacoes": "0.50",
   "melhorRank": {
     "rank": 284,
     "date": "2025-10-17"
@@ -117,6 +117,13 @@
       "pontos": 1,
       "eliminatedCount": 0,
       "eliminatedBy": "alegoldale"
+    },
+    {
+      "date": "2025-10-28",
+      "rank": 1381,
+      "pontos": 5,
+      "eliminatedCount": 1,
+      "eliminatedBy": "adrielproba"
     }
   ]
 }

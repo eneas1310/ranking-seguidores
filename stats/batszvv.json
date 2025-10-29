@@ -1,11 +1,11 @@
 {
   "username": "batszvv",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZDAxMDAwMGVlMDEwMDAwZmEwMTAwMDAwNTAyMDAwMDEwMDIwMDAwMWMwMjAwMDAyODAyMDAwMDgxMDIwMDAwOGMwMjAwMDA5NzAyMDAwMGE1MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACgAAQEAAAAAAAAAAAAAAAAAAAAHEAEBAAAAAAAAAAAAAAAAAABggP/aAAwDAQACAAMAAAABkwAAAAAAAAFZk1ZJMAAAAAAAABWZNWSTAAAAAAAAAVmTVkkwAAAAAAAAFZk1ZJMAAAAAAAABWZNWSTAAAAAAAAAVmTVkkwAAAAAAAAFZk1ZJMAAAAAAAABWZNWSTAAAAAAAAAVmTVkkysiTKyJMrIkysiTKyJMrIkysiTKyJMrIk1ZD/2gAIAQEAAQUCmn//2gAIAQMAAT8BSf/aAAgBAgABPwFJ/9oACAEBAAY/App//9oACAEBAAE/IZp//9oADAMBAAIAAwAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/2gAIAQMAAT8QSf/aAAgBAgABPxBJ/9oACAEBAAE/EJp//9k=",
-  "totalParticipacoes": 11,
-  "totalEliminacoes": 12,
-  "pontosAcumulados": 97,
-  "mediaRank": "1788.64",
-  "mediaEliminacoes": "1.09",
+  "totalParticipacoes": 12,
+  "totalEliminacoes": 14,
+  "pontosAcumulados": 112,
+  "mediaRank": "1676.42",
+  "mediaEliminacoes": "1.17",
   "melhorRank": {
     "rank": 84,
     "date": "2025-10-19"
@@ -91,6 +91,13 @@
       "pontos": 5,
       "eliminatedCount": 1,
       "eliminatedBy": "andressa___cb"
+    },
+    {
+      "date": "2025-10-28",
+      "rank": 442,
+      "pontos": 15,
+      "eliminatedCount": 2,
+      "eliminatedBy": "oo_borbazx"
     }
   ]
 }

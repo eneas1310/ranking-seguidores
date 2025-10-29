@@ -1,14 +1,14 @@
 {
   "username": "smok.gazz",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE2YzAxMDAwMDUxMDIwMDAwNWQwMjAwMDA2ZjAyMDAwMDdiMDIwMDAwODcwMjAwMDA5ZTAyMDAwMGY3MDIwMDAwMmQwMzAwMDA1MzAzMDAwMGU1MDMwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EADcAAQEBAQEBAQAAAAAAAAAAAAABBQIEAwYQAAMBAQEAAgMBAAAAAAAAAAABERAgMDFAUGCAcP/aAAwDAQACAAMAAAAB9ET81+RRzJYkl5iRHEliQSc8oiIiPX5PWn1ifX0Ekl5ScpJCJJZJJZIlkIiTm+zxe1O5J9fRZJJeYiEkRJEkSxEsicokj35+gI5+n3vKBJzyiIiIIiJObykCDRzdJPmjv7o5kscpeRESQRyiQiJYQ0szTT4xO/sjksRLInKJIiFiIJIgNTL1Dz8p39RERJLJJLEEJCRLAAamXqHkidfQcubIhLygQkIAAA1MvUPFEvSAiIJIgAAAANTL1DwTQXrOmkkzWkTMmoMtqDLagy2oMtqDLagy9QP/2gAIAQEAAQUC/mn/2gAIAQMAAT8B8bzfq3lv85//2gAIAQIAAT8B/ZP/2gAIAQEABj8C/mn/2gAIAQEAAT8h8r+Dv0r736l+lf8Adf/aAAwDAQACAAMAAAAQV1VYVkv33hzu37/OOK/BbNL4y+eKTiTAv/3h1fgpKGGa+hCdajzWeLb2V76qXh8HC+vKCC+lL16OiCCCzSV36CCCCCCzjSCCCCCC/9oACAEDAAE/ELjZT5G4Ub4NjZB4Y2NlGz5PgbpcbG8uNwbLjF6KNjZT46bG8vTZfBvi/Qfl/9oACAECAAE/EBspSjZdpSlxvilKPG9peGxvWy8N8Xwb8b40v3f/2gAIAQEAAT8QG8o3lG9fK5cuNl242N7RvGy7RvaN4w3tLjfFGxlLlHq43je3hseKN63lxvbjeXWG7tKUb4uN8vlcb2lyjeUbG9pSlG9by8XLrZcb4uN+NLjfVL1SjY2XhvKUuPWx43jfFy8Pbwxvpvbw+breUpcut+LeNl2635Ub7b8qNlx635tl27fpX1//2Q==",
-  "totalParticipacoes": 1,
+  "totalParticipacoes": 2,
   "totalEliminacoes": 0,
-  "pontosAcumulados": 5,
-  "mediaRank": "1850.00",
+  "pontosAcumulados": 10,
+  "mediaRank": "1453.00",
   "mediaEliminacoes": "0.00",
   "melhorRank": {
-    "rank": 1850,
-    "date": "2025-10-27"
+    "rank": 1056,
+    "date": "2025-10-28"
   },
   "piorRank": {
     "rank": 1850,
@@ -21,6 +21,13 @@
       "pontos": 5,
       "eliminatedCount": 0,
       "eliminatedBy": "vg_jf_joao"
+    },
+    {
+      "date": "2025-10-28",
+      "rank": 1056,
+      "pontos": 5,
+      "eliminatedCount": 0,
+      "eliminatedBy": "euiaansouzaa"
     }
   ]
 }

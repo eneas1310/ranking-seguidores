@@ -1,18 +1,18 @@
 {
   "username": "felipedosrs",
   "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7QCEUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAGgcAigAYkZCTUQwYTAwMGE1ZTAxMDAwMGYwMDEwMDAwZmMwMTAwMDAwNzAyMDAwMDEyMDIwMDAwMWUwMjAwMDAyYTAyMDAwMDgzMDIwMDAwOGUwMjAwMDA5OTAyMDAwMGE3MDIwMDAwAP/bAIQABQYGCwgLCwsLCw0LCwsNDg4NDQ4ODw0ODg4NDxAQEBEREBAQEA8TEhMPEBETFBQTERMWFhYTFhUVFhkWGRYWEgEFBQUKBwoICQkICwgKCAsKCgkJCgoMCQoJCgkMDQsKCwsKCw0MCwsICwsMDAwNDQwMDQoLCg0MDQ0MExQTExOc/8IAEQgAlgCWAwEiAAIRAQMRAf/EACkAAQEBAAAAAAAAAAAAAAAAAAAHARABAQAAAAAAAAAAAAAAAAAAYID/2gAMAwEAAgADAAAAAa0M0AAAAAAABJa1JStAAAAAAAAASWtSUrQAAAAAAAAElrUlK0AAAAAAAABJa1JStAAAAAAAAASWtSUrQAAAAAAAAElrUlK0AAAAAAAABJa1JStAAAAAAAAASWtSUrQAAAAAAAAElrUlK0korSSitJKK0korSSitJKK0korSSitJKK1JQ//aAAgBAQABBQKaf//aAAgBAwABPwFJ/9oACAECAAE/AUn/2gAIAQEABj8Cmn//2gAIAQEAAT8hmn//2gAMAwEAAgADAAAAEPffffffffafffffffffafffffffffafffffffffafffffffffafffffffffafffffffffafffffffffafffffffffacccccccccYf/aAAgBAwABPxBJ/9oACAECAAE/EEn/2gAIAQEAAT8Qmn//2Q==",
-  "totalParticipacoes": 15,
+  "totalParticipacoes": 16,
   "totalEliminacoes": 10,
   "pontosAcumulados": 63,
-  "mediaRank": "2314.13",
-  "mediaEliminacoes": "0.67",
+  "mediaRank": "2461.50",
+  "mediaEliminacoes": "0.63",
   "melhorRank": {
     "rank": 605,
     "date": "2025-10-25"
   },
   "piorRank": {
-    "rank": 4183,
-    "date": "2025-10-15"
+    "rank": 4672,
+    "date": "2025-10-28"
   },
   "historicoDeBatalhas": [
     {
@@ -117,6 +117,13 @@
       "pontos": 3,
       "eliminatedCount": 1,
       "eliminatedBy": "euluizferreira_"
+    },
+    {
+      "date": "2025-10-28",
+      "rank": 4672,
+      "pontos": 0,
+      "eliminatedCount": 0,
+      "eliminatedBy": "paulinha.carismatica"
     }
   ]
 }
